@@ -1,0 +1,129 @@
+===============================================
+           PROJECT LOG
+===============================================
+Author Name        : Jyothirmai Chandolu
+Employee ID        : 800342
+Project Name       : Impact of CEO transition on the company stock performance
+Project Description: ETL pipeline fetching and processing Stock Exchange data.
+Log Session ID     : fcc30b64
+Date Created       : 2026-02-16 16:39:29
+===============================================
+
+2026-02-16 16:39:29 - INFO - Starting stock data extraction...
+2026-02-16 16:39:29 - INFO - RAW MODE → Fetching historical stock data
+2026-02-16 16:39:29 - INFO - Fetching RAW historical data for 100 tickers from data.csv
+2026-02-16 16:39:29 - INFO - Date range: 1996-01-01 to 2025-12-31
+2026-02-16 16:39:35 - INFO - Downloaded data from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - Total trading days in downloaded data: 7550
+2026-02-16 16:39:35 - INFO - AAPL: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - ABBV: Data available from 2013-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - ABT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - ACN: Data available from 2001-07-19 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - ADBE: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AIG: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AMD: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AMGN: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AMT: Data available from 1998-02-27 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AMZN: Data available from 1997-05-15 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AVGO: Data available from 2009-08-06 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - AXP: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BA: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BAC: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BK: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BKNG: Data available from 1999-03-31 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BLK: Data available from 1999-10-01 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BMY: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - BRK-B: Data available from 1996-05-09 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - C: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CAT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CL: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CMCSA: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - COF: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - COP: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - COST: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CRM: Data available from 2004-06-23 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CSCO: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CVS: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - CVX: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - DE: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - DHR: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - DIS: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - DUK: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - EMR: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - FDX: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GD: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GE: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GILD: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GM: Data available from 2010-11-18 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GOOG: Data available from 2004-08-19 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GOOGL: Data available from 2004-08-19 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - GS: Data available from 1999-05-04 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - HD: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - HON: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - IBM: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - INTC: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - INTU: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - ISRG: Data available from 2000-06-16 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - JNJ: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - JPM: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - KO: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - LIN: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - LLY: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - LMT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - LOW: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MA: Data available from 2006-05-25 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MCD: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MDLZ: Data available from 2001-06-13 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MDT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MET: Data available from 2000-04-05 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - META: Data available from 2012-05-18 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MMM: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MO: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MRK: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MS: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - MSFT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - NEE: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - NFLX: Data available from 2002-05-23 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - NKE: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - NOW: Data available from 2012-06-29 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - NVDA: Data available from 1999-01-22 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - ORCL: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - PEP: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - PFE: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - PG: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - PLTR: Data available from 2020-09-30 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - PM: Data available from 2008-03-17 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - PYPL: Data available from 2015-07-06 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - QCOM: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - RTX: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - SBUX: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - SCHW: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - SO: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - SPG: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - T: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - TGT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - TMO: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - TMUS: Data available from 2007-04-19 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - TSLA: Data available from 2010-06-29 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - TXN: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - UBER: Data available from 2019-05-10 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - UNH: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - UNP: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - UPS: Data available from 1999-11-10 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - USB: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - V: Data available from 2008-03-19 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - VZ: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - WFC: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - WMT: Data available from 1996-01-02 00:00:00 to 2025-12-31 00:00:00
+2026-02-16 16:39:35 - INFO - Tickers with data: 100
+2026-02-16 16:39:35 - INFO - Tickers without data: 0
+2026-02-16 16:39:35 - INFO - Saving historical files in year/month/day structure
+2026-02-16 16:39:35 - INFO - All tickers will be included in every file, with null values for missing data
+2026-02-16 16:41:01 - INFO - RAW stock data saved in structured folders: stock_data_raw
+2026-02-16 16:41:01 - INFO - Total days saved: 7550
+2026-02-16 16:41:01 - INFO - Stock data extraction completed!
+
+
+===============================================
+           PROJECT LOG END
+===============================================

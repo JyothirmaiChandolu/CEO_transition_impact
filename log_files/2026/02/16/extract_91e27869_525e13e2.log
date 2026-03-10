@@ -1,0 +1,46 @@
+===============================================
+           PROJECT LOG
+===============================================
+Author Name        : Jyothirmai Chandolu
+Employee ID        : 800342
+Project Name       : Impact of CEO transition on the company stock performance
+Project Description: ETL pipeline fetching and processing Stock Exchange data.
+Log Session ID     : 525e13e2
+Date Created       : 2026-02-16 16:33:26
+===============================================
+
+2026-02-16 16:33:26 - INFO - Starting stock data extraction...
+2026-02-16 16:33:26 - INFO - RAW MODE → Fetching historical stock data
+2026-02-16 16:33:26 - ERROR - FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+Traceback (most recent call last):
+  File "/Users/jyothirmaichandolu/Downloads/CEO_impact_website_UI/extract.py", line 18, in fetch_stock_data_raw
+    df = pd.read_csv(file_path)
+  File "/Users/jyothirmaichandolu/Downloads/CEO_impact_website_UI/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/jyothirmaichandolu/Downloads/CEO_impact_website_UI/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/jyothirmaichandolu/Downloads/CEO_impact_website_UI/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jyothirmaichandolu/Downloads/CEO_impact_website_UI/venv/lib/python3.14/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jyothirmaichandolu/Downloads/CEO_impact_website_UI/venv/lib/python3.14/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+
+
+===============================================
+           PROJECT LOG END
+===============================================
