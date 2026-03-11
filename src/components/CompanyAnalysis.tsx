@@ -27,7 +27,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
   const chartData = useMemo(() => {
     if (!stockData) return [];
     const days = daysMap[selectedRange];
-    return getStockDataAroundTransition(stockData.data, transition.transitionDate, days, days);
+    return getStockDataAroundTransition(stockData.data, transition.transitionDate, days / 2, days / 2);
   }, [stockData, transition.transitionDate, selectedRange]);
 
   // Calculate metrics
