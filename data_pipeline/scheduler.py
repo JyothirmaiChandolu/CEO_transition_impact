@@ -36,15 +36,16 @@ class DataScheduler:
         self.last_status = None
 
     def load_tickers(self) -> dict:
-        """Load tickers and transition dates from config"""
-        config_file = Path(__file__).parent.parent / 'data' / 'companies.json'
+        """Load tickers and transition dates from config or CSV"""
+        tickers = {}
 
+        # Try 1: Load from companies.json
+        config_file = Path(__file__).parent.parent / 'data' / 'companies.json'
         if config_file.exists():
             try:
                 with open(config_file, 'r') as f:
                     data = json.load(f)
                     # Extract tickers and transitions
-                    tickers = {}
                     for company in data.get('companies', []):
                         ticker = company.get('ticker')
                         transitions = company.get('transitions', [])
@@ -60,16 +61,51 @@ class DataScheduler:
                         elif ticker:
                             tickers[ticker] = None
 
-                    return tickers
+                    if tickers:
+                        logger.info(f"Loaded {len(tickers)} companies from companies.json")
+                        return tickers
             except Exception as e:
-                logger.error(f"Error loading config: {e}")
+                logger.error(f"Error loading companies.json: {e}")
 
-        # Fallback: use hardcoded list (update with your S&P 100 companies)
+        # Try 2: Load from data.csv (fallback)
+        csv_file = Path(__file__).parent.parent / 'data.csv'
+        if csv_file.exists():
+            try:
+                import pandas as pd
+                df = pd.read_csv(csv_file)
+                if 'Ticker' in df.columns:
+                    for _, row in df.iterrows():
+                        ticker = row.get('Ticker') or row.get('ticker')
+                        if ticker:
+                            tickers[str(ticker).upper()] = None
+                    if tickers:
+                        logger.info(f"Loaded {len(tickers)} companies from data.csv")
+                        return tickers
+            except Exception as e:
+                logger.error(f"Error loading data.csv: {e}")
+
+        # Try 3: Load from sec_10k_filings CSV with CEO data
+        sec_file = Path(__file__).parent.parent / 'sec_10k_filings_results_with_ceo_new.csv'
+        if sec_file.exists():
+            try:
+                import pandas as pd
+                df = pd.read_csv(sec_file)
+                if 'Ticker' in df.columns:
+                    unique_tickers = df['Ticker'].dropna().unique()
+                    for ticker in unique_tickers:
+                        tickers[str(ticker).upper()] = None
+                    if tickers:
+                        logger.info(f"Loaded {len(tickers)} companies from sec_10k_filings CSV")
+                        return tickers
+            except Exception as e:
+                logger.error(f"Error loading sec_10k_filings CSV: {e}")
+
+        # Fallback: use hardcoded list (only if no files found)
+        logger.warning("No company data files found. Using default list.")
         return {
             'AAPL': None, 'MSFT': None, 'GOOGL': None, 'AMZN': None,
             'NVDA': None, 'TSLA': None, 'META': None, 'BRK.B': None,
             'JNJ': None, 'V': None, 'WMT': None, 'JPM': None,
-            # Add more as needed
         }
 
     def run_daily_update(self):
