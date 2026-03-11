@@ -27,7 +27,7 @@ export function HomePage({ onGetStarted, stats }: HomePageProps) {
             </h1>
 
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
-              Explore how leadership changes affect stock market performance. Analyze real SEC 10-K filing data and historical stock prices from S&P 500 companies spanning {stats.dateRange}.
+              Explore how leadership changes affect stock market performance. Analyze real SEC 10-K filing data and historical stock prices from S&P 100 companies spanning {stats.dateRange}.
             </p>
 
             <button
@@ -104,7 +104,7 @@ export function HomePage({ onGetStarted, stats }: HomePageProps) {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-center mb-8 text-2xl font-bold text-slate-900">About This Project</h2>
               <p className="text-slate-600 text-lg leading-loose mb-10 text-center">
-                This comprehensive analysis examines the relationship between CEO transitions and stock market performance across S&P 500 companies. Using SEC 10-K filings to identify leadership changes and daily stock data to measure market impact, we provide insights into investor sentiment and long-term performance trends.
+                This comprehensive analysis examines the relationship between CEO transitions and stock market performance across S&P 100 companies. Using SEC 10-K filings to identify leadership changes and daily stock data to measure market impact, we provide insights into investor sentiment and long-term performance trends.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 <div className="flex items-start gap-4">
