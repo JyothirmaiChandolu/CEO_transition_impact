@@ -1,11 +1,11 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Button } from './ui/button';
 import { ArrowLeft, Calendar, User, TrendingUp, TrendingDown, Activity, DollarSign, Award, BookOpen, Clock } from 'lucide-react';
 import { StockChart } from './StockChart';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { motion } from 'motion/react';
-import { getStockDataAroundTransition, calculateTransitionMetrics, formatDate, formatDateShort } from '../utils/dataLoader';
-import type { Company, CEOTransition, StockData } from '../utils/types';
+import { formatDate, formatDateShort, loadKPIs } from '../utils/api';
+import type { Company, CEOTransition, StockData, ChartDataPoint } from '../utils/types';
 
 interface CompanyAnalysisProps {
   company: Company;
@@ -20,21 +20,73 @@ type TimeRange = '6m' | '1y' | '2y' | '5y';
 
 export function CompanyAnalysis({ company, transition, stockData, stockLoading, onBack, onChangeSelection }: CompanyAnalysisProps) {
   const [selectedRange, setSelectedRange] = useState<TimeRange>('1y');
+  const [metrics, setMetrics] = useState<any>(null);
+  const [metricsLoading, setMetricsLoading] = useState(false);
 
   const daysMap: Record<TimeRange, number> = { '6m': 180, '1y': 365, '2y': 730, '5y': 1825 };
 
-  // Get chart data around transition
-  const chartData = useMemo(() => {
-    if (!stockData) return [];
-    const days = daysMap[selectedRange];
-    return getStockDataAroundTransition(stockData.data, transition.transitionDate, days / 2, days / 2);
-  }, [stockData, transition.transitionDate, selectedRange]);
+  // Fetch metrics from backend
+  useEffect(() => {
+    const fetchMetrics = async () => {
+      setMetricsLoading(true);
+      try {
+        const kpis = await loadKPIs(company.ticker);
+        if (kpis && kpis.transition_impact) {
+          setMetrics({
+            priceAtTransition: kpis.transition_impact.transition_price,
+            impact90Days: kpis.transition_impact.impact_90days_pct,
+            impact1Year: kpis.transition_impact.impact_1year_pct,
+            preTransitionTrend: kpis.transition_impact.pre_transition_trend_90d_pct,
+            volatility: kpis.risk_metrics?.daily_volatility_pct || 0,
+            volatilityLevel: kpis.price_metrics?.volatility_level || 'Medium',
+            priceAfter90: null,
+            priceAfter365: null
+          });
+        }
+      } catch (error) {
+        console.error('Error loading metrics:', error);
+      } finally {
+        setMetricsLoading(false);
+      }
+    };
 
-  // Calculate metrics
-  const metrics = useMemo(() => {
-    if (!stockData) return null;
-    return calculateTransitionMetrics(stockData.data, transition.transitionDate);
-  }, [stockData, transition.transitionDate]);
+    if (company.ticker) {
+      fetchMetrics();
+    }
+  }, [company.ticker]);
+
+  // Get chart data around transition (filter from stockData)
+  const chartData = useMemo(() => {
+    if (!stockData || !stockData.data) return [];
+    const days = daysMap[selectedRange];
+    const transDate = new Date(transition.transitionDate);
+    const startDate = new Date(transDate);
+    startDate.setDate(startDate.getDate() - days / 2);
+    const endDate = new Date(transDate);
+    endDate.setDate(endDate.getDate() + days / 2);
+
+    const startStr = startDate.toISOString().split('T')[0];
+    const endStr = endDate.toISOString().split('T')[0];
+
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const formatLabel = (dateStr: string) => {
+      const d = new Date(dateStr);
+      return `${months[d.getMonth()]} '${String(d.getFullYear()).slice(2)}`;
+    };
+
+    return stockData.data
+      .filter(d => d.date >= startStr && d.date <= endStr)
+      .map(d => ({
+        date: d.date,
+        dateLabel: formatLabel(d.date),
+        close: d.close,
+        open: d.open,
+        high: d.high,
+        low: d.low,
+        volume: d.volume,
+        isTransitionDate: d.date === transition.transitionDate
+      }));
+  }, [stockData, transition.transitionDate, selectedRange]);
 
   const isPositive = metrics ? (metrics.impact90Days ?? 0) >= 0 : true;
   const impactValue = metrics?.impact90Days ?? 0;

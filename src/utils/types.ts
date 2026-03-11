@@ -28,16 +28,18 @@ export interface CompaniesData {
 }
 
 export interface StockDataPoint {
-  d: string;  // date YYYY-MM-DD
-  c: number;  // close (adjusted)
-  o: number | null;  // open
-  h: number | null;  // high
-  l: number | null;  // low
-  v: number | null;  // volume
+  date: string;   // YYYY-MM-DD
+  ticker: string;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
 }
 
 export interface StockData {
   ticker: string;
+  total_records: number;
   data: StockDataPoint[];
 }
 
