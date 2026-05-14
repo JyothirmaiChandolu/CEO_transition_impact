@@ -1,0 +1,63 @@
+{
+  "ticker": "RVLV",
+  "last_updated": "2026-05-11T18:49:47.394427",
+  "data_points": 1740,
+  "date_range": {
+    "start": "2019-06-07",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -38.65,
+    "volatility_pct": 67.07,
+    "volatility_level": "High",
+    "ma_20": 25.02,
+    "ma_50": 24.07,
+    "ma_200": 24.34,
+    "price_high": 87.79,
+    "price_low": 7.3,
+    "current_price": 20.86
+  },
+  "volume_metrics": {
+    "avg_volume": 1243086,
+    "avg_volume_20d": 1149385,
+    "current_volume": 1903600,
+    "volume_trend_pct": -7.54
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.2,
+    "max_drawdown_pct": -85.74,
+    "daily_volatility_pct": 4.23
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

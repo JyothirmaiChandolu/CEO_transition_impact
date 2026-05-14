@@ -1,0 +1,63 @@
+{
+  "ticker": "TRNS",
+  "last_updated": "2026-05-11T18:50:09.878344",
+  "data_points": 7638,
+  "date_range": {
+    "start": "1996-01-02",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 2290.28,
+    "volatility_pct": 69.57,
+    "volatility_level": "High",
+    "ma_20": 77.61,
+    "ma_50": 75.88,
+    "ma_200": 70.88,
+    "price_high": 144.07,
+    "price_low": 0.65,
+    "current_price": 76.25
+  },
+  "volume_metrics": {
+    "avg_volume": 18766,
+    "avg_volume_20d": 128885,
+    "current_volume": 93100,
+    "volume_trend_pct": 586.78
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.46,
+    "max_drawdown_pct": -93.33,
+    "daily_volatility_pct": 4.38
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

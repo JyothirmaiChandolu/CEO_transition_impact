@@ -1,0 +1,63 @@
+{
+  "ticker": "LILA",
+  "last_updated": "2026-05-11T18:49:01.697586",
+  "data_points": 2729,
+  "date_range": {
+    "start": "2015-07-02",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -83.68,
+    "volatility_pct": 46.31,
+    "volatility_level": "High",
+    "ma_20": 8.21,
+    "ma_50": 8.12,
+    "ma_200": 7.92,
+    "price_high": 47.13,
+    "price_low": 4.5,
+    "current_price": 7.63
+  },
+  "volume_metrics": {
+    "avg_volume": 305429,
+    "avg_volume_20d": 261265,
+    "current_volume": 474300,
+    "volume_trend_pct": -14.46
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.17,
+    "max_drawdown_pct": -90.45,
+    "daily_volatility_pct": 2.92
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

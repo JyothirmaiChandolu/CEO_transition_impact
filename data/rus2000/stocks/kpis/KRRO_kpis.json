@@ -1,0 +1,63 @@
+{
+  "ticker": "KRRO",
+  "last_updated": "2026-05-11T18:48:58.316997",
+  "data_points": 1658,
+  "date_range": {
+    "start": "2019-10-03",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -98.24,
+    "volatility_pct": 120.73,
+    "volatility_level": "High",
+    "ma_20": 13.33,
+    "ma_50": 12.43,
+    "ma_200": 18.66,
+    "price_high": 2750.5,
+    "price_low": 5.28,
+    "current_price": 12.05
+  },
+  "volume_metrics": {
+    "avg_volume": 65207,
+    "avg_volume_20d": 89950,
+    "current_volume": 242300,
+    "volume_trend_pct": 37.94
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.2,
+    "max_drawdown_pct": -99.81,
+    "daily_volatility_pct": 7.61
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

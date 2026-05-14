@@ -1,0 +1,63 @@
+{
+  "ticker": "EGAN",
+  "last_updated": "2026-05-11T18:48:18.981522",
+  "data_points": 6697,
+  "date_range": {
+    "start": "1999-09-23",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -96.76,
+    "volatility_pct": 104.57,
+    "volatility_level": "High",
+    "ma_20": 7.69,
+    "ma_50": 8.19,
+    "ma_200": 9.5,
+    "price_high": 685.0,
+    "price_low": 0.21,
+    "current_price": 7.46
+  },
+  "volume_metrics": {
+    "avg_volume": 81066,
+    "avg_volume_20d": 178275,
+    "current_volume": 240600,
+    "volume_trend_pct": 119.91
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.34,
+    "max_drawdown_pct": -99.97,
+    "daily_volatility_pct": 6.59
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

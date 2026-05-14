@@ -1,0 +1,63 @@
+{
+  "ticker": "MNSB",
+  "last_updated": "2026-05-11T18:49:11.522334",
+  "data_points": 5201,
+  "date_range": {
+    "start": "2005-09-06",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 114.03,
+    "volatility_pct": 39.96,
+    "volatility_level": "Medium",
+    "ma_20": 23.6,
+    "ma_50": 22.64,
+    "ma_200": 20.93,
+    "price_high": 27.74,
+    "price_low": 3.08,
+    "current_price": 23.5
+  },
+  "volume_metrics": {
+    "avg_volume": 8838,
+    "avg_volume_20d": 54975,
+    "current_volume": 23200,
+    "volume_trend_pct": 521.96
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.24,
+    "max_drawdown_pct": -75.04,
+    "daily_volatility_pct": 2.52
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

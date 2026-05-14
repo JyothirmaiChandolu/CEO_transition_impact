@@ -1,0 +1,63 @@
+{
+  "ticker": "DHT",
+  "last_updated": "2026-05-11T18:48:14.868304",
+  "data_points": 5174,
+  "date_range": {
+    "start": "2005-10-13",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -35.68,
+    "volatility_pct": 47.09,
+    "volatility_level": "High",
+    "ma_20": 18.28,
+    "ma_50": 18.16,
+    "ma_200": 13.95,
+    "price_high": 53.45,
+    "price_low": 1.54,
+    "current_price": 19.0
+  },
+  "volume_metrics": {
+    "avg_volume": 1196542,
+    "avg_volume_20d": 3225375,
+    "current_volume": 2915200,
+    "volume_trend_pct": 169.56
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.15,
+    "max_drawdown_pct": -97.12,
+    "daily_volatility_pct": 2.97
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

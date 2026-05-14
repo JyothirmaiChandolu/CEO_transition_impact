@@ -1,0 +1,63 @@
+{
+  "ticker": "HTFL",
+  "last_updated": "2026-05-11T18:48:45.543355",
+  "data_points": 188,
+  "date_range": {
+    "start": "2025-08-11",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -1.6,
+    "volatility_pct": 75.56,
+    "volatility_level": "High",
+    "ma_20": 30.18,
+    "ma_50": 26.82,
+    "ma_200": null,
+    "price_high": 39.91,
+    "price_low": 20.49,
+    "current_price": 29.51
+  },
+  "volume_metrics": {
+    "avg_volume": 939617,
+    "avg_volume_20d": 1063995,
+    "current_volume": 541800,
+    "volume_trend_pct": 13.24
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.32,
+    "max_drawdown_pct": -48.66,
+    "daily_volatility_pct": 4.76
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "ticker": "AESI",
+  "last_updated": "2026-05-11T18:47:31.572263",
+  "data_points": 795,
+  "date_range": {
+    "start": "2023-03-09",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 26.25,
+    "volatility_pct": 48.32,
+    "volatility_level": "High",
+    "ma_20": 15.89,
+    "ma_50": 13.74,
+    "ma_200": 11.59,
+    "price_high": 23.76,
+    "price_low": 8.1,
+    "current_price": 18.71
+  },
+  "volume_metrics": {
+    "avg_volume": 1529244,
+    "avg_volume_20d": 5940455,
+    "current_volume": 2962400,
+    "volume_trend_pct": 288.46
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.35,
+    "max_drawdown_pct": -65.91,
+    "daily_volatility_pct": 3.04
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

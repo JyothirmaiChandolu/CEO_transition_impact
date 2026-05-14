@@ -1,0 +1,63 @@
+{
+  "ticker": "DLX",
+  "last_updated": "2026-05-11T18:48:15.643642",
+  "data_points": 7638,
+  "date_range": {
+    "start": "1996-01-02",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 442.45,
+    "volatility_pct": 38.55,
+    "volatility_level": "Medium",
+    "ma_20": 29.67,
+    "ma_50": 28.33,
+    "ma_200": 22.58,
+    "price_high": 53.79,
+    "price_low": 3.25,
+    "current_price": 26.58
+  },
+  "volume_metrics": {
+    "avg_volume": 356151,
+    "avg_volume_20d": 439900,
+    "current_volume": 609600,
+    "volume_trend_pct": 23.51
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.28,
+    "max_drawdown_pct": -84.62,
+    "daily_volatility_pct": 2.43
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

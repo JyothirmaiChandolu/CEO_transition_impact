@@ -1,0 +1,63 @@
+{
+  "ticker": "ASAN",
+  "last_updated": "2026-05-11T18:47:39.577992",
+  "data_points": 1408,
+  "date_range": {
+    "start": "2020-09-30",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -76.98,
+    "volatility_pct": 76.61,
+    "volatility_level": "High",
+    "ma_20": 6.4,
+    "ma_50": 6.59,
+    "ma_200": 11.31,
+    "price_high": 142.68,
+    "price_low": 5.46,
+    "current_price": 6.63
+  },
+  "volume_metrics": {
+    "avg_volume": 3234062,
+    "avg_volume_20d": 7405965,
+    "current_volume": 7503800,
+    "volume_trend_pct": 129.0
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.01,
+    "max_drawdown_pct": -96.17,
+    "daily_volatility_pct": 4.83
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

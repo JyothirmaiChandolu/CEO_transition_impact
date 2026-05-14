@@ -1,0 +1,63 @@
+{
+  "ticker": "PHAT",
+  "last_updated": "2026-05-11T18:49:34.040781",
+  "data_points": 1642,
+  "date_range": {
+    "start": "2019-10-25",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -50.57,
+    "volatility_pct": 92.53,
+    "volatility_level": "High",
+    "ma_20": 12.32,
+    "ma_50": 11.58,
+    "ma_200": 12.67,
+    "price_high": 54.6,
+    "price_low": 2.29,
+    "current_price": 12.16
+  },
+  "volume_metrics": {
+    "avg_volume": 568568,
+    "avg_volume_20d": 1418250,
+    "current_volume": 628900,
+    "volume_trend_pct": 149.44
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.3,
+    "max_drawdown_pct": -95.81,
+    "daily_volatility_pct": 5.83
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

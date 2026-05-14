@@ -1,0 +1,38 @@
+# ── Dependencies ────────────────────────────────────────────────
+node_modules/
+
+# ── Build output ─────────────────────────────────────────────────
+dist/
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# ── Logs ─────────────────────────────────────────────────────────
+*.log
+pipeline.log
+fetch_historical.log
+
+# ── Large data files ──────────────────────────────────────────────
+data/rus2000/stock/
+data/sp500/stock/
+data/stock/
+
+# ── Environment / secrets ────────────────────────────────────────
+.env
+.env.*
+*.env
+
+# ── OS files ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── TypeScript build info ────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Cost / report CSVs (generated) ───────────────────────────────
+cost_report.csv

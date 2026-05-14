@@ -1,0 +1,63 @@
+{
+  "ticker": "ENVA",
+  "last_updated": "2026-05-11T18:48:20.805885",
+  "data_points": 2887,
+  "date_range": {
+    "start": "2014-11-13",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 548.98,
+    "volatility_pct": 51.78,
+    "volatility_level": "High",
+    "ma_20": 166.04,
+    "ma_50": 149.32,
+    "ma_200": 135.99,
+    "price_high": 174.9,
+    "price_low": 4.97,
+    "current_price": 174.9
+  },
+  "volume_metrics": {
+    "avg_volume": 286153,
+    "avg_volume_20d": 275850,
+    "current_volume": 180600,
+    "volume_trend_pct": -3.6
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.54,
+    "max_drawdown_pct": -80.21,
+    "daily_volatility_pct": 3.26
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

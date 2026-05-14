@@ -1,0 +1,63 @@
+{
+  "ticker": "CARG",
+  "last_updated": "2026-05-11T18:47:54.975034",
+  "data_points": 2154,
+  "date_range": {
+    "start": "2017-10-12",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 25.96,
+    "volatility_pct": 50.68,
+    "volatility_level": "High",
+    "ma_20": 36.88,
+    "ma_50": 34.87,
+    "ma_200": 34.63,
+    "price_high": 55.91,
+    "price_low": 11.93,
+    "current_price": 34.74
+  },
+  "volume_metrics": {
+    "avg_volume": 1103645,
+    "avg_volume_20d": 1041570,
+    "current_volume": 1907500,
+    "volume_trend_pct": -5.62
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.27,
+    "max_drawdown_pct": -78.66,
+    "daily_volatility_pct": 3.19
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

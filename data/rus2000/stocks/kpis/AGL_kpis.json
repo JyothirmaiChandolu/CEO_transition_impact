@@ -1,0 +1,63 @@
+{
+  "ticker": "AGL",
+  "last_updated": "2026-05-11T18:47:31.808052",
+  "data_points": 1273,
+  "date_range": {
+    "start": "2021-04-15",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -93.0,
+    "volatility_pct": 101.62,
+    "volatility_level": "High",
+    "ma_20": 30.04,
+    "ma_50": 20.27,
+    "ma_200": 22.24,
+    "price_high": 1081.25,
+    "price_low": 7.91,
+    "current_price": 54.23
+  },
+  "volume_metrics": {
+    "avg_volume": 168923,
+    "avg_volume_20d": 587265,
+    "current_volume": 859500,
+    "volume_trend_pct": 247.65
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.07,
+    "max_drawdown_pct": -99.27,
+    "daily_volatility_pct": 6.4
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

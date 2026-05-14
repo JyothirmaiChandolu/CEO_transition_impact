@@ -1,0 +1,63 @@
+{
+  "ticker": "EXFY",
+  "last_updated": "2026-05-11T18:48:23.620031",
+  "data_points": 1127,
+  "date_range": {
+    "start": "2021-11-10",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -97.52,
+    "volatility_pct": 80.54,
+    "volatility_level": "High",
+    "ma_20": 0.98,
+    "ma_50": 0.9,
+    "ma_200": 1.46,
+    "price_high": 48.54,
+    "price_low": 0.75,
+    "current_price": 1.02
+  },
+  "volume_metrics": {
+    "avg_volume": 575508,
+    "avg_volume_20d": 571990,
+    "current_volume": 551400,
+    "volume_trend_pct": -0.61
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.65,
+    "max_drawdown_pct": -98.45,
+    "daily_volatility_pct": 5.07
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

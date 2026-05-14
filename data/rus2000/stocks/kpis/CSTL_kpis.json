@@ -1,0 +1,63 @@
+{
+  "ticker": "CSTL",
+  "last_updated": "2026-05-11T18:48:08.251264",
+  "data_points": 1707,
+  "date_range": {
+    "start": "2019-07-25",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -7.34,
+    "volatility_pct": 74.5,
+    "volatility_level": "High",
+    "ma_20": 24.11,
+    "ma_50": 25.06,
+    "ma_200": 28.57,
+    "price_high": 97.33,
+    "price_low": 11.66,
+    "current_price": 19.83
+  },
+  "volume_metrics": {
+    "avg_volume": 301620,
+    "avg_volume_20d": 401410,
+    "current_volume": 498500,
+    "volume_trend_pct": 33.08
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.33,
+    "max_drawdown_pct": -88.02,
+    "daily_volatility_pct": 4.69
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "ticker": "HGV",
+  "last_updated": "2026-05-11T18:48:42.216042",
+  "data_points": 2349,
+  "date_range": {
+    "start": "2017-01-04",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 88.28,
+    "volatility_pct": 42.64,
+    "volatility_level": "High",
+    "ma_20": 46.94,
+    "ma_50": 43.97,
+    "ma_200": 44.42,
+    "price_high": 55.0,
+    "price_low": 10.53,
+    "current_price": 48.67
+  },
+  "volume_metrics": {
+    "avg_volume": 907244,
+    "avg_volume_20d": 880775,
+    "current_volume": 657900,
+    "volume_trend_pct": -2.92
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.33,
+    "max_drawdown_pct": -77.74,
+    "daily_volatility_pct": 2.69
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

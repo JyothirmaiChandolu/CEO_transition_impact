@@ -1,0 +1,4287 @@
+{
+  "totalCompanies": 237,
+  "companiesWithTransitions": 162,
+  "totalTransitions": 385,
+  "dateRange": "1996-2026",
+  "companies": [
+    {
+      "ticker": "AAMI",
+      "name": "AAMI",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Guang Yang",
+          "newCEO": "Suren Rana",
+          "transitionDate": "2020-04-15",
+          "startDate": "2020-04-15",
+          "endDate": "2024-12-31"
+        },
+        {
+          "previousCEO": "Suren Rana",
+          "newCEO": "Kelly Young",
+          "transitionDate": "2025-01-01",
+          "startDate": "2025-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "AAOI",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Juen-Sheng Kang",
+          "newCEO": "Chih-Hsiang Lin",
+          "transitionDate": "2013-12-30",
+          "startDate": "2013-12-30",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AAP",
+      "name": "AAP",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "Lawrence P. Castellani",
+          "newCEO": "Michael N. Coppola",
+          "transitionDate": "2005-05-18",
+          "startDate": "2005-05-18",
+          "endDate": "2007-05-07"
+        },
+        {
+          "previousCEO": "Michael N. Coppola",
+          "newCEO": "John C. Brouillard",
+          "transitionDate": "2007-05-07",
+          "startDate": "2007-05-07",
+          "endDate": "2008-01-07"
+        },
+        {
+          "previousCEO": "John C. Brouillard",
+          "newCEO": "Darren R. Jackson",
+          "transitionDate": "2008-01-07",
+          "startDate": "2008-01-07",
+          "endDate": "2014-01-02"
+        },
+        {
+          "previousCEO": "Darren R. Jackson",
+          "newCEO": "O. Temple Sloan III",
+          "transitionDate": "2014-01-02",
+          "startDate": "2014-01-02",
+          "endDate": "2016-01-03"
+        },
+        {
+          "previousCEO": "O. Temple Sloan III",
+          "newCEO": "George E. Sherman",
+          "transitionDate": "2016-01-03",
+          "startDate": "2016-01-03",
+          "endDate": "2016-04-11"
+        },
+        {
+          "previousCEO": "George E. Sherman",
+          "newCEO": "Thomas Greco",
+          "transitionDate": "2016-04-11",
+          "startDate": "2016-04-11",
+          "endDate": "2023-09-11"
+        },
+        {
+          "previousCEO": "Thomas Greco",
+          "newCEO": "Shane M. O'Kelly",
+          "transitionDate": "2023-09-11",
+          "startDate": "2023-09-11",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AARD",
+      "name": "Aardvark Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AAT",
+      "name": "AAT",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "John W. Chamberlain",
+          "newCEO": "Ernest W. Rady",
+          "transitionDate": "2015-09-14",
+          "startDate": "2015-09-14",
+          "endDate": "2025-01-01"
+        },
+        {
+          "previousCEO": "Ernest W. Rady",
+          "newCEO": "Adam Wyll",
+          "transitionDate": "2025-01-01",
+          "startDate": "2025-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABAT",
+      "name": "ABAT",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Craig Alford",
+          "newCEO": "Michael Mason",
+          "transitionDate": "2017-02-15",
+          "startDate": "2017-02-15",
+          "endDate": "2017-08-07"
+        },
+        {
+          "previousCEO": "Michael Mason",
+          "newCEO": "Douglas Cole",
+          "transitionDate": "2017-08-07",
+          "startDate": "2017-08-07",
+          "endDate": "2021-08-27"
+        },
+        {
+          "previousCEO": "Douglas Cole",
+          "newCEO": "Ryan Melsert",
+          "transitionDate": "2021-08-27",
+          "startDate": "2021-08-27",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABCB",
+      "name": "ABCB",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Eugene M. Vereen, Jr.",
+          "newCEO": "Dennis J. Zember Jr.",
+          "transitionDate": "2018-01-01",
+          "startDate": "2018-01-01",
+          "endDate": "2019-06-27"
+        },
+        {
+          "previousCEO": "Dennis J. Zember Jr.",
+          "newCEO": "H. Palmer Proctor, Jr.",
+          "transitionDate": "2019-06-28",
+          "startDate": "2019-06-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABEO",
+      "name": "ABEO",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Kerry Gray",
+          "newCEO": "Rosemary Mazanet",
+          "transitionDate": "2006-05-19",
+          "startDate": "2006-05-19",
+          "endDate": "2007-01-04"
+        },
+        {
+          "previousCEO": "Rosemary Mazanet",
+          "newCEO": "Stephen R. Seiler",
+          "transitionDate": "2007-01-04",
+          "startDate": "2007-01-04",
+          "endDate": "2007-12-19"
+        },
+        {
+          "previousCEO": "Stephen R. Seiler",
+          "newCEO": "Jeffrey B. Davis",
+          "transitionDate": "2007-12-26",
+          "startDate": "2007-12-26",
+          "endDate": "2014-09-19"
+        },
+        {
+          "previousCEO": "Jeffrey B. Davis",
+          "newCEO": "Scott Schorer",
+          "transitionDate": "2014-09-19",
+          "startDate": "2014-09-19",
+          "endDate": "2015-05-06"
+        },
+        {
+          "previousCEO": "Scott Schorer",
+          "newCEO": "Tim Miller",
+          "transitionDate": "2015-05-06",
+          "startDate": "2015-05-06",
+          "endDate": "2018-03-29"
+        },
+        {
+          "previousCEO": "Tim Miller",
+          "newCEO": "Frank Carsten Thiel",
+          "transitionDate": "2018-03-29",
+          "startDate": "2018-03-29",
+          "endDate": "2018-11-26"
+        },
+        {
+          "previousCEO": "Frank Carsten Thiel",
+          "newCEO": "Jo o Siffert",
+          "transitionDate": "2018-11-26",
+          "startDate": "2018-11-26",
+          "endDate": "2020-04-15"
+        },
+        {
+          "previousCEO": "Jo o Siffert",
+          "newCEO": "Brian Pereira",
+          "transitionDate": "2020-04-15",
+          "startDate": "2020-04-15",
+          "endDate": "2021-03-19"
+        },
+        {
+          "previousCEO": "Brian Pereira",
+          "newCEO": "Michael Amoroso",
+          "transitionDate": "2021-03-19",
+          "startDate": "2021-03-19",
+          "endDate": "2021-10-14"
+        },
+        {
+          "previousCEO": "Michael Amoroso",
+          "newCEO": "Vishwas Seshadri",
+          "transitionDate": "2021-10-15",
+          "startDate": "2021-10-15",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABG",
+      "name": "ABG",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "Kenneth B. Gilman",
+          "newCEO": "Charles B. Tomm",
+          "transitionDate": "2005-01-01",
+          "startDate": "2005-01-01",
+          "endDate": "2007-05-04"
+        },
+        {
+          "previousCEO": "Charles B. Tomm",
+          "newCEO": "Charles R. Oglesby",
+          "transitionDate": "2007-05-04",
+          "startDate": "2007-05-04",
+          "endDate": "2011-02-09"
+        },
+        {
+          "previousCEO": "Charles R. Oglesby",
+          "newCEO": "Craig T. Monaghan",
+          "transitionDate": "2011-02-09",
+          "startDate": "2011-02-09",
+          "endDate": "2017-12-31"
+        },
+        {
+          "previousCEO": "Craig T. Monaghan",
+          "newCEO": "David W. Hult",
+          "transitionDate": "2018-01-01",
+          "startDate": "2018-01-01",
+          "endDate": "2026-05-01"
+        },
+        {
+          "previousCEO": "David W. Hult",
+          "newCEO": "Daniel E. Clara",
+          "transitionDate": "2026-05-01",
+          "startDate": "2026-05-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABM",
+      "name": "ABM",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Henrik C. Slipsager",
+          "newCEO": "Scott Salmirs",
+          "transitionDate": "2015-03-31",
+          "startDate": "2015-03-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABR",
+      "name": "ABR",
+      "sector": "Real Estate",
+      "transitions": []
+    },
+    {
+      "ticker": "ABSI",
+      "name": "ABSI",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ABUS",
+      "name": "ABUS",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Mark J. Murray",
+          "newCEO": "William H. Collier",
+          "transitionDate": "2019-06-24",
+          "startDate": "2019-06-24",
+          "endDate": "2023-12-31"
+        },
+        {
+          "previousCEO": "William H. Collier",
+          "newCEO": "Michael J. McElhaugh",
+          "transitionDate": "2024-01-01",
+          "startDate": "2024-01-01",
+          "endDate": "2025-02-23"
+        },
+        {
+          "previousCEO": "Michael J. McElhaugh",
+          "newCEO": "Lindsay Androski",
+          "transitionDate": "2025-02-24",
+          "startDate": "2025-02-24",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ABX",
+      "name": "ABX",
+      "sector": "Financial Services",
+      "transitions": []
+    },
+    {
+      "ticker": "ACA",
+      "name": "Arcosa, Inc.",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "ACAD",
+      "name": "ACAD",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Uli Hacksell",
+          "newCEO": "Stephen R. Davis",
+          "transitionDate": "2015-03-11",
+          "startDate": "2015-03-11",
+          "endDate": "2024-09-23"
+        },
+        {
+          "previousCEO": "Stephen R. Davis",
+          "newCEO": "Catherine Owen Adams",
+          "transitionDate": "2024-09-23",
+          "startDate": "2024-09-23",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACCO",
+      "name": "ACCO",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "David D. Campbell",
+          "newCEO": "Robert J. Keller",
+          "transitionDate": "2008-10-22",
+          "startDate": "2008-10-22",
+          "endDate": "2013-03-31"
+        },
+        {
+          "previousCEO": "Robert J. Keller",
+          "newCEO": "Boris Elisman",
+          "transitionDate": "2013-03-31",
+          "startDate": "2013-03-31",
+          "endDate": "2023-10-01"
+        },
+        {
+          "previousCEO": "Boris Elisman",
+          "newCEO": "Thomas W. Tedford",
+          "transitionDate": "2023-10-01",
+          "startDate": "2023-10-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACDC",
+      "name": "ProFrac Holding Corp.",
+      "sector": "Energy",
+      "transitions": []
+    },
+    {
+      "ticker": "ACEL",
+      "name": "ACEL",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ACH",
+      "name": "ACH",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "G. Gilmer Minor, III",
+          "newCEO": "Craig R. Smith",
+          "transitionDate": "2005-07-01",
+          "startDate": "2005-07-01",
+          "endDate": "2014-09-01"
+        },
+        {
+          "previousCEO": "Craig R. Smith",
+          "newCEO": "James L. Bierman",
+          "transitionDate": "2014-09-01",
+          "startDate": "2014-09-01",
+          "endDate": "2015-02-17"
+        },
+        {
+          "previousCEO": "James L. Bierman",
+          "newCEO": "P. Cody Phipps",
+          "transitionDate": "2017-05-05",
+          "startDate": "2017-05-05",
+          "endDate": "2018-11-07"
+        },
+        {
+          "previousCEO": "P. Cody Phipps",
+          "newCEO": "Robert C. Sledd",
+          "transitionDate": "2018-11-07",
+          "startDate": "2018-11-07",
+          "endDate": "2019-03-04"
+        },
+        {
+          "previousCEO": "Robert C. Sledd",
+          "newCEO": "Edward A. Pesicka",
+          "transitionDate": "2019-03-04",
+          "startDate": "2019-03-04",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACHR",
+      "name": "ACHR",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Brett Adcock",
+          "newCEO": "Adam Goldstein",
+          "transitionDate": "2022-04-18",
+          "startDate": "2022-04-18",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACIC",
+      "name": "ACIC",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Donald J. Cronin",
+          "newCEO": "Melvin Russell",
+          "transitionDate": "2012-02-13",
+          "startDate": "2012-02-13",
+          "endDate": "2012-06-14"
+        },
+        {
+          "previousCEO": "Melvin Russell",
+          "newCEO": "John Forney",
+          "transitionDate": "2012-06-14",
+          "startDate": "2012-06-14",
+          "endDate": "2020-06-30"
+        },
+        {
+          "previousCEO": "John Forney",
+          "newCEO": "R. Daniel Peed",
+          "transitionDate": "2020-07-01",
+          "startDate": "2020-07-01",
+          "endDate": "2025-02-11"
+        },
+        {
+          "previousCEO": "R. Daniel Peed",
+          "newCEO": "B. Bradford Martz",
+          "transitionDate": "2025-02-11",
+          "startDate": "2025-02-11",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACIW",
+      "name": "ACIW",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Gregory D. Derkacht",
+          "newCEO": "Philip G. Heasley",
+          "transitionDate": "2005-03-08",
+          "startDate": "2005-03-08",
+          "endDate": "2019-12-31"
+        },
+        {
+          "previousCEO": "Philip G. Heasley",
+          "newCEO": "Craig Saks",
+          "transitionDate": "2020-01-01",
+          "startDate": "2020-01-01",
+          "endDate": "2020-03-09"
+        },
+        {
+          "previousCEO": "Craig Saks",
+          "newCEO": "Odilon Almeida",
+          "transitionDate": "2020-03-09",
+          "startDate": "2020-03-09",
+          "endDate": "2022-11-08"
+        },
+        {
+          "previousCEO": "Odilon Almeida",
+          "newCEO": "Thomas Warsop",
+          "transitionDate": "2022-11-08",
+          "startDate": "2022-11-08",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACLS",
+      "name": "ACLS",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Mary G. Puma",
+          "newCEO": "Russell J. Low",
+          "transitionDate": "2023-05-11",
+          "startDate": "2023-05-11",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACMR",
+      "name": "ACMR",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "ACNB",
+      "name": "ACNB",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Guy F. Donaldson",
+          "newCEO": "John W. Krichten",
+          "transitionDate": "2005-03-22",
+          "startDate": "2005-03-22",
+          "endDate": "2005-04-28"
+        },
+        {
+          "previousCEO": "John W. Krichten",
+          "newCEO": "Thomas A. Ritter",
+          "transitionDate": "2005-04-28",
+          "startDate": "2005-04-28",
+          "endDate": "2017-05-05"
+        },
+        {
+          "previousCEO": "Thomas A. Ritter",
+          "newCEO": "James P. Helt",
+          "transitionDate": "2017-05-05",
+          "startDate": "2017-05-05",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACNT",
+      "name": "ACNT",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Ralph Matera",
+          "newCEO": "Ronald H. Braam",
+          "transitionDate": "2006-01-01",
+          "startDate": "2006-01-01",
+          "endDate": "2011-01-24"
+        },
+        {
+          "previousCEO": "Ronald H. Braam",
+          "newCEO": "Craig C. Bram",
+          "transitionDate": "2011-01-24",
+          "startDate": "2011-01-24",
+          "endDate": "2020-10-26"
+        },
+        {
+          "previousCEO": "Craig C. Bram",
+          "newCEO": "Christopher G. Hutter",
+          "transitionDate": "2020-10-26",
+          "startDate": "2020-10-26",
+          "endDate": "2024-02-10"
+        },
+        {
+          "previousCEO": "Christopher G. Hutter",
+          "newCEO": "J. Bryan Kitchen",
+          "transitionDate": "2024-02-10",
+          "startDate": "2024-02-10",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACR",
+      "name": "ACR",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Robert C. Lieber",
+          "newCEO": "Mark S. Fogel",
+          "transitionDate": "2020-07-31",
+          "startDate": "2020-07-31",
+          "endDate": "2026-04-29"
+        },
+        {
+          "previousCEO": "Mark S. Fogel",
+          "newCEO": "Andrew Fentress",
+          "transitionDate": "2026-04-29",
+          "startDate": "2026-04-29",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACRE",
+      "name": "ACRE",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "John B. Bartling, Jr.",
+          "newCEO": "Todd Schuster",
+          "transitionDate": "2013-06-01",
+          "startDate": "2013-06-01",
+          "endDate": "2015-08-26"
+        },
+        {
+          "previousCEO": "Todd Schuster",
+          "newCEO": "John Jardine",
+          "transitionDate": "2015-08-28",
+          "startDate": "2015-08-28",
+          "endDate": "2017-10-31"
+        },
+        {
+          "previousCEO": "John Jardine",
+          "newCEO": "James A. Henderson",
+          "transitionDate": "2017-10-31",
+          "startDate": "2017-10-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACRS",
+      "name": "ACRS",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Douglas Manion",
+          "newCEO": "Neal Walker",
+          "transitionDate": "2024-01-17",
+          "startDate": "2024-01-17",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACT",
+      "name": "ACT",
+      "sector": "Financial Services",
+      "transitions": []
+    },
+    {
+      "ticker": "ACTG",
+      "name": "ACTG",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Paul R. Ryan",
+          "newCEO": "Matthew Vella",
+          "transitionDate": "2013-08-01",
+          "startDate": "2013-08-01",
+          "endDate": "2015-12-21"
+        },
+        {
+          "previousCEO": "Matthew Vella",
+          "newCEO": "Marvin Key",
+          "transitionDate": "2015-12-21",
+          "startDate": "2015-12-21",
+          "endDate": "2017-04-19"
+        },
+        {
+          "previousCEO": "Marvin Key",
+          "newCEO": "Clifford Press",
+          "transitionDate": "2019-09-03",
+          "startDate": "2019-09-03",
+          "endDate": "2022-10-31"
+        },
+        {
+          "previousCEO": "Clifford Press",
+          "newCEO": "Martin D. McNulty Jr.",
+          "transitionDate": "2022-10-31",
+          "startDate": "2022-10-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ACTU",
+      "name": "ACTU",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ACU",
+      "name": "ACU",
+      "sector": "Consumer Defensive",
+      "transitions": []
+    },
+    {
+      "ticker": "ACVA",
+      "name": "ACVA",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ADAM",
+      "name": "ADAM",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "David A. Akre",
+          "newCEO": "Steven R. Mumma",
+          "transitionDate": "2009-02-03",
+          "startDate": "2009-02-03",
+          "endDate": "2022-01-01"
+        },
+        {
+          "previousCEO": "Steven R. Mumma",
+          "newCEO": "Jason T. Serrano",
+          "transitionDate": "2022-01-01",
+          "startDate": "2022-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ADCT",
+      "name": "ADC Therapeutics SA",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ADEA",
+      "name": "ADEA",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Jon Kirchner",
+          "newCEO": "Paul E. Davis",
+          "transitionDate": "2022-10-01",
+          "startDate": "2022-10-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ADMA",
+      "name": "ADMA",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ADNT",
+      "name": "ADNT",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "R. Bruce McDonald",
+          "newCEO": "Frederick A. Henderson",
+          "transitionDate": "2018-06-11",
+          "startDate": "2018-06-11",
+          "endDate": "2018-09-30"
+        },
+        {
+          "previousCEO": "Frederick A. Henderson",
+          "newCEO": "Douglas G. DelGrosso",
+          "transitionDate": "2018-10-01",
+          "startDate": "2018-10-01",
+          "endDate": "2023-12-31"
+        },
+        {
+          "previousCEO": "Douglas G. DelGrosso",
+          "newCEO": "Jerome J. Dorlack",
+          "transitionDate": "2024-01-01",
+          "startDate": "2024-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ADPT",
+      "name": "ADPT",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ADRO",
+      "name": "ADRO CONSTRUCTION INC",
+      "sector": "Unknown",
+      "transitions": []
+    },
+    {
+      "ticker": "ADTN",
+      "name": "ADTN",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Mark C. Smith",
+          "newCEO": "Wolfgang Protiva",
+          "transitionDate": "2005-09-10",
+          "startDate": "2005-09-10",
+          "endDate": "2022-08-31"
+        },
+        {
+          "previousCEO": "Wolfgang Protiva",
+          "newCEO": "Christoph Glingener",
+          "transitionDate": "2022-08-31",
+          "startDate": "2022-08-31",
+          "endDate": "2005-09-01"
+        },
+        {
+          "previousCEO": "Christoph Glingener",
+          "newCEO": "Michael Foliano",
+          "transitionDate": "2005-09-01",
+          "startDate": "2005-09-01",
+          "endDate": "2005-09-10"
+        },
+        {
+          "previousCEO": "Michael Foliano",
+          "newCEO": "Thomas R. Stanton",
+          "transitionDate": "2005-09-10",
+          "startDate": "2005-09-10",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ADUS",
+      "name": "ADUS",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Mark Heaney",
+          "newCEO": "R. Dirk Allison",
+          "transitionDate": "2016-01-18",
+          "startDate": "2016-01-18",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ADV",
+      "name": "ADV",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Tanya Domier",
+          "newCEO": "Jill Griffin",
+          "transitionDate": "2022-04-01",
+          "startDate": "2022-04-01",
+          "endDate": "2023-01-16"
+        },
+        {
+          "previousCEO": "Jill Griffin",
+          "newCEO": "David Peacock",
+          "transitionDate": "2023-02-01",
+          "startDate": "2023-02-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AEBI",
+      "name": "Aebi Schmidt Holding AG",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "AEHR",
+      "name": "AEHR",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Rhea J. Posedel",
+          "newCEO": "Gayn Erickson",
+          "transitionDate": "2012-01-03",
+          "startDate": "2012-01-03",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AEIS",
+      "name": "AEIS",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Douglas S. Schatz",
+          "newCEO": "Dr. Hans Georg Betz",
+          "transitionDate": "2005-08-01",
+          "startDate": "2005-08-01",
+          "endDate": "2008-03-29"
+        },
+        {
+          "previousCEO": "Dr. Hans Georg Betz",
+          "newCEO": "Dr. Garry Rogerson",
+          "transitionDate": "2011-08-04",
+          "startDate": "2011-08-04",
+          "endDate": "2014-05-27"
+        },
+        {
+          "previousCEO": "Dr. Garry Rogerson",
+          "newCEO": "Yuval Wasserman",
+          "transitionDate": "2014-10-01",
+          "startDate": "2014-10-01",
+          "endDate": "2021-03-01"
+        },
+        {
+          "previousCEO": "Yuval Wasserman",
+          "newCEO": "Stephen D. Kelley",
+          "transitionDate": "2021-03-01",
+          "startDate": "2021-03-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AEO",
+      "name": "AEO",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "James V. O'Donnell",
+          "newCEO": "Robert L. Hanson",
+          "transitionDate": "2012-01-30",
+          "startDate": "2012-01-30",
+          "endDate": "2014-01-22"
+        },
+        {
+          "previousCEO": "Robert L. Hanson",
+          "newCEO": "Jay L. Schottenstein",
+          "transitionDate": "2014-01-22",
+          "startDate": "2014-01-22",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AESI",
+      "name": "AESI",
+      "sector": "Energy",
+      "transitions": [
+        {
+          "previousCEO": "Ben M. Bud Brigham",
+          "newCEO": "Lance Langford",
+          "transitionDate": "2024-03-06",
+          "startDate": "2024-03-06",
+          "endDate": "2024-03-06"
+        },
+        {
+          "previousCEO": "Lance Langford",
+          "newCEO": "John Turner",
+          "transitionDate": "2024-03-06",
+          "startDate": "2024-03-06",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AEVA",
+      "name": "AEVA",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "AEYE",
+      "name": "AEYE",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Nathaniel Bradley",
+          "newCEO": "Lonny Sternberg",
+          "transitionDate": "2015-04-24",
+          "startDate": "2015-04-24",
+          "endDate": "2015-11-04"
+        },
+        {
+          "previousCEO": "Lonny Sternberg",
+          "newCEO": "Todd Bankofier",
+          "transitionDate": "2015-11-04",
+          "startDate": "2015-11-04",
+          "endDate": "2019-01-01"
+        },
+        {
+          "previousCEO": "Todd Bankofier",
+          "newCEO": "Sean Bradley",
+          "transitionDate": "2019-01-01",
+          "startDate": "2019-01-01",
+          "endDate": "2020-03-23"
+        },
+        {
+          "previousCEO": "Sean Bradley",
+          "newCEO": "Heath Thompson",
+          "transitionDate": "2020-03-23",
+          "startDate": "2020-03-23",
+          "endDate": "2020-08-13"
+        },
+        {
+          "previousCEO": "Heath Thompson",
+          "newCEO": "David Moradi",
+          "transitionDate": "2020-08-13",
+          "startDate": "2020-08-13",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AFRI",
+      "name": "Forafric Global PLC",
+      "sector": "Consumer Defensive",
+      "transitions": [
+        {
+          "previousCEO": "Mustapha Jamaleddine",
+          "newCEO": "Khalid Assari",
+          "transitionDate": "2024-12-01",
+          "startDate": "2024-12-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AGIO",
+      "name": "AGIO",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "David P. Schenkein",
+          "newCEO": "Jacqualyn A. Fouse",
+          "transitionDate": "2019-02-01",
+          "startDate": "2019-02-01",
+          "endDate": "2022-08-08"
+        },
+        {
+          "previousCEO": "Jacqualyn A. Fouse",
+          "newCEO": "Brian Goff",
+          "transitionDate": "2022-08-08",
+          "startDate": "2022-08-08",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AGL",
+      "name": "AGL",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Steven J. Sell",
+          "newCEO": "Tim O'Rourke",
+          "transitionDate": "2026-05-07",
+          "startDate": "2026-05-07",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AGM",
+      "name": "AGM",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Henry D. Edelman",
+          "newCEO": "Michael A. Gerber",
+          "transitionDate": "2008-09-30",
+          "startDate": "2008-09-30",
+          "endDate": "2012-10-03"
+        },
+        {
+          "previousCEO": "Michael A. Gerber",
+          "newCEO": "Timothy L. Buzby",
+          "transitionDate": "2012-10-03",
+          "startDate": "2012-10-03",
+          "endDate": "2017-12-07"
+        },
+        {
+          "previousCEO": "Timothy L. Buzby",
+          "newCEO": "Lowell L. Junkins",
+          "transitionDate": "2017-12-07",
+          "startDate": "2017-12-07",
+          "endDate": "2018-10-15"
+        },
+        {
+          "previousCEO": "Lowell L. Junkins",
+          "newCEO": "Bradford T. Nordholm",
+          "transitionDate": "2018-10-15",
+          "startDate": "2018-10-15",
+          "endDate": "2025-09-30"
+        },
+        {
+          "previousCEO": "Bradford T. Nordholm",
+          "newCEO": "Zachary N. Carpenter",
+          "transitionDate": "2025-09-30",
+          "startDate": "2025-09-30",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AGX",
+      "name": "AGX",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Rainer Bosselmann",
+          "newCEO": "William F. Griffin, Jr.",
+          "transitionDate": "2008-09-03",
+          "startDate": "2008-09-03",
+          "endDate": "2019-11-15"
+        },
+        {
+          "previousCEO": "William F. Griffin, Jr.",
+          "newCEO": "Charles Collins IV",
+          "transitionDate": "2019-11-15",
+          "startDate": "2019-11-15",
+          "endDate": "2022-08-16"
+        },
+        {
+          "previousCEO": "Charles Collins IV",
+          "newCEO": "David H. Watson",
+          "transitionDate": "2022-08-16",
+          "startDate": "2022-08-16",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AGYS",
+      "name": "AGYS",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Arthur Rhein",
+          "newCEO": "Dana Jones",
+          "transitionDate": "2008-10-20",
+          "startDate": "2008-10-20",
+          "endDate": "2008-10-20"
+        },
+        {
+          "previousCEO": "Dana Jones",
+          "newCEO": "Martin F. Ellis",
+          "transitionDate": "2008-10-20",
+          "startDate": "2008-10-20",
+          "endDate": "2011-05-31"
+        },
+        {
+          "previousCEO": "Martin F. Ellis",
+          "newCEO": "James H. Dennedy",
+          "transitionDate": "2011-05-31",
+          "startDate": "2011-05-31",
+          "endDate": "2017-01-02"
+        },
+        {
+          "previousCEO": "James H. Dennedy",
+          "newCEO": "Ramesh Srinivasan",
+          "transitionDate": "2017-01-03",
+          "startDate": "2017-01-03",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AHCO",
+      "name": "AHCO",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Stephen Griggs",
+          "newCEO": "Richard Barasch",
+          "transitionDate": "2023-07-01",
+          "startDate": "2023-07-01",
+          "endDate": "2023-09-01"
+        },
+        {
+          "previousCEO": "Richard Barasch",
+          "newCEO": "Crispin Teufel",
+          "transitionDate": "2023-09-01",
+          "startDate": "2023-09-01",
+          "endDate": "2024-05-20"
+        },
+        {
+          "previousCEO": "Crispin Teufel",
+          "newCEO": "Suzanne Foster",
+          "transitionDate": "2024-05-20",
+          "startDate": "2024-05-20",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AHR",
+      "name": "AHR",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Jeffrey T. Hanson",
+          "newCEO": "Danny Prosky",
+          "transitionDate": "2021-10-01",
+          "startDate": "2021-10-01",
+          "endDate": "2026-02-03"
+        }
+      ]
+    },
+    {
+      "ticker": "AHRT",
+      "name": "AHRT",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Louis S. Haddad",
+          "newCEO": "Shawn J. Tibbetts",
+          "transitionDate": "2025-01-01",
+          "startDate": "2025-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AI",
+      "name": "AI",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Thomas M. Siebel",
+          "newCEO": "Stephen Ehikian",
+          "transitionDate": "2025-09-01",
+          "startDate": "2025-09-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AII",
+      "name": "AII",
+      "sector": "Financial Services",
+      "transitions": []
+    },
+    {
+      "ticker": "AIN",
+      "name": "AIN",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "Frank R. Schmeler",
+          "newCEO": "Joseph G. Morone",
+          "transitionDate": "2006-01-01",
+          "startDate": "2006-01-01",
+          "endDate": "2018-03-02"
+        },
+        {
+          "previousCEO": "Joseph G. Morone",
+          "newCEO": "Olivier Jarrault",
+          "transitionDate": "2018-03-02",
+          "startDate": "2018-03-02",
+          "endDate": "2020-01-20"
+        },
+        {
+          "previousCEO": "Olivier Jarrault",
+          "newCEO": "A. William Higgins",
+          "transitionDate": "2020-01-20",
+          "startDate": "2020-01-20",
+          "endDate": "2023-09-01"
+        },
+        {
+          "previousCEO": "A. William Higgins",
+          "newCEO": "Gunnar Kleveland",
+          "transitionDate": "2023-09-01",
+          "startDate": "2023-09-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AIOT",
+      "name": "AIOT",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "David Mahlab",
+          "newCEO": "Chris Wolfe",
+          "transitionDate": "2020-01-31",
+          "startDate": "2020-01-31",
+          "endDate": "2022-01-04"
+        },
+        {
+          "previousCEO": "Chris Wolfe",
+          "newCEO": "Steve Towe",
+          "transitionDate": "2022-01-05",
+          "startDate": "2022-01-05",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AIP",
+      "name": "AIP",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "AIR",
+      "name": "AIR",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Ira A. Eichner",
+          "newCEO": "David P. Storch",
+          "transitionDate": "2005-10-19",
+          "startDate": "2005-10-19",
+          "endDate": "2018-05-31"
+        },
+        {
+          "previousCEO": "David P. Storch",
+          "newCEO": "John M. Holmes",
+          "transitionDate": "2018-06-01",
+          "startDate": "2018-06-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AIRJ",
+      "name": "AIRJ",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "AIRO",
+      "name": "AIRO",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "AIRS",
+      "name": "AIRS",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Todd Magazine",
+          "newCEO": "Dennis Dean",
+          "transitionDate": "2024-08-08",
+          "startDate": "2024-08-08",
+          "endDate": "2025-01-07"
+        },
+        {
+          "previousCEO": "Dennis Dean",
+          "newCEO": "Yogesh Jashnani",
+          "transitionDate": "2025-01-07",
+          "startDate": "2025-01-07",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AISP",
+      "name": "AISP",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Danny Yamin",
+          "newCEO": "Sam Gloor",
+          "transitionDate": "2022-11-30",
+          "startDate": "2022-11-30",
+          "endDate": "2023-12-21"
+        },
+        {
+          "previousCEO": "Sam Gloor",
+          "newCEO": "Victor Huang",
+          "transitionDate": "2023-12-21",
+          "startDate": "2023-12-21",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AKBA",
+      "name": "AKBA",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "John P. Butler",
+          "newCEO": "Scott A. Canute",
+          "transitionDate": "2016-07-29",
+          "startDate": "2016-07-29",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AKE",
+      "name": "AKE",
+      "sector": "Unknown",
+      "transitions": []
+    },
+    {
+      "ticker": "AKR",
+      "name": "AKR",
+      "sector": "Real Estate",
+      "transitions": []
+    },
+    {
+      "ticker": "AKTS",
+      "name": "Aktis Oncology, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ALCO",
+      "name": "ALCO",
+      "sector": "Consumer Defensive",
+      "transitions": [
+        {
+          "previousCEO": "John R. Alexander",
+          "newCEO": "Dan L. Gunter",
+          "transitionDate": "2008-07-01",
+          "startDate": "2008-07-01",
+          "endDate": "2008-11-17"
+        },
+        {
+          "previousCEO": "Dan L. Gunter",
+          "newCEO": "Steven M. Smith",
+          "transitionDate": "2008-11-17",
+          "startDate": "2008-11-17",
+          "endDate": "2010-02-24"
+        },
+        {
+          "previousCEO": "Steven M. Smith",
+          "newCEO": "Clayton G. Wilson",
+          "transitionDate": "2013-11-22",
+          "startDate": "2013-11-22",
+          "endDate": "2016-12-31"
+        },
+        {
+          "previousCEO": "Clayton G. Wilson",
+          "newCEO": "Remy W. Trafelet",
+          "transitionDate": "2017-01-01",
+          "startDate": "2017-01-01",
+          "endDate": "2018-11-19"
+        },
+        {
+          "previousCEO": "Remy W. Trafelet",
+          "newCEO": "Benjamin D. Fishman",
+          "transitionDate": "2018-11-19",
+          "startDate": "2018-11-19",
+          "endDate": "2019-07-01"
+        },
+        {
+          "previousCEO": "Benjamin D. Fishman",
+          "newCEO": "John E. Kiernan",
+          "transitionDate": "2019-07-01",
+          "startDate": "2019-07-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALDX",
+      "name": "ALDX",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ALEC",
+      "name": "ALEC",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ALG",
+      "name": "ALG",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Ronald A. Robinson",
+          "newCEO": "Jeffery A. Leonard",
+          "transitionDate": "2021-05-31",
+          "startDate": "2021-05-31",
+          "endDate": "2025-09-01"
+        },
+        {
+          "previousCEO": "Jeffery A. Leonard",
+          "newCEO": "Robert P. Hureau",
+          "transitionDate": "2025-09-02",
+          "startDate": "2025-09-02",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALGT",
+      "name": "ALGT",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Maurice J. Gallagher, Jr.",
+          "newCEO": "John Redmond",
+          "transitionDate": "2022-06-01",
+          "startDate": "2022-06-01",
+          "endDate": "2023-09-26"
+        },
+        {
+          "previousCEO": "John Redmond",
+          "newCEO": "Maurice Gallagher",
+          "transitionDate": "2023-09-26",
+          "startDate": "2023-09-26",
+          "endDate": "2024-09-01"
+        },
+        {
+          "previousCEO": "Maurice Gallagher",
+          "newCEO": "Gregory C. Anderson",
+          "transitionDate": "2024-09-01",
+          "startDate": "2024-09-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALH",
+      "name": "ALH",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ALHC",
+      "name": "ALHC",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ALIT",
+      "name": "ALIT",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Richard N. Massey",
+          "newCEO": "Stephan D. Scholl",
+          "transitionDate": "2021-07-09",
+          "startDate": "2021-07-09",
+          "endDate": "2024-08-20"
+        },
+        {
+          "previousCEO": "Stephan D. Scholl",
+          "newCEO": "David D. Guilmette",
+          "transitionDate": "2024-08-20",
+          "startDate": "2024-08-20",
+          "endDate": "2025-12-31"
+        },
+        {
+          "previousCEO": "David D. Guilmette",
+          "newCEO": "Rohit Verma",
+          "transitionDate": "2026-01-01",
+          "startDate": "2026-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALKS",
+      "name": "ALKS",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ALKT",
+      "name": "ALKT",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Michael Hansen",
+          "newCEO": "Alex Shootman",
+          "transitionDate": "2021-11-05",
+          "startDate": "2021-11-05",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALLO",
+      "name": "ALLO",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Timothy Moore",
+          "newCEO": "David Chang",
+          "transitionDate": "2025-01-29",
+          "startDate": "2025-01-29",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALMS",
+      "name": "ALMS",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ALMU",
+      "name": "ALMU",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "ALNT",
+      "name": "ALNT",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Richard D. Smith",
+          "newCEO": "Richard S. Warzala",
+          "transitionDate": "2009-05-12",
+          "startDate": "2009-05-12",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALRM",
+      "name": "ALRM",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "ALRS",
+      "name": "ALRS",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Randy L. Newman",
+          "newCEO": "Katie A. Lorenson",
+          "transitionDate": "2022-01-01",
+          "startDate": "2022-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALT",
+      "name": "ALT",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Derace M. Schaffer",
+          "newCEO": "David P. Wright",
+          "transitionDate": "2007-08-06",
+          "startDate": "2007-08-06",
+          "endDate": "2010-05-02"
+        },
+        {
+          "previousCEO": "David P. Wright",
+          "newCEO": "Eric I. Richman",
+          "transitionDate": "2010-05-02",
+          "startDate": "2010-05-02",
+          "endDate": "2017-05-04"
+        },
+        {
+          "previousCEO": "Eric I. Richman",
+          "newCEO": "William Enright",
+          "transitionDate": "2017-05-04",
+          "startDate": "2017-05-04",
+          "endDate": "2018-11-30"
+        },
+        {
+          "previousCEO": "William Enright",
+          "newCEO": "Vipin K. Garg",
+          "transitionDate": "2018-11-30",
+          "startDate": "2018-11-30",
+          "endDate": "2026-01-01"
+        },
+        {
+          "previousCEO": "Vipin K. Garg",
+          "newCEO": "Jerome Durso",
+          "transitionDate": "2026-01-01",
+          "startDate": "2026-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALTG",
+      "name": "ALTG",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "ALTI",
+      "name": "ALTI",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Michael Tiedemann",
+          "newCEO": "Nancy Curtin",
+          "transitionDate": "2026-03-30",
+          "startDate": "2026-03-30",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ALX",
+      "name": "ALEXANDERS INC",
+      "sector": "Real Estate",
+      "transitions": []
+    },
+    {
+      "ticker": "AMAL",
+      "name": "AMAL",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Keith R. Mestrich",
+          "newCEO": "Lynne P. Fox",
+          "transitionDate": "2021-02-01",
+          "startDate": "2021-02-01",
+          "endDate": "2021-06-01"
+        },
+        {
+          "previousCEO": "Lynne P. Fox",
+          "newCEO": "Priscilla Sims Brown",
+          "transitionDate": "2021-06-01",
+          "startDate": "2021-06-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMBA",
+      "name": "AMBA",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "AMBP",
+      "name": "Ardagh Metal Packaging S.A.",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "AMBQ",
+      "name": "Ambiq Micro, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Scott Hanson",
+          "newCEO": "Fumihide Esaka",
+          "transitionDate": "2015-12-01",
+          "startDate": "2015-12-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Gerardo I. Lopez",
+          "newCEO": "Craig R. Ramsey",
+          "transitionDate": "2015-08-07",
+          "startDate": "2015-08-07",
+          "endDate": "2015-09-29"
+        },
+        {
+          "previousCEO": "Craig R. Ramsey",
+          "newCEO": "Jack Q. Gao",
+          "transitionDate": "2015-09-29",
+          "startDate": "2015-09-29",
+          "endDate": "2016-01-04"
+        },
+        {
+          "previousCEO": "Jack Q. Gao",
+          "newCEO": "Adam M. Aron",
+          "transitionDate": "2016-01-04",
+          "startDate": "2016-01-04",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMCX",
+      "name": "AMC Global Media Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Joshua Sapan",
+          "newCEO": "Matthew Blank",
+          "transitionDate": "2021-09-08",
+          "startDate": "2021-09-08",
+          "endDate": "2022-09-09"
+        },
+        {
+          "previousCEO": "Matthew Blank",
+          "newCEO": "Christina Spade",
+          "transitionDate": "2022-09-09",
+          "startDate": "2022-09-09",
+          "endDate": "2022-11-28"
+        },
+        {
+          "previousCEO": "Christina Spade",
+          "newCEO": "James L. Dolan",
+          "transitionDate": "2022-12-05",
+          "startDate": "2022-12-05",
+          "endDate": "2023-02-27"
+        },
+        {
+          "previousCEO": "James L. Dolan",
+          "newCEO": "Kristin Dolan",
+          "transitionDate": "2023-02-27",
+          "startDate": "2023-02-27",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMLX",
+      "name": "Amylyx Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Joshua Cohen",
+          "newCEO": "Justin Klee",
+          "transitionDate": "2014-01-01",
+          "startDate": "2014-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMN",
+      "name": "AMN HEALTHCARE SERVICES INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Susan R. Nowakowski",
+          "newCEO": "Susan R. Salka",
+          "transitionDate": "2005-05-04",
+          "startDate": "2005-05-04",
+          "endDate": "2022-11-27"
+        },
+        {
+          "previousCEO": "Susan R. Salka",
+          "newCEO": "Cary Grace",
+          "transitionDate": "2022-11-28",
+          "startDate": "2022-11-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMPH",
+      "name": "Amphastar Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AMPL",
+      "name": "Amplitude, Inc.",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "AMPX",
+      "name": "Amprius Technologies, Inc.",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Kang Sun",
+          "newCEO": "Tom Stepien",
+          "transitionDate": "2026-01-01",
+          "startDate": "2026-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMR",
+      "name": "Alpha Metallurgical Resources, Inc.",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Kevin S. Crutchfield",
+          "newCEO": "Charles Andrew Eidson",
+          "transitionDate": "2019-05-07",
+          "startDate": "2019-05-07",
+          "endDate": "2019-07-29"
+        },
+        {
+          "previousCEO": "Charles Andrew Eidson",
+          "newCEO": "David J. Stetson",
+          "transitionDate": "2019-07-29",
+          "startDate": "2019-07-29",
+          "endDate": "2020-12-14"
+        },
+        {
+          "previousCEO": "David J. Stetson",
+          "newCEO": "Andy Eidson",
+          "transitionDate": "2020-12-14",
+          "startDate": "2020-12-14",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMRC",
+      "name": "Ameresco, Inc.",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "AMRX",
+      "name": "Amneal Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "James Stewart",
+          "newCEO": "Chirag Patel",
+          "transitionDate": "2019-08-01",
+          "startDate": "2019-08-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMSC",
+      "name": "AMERICAN SUPERCONDUCTOR CORP /DE/",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "John Wood",
+          "newCEO": "Gregory J. Yurek",
+          "transitionDate": "2005-06-28",
+          "startDate": "2005-06-28",
+          "endDate": "2011-06-01"
+        },
+        {
+          "previousCEO": "Gregory J. Yurek",
+          "newCEO": "Daniel P. McGahn",
+          "transitionDate": "2011-06-01",
+          "startDate": "2011-06-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMSF",
+      "name": "AMERISAFE INC",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "C. Allen Bradley",
+          "newCEO": "G. Janelle Frost",
+          "transitionDate": "2015-04-01",
+          "startDate": "2015-04-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMTB",
+      "name": "Amerant Bancorp Inc.",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Millar Wilson",
+          "newCEO": "Gerald P. Plush",
+          "transitionDate": "2021-02-15",
+          "startDate": "2021-02-15",
+          "endDate": "2025-11-05"
+        },
+        {
+          "previousCEO": "Gerald P. Plush",
+          "newCEO": "Carlos Iafigliola",
+          "transitionDate": "2025-11-05",
+          "startDate": "2025-11-05",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AMWD",
+      "name": "AMERICAN WOODMARK CORP",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "Jake Gosa",
+          "newCEO": "Kent Guichard",
+          "transitionDate": "2007-08-23",
+          "startDate": "2007-08-23",
+          "endDate": "2015-08-26"
+        },
+        {
+          "previousCEO": "Kent Guichard",
+          "newCEO": "Cary Dunston",
+          "transitionDate": "2015-08-26",
+          "startDate": "2015-08-26",
+          "endDate": "2020-07-09"
+        },
+        {
+          "previousCEO": "Cary Dunston",
+          "newCEO": "M. Scott Culbreth",
+          "transitionDate": "2020-07-09",
+          "startDate": "2020-07-09",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANAB",
+      "name": "ANAPTYSBIO, INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Hamza Suria",
+          "newCEO": "Daniel Faga",
+          "transitionDate": "2022-03-21",
+          "startDate": "2022-03-21",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANDE",
+      "name": "Andersons, Inc.",
+      "sector": "Consumer Defensive",
+      "transitions": [
+        {
+          "previousCEO": "Michael J. Anderson",
+          "newCEO": "Patrick E. Bowe",
+          "transitionDate": "2015-11-02",
+          "startDate": "2015-11-02",
+          "endDate": "2024-10-01"
+        },
+        {
+          "previousCEO": "Patrick E. Bowe",
+          "newCEO": "William E. Krueger",
+          "transitionDate": "2024-10-01",
+          "startDate": "2024-10-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANF",
+      "name": "ABERCROMBIE & FITCH CO /DE/",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ANGI",
+      "name": "Angi Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Craig Smith",
+          "newCEO": "Chris Terrill",
+          "transitionDate": "2011-04-01",
+          "startDate": "2011-04-01",
+          "endDate": "2017-10-02"
+        },
+        {
+          "previousCEO": "Chris Terrill",
+          "newCEO": "Brandon Ridenour",
+          "transitionDate": "2018-11-08",
+          "startDate": "2018-11-08",
+          "endDate": "2021-02-24"
+        },
+        {
+          "previousCEO": "Brandon Ridenour",
+          "newCEO": "Oisin Hanrahan",
+          "transitionDate": "2021-02-24",
+          "startDate": "2021-02-24",
+          "endDate": "2022-10-10"
+        },
+        {
+          "previousCEO": "Oisin Hanrahan",
+          "newCEO": "Joseph Levin",
+          "transitionDate": "2022-10-10",
+          "startDate": "2022-10-10",
+          "endDate": "2024-04-08"
+        },
+        {
+          "previousCEO": "Joseph Levin",
+          "newCEO": "Jeffrey W. Kip",
+          "transitionDate": "2024-04-08",
+          "startDate": "2024-04-08",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANGO",
+      "name": "ANGIODYNAMICS INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Eamonn P. Hobbs",
+          "newCEO": "Jan Keltjens",
+          "transitionDate": "2009-03-01",
+          "startDate": "2009-03-01",
+          "endDate": "2011-06-13"
+        },
+        {
+          "previousCEO": "Jan Keltjens",
+          "newCEO": "Scott J. Solano",
+          "transitionDate": "2011-06-13",
+          "startDate": "2011-06-13",
+          "endDate": "2011-09-07"
+        },
+        {
+          "previousCEO": "Scott J. Solano",
+          "newCEO": "Joseph M. DeVivo",
+          "transitionDate": "2011-09-07",
+          "startDate": "2011-09-07",
+          "endDate": "2016-04-04"
+        },
+        {
+          "previousCEO": "Joseph M. DeVivo",
+          "newCEO": "James C. Clemmer",
+          "transitionDate": "2016-04-04",
+          "startDate": "2016-04-04",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANIK",
+      "name": "Anika Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Joseph G. Darling",
+          "newCEO": "Charles H. Sherwood",
+          "transitionDate": "2017-07-27",
+          "startDate": "2017-07-27",
+          "endDate": "2018-03-09"
+        },
+        {
+          "previousCEO": "Charles H. Sherwood",
+          "newCEO": "Cheryl R. Blanchard",
+          "transitionDate": "2020-02-10",
+          "startDate": "2020-02-10",
+          "endDate": "2026-02-01"
+        },
+        {
+          "previousCEO": "Cheryl R. Blanchard",
+          "newCEO": "Steve Griffin",
+          "transitionDate": "2026-02-01",
+          "startDate": "2026-02-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANIP",
+      "name": "ANI PHARMACEUTICALS INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Stephen A. Sherwin",
+          "newCEO": "Stephen M. Simes",
+          "transitionDate": "2012-01-01",
+          "startDate": "2012-01-01",
+          "endDate": "2013-06-19"
+        },
+        {
+          "previousCEO": "Stephen M. Simes",
+          "newCEO": "Arthur S. Przybyl",
+          "transitionDate": "2013-06-19",
+          "startDate": "2013-06-19",
+          "endDate": "2020-05-10"
+        },
+        {
+          "previousCEO": "Arthur S. Przybyl",
+          "newCEO": "Patrick D. Walsh",
+          "transitionDate": "2020-05-11",
+          "startDate": "2020-05-11",
+          "endDate": "2020-09-08"
+        },
+        {
+          "previousCEO": "Patrick D. Walsh",
+          "newCEO": "Nikhil Lalwani",
+          "transitionDate": "2020-09-08",
+          "startDate": "2020-09-08",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ANNX",
+      "name": "Annexon, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AOMR",
+      "name": "Angel Oak Mortgage REIT, Inc.",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Robert Williams",
+          "newCEO": "Sreeniwas Prabhu",
+          "transitionDate": "2022-09-28",
+          "startDate": "2022-09-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AORT",
+      "name": "ARTIVION, INC.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Albert E. Heacox",
+          "newCEO": "Steven G. Anderson",
+          "transitionDate": "2011-12-31",
+          "startDate": "2011-12-31",
+          "endDate": "2014-09-02"
+        },
+        {
+          "previousCEO": "Steven G. Anderson",
+          "newCEO": "James Patrick Mackin",
+          "transitionDate": "2014-09-02",
+          "startDate": "2014-09-02",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AOSL",
+      "name": "ALPHA & OMEGA SEMICONDUCTOR Ltd",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Mike F. Chang",
+          "newCEO": "Stephen Chang",
+          "transitionDate": "2023-03-01",
+          "startDate": "2023-03-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AOUT",
+      "name": "American Outdoor Brands, Inc.",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "APAM",
+      "name": "Artisan Partners Asset Management Inc.",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Andrew A. Ziegler",
+          "newCEO": "Eric R. Colson",
+          "transitionDate": "2010-01-01",
+          "startDate": "2010-01-01",
+          "endDate": "2025-06-04"
+        },
+        {
+          "previousCEO": "Eric R. Colson",
+          "newCEO": "Jason A. Gottlieb",
+          "transitionDate": "2025-06-04",
+          "startDate": "2025-06-04",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "APEI",
+      "name": "AMERICAN PUBLIC EDUCATION INC",
+      "sector": "Consumer Defensive",
+      "transitions": [
+        {
+          "previousCEO": "Harry T. Wilkins",
+          "newCEO": "Angela Selden",
+          "transitionDate": "2019-09-23",
+          "startDate": "2019-09-23",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "APGE",
+      "name": "Apogee Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital Corp.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "William B. Cotton",
+          "newCEO": "Kenneth S. Wood",
+          "transitionDate": "2008-09-23",
+          "startDate": "2008-09-23",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "APLE",
+      "name": "Apple Hospitality REIT, Inc.",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Glade Knight",
+          "newCEO": "Justin Knight",
+          "transitionDate": "2014-03-01",
+          "startDate": "2014-03-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "APOG",
+      "name": "APOGEE ENTERPRISES, INC.",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Russell Huffer",
+          "newCEO": "Joseph F. Puishys",
+          "transitionDate": "2011-08-22",
+          "startDate": "2011-08-22",
+          "endDate": "2021-01-04"
+        },
+        {
+          "previousCEO": "Joseph F. Puishys",
+          "newCEO": "Ty R. Silberhorn",
+          "transitionDate": "2021-01-04",
+          "startDate": "2021-01-04",
+          "endDate": "2025-10-31"
+        },
+        {
+          "previousCEO": "Ty R. Silberhorn",
+          "newCEO": "Donald A. Nolan",
+          "transitionDate": "2025-10-31",
+          "startDate": "2025-10-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "APPN",
+      "name": "APPIAN CORP",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "APPS",
+      "name": "Digital Turbine, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Ian Aaron",
+          "newCEO": "William G. Stone III",
+          "transitionDate": "2009-10-07",
+          "startDate": "2009-10-07",
+          "endDate": "2005-02-08"
+        },
+        {
+          "previousCEO": "William G. Stone III",
+          "newCEO": "Robert Ellin",
+          "transitionDate": "2005-02-08",
+          "startDate": "2005-02-08",
+          "endDate": "2008-03-07"
+        },
+        {
+          "previousCEO": "Robert Ellin",
+          "newCEO": "Bruce Stein",
+          "transitionDate": "2008-03-07",
+          "startDate": "2008-03-07",
+          "endDate": "2009-01-12"
+        },
+        {
+          "previousCEO": "Bruce Stein",
+          "newCEO": "Paul Schaeffer",
+          "transitionDate": "2010-03-18",
+          "startDate": "2010-03-18",
+          "endDate": "2010-04-05"
+        },
+        {
+          "previousCEO": "Paul Schaeffer",
+          "newCEO": "Ray Schaaf",
+          "transitionDate": "2010-04-05",
+          "startDate": "2010-04-05",
+          "endDate": "2010-08-09"
+        },
+        {
+          "previousCEO": "Ray Schaaf",
+          "newCEO": "Peter Adderton",
+          "transitionDate": "2011-06-27",
+          "startDate": "2011-06-27",
+          "endDate": "2014-10-01"
+        },
+        {
+          "previousCEO": "Peter Adderton",
+          "newCEO": "William Stone",
+          "transitionDate": "2014-10-02",
+          "startDate": "2014-10-02",
+          "endDate": "2015-03-06"
+        },
+        {
+          "previousCEO": "William Stone",
+          "newCEO": "Jud Bowman",
+          "transitionDate": "2015-03-06",
+          "startDate": "2015-03-06",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AQST",
+      "name": "Aquestive Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ARAY",
+      "name": "ACCURAY INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Euan S. Thomson",
+          "newCEO": "Joshua H. Levine",
+          "transitionDate": "2012-10-12",
+          "startDate": "2012-10-12",
+          "endDate": "2022-06-30"
+        },
+        {
+          "previousCEO": "Joshua H. Levine",
+          "newCEO": "Suzanne Winter",
+          "transitionDate": "2022-07-01",
+          "startDate": "2022-07-01",
+          "endDate": "2024-09-03"
+        },
+        {
+          "previousCEO": "Suzanne Winter",
+          "newCEO": "Sandeep Chalke",
+          "transitionDate": "2024-09-03",
+          "startDate": "2024-09-03",
+          "endDate": "2024-10-15"
+        },
+        {
+          "previousCEO": "Sandeep Chalke",
+          "newCEO": "Stephen La Neve",
+          "transitionDate": "2025-10-20",
+          "startDate": "2025-10-20",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARCB",
+      "name": "ARCBEST CORP /DE/",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Robert A. Young III",
+          "newCEO": "Robert A. Davidson",
+          "transitionDate": "2005-01-01",
+          "startDate": "2005-01-01",
+          "endDate": "2009-12-31"
+        },
+        {
+          "previousCEO": "Robert A. Davidson",
+          "newCEO": "Judy R. McReynolds",
+          "transitionDate": "2010-01-01",
+          "startDate": "2010-01-01",
+          "endDate": "2025-12-31"
+        },
+        {
+          "previousCEO": "Judy R. McReynolds",
+          "newCEO": "Seth Runser",
+          "transitionDate": "2026-01-01",
+          "startDate": "2026-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARCT",
+      "name": "Arcturus Therapeutics Holdings Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ARDT",
+      "name": "Ardent Health, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ARDX",
+      "name": "ARDELYX, INC.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AREN",
+      "name": "Arena Group Holdings, Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Ramesh C. Trivedi",
+          "newCEO": "Peter B. Mills",
+          "transitionDate": "2007-07-18",
+          "startDate": "2007-07-18",
+          "endDate": "2008-04-25"
+        },
+        {
+          "previousCEO": "Peter B. Mills",
+          "newCEO": "Christopher A. Marlett",
+          "transitionDate": "2008-04-25",
+          "startDate": "2008-04-25",
+          "endDate": "2016-11-07"
+        },
+        {
+          "previousCEO": "Christopher A. Marlett",
+          "newCEO": "James C. Heckman",
+          "transitionDate": "2016-11-07",
+          "startDate": "2016-11-07",
+          "endDate": "2020-08-26"
+        },
+        {
+          "previousCEO": "James C. Heckman",
+          "newCEO": "Ross Levinsohn",
+          "transitionDate": "2020-08-26",
+          "startDate": "2020-08-26",
+          "endDate": "2023-12-11"
+        },
+        {
+          "previousCEO": "Ross Levinsohn",
+          "newCEO": "Manoj Bhargava",
+          "transitionDate": "2023-12-11",
+          "startDate": "2023-12-11",
+          "endDate": "2024-01-04"
+        },
+        {
+          "previousCEO": "Manoj Bhargava",
+          "newCEO": "Cavitt Randall",
+          "transitionDate": "2024-02-13",
+          "startDate": "2024-02-13",
+          "endDate": "2024-04-19"
+        },
+        {
+          "previousCEO": "Cavitt Randall",
+          "newCEO": "Sara Silverstein",
+          "transitionDate": "2024-04-19",
+          "startDate": "2024-04-19",
+          "endDate": "2025-02-12"
+        },
+        {
+          "previousCEO": "Sara Silverstein",
+          "newCEO": "Paul Edmondson",
+          "transitionDate": "2025-02-12",
+          "startDate": "2025-02-12",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARHS",
+      "name": "Arhaus, Inc.",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ARI",
+      "name": "Apollo Commercial Real Estate Finance, Inc.",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Joseph F. Azrack",
+          "newCEO": "Stuart A. Rothstein",
+          "transitionDate": "2012-03-15",
+          "startDate": "2012-03-15",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARKO",
+      "name": "ARKO Corp.",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ARL",
+      "name": "AMERICAN REALTY INVESTORS INC",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Steven A. Abney",
+          "newCEO": "Daniel J. Moos",
+          "transitionDate": "2010-03-01",
+          "startDate": "2010-03-01",
+          "endDate": "2020-08-14"
+        },
+        {
+          "previousCEO": "Daniel J. Moos",
+          "newCEO": "Erik L. Johnson",
+          "transitionDate": "2020-08-17",
+          "startDate": "2020-08-17",
+          "endDate": "2021-12-16"
+        },
+        {
+          "previousCEO": "Erik L. Johnson",
+          "newCEO": "Bradley J. Muth",
+          "transitionDate": "2021-12-16",
+          "startDate": "2021-12-16",
+          "endDate": "2023-04-14"
+        }
+      ]
+    },
+    {
+      "ticker": "ARLO",
+      "name": "Arlo Technologies, Inc.",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "AROC",
+      "name": "Archrock, Inc.",
+      "sector": "Energy",
+      "transitions": [
+        {
+          "previousCEO": "Stephen A. Snider",
+          "newCEO": "Ernie L. Danner",
+          "transitionDate": "2009-06-30",
+          "startDate": "2009-06-30",
+          "endDate": "2011-10-31"
+        },
+        {
+          "previousCEO": "Ernie L. Danner",
+          "newCEO": "D. Bradley Childers",
+          "transitionDate": "2011-10-31",
+          "startDate": "2011-10-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AROW",
+      "name": "ARROW FINANCIAL CORP",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Thomas L. Hoy",
+          "newCEO": "Thomas J. Murphy",
+          "transitionDate": "2013-01-01",
+          "startDate": "2013-01-01",
+          "endDate": "2023-05-12"
+        },
+        {
+          "previousCEO": "Thomas J. Murphy",
+          "newCEO": "David S. DeMarco",
+          "transitionDate": "2023-05-13",
+          "startDate": "2023-05-13",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARQ",
+      "name": "Arq, Inc.",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Michael D. Durham",
+          "newCEO": "L. Heath Sampson",
+          "transitionDate": "2015-04-01",
+          "startDate": "2015-04-01",
+          "endDate": "2020-06-30"
+        },
+        {
+          "previousCEO": "L. Heath Sampson",
+          "newCEO": "Greg P. Marken",
+          "transitionDate": "2020-07-01",
+          "startDate": "2020-07-01",
+          "endDate": "2023-07-17"
+        },
+        {
+          "previousCEO": "Greg P. Marken",
+          "newCEO": "Robert Rasmus",
+          "transitionDate": "2023-07-17",
+          "startDate": "2023-07-17",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARQT",
+      "name": "Arcutis Biotherapeutics, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "ARR",
+      "name": "Armour Residential REIT, Inc.",
+      "sector": "Real Estate",
+      "transitions": [
+        {
+          "previousCEO": "Scott J. Ulm",
+          "newCEO": "Jeffrey J. Zimmer",
+          "transitionDate": "2020-03-31",
+          "startDate": "2020-03-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARRY",
+      "name": "Array Technologies, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Jim Fusaro",
+          "newCEO": "Kevin Hostetler",
+          "transitionDate": "2022-04-18",
+          "startDate": "2022-04-18",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARVN",
+      "name": "ARVINAS, INC.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "John Houston",
+          "newCEO": "Randy Teel",
+          "transitionDate": "2026-02-12",
+          "startDate": "2026-02-12",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ARWR",
+      "name": "ARROWHEAD PHARMACEUTICALS, INC.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "John Petrovich",
+          "newCEO": "Edward Jacobs",
+          "transitionDate": "2007-01-01",
+          "startDate": "2007-01-01",
+          "endDate": "2007-05-29"
+        },
+        {
+          "previousCEO": "Edward Jacobs",
+          "newCEO": "Arthur L. Swift",
+          "transitionDate": "2007-06-18",
+          "startDate": "2007-06-18",
+          "endDate": "2007-11-01"
+        },
+        {
+          "previousCEO": "Arthur L. Swift",
+          "newCEO": "Larry Stambaugh",
+          "transitionDate": "2007-11-01",
+          "startDate": "2007-11-01",
+          "endDate": "2007-12-01"
+        },
+        {
+          "previousCEO": "Larry Stambaugh",
+          "newCEO": "Christopher Anzalone",
+          "transitionDate": "2007-12-01",
+          "startDate": "2007-12-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASAN",
+      "name": "Asana, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Justin Rosenstein",
+          "newCEO": "Dustin Moskovitz",
+          "transitionDate": "2010-10-01",
+          "startDate": "2010-10-01",
+          "endDate": "2025-03-10"
+        },
+        {
+          "previousCEO": "Dustin Moskovitz",
+          "newCEO": "Daniel Rogers",
+          "transitionDate": "2025-07-21",
+          "startDate": "2025-07-21",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASB",
+      "name": "ASSOCIATED BANC-CORP",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Paul S. Beideman",
+          "newCEO": "Philip B. Flynn",
+          "transitionDate": "2009-12-01",
+          "startDate": "2009-12-01",
+          "endDate": "2021-04-28"
+        },
+        {
+          "previousCEO": "Philip B. Flynn",
+          "newCEO": "Andrew J. Harmening",
+          "transitionDate": "2021-04-28",
+          "startDate": "2021-04-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASC",
+      "name": "Ardmore Shipping Corp",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Anthony Gurnee",
+          "newCEO": "Gernot Ruppelt",
+          "transitionDate": "2024-01-01",
+          "startDate": "2024-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASIC",
+      "name": "Ategrity Specialty Insurance Co Holdings",
+      "sector": "Financial Services",
+      "transitions": []
+    },
+    {
+      "ticker": "ASIX",
+      "name": "AdvanSix Inc.",
+      "sector": "Basic Materials",
+      "transitions": []
+    },
+    {
+      "ticker": "ASLE",
+      "name": "AerSale Corp",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Nicolas Finazzo",
+          "newCEO": "Basil Barimo",
+          "transitionDate": "2019-01-01",
+          "startDate": "2019-01-01",
+          "endDate": "2019-12-01"
+        }
+      ]
+    },
+    {
+      "ticker": "ASO",
+      "name": "Academy Sports & Outdoors, Inc.",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "Ken C. Hicks",
+          "newCEO": "Steven P. Lawrence",
+          "transitionDate": "2023-06-01",
+          "startDate": "2023-06-01",
+          "endDate": "2023-06-21"
+        }
+      ]
+    },
+    {
+      "ticker": "ASPI",
+      "name": "ASP Isotopes Inc.",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Robert Ainscow",
+          "newCEO": "Paul Mann",
+          "transitionDate": "2026-01-19",
+          "startDate": "2026-01-19",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASPN",
+      "name": "ASPEN AEROGELS INC",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "ASST",
+      "name": "Strive, Inc.",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Arshia Sarkhani",
+          "newCEO": "Matthew Cole",
+          "transitionDate": "2025-09-12",
+          "startDate": "2025-09-12",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASTE",
+      "name": "ASTEC INDUSTRIES INC",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "J. Don Brock",
+          "newCEO": "Benjamin G. Brock",
+          "transitionDate": "2014-01-01",
+          "startDate": "2014-01-01",
+          "endDate": "2019-01-21"
+        },
+        {
+          "previousCEO": "Benjamin G. Brock",
+          "newCEO": "Richard J. Dorris",
+          "transitionDate": "2019-01-22",
+          "startDate": "2019-01-22",
+          "endDate": "2019-08-12"
+        },
+        {
+          "previousCEO": "Richard J. Dorris",
+          "newCEO": "Barry Ruffalo",
+          "transitionDate": "2019-08-12",
+          "startDate": "2019-08-12",
+          "endDate": "2023-01-06"
+        },
+        {
+          "previousCEO": "Barry Ruffalo",
+          "newCEO": "Jaco van der Merwe",
+          "transitionDate": "2023-01-06",
+          "startDate": "2023-01-06",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASTH",
+      "name": "Astrana Health, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Adrian Vazquez",
+          "newCEO": "Gary Augusta",
+          "transitionDate": "2011-12-09",
+          "startDate": "2011-12-09",
+          "endDate": "2011-12-09"
+        },
+        {
+          "previousCEO": "Gary Augusta",
+          "newCEO": "Warren Hosseinion",
+          "transitionDate": "2011-12-09",
+          "startDate": "2011-12-09",
+          "endDate": "2019-03-28"
+        },
+        {
+          "previousCEO": "Warren Hosseinion",
+          "newCEO": "Thomas Lam",
+          "transitionDate": "2019-03-28",
+          "startDate": "2019-03-28",
+          "endDate": "2019-09-30"
+        },
+        {
+          "previousCEO": "Thomas Lam",
+          "newCEO": "Kenneth Sim",
+          "transitionDate": "2019-09-30",
+          "startDate": "2019-09-30",
+          "endDate": "2021-11-02"
+        },
+        {
+          "previousCEO": "Kenneth Sim",
+          "newCEO": "Brandon Sim",
+          "transitionDate": "2021-11-02",
+          "startDate": "2021-11-02",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ASUR",
+      "name": "ASURE SOFTWARE INC",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Nancy L. Harris",
+          "newCEO": "Patrick Goepel",
+          "transitionDate": "2010-01-01",
+          "startDate": "2010-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATEC",
+      "name": "Alphatec Holdings, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Ronald G. Hiscock",
+          "newCEO": "John H. Foster",
+          "transitionDate": "2006-12-14",
+          "startDate": "2006-12-14",
+          "endDate": "2007-07-02"
+        },
+        {
+          "previousCEO": "John H. Foster",
+          "newCEO": "Dirk Kuyper",
+          "transitionDate": "2007-07-02",
+          "startDate": "2007-07-02",
+          "endDate": "2012-02-22"
+        },
+        {
+          "previousCEO": "Dirk Kuyper",
+          "newCEO": "Leslie H. Cross",
+          "transitionDate": "2012-02-22",
+          "startDate": "2012-02-22",
+          "endDate": "2014-05-01"
+        },
+        {
+          "previousCEO": "Leslie H. Cross",
+          "newCEO": "James M. Corbett",
+          "transitionDate": "2014-05-01",
+          "startDate": "2014-05-01",
+          "endDate": "2016-09-12"
+        },
+        {
+          "previousCEO": "James M. Corbett",
+          "newCEO": "Terry M. Rich",
+          "transitionDate": "2016-12-10",
+          "startDate": "2016-12-10",
+          "endDate": "2018-03-06"
+        },
+        {
+          "previousCEO": "Terry M. Rich",
+          "newCEO": "Patrick S. Miles",
+          "transitionDate": "2018-03-06",
+          "startDate": "2018-03-06",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATEN",
+      "name": "A10 Networks, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Lee Chen",
+          "newCEO": "Dhrupad Trivedi",
+          "transitionDate": "2019-12-02",
+          "startDate": "2019-12-02",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATEX",
+      "name": "Anterix Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "John Pescatore",
+          "newCEO": "Morgan O'Brien",
+          "transitionDate": "2018-04-23",
+          "startDate": "2018-04-23",
+          "endDate": "2020-07-01"
+        },
+        {
+          "previousCEO": "Morgan O'Brien",
+          "newCEO": "Robert Schwartz",
+          "transitionDate": "2020-07-01",
+          "startDate": "2020-07-01",
+          "endDate": "2024-10-08"
+        },
+        {
+          "previousCEO": "Robert Schwartz",
+          "newCEO": "Scott A. Lang",
+          "transitionDate": "2024-10-08",
+          "startDate": "2024-10-08",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATKR",
+      "name": "Atkore Inc.",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "John P. Williamson",
+          "newCEO": "William E. Waltz, Jr.",
+          "transitionDate": "2018-01-01",
+          "startDate": "2018-01-01",
+          "endDate": "2018-10-01"
+        },
+        {
+          "previousCEO": "William E. Waltz, Jr.",
+          "newCEO": "William Waltz",
+          "transitionDate": "2018-10-01",
+          "startDate": "2018-10-01",
+          "endDate": "2025-08-04"
+        }
+      ]
+    },
+    {
+      "ticker": "ATLC",
+      "name": "Atlanticus Holdings Corp",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "David G. Hanna",
+          "newCEO": "Jeffrey A. Howard",
+          "transitionDate": "2021-03-18",
+          "startDate": "2021-03-18",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATLN",
+      "name": "ATLANTIC INTERNATIONAL CORP.",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Daniel Jones",
+          "newCEO": "Jeffrey Jagid",
+          "transitionDate": "2026-01-23",
+          "startDate": "2026-01-23",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATLO",
+      "name": "AMES NATIONAL CORP",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Daniel L. Krieger",
+          "newCEO": "Thomas H. Pohlman",
+          "transitionDate": "2007-05-10",
+          "startDate": "2007-05-10",
+          "endDate": "2018-06-29"
+        },
+        {
+          "previousCEO": "Thomas H. Pohlman",
+          "newCEO": "John P. Nelson",
+          "transitionDate": "2018-06-29",
+          "startDate": "2018-06-29",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATMU",
+      "name": "Atmus Filtration Technologies Inc.",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "ATNI",
+      "name": "ATN International, Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Cornelius B. Prior, Jr.",
+          "newCEO": "Michael T. Prior",
+          "transitionDate": "2006-01-01",
+          "startDate": "2006-01-01",
+          "endDate": "2024-01-01"
+        },
+        {
+          "previousCEO": "Michael T. Prior",
+          "newCEO": "Brad Martin",
+          "transitionDate": "2024-01-01",
+          "startDate": "2024-01-01",
+          "endDate": "2026-04-20"
+        },
+        {
+          "previousCEO": "Brad Martin",
+          "newCEO": "Naji N. Khoury",
+          "transitionDate": "2026-04-20",
+          "startDate": "2026-04-20",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATOM",
+      "name": "Atomera Inc",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Robert Mears",
+          "newCEO": "Scott Bibaud",
+          "transitionDate": "2015-10-01",
+          "startDate": "2015-10-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATRC",
+      "name": "AtriCure, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "David J. Drachman",
+          "newCEO": "Michael H. Carrel",
+          "transitionDate": "2012-11-01",
+          "startDate": "2012-11-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "ATRO",
+      "name": "ASTRONICS CORP",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "ATYR",
+      "name": "aTYR PHARMA INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "John D. Mendlein",
+          "newCEO": "Sanjay S. Shukla",
+          "transitionDate": "2017-11-01",
+          "startDate": "2017-11-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AUB",
+      "name": "Atlantic Union Bankshares Corp",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "G. William Beale",
+          "newCEO": "John C. Asbury",
+          "transitionDate": "2017-01-01",
+          "startDate": "2017-01-01",
+          "endDate": "2018-09-28"
+        },
+        {
+          "previousCEO": "John C. Asbury",
+          "newCEO": "Maria P. Tedesco",
+          "transitionDate": "2018-09-28",
+          "startDate": "2018-09-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AUPH",
+      "name": "Aurinia Pharmaceuticals Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Peter Greenleaf",
+          "newCEO": "Kevin Tang",
+          "transitionDate": "2026-03-23",
+          "startDate": "2026-03-23",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AURA",
+      "name": "Aura Biosciences, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Elisabet de los Pinos",
+          "newCEO": "Natalie Holles",
+          "transitionDate": "2026-04-30",
+          "startDate": "2026-04-30",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVA",
+      "name": "AVISTA CORP",
+      "sector": "Utilities",
+      "transitions": [
+        {
+          "previousCEO": "Gary G. Ely",
+          "newCEO": "Scott L. Morris",
+          "transitionDate": "2008-01-01",
+          "startDate": "2008-01-01",
+          "endDate": "2019-10-01"
+        },
+        {
+          "previousCEO": "Scott L. Morris",
+          "newCEO": "Dennis P. Vermillion",
+          "transitionDate": "2019-10-01",
+          "startDate": "2019-10-01",
+          "endDate": "2024-12-31"
+        },
+        {
+          "previousCEO": "Dennis P. Vermillion",
+          "newCEO": "Heather L. Rosentrater",
+          "transitionDate": "2025-01-01",
+          "startDate": "2025-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVAH",
+      "name": "Aveanna Healthcare Holdings, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Anthony H. Strange",
+          "newCEO": "Jeff Shaner",
+          "transitionDate": "2022-12-31",
+          "startDate": "2022-12-31",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVAV",
+      "name": "AeroVironment Inc",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Tim Conver",
+          "newCEO": "Wahid Nawabi",
+          "transitionDate": "2016-05-02",
+          "startDate": "2016-05-02",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVBH",
+      "name": "Avidbank Holdings, Inc.",
+      "sector": "Financial Services",
+      "transitions": []
+    },
+    {
+      "ticker": "AVBP",
+      "name": "ArriVent BioPharma, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AVD",
+      "name": "AMERICAN VANGUARD CORP",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Eric G. Wintemute",
+          "newCEO": "Douglas A. Kaye III",
+          "transitionDate": "2024-12-03",
+          "startDate": "2024-12-03",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVIR",
+      "name": "Atea Pharmaceuticals, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AVNS",
+      "name": "AVANOS MEDICAL, INC.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Robert E. Abernathy",
+          "newCEO": "Joseph F. Woody",
+          "transitionDate": "2017-06-26",
+          "startDate": "2017-06-26",
+          "endDate": "2024-10-28"
+        },
+        {
+          "previousCEO": "Joseph F. Woody",
+          "newCEO": "Michael C. Greiner",
+          "transitionDate": "2024-10-28",
+          "startDate": "2024-10-28",
+          "endDate": "2025-04-14"
+        },
+        {
+          "previousCEO": "Michael C. Greiner",
+          "newCEO": "David Pacitti",
+          "transitionDate": "2025-04-14",
+          "startDate": "2025-04-14",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVNT",
+      "name": "AVIENT CORP",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Thomas A. Waltermire",
+          "newCEO": "William F. Patient",
+          "transitionDate": "2005-10-06",
+          "startDate": "2005-10-06",
+          "endDate": "2006-02-21"
+        },
+        {
+          "previousCEO": "William F. Patient",
+          "newCEO": "Stephen D. Newlin",
+          "transitionDate": "2006-02-21",
+          "startDate": "2006-02-21",
+          "endDate": "2014-05-15"
+        },
+        {
+          "previousCEO": "Stephen D. Newlin",
+          "newCEO": "Robert M. Patterson",
+          "transitionDate": "2014-05-15",
+          "startDate": "2014-05-15",
+          "endDate": "2023-12-01"
+        },
+        {
+          "previousCEO": "Robert M. Patterson",
+          "newCEO": "Ashish Khandpur",
+          "transitionDate": "2023-12-01",
+          "startDate": "2023-12-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVNW",
+      "name": "AVIAT NETWORKS, INC.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Guy M. Campbell",
+          "newCEO": "Harald J. Braun",
+          "transitionDate": "2008-04-08",
+          "startDate": "2008-04-08",
+          "endDate": "2010-06-28"
+        },
+        {
+          "previousCEO": "Harald J. Braun",
+          "newCEO": "Charles D. Kissner",
+          "transitionDate": "2010-06-28",
+          "startDate": "2010-06-28",
+          "endDate": "2011-07-18"
+        },
+        {
+          "previousCEO": "Charles D. Kissner",
+          "newCEO": "Michael Pangia",
+          "transitionDate": "2011-07-18",
+          "startDate": "2011-07-18",
+          "endDate": "2019-09-18"
+        },
+        {
+          "previousCEO": "Michael Pangia",
+          "newCEO": "Stan Gallagher",
+          "transitionDate": "2019-09-18",
+          "startDate": "2019-09-18",
+          "endDate": "2020-01-02"
+        },
+        {
+          "previousCEO": "Stan Gallagher",
+          "newCEO": "Peter Smith",
+          "transitionDate": "2020-01-02",
+          "startDate": "2020-01-02",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVO",
+      "name": "Mission Produce, Inc.",
+      "sector": "Consumer Defensive",
+      "transitions": [
+        {
+          "previousCEO": "Stephen J. Barnard",
+          "newCEO": "John M. Pawlowski",
+          "transitionDate": "2026-04-09",
+          "startDate": "2026-04-09",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVPT",
+      "name": "AvePoint, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Xunkai Gong",
+          "newCEO": "Tianyi Jiang",
+          "transitionDate": "2021-07-01",
+          "startDate": "2021-07-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVR",
+      "name": "Anteris Technologies Global Corp.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Stephen Denaro",
+          "newCEO": "Wayne Paterson",
+          "transitionDate": "2017-03-01",
+          "startDate": "2017-03-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AVXL",
+      "name": "ANAVEX LIFE SCIENCES CORP.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Panos Kontzalis",
+          "newCEO": "Herve de Kergrohen",
+          "transitionDate": "2009-06-16",
+          "startDate": "2009-06-16",
+          "endDate": "2010-03-01"
+        },
+        {
+          "previousCEO": "Herve de Kergrohen",
+          "newCEO": "Harvey Lalach",
+          "transitionDate": "2010-03-01",
+          "startDate": "2010-03-01",
+          "endDate": "2013-07-05"
+        },
+        {
+          "previousCEO": "Harvey Lalach",
+          "newCEO": "Christopher Missling",
+          "transitionDate": "2013-07-05",
+          "startDate": "2013-07-05",
+          "endDate": "2026-04-30"
+        },
+        {
+          "previousCEO": "Christopher Missling",
+          "newCEO": "Terrie Kellmeyer",
+          "transitionDate": "2026-05-04",
+          "startDate": "2026-05-04",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AWR",
+      "name": "AMERICAN STATES WATER CO",
+      "sector": "Utilities",
+      "transitions": [
+        {
+          "previousCEO": "Floyd E. Wicks",
+          "newCEO": "Robert J. Sprowls",
+          "transitionDate": "2009-01-01",
+          "startDate": "2009-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AX",
+      "name": "Axos Financial, Inc.",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Gary Lewis Evans",
+          "newCEO": "Gregory Garrabrants",
+          "transitionDate": "2008-03-01",
+          "startDate": "2008-03-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AXGN",
+      "name": "Axogen, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Timothy P. Fitzgerald",
+          "newCEO": "Alan C. Hymes",
+          "transitionDate": "2005-01-14",
+          "startDate": "2005-01-14",
+          "endDate": "2006-11-21"
+        },
+        {
+          "previousCEO": "Alan C. Hymes",
+          "newCEO": "Judd A. Berlin",
+          "transitionDate": "2006-11-21",
+          "startDate": "2006-11-21",
+          "endDate": "2010-06-01"
+        },
+        {
+          "previousCEO": "Judd A. Berlin",
+          "newCEO": "Gregory G. Freitag",
+          "transitionDate": "2010-06-01",
+          "startDate": "2010-06-01",
+          "endDate": "2012-10-05"
+        },
+        {
+          "previousCEO": "Gregory G. Freitag",
+          "newCEO": "John P. McLaughlin",
+          "transitionDate": "2012-10-05",
+          "startDate": "2012-10-05",
+          "endDate": "2018-05-15"
+        },
+        {
+          "previousCEO": "John P. McLaughlin",
+          "newCEO": "Karen Zaderej",
+          "transitionDate": "2018-05-15",
+          "startDate": "2018-05-15",
+          "endDate": "2024-08-08"
+        },
+        {
+          "previousCEO": "Karen Zaderej",
+          "newCEO": "Michael Dale",
+          "transitionDate": "2024-08-09",
+          "startDate": "2024-08-09",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AXSM",
+      "name": "Axsome Therapeutics, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "AZTA",
+      "name": "Azenta, Inc.",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Edward C. Grady",
+          "newCEO": "Robert J. Lepofsky",
+          "transitionDate": "2007-08-15",
+          "startDate": "2007-08-15",
+          "endDate": "2010-04-05"
+        },
+        {
+          "previousCEO": "Robert J. Lepofsky",
+          "newCEO": "Stephen S. Schwartz",
+          "transitionDate": "2010-04-05",
+          "startDate": "2010-04-05",
+          "endDate": "2024-05-08"
+        },
+        {
+          "previousCEO": "Stephen S. Schwartz",
+          "newCEO": "John Marotta",
+          "transitionDate": "2024-09-09",
+          "startDate": "2024-09-09",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "AZZ",
+      "name": "AZZ INC",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "David H. Dingus",
+          "newCEO": "Dana L. Perry",
+          "transitionDate": "2013-10-27",
+          "startDate": "2013-10-27",
+          "endDate": "2013-11-04"
+        },
+        {
+          "previousCEO": "Dana L. Perry",
+          "newCEO": "Tom Ferguson",
+          "transitionDate": "2013-11-04",
+          "startDate": "2013-11-04",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BALY",
+      "name": "Bally's Corp",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "George Papanier",
+          "newCEO": "Lee Fenton",
+          "transitionDate": "2021-10-01",
+          "startDate": "2021-10-01",
+          "endDate": "2023-03-31"
+        },
+        {
+          "previousCEO": "Lee Fenton",
+          "newCEO": "Robeson Reeves",
+          "transitionDate": "2023-04-01",
+          "startDate": "2023-04-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BANC",
+      "name": "BANC OF CALIFORNIA, INC.",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Hans R. Ganz",
+          "newCEO": "Gregory A. Mitchell",
+          "transitionDate": "2010-11-01",
+          "startDate": "2010-11-01",
+          "endDate": "2012-09-21"
+        },
+        {
+          "previousCEO": "Gregory A. Mitchell",
+          "newCEO": "Steven A. Sugarman",
+          "transitionDate": "2012-09-21",
+          "startDate": "2012-09-21",
+          "endDate": "2017-01-23"
+        },
+        {
+          "previousCEO": "Steven A. Sugarman",
+          "newCEO": "Hugh Boyle",
+          "transitionDate": "2017-01-23",
+          "startDate": "2017-01-23",
+          "endDate": "2017-05-08"
+        },
+        {
+          "previousCEO": "Hugh Boyle",
+          "newCEO": "Douglas Bowers",
+          "transitionDate": "2017-05-08",
+          "startDate": "2017-05-08",
+          "endDate": "2019-03-18"
+        },
+        {
+          "previousCEO": "Douglas Bowers",
+          "newCEO": "Jared M. Wolff",
+          "transitionDate": "2019-03-18",
+          "startDate": "2019-03-18",
+          "endDate": "2023-10-26"
+        },
+        {
+          "previousCEO": "Jared M. Wolff",
+          "newCEO": "John M. Eggemeyer, III",
+          "transitionDate": "2023-10-26",
+          "startDate": "2023-10-26",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BAND",
+      "name": "Bandwidth Inc.",
+      "sector": "Technology",
+      "transitions": []
+    },
+    {
+      "ticker": "BANF",
+      "name": "BANCFIRST CORP /OK/",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "David E. Rainbolt",
+          "newCEO": "David Harlow",
+          "transitionDate": "2017-05-25",
+          "startDate": "2017-05-25",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BANR",
+      "name": "BANNER CORP",
+      "sector": "Financial Services",
+      "transitions": []
+    },
+    {
+      "ticker": "BARK",
+      "name": "Bark, Inc.",
+      "sector": "Consumer Cyclical",
+      "transitions": [
+        {
+          "previousCEO": "Manish Joneja",
+          "newCEO": "Matt Meeker",
+          "transitionDate": "2022-01-10",
+          "startDate": "2022-01-10",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BATRA",
+      "name": "Atlanta Braves Holdings, Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Terence F. McGuirk",
+          "newCEO": "Gregory B. Maffei",
+          "transitionDate": "2019-12-13",
+          "startDate": "2019-12-13",
+          "endDate": "2024-08-31"
+        }
+      ]
+    },
+    {
+      "ticker": "BATRK",
+      "name": "Atlanta Braves Holdings, Inc.",
+      "sector": "Communication Services",
+      "transitions": [
+        {
+          "previousCEO": "Terence F. McGuirk",
+          "newCEO": "Gregory B. Maffei",
+          "transitionDate": "2019-12-13",
+          "startDate": "2019-12-13",
+          "endDate": "2024-08-31"
+        }
+      ]
+    },
+    {
+      "ticker": "BBAI",
+      "name": "BigBear.ai Holdings, Inc.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Reginald Brothers",
+          "newCEO": "Amanda Long",
+          "transitionDate": "2022-10-12",
+          "startDate": "2022-10-12",
+          "endDate": "2025-01-15"
+        },
+        {
+          "previousCEO": "Amanda Long",
+          "newCEO": "Kevin McAleenan",
+          "transitionDate": "2025-01-15",
+          "startDate": "2025-01-15",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BBBY",
+      "name": "BED BATH & BEYOND, INC.",
+      "sector": "Unknown",
+      "transitions": [
+        {
+          "previousCEO": "Patrick M. Byrne",
+          "newCEO": "Jonathan E. Johnson",
+          "transitionDate": "2013-02-12",
+          "startDate": "2013-02-12",
+          "endDate": "2013-04-15"
+        },
+        {
+          "previousCEO": "Jonathan E. Johnson",
+          "newCEO": "Mitch Edwards",
+          "transitionDate": "2016-04-11",
+          "startDate": "2016-04-11",
+          "endDate": "2018-05-08"
+        },
+        {
+          "previousCEO": "Mitch Edwards",
+          "newCEO": "Jonathan E. Johnson III",
+          "transitionDate": "2019-08-22",
+          "startDate": "2019-08-22",
+          "endDate": "2023-11-06"
+        },
+        {
+          "previousCEO": "Jonathan E. Johnson III",
+          "newCEO": "David J. Nielsen",
+          "transitionDate": "2023-11-06",
+          "startDate": "2023-11-06",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BBCP",
+      "name": "Concrete Pumping Holdings, Inc.",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "BBIO",
+      "name": "BridgeBio Pharma, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "BBNX",
+      "name": "Beta Bionics, Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "BBSI",
+      "name": "BARRETT BUSINESS SERVICES INC",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "William W. Sherertz",
+          "newCEO": "Michael L. Elich",
+          "transitionDate": "2011-01-20",
+          "startDate": "2011-01-20",
+          "endDate": "2020-03-05"
+        },
+        {
+          "previousCEO": "Michael L. Elich",
+          "newCEO": "Gary E. Kramer",
+          "transitionDate": "2020-03-05",
+          "startDate": "2020-03-05",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BBT",
+      "name": "Beacon Financial Corp",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "J. Williar Dunlaevy",
+          "newCEO": "Patrick J. Sullivan",
+          "transitionDate": "2011-08-18",
+          "startDate": "2011-08-18",
+          "endDate": "2015-04-23"
+        },
+        {
+          "previousCEO": "Patrick J. Sullivan",
+          "newCEO": "Glenn S. Welch",
+          "transitionDate": "2015-04-23",
+          "startDate": "2015-04-23",
+          "endDate": "2018-11-26"
+        },
+        {
+          "previousCEO": "Glenn S. Welch",
+          "newCEO": "Richard M. Marotta",
+          "transitionDate": "2018-11-26",
+          "startDate": "2018-11-26",
+          "endDate": "2019-05-30"
+        },
+        {
+          "previousCEO": "Richard M. Marotta",
+          "newCEO": "Rheo A. Brouillard",
+          "transitionDate": "2019-05-30",
+          "startDate": "2019-05-30",
+          "endDate": "2020-08-10"
+        },
+        {
+          "previousCEO": "Rheo A. Brouillard",
+          "newCEO": "Sean Gray",
+          "transitionDate": "2020-08-10",
+          "startDate": "2020-08-10",
+          "endDate": "2021-01-29"
+        },
+        {
+          "previousCEO": "Sean Gray",
+          "newCEO": "Nitin J. Mhatre",
+          "transitionDate": "2021-01-29",
+          "startDate": "2021-01-29",
+          "endDate": "2024-12-16"
+        },
+        {
+          "previousCEO": "Nitin J. Mhatre",
+          "newCEO": "Paul A. Perrault",
+          "transitionDate": "2025-09-01",
+          "startDate": "2025-09-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BBUC",
+      "name": "Brookfield Business Corp",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Cyrus Madon",
+          "newCEO": "Anuj Ranjan",
+          "transitionDate": "",
+          "startDate": "",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BBW",
+      "name": "BUILD-A-BEAR WORKSHOP INC",
+      "sector": "Consumer Cyclical",
+      "transitions": []
+    },
+    {
+      "ticker": "BCAL",
+      "name": "California BanCorp \\ CA",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "David I. Rainer",
+          "newCEO": "Steven E. Shelton",
+          "transitionDate": "2024-07-31",
+          "startDate": "2024-07-31",
+          "endDate": "2025-12-31"
+        }
+      ]
+    },
+    {
+      "ticker": "BCAX",
+      "name": "Bicara Therapeutics Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "BCBP",
+      "name": "BCB BANCORP INC",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Donald Mindiak",
+          "newCEO": "Thomas Coughlin",
+          "transitionDate": "2014-08-04",
+          "startDate": "2014-08-04",
+          "endDate": "2023-12-31"
+        },
+        {
+          "previousCEO": "Thomas Coughlin",
+          "newCEO": "Michael A. Shriner",
+          "transitionDate": "2024-01-01",
+          "startDate": "2024-01-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BCC",
+      "name": "BOISE CASCADE Co",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Thomas E. Carlile",
+          "newCEO": "Thomas K. Corrick",
+          "transitionDate": "2015-03-06",
+          "startDate": "2015-03-06",
+          "endDate": "2020-03-06"
+        },
+        {
+          "previousCEO": "Thomas K. Corrick",
+          "newCEO": "Nate Jorgensen",
+          "transitionDate": "2020-03-06",
+          "startDate": "2020-03-06",
+          "endDate": "2026-03-03"
+        },
+        {
+          "previousCEO": "Nate Jorgensen",
+          "newCEO": "Jeff Strom",
+          "transitionDate": "2026-03-03",
+          "startDate": "2026-03-03",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BCML",
+      "name": "BayCom Corp",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "George J. Guarini",
+          "newCEO": "William J. Black, Jr.",
+          "transitionDate": "2026-04-13",
+          "startDate": "2026-04-13",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BCO",
+      "name": "BRINKS CO",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "BCPC",
+      "name": "BALCHEM CORP",
+      "sector": "Basic Materials",
+      "transitions": [
+        {
+          "previousCEO": "Dino A. Rossi",
+          "newCEO": "Theodore L. Harris",
+          "transitionDate": "2015-04-28",
+          "startDate": "2015-04-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BCRX",
+      "name": "BIOCRYST PHARMACEUTICALS INC",
+      "sector": "Healthcare",
+      "transitions": [
+        {
+          "previousCEO": "Charles E. Bugg",
+          "newCEO": "Jon P. Stonehouse",
+          "transitionDate": "2007-01-05",
+          "startDate": "2007-01-05",
+          "endDate": "2025-10-13"
+        },
+        {
+          "previousCEO": "Jon P. Stonehouse",
+          "newCEO": "Jill C. Milne",
+          "transitionDate": "2025-10-13",
+          "startDate": "2025-10-13",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BDC",
+      "name": "BELDEN INC.",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "C. Baker Cunningham",
+          "newCEO": "John Stroup",
+          "transitionDate": "2005-10-31",
+          "startDate": "2005-10-31",
+          "endDate": "2020-05-21"
+        },
+        {
+          "previousCEO": "John Stroup",
+          "newCEO": "Roel Vestjens",
+          "transitionDate": "2020-05-21",
+          "startDate": "2020-05-21",
+          "endDate": "2023-02-22"
+        },
+        {
+          "previousCEO": "Roel Vestjens",
+          "newCEO": "Ashish Chand",
+          "transitionDate": "2023-02-23",
+          "startDate": "2023-02-23",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BDN",
+      "name": "BRANDYWINE REALTY TRUST",
+      "sector": "Real Estate",
+      "transitions": []
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy Corp",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "BEAM",
+      "name": "Beam Therapeutics Inc.",
+      "sector": "Healthcare",
+      "transitions": []
+    },
+    {
+      "ticker": "BEEP",
+      "name": "Mobile Infrastructure Corp",
+      "sector": "Industrials",
+      "transitions": [
+        {
+          "previousCEO": "Manuel Chavez, III",
+          "newCEO": "Stephanie Hogue",
+          "transitionDate": "2025-08-01",
+          "startDate": "2025-08-01",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BELFA",
+      "name": "BEL FUSE INC /NJ",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Daniel Bernstein",
+          "newCEO": "Farouq Tuweiq",
+          "transitionDate": "2025-02-07",
+          "startDate": "2025-02-07",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BELFB",
+      "name": "BEL FUSE INC /NJ",
+      "sector": "Technology",
+      "transitions": [
+        {
+          "previousCEO": "Daniel Bernstein",
+          "newCEO": "Farouq Tuweiq",
+          "transitionDate": "2025-02-07",
+          "startDate": "2025-02-07",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BETA",
+      "name": "BETA Technologies, Inc.",
+      "sector": "Industrials",
+      "transitions": []
+    },
+    {
+      "ticker": "BETR",
+      "name": "Better Home & Finance Holding Co",
+      "sector": "Financial Services",
+      "transitions": [
+        {
+          "previousCEO": "Thor Bj\u00f6rg\u00f3lfsson",
+          "newCEO": "Vishal Garg",
+          "transitionDate": "2023-08-28",
+          "startDate": "2023-08-28",
+          "endDate": "Present"
+        }
+      ]
+    },
+    {
+      "ticker": "BFC",
+      "name": "Bank First Corp",
+      "sector": "Financial Services",
+      "transitions": []
+    }
+  ]
+}

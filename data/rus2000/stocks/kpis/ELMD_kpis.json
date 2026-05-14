@@ -1,0 +1,63 @@
+{
+  "ticker": "ELMD",
+  "last_updated": "2026-05-11T18:48:20.030190",
+  "data_points": 3958,
+  "date_range": {
+    "start": "2010-08-13",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 576.63,
+    "volatility_pct": 68.1,
+    "volatility_level": "High",
+    "ma_20": 25.74,
+    "ma_50": 24.67,
+    "ma_200": 24.98,
+    "price_high": 35.43,
+    "price_low": 0.92,
+    "current_price": 26.93
+  },
+  "volume_metrics": {
+    "avg_volume": 44069,
+    "avg_volume_20d": 32265,
+    "current_volume": 28900,
+    "volume_trend_pct": -26.79
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.45,
+    "max_drawdown_pct": -78.65,
+    "daily_volatility_pct": 4.29
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

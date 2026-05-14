@@ -1,0 +1,63 @@
+{
+  "ticker": "MCHB",
+  "last_updated": "2026-05-11T18:49:06.911373",
+  "data_points": 3581,
+  "date_range": {
+    "start": "2012-02-10",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 51.02,
+    "volatility_pct": 42.75,
+    "volatility_level": "High",
+    "ma_20": 15.11,
+    "ma_50": 14.77,
+    "ma_200": 13.82,
+    "price_high": 49.98,
+    "price_low": 4.26,
+    "current_price": 14.83
+  },
+  "volume_metrics": {
+    "avg_volume": 181016,
+    "avg_volume_20d": 498570,
+    "current_volume": 274100,
+    "volume_trend_pct": 175.43
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.24,
+    "max_drawdown_pct": -91.48,
+    "daily_volatility_pct": 2.69
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

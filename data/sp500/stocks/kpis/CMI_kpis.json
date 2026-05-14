@@ -1,0 +1,104 @@
+{
+  "ticker": "CMI",
+  "last_updated": "2026-05-13T15:04:37.875671",
+  "data_points": 7640,
+  "date_range": {
+    "start": "1996-01-02",
+    "end": "2026-05-12"
+  },
+  "price_metrics": {
+    "total_return_pct": 14427.01,
+    "volatility_pct": 37.03,
+    "volatility_level": "Medium",
+    "ma_20": 657.88,
+    "ma_50": 597.15,
+    "ma_200": 503.97,
+    "price_high": 715.76,
+    "price_low": 2.96,
+    "current_price": 704.56
+  },
+  "volume_metrics": {
+    "avg_volume": 1905983,
+    "avg_volume_20d": 899015,
+    "current_volume": 931600,
+    "volume_trend_pct": -52.83
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.57,
+    "max_drawdown_pct": -75.68,
+    "daily_volatility_pct": 2.33
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11089,
+    "recession_percentage": 9.88,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2008-05-01",
+      "transition_price": 43.36,
+      "impact_90days_pct": 7.5,
+      "impact_1year_pct": -47.16,
+      "pre_transition_trend_90d_pct": 40.32,
+      "macro_economic_context": {
+        "in_recession": true,
+        "recession_period": "2007-2009 Financial Crisis",
+        "context": "Recession Period"
+      },
+      "analysis_note": "\u26a0\ufe0f CEO transition occurred during 2007-2009 Financial Crisis. Stock movement may be confounded by macro-economic factors."
+    },
+    {
+      "transition_date": "2011-12-30",
+      "transition_price": 61.59,
+      "impact_90days_pct": 36.81,
+      "impact_1year_pct": 25.22,
+      "pre_transition_trend_90d_pct": 9.11,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2022-08-01",
+      "transition_price": 199.52,
+      "impact_90days_pct": 13.14,
+      "impact_1year_pct": 24.94,
+      "pre_transition_trend_90d_pct": 8.54,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
+}

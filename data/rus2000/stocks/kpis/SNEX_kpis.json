@@ -1,0 +1,63 @@
+{
+  "ticker": "SNEX",
+  "last_updated": "2026-05-11T18:49:57.953313",
+  "data_points": 7638,
+  "date_range": {
+    "start": "1996-01-02",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 21671.43,
+    "volatility_pct": 81.63,
+    "volatility_level": "High",
+    "ma_20": 106.39,
+    "ma_50": 89.47,
+    "ma_200": 72.34,
+    "price_high": 121.92,
+    "price_low": 0.14,
+    "current_price": 121.92
+  },
+  "volume_metrics": {
+    "avg_volume": 204218,
+    "avg_volume_20d": 690130,
+    "current_volume": 741000,
+    "volume_trend_pct": 237.94
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.55,
+    "max_drawdown_pct": -97.67,
+    "daily_volatility_pct": 5.14
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

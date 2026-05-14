@@ -1,0 +1,63 @@
+{
+  "ticker": "PTGX",
+  "last_updated": "2026-05-11T18:49:39.862061",
+  "data_points": 2449,
+  "date_range": {
+    "start": "2016-08-11",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 749.23,
+    "volatility_pct": 91.08,
+    "volatility_level": "High",
+    "ma_20": 101.67,
+    "ma_50": 99.75,
+    "ma_200": 80.88,
+    "price_high": 105.98,
+    "price_low": 4.69,
+    "current_price": 99.36
+  },
+  "volume_metrics": {
+    "avg_volume": 617088,
+    "avg_volume_20d": 669565,
+    "current_volume": 505000,
+    "volume_trend_pct": 8.5
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.66,
+    "max_drawdown_pct": -85.79,
+    "daily_volatility_pct": 5.74
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

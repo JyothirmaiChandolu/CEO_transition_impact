@@ -1,0 +1,30 @@
+{
+  "russell2000": {
+    "name": "Russell 2000",
+    "description": "Small-cap US stocks — ~2,000 companies",
+    "benchmark_ticker": "RUT",
+    "data_dir": "data/rus2000",
+    "raw_stock_dir": "data/rus2000/stock/raw",
+    "index_dir": "data/rus2000/index",
+    "companies_file": "data/rus2000/companies.json",
+    "metadata_file": "data/rus2000/company_metadata.json",
+    "kpi_dir": "data/rus2000/stocks/kpis",
+    "validated_dir": "data/rus2000/stocks/validated",
+    "ceo_data_dir": "sec_ceo_data",
+    "tickers_csv": "output.csv"
+  },
+  "sp500": {
+    "name": "S&P 500",
+    "description": "Large-cap US stocks — ~500 companies",
+    "benchmark_ticker": "SPX",
+    "data_dir": "data/sp500",
+    "raw_stock_dir": "data/sp500/stock/raw",
+    "index_dir": "data/sp500/index",
+    "companies_file": "data/sp500/companies.json",
+    "metadata_file": "data/sp500/company_metadata.json",
+    "kpi_dir": "data/sp500/stocks/kpis",
+    "validated_dir": "data/sp500/stocks/validated",
+    "ceo_data_dir": "sec_ceo_data_sp500",
+    "tickers_csv": "sp500_output.csv"
+  }
+}

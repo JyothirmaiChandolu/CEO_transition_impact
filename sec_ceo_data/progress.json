@@ -1,0 +1,144 @@
+[
+  {
+    "ticker": "AAMI",
+    "company_name": "Acadian Asset Management Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Guang Yang",
+        "start_date": null,
+        "end_date": "2020-04-15",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1748824/000174882420000014/bsig-form8xkxranaceoap.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Suren Rana",
+        "start_date": "2020-04-15",
+        "end_date": "2024-12-31",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1748824/000174882420000014/bsig-form8xkxranaceoap.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Kelly Young",
+        "start_date": "2025-01-01",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1748824/000174882424000041/bsig-20240930.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)",
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "AAOI",
+    "company_name": "APPLIED OPTOELECTRONICS, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Chih-Hsiang Lin",
+        "start_date": "Unknown",
+        "end_date": "Present",
+        "validation_url": "https://en.wikipedia.org/wiki/Applied_Optoelectronics",
+        "source": "Wikipedia (scraped)"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)"
+    ]
+  },
+  {
+    "ticker": "AAP",
+    "company_name": "ADVANCE AUTO PARTS INC",
+    "ceo_timeline": [
+      {
+        "name": "Lawrence P. Castellani",
+        "start_date": null,
+        "end_date": "2005-05-24",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844905000105/aap8k_052405.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Michael N. Coppola",
+        "start_date": "2005-05-24",
+        "end_date": "2007-05-07",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844905000105/aap8k_052405.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "John C. Brouillard",
+        "start_date": "2007-05-07",
+        "end_date": "2008-01-07",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844907000074/aap8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Darren R. Jackson",
+        "start_date": "2008-01-07",
+        "end_date": "2016-01-02",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844907000176/aap8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "George E. Sherman",
+        "start_date": "2016-01-03",
+        "end_date": "2016-04-11",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844915000187/a8k_11x11x2015.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Thomas R. Greco",
+        "start_date": "2016-04-11",
+        "end_date": "2023-09-11",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844916000365/a8k_4x4x2016.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Shane M. O'Kelly",
+        "start_date": "2023-09-11",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000119312523218433/d508220d8k.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)",
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "AARD",
+    "company_name": "Aardvark Therapeutics, Inc.",
+    "ceo_timeline": [],
+    "data_sources": []
+  },
+  {
+    "ticker": "AAT",
+    "company_name": "American Assets Trust, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "John W. Chamberlain",
+        "start_date": null,
+        "end_date": "2015-09-14",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1500217/000162828015007099/a8k_2015x09xchamberlain.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Ernest W. Rady",
+        "start_date": "2015-09-14",
+        "end_date": "2025-01-01",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1500217/000162828015007099/a8k_2015x09xchamberlain.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Adam Wyll",
+        "start_date": "2025-01-01",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1500217/000150021724000043/aat-20240730.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "8-K"
+    ]
+  }
+]

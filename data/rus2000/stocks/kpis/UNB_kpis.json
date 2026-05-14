@@ -1,0 +1,63 @@
+{
+  "ticker": "UNB",
+  "last_updated": "2026-05-11T18:50:14.689500",
+  "data_points": 6729,
+  "date_range": {
+    "start": "1999-08-09",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 518.41,
+    "volatility_pct": 35.35,
+    "volatility_level": "Medium",
+    "ma_20": 24.45,
+    "ma_50": 23.8,
+    "ma_200": 23.85,
+    "price_high": 37.27,
+    "price_low": 2.74,
+    "current_price": 24.18
+  },
+  "volume_metrics": {
+    "avg_volume": 2975,
+    "avg_volume_20d": 5530,
+    "current_volume": 5900,
+    "volume_trend_pct": 85.87
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.31,
+    "max_drawdown_pct": -66.38,
+    "daily_volatility_pct": 2.23
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

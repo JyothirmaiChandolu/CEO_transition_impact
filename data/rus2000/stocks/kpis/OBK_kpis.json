@@ -1,0 +1,63 @@
+{
+  "ticker": "OBK",
+  "last_updated": "2026-05-11T18:49:24.279368",
+  "data_points": 2012,
+  "date_range": {
+    "start": "2018-05-08",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 53.81,
+    "volatility_pct": 35.19,
+    "volatility_level": "Medium",
+    "ma_20": 46.22,
+    "ma_50": 43.39,
+    "ma_200": 38.97,
+    "price_high": 47.35,
+    "price_low": 15.72,
+    "current_price": 46.88
+  },
+  "volume_metrics": {
+    "avg_volume": 95468,
+    "avg_volume_20d": 204075,
+    "current_volume": 107600,
+    "volume_trend_pct": 113.76
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.27,
+    "max_drawdown_pct": -57.66,
+    "daily_volatility_pct": 2.22
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

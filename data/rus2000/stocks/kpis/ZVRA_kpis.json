@@ -1,0 +1,63 @@
+{
+  "ticker": "ZVRA",
+  "last_updated": "2026-05-11T18:50:28.540382",
+  "data_points": 2783,
+  "date_range": {
+    "start": "2015-04-16",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -93.79,
+    "volatility_pct": 83.87,
+    "volatility_level": "High",
+    "ma_20": 10.32,
+    "ma_50": 9.8,
+    "ma_200": 9.43,
+    "price_high": 378.08,
+    "price_low": 2.75,
+    "current_price": 11.13
+  },
+  "volume_metrics": {
+    "avg_volume": 382858,
+    "avg_volume_20d": 1073180,
+    "current_volume": 2650200,
+    "volume_trend_pct": 180.31
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.1,
+    "max_drawdown_pct": -99.27,
+    "daily_volatility_pct": 5.28
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

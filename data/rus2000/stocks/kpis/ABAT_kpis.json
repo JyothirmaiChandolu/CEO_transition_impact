@@ -1,0 +1,63 @@
+{
+  "ticker": "ABAT",
+  "last_updated": "2026-05-11T18:47:27.454280",
+  "data_points": 2567,
+  "date_range": {
+    "start": "2016-02-24",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -39.62,
+    "volatility_pct": 164.34,
+    "volatility_level": "High",
+    "ma_20": 3.26,
+    "ma_50": 3.16,
+    "ma_200": 3.77,
+    "price_high": 61.12,
+    "price_low": 0.38,
+    "current_price": 3.17
+  },
+  "volume_metrics": {
+    "avg_volume": 979979,
+    "avg_volume_20d": 4480800,
+    "current_volume": 6484400,
+    "volume_trend_pct": 357.23
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.6,
+    "max_drawdown_pct": -98.76,
+    "daily_volatility_pct": 10.35
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

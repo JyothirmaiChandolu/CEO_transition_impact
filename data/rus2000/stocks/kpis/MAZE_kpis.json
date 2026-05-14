@@ -1,0 +1,63 @@
+{
+  "ticker": "MAZE",
+  "last_updated": "2026-05-11T18:49:06.149365",
+  "data_points": 319,
+  "date_range": {
+    "start": "2025-01-31",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 63.2,
+    "volatility_pct": 97.16,
+    "volatility_level": "High",
+    "ma_20": 26.55,
+    "ma_50": 34.95,
+    "ma_200": 32.29,
+    "price_high": 51.83,
+    "price_low": 7.57,
+    "current_price": 26.03
+  },
+  "volume_metrics": {
+    "avg_volume": 444547,
+    "avg_volume_20d": 831495,
+    "current_volume": 535000,
+    "volume_trend_pct": 87.04
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.85,
+    "max_drawdown_pct": -50.86,
+    "daily_volatility_pct": 6.12
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

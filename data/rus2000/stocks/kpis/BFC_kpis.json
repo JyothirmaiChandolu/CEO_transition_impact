@@ -1,0 +1,63 @@
+{
+  "ticker": "BFC",
+  "last_updated": "2026-05-11T18:47:47.188258",
+  "data_points": 5677,
+  "date_range": {
+    "start": "2003-10-15",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 1190.67,
+    "volatility_pct": 33.17,
+    "volatility_level": "Medium",
+    "ma_20": 143.42,
+    "ma_50": 138.77,
+    "ma_200": 130.73,
+    "price_high": 151.27,
+    "price_low": 3.85,
+    "current_price": 146.62
+  },
+  "volume_metrics": {
+    "avg_volume": 9539,
+    "avg_volume_20d": 87600,
+    "current_volume": 53600,
+    "volume_trend_pct": 818.32
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.45,
+    "max_drawdown_pct": -73.74,
+    "daily_volatility_pct": 2.09
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

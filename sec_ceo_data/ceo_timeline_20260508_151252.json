@@ -1,0 +1,368 @@
+[
+  {
+    "ticker": "AAMI",
+    "company_name": "Acadian Asset Management Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Guang Yang",
+        "start_date": null,
+        "end_date": "2020-04-15",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1748824/000174882420000014/bsig-form8xkxranaceoap.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Suren Rana",
+        "start_date": "2020-04-15",
+        "end_date": "2024-12-31",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1748824/000174882420000014/bsig-form8xkxranaceoap.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Kelly Young",
+        "start_date": "2025-01-01",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1748824/000174882424000041/bsig-20240930.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)",
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "AAOI",
+    "company_name": "APPLIED OPTOELECTRONICS, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Chih-Hsiang Lin",
+        "start_date": "Unknown",
+        "end_date": "Present",
+        "validation_url": "https://en.wikipedia.org/wiki/Applied_Optoelectronics",
+        "source": "Wikipedia (scraped)"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)"
+    ]
+  },
+  {
+    "ticker": "AAP",
+    "company_name": "ADVANCE AUTO PARTS INC",
+    "ceo_timeline": [
+      {
+        "name": "Lawrence P. Castellani",
+        "start_date": null,
+        "end_date": "2005-05-24",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844905000105/aap8k_052405.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Michael N. Coppola",
+        "start_date": "2005-05-24",
+        "end_date": "2007-05-07",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844905000105/aap8k_052405.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "John C. Brouillard",
+        "start_date": "2007-05-07",
+        "end_date": "2008-01-07",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844907000074/aap8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Darren R. Jackson",
+        "start_date": "2008-01-07",
+        "end_date": "2016-01-02",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844907000176/aap8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "George E. Sherman",
+        "start_date": "2016-01-03",
+        "end_date": "2016-04-11",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844915000187/a8k_11x11x2015.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Thomas R. Greco",
+        "start_date": "2016-04-11",
+        "end_date": "2023-09-11",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000115844916000365/a8k_4x4x2016.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Shane M. O'Kelly",
+        "start_date": "2023-09-11",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1158449/000119312523218433/d508220d8k.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)",
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "AARD",
+    "company_name": "Aardvark Therapeutics, Inc.",
+    "ceo_timeline": [],
+    "data_sources": []
+  },
+  {
+    "ticker": "AAT",
+    "company_name": "American Assets Trust, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "John W. Chamberlain",
+        "start_date": null,
+        "end_date": "2015-09-14",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1500217/000162828015007099/a8k_2015x09xchamberlain.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Ernest W. Rady",
+        "start_date": "2015-09-14",
+        "end_date": "2025-01-01",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1500217/000162828015007099/a8k_2015x09xchamberlain.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Adam Wyll",
+        "start_date": "2025-01-01",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1500217/000150021724000043/aat-20240730.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "ABAT",
+    "company_name": "AMERICAN BATTERY TECHNOLOGY Co",
+    "ceo_timeline": [
+      {
+        "name": "Craig Alford",
+        "start_date": "2016-05-31",
+        "end_date": "2017-02-15",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1576873/000107878216002947/f8k060616_8k.htm",
+        "source": "8-K",
+        "note": "Company formed/spun off on 2011-01-01. No prior CEO exists."
+      },
+      {
+        "name": "Michael Mason",
+        "start_date": "2017-02-15",
+        "end_date": "2017-08-07",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1576873/000107878217000246/f8k022117_8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Douglas Cole",
+        "start_date": "2017-08-07",
+        "end_date": "2021-08-27",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1576873/000107878217001083/f8k081117_8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Ryan Melsert",
+        "start_date": "2021-08-27",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1576873/000149315221021498/form8-k.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "ABCB",
+    "company_name": "Ameris Bancorp",
+    "ceo_timeline": [
+      {
+        "name": "Eugene M. Vereen",
+        "start_date": "1981-01-01",
+        "end_date": "2008-04-06",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/351569/000035156908000010/form8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Edwin W. Hortman Jr.",
+        "start_date": "2008-04-06",
+        "end_date": "2018-07-05",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/351569/000114420418033090/tv496032_8-k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Dennis J. Zember Jr.",
+        "start_date": "2018-07-05",
+        "end_date": "2019-06-28",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/351569/000114420418033090/tv496032_8-k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "H. Palmer Proctor",
+        "start_date": "2019-06-28",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/351569/000114420419033242/tv524542_8k.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "ABEO",
+    "company_name": "ABEONA THERAPEUTICS INC.",
+    "ceo_timeline": [
+      {
+        "name": "Kerry Gray",
+        "start_date": null,
+        "end_date": "2005-05-10",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000031830605000011/r8k-093.txt",
+        "source": "8-K"
+      },
+      {
+        "name": "Rosemary Mazanet",
+        "start_date": "2005-05-10",
+        "end_date": "2007-01-04",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000031830607000005/r8k-140.txt",
+        "source": "8-K",
+        "note": "Start date not found; set to previous CEO's end date"
+      },
+      {
+        "name": "Stephen R. Seiler",
+        "start_date": "2007-01-04",
+        "end_date": "2007-12-19",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000031830607000005/r8k-140.txt",
+        "source": "8-K"
+      },
+      {
+        "name": "Jeffrey B. Davis",
+        "start_date": "2007-12-26",
+        "end_date": "2014-09-19",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000031830607000065/r8k-237.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Scott W. Schorer",
+        "start_date": "2014-09-19",
+        "end_date": "2015-05-06",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000031830614000027/r8k-530.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Tim Miller",
+        "start_date": "2015-05-06",
+        "end_date": "2018-03-29",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000031830615000013/r8k-560.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Frank Carsten Thiel",
+        "start_date": "2018-03-29",
+        "end_date": "2018-11-26",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000114420418018693/tv490170_8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Joao Siffert",
+        "start_date": "2018-11-26",
+        "end_date": "2020-09-23",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000114420418062416/tv507897_8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Michael Amoroso",
+        "start_date": "2021-03-19",
+        "end_date": "2021-10-14",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000149315221006620/form8-k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Vishwas Seshadri",
+        "start_date": "2021-10-15",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/318306/000149315221023269/form8-k.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "ABG",
+    "company_name": "ASBURY AUTOMOTIVE GROUP INC",
+    "ceo_timeline": [
+      {
+        "name": "Kenneth B. Gilman",
+        "start_date": null,
+        "end_date": "2007-05-04",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1144980/000110465907011465/a07-4578_28k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Charles R. Oglesby",
+        "start_date": "2007-05-04",
+        "end_date": "2011-02-09",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1144980/000110465907011465/a07-4578_28k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Craig T. Monaghan",
+        "start_date": "2011-02-09",
+        "end_date": "2017-12-31",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1144980/000119312511030118/d8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "David W. Hult",
+        "start_date": "2018-01-01",
+        "end_date": "2026-05-04",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1144980/000114498017000119/a8-k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Daniel E. Clara",
+        "start_date": "2026-05-04",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1144980/000114498026000083/abg-20251208.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)",
+      "8-K"
+    ]
+  },
+  {
+    "ticker": "ABM",
+    "company_name": "ABM INDUSTRIES INC /DE/",
+    "ceo_timeline": [
+      {
+        "name": "Henrik C. Slipsager",
+        "start_date": "2000-11-01",
+        "end_date": "2015-03-31",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/771497/000157104915000264/t1500089_8k.htm",
+        "source": "8-K"
+      },
+      {
+        "name": "Scott Salmirs",
+        "start_date": "2015-03-31",
+        "end_date": "Present",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/771497/000157104915000264/t1500089_8k.htm",
+        "source": "8-K"
+      }
+    ],
+    "data_sources": [
+      "Wikipedia (scraped)",
+      "8-K"
+    ]
+  }
+]

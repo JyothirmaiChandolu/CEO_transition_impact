@@ -1,0 +1,63 @@
+{
+  "ticker": "UFCS",
+  "last_updated": "2026-05-11T18:50:13.328102",
+  "data_points": 7638,
+  "date_range": {
+    "start": "1996-01-02",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 648.76,
+    "volatility_pct": 39.99,
+    "volatility_level": "Medium",
+    "ma_20": 40.79,
+    "ma_50": 38.87,
+    "ma_200": 34.75,
+    "price_high": 48.22,
+    "price_low": 3.91,
+    "current_price": 48.22
+  },
+  "volume_metrics": {
+    "avg_volume": 67534,
+    "avg_volume_20d": 113240,
+    "current_volume": 158500,
+    "volume_trend_pct": 67.68
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.32,
+    "max_drawdown_pct": -69.89,
+    "daily_volatility_pct": 2.52
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "ticker": "RZLT",
+  "last_updated": "2026-05-11T18:49:48.132784",
+  "data_points": 3350,
+  "date_range": {
+    "start": "2013-01-14",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -99.33,
+    "volatility_pct": 165.09,
+    "volatility_level": "High",
+    "ma_20": 3.3,
+    "ma_50": 3.13,
+    "ma_200": 5.59,
+    "price_high": 750.0,
+    "price_low": 0.74,
+    "current_price": 3.21
+  },
+  "volume_metrics": {
+    "avg_volume": 284772,
+    "avg_volume_20d": 1382660,
+    "current_volume": 710300,
+    "volume_trend_pct": 385.53
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.48,
+    "max_drawdown_pct": -99.9,
+    "daily_volatility_pct": 10.4
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

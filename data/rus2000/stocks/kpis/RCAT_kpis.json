@@ -1,0 +1,63 @@
+{
+  "ticker": "RCAT",
+  "last_updated": "2026-05-11T18:49:41.968416",
+  "data_points": 6106,
+  "date_range": {
+    "start": "2002-01-16",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -100.0,
+    "volatility_pct": 356.49,
+    "volatility_level": "High",
+    "ma_20": 11.89,
+    "ma_50": 13.28,
+    "ma_200": 11.14,
+    "price_high": 990000.0,
+    "price_low": 0.4,
+    "current_price": 10.37
+  },
+  "volume_metrics": {
+    "avg_volume": 806146,
+    "avg_volume_20d": 9703695,
+    "current_volume": 8704400,
+    "volume_trend_pct": 1103.71
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 1.05,
+    "max_drawdown_pct": -100.0,
+    "daily_volatility_pct": 22.46
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

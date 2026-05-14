@@ -1,0 +1,63 @@
+{
+  "ticker": "ARR",
+  "last_updated": "2026-05-11T18:47:39.302387",
+  "data_points": 4637,
+  "date_range": {
+    "start": "2007-12-03",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -44.16,
+    "volatility_pct": 29.6,
+    "volatility_level": "Medium",
+    "ma_20": 17.48,
+    "ma_50": 17.02,
+    "ma_200": 15.77,
+    "price_high": 44.94,
+    "price_low": 8.93,
+    "current_price": 17.63
+  },
+  "volume_metrics": {
+    "avg_volume": 502757,
+    "avg_volume_20d": 3160070,
+    "current_volume": 4990600,
+    "volume_trend_pct": 528.55
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.02,
+    "max_drawdown_pct": -80.13,
+    "daily_volatility_pct": 1.86
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

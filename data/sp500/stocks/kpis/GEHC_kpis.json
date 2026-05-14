@@ -1,0 +1,78 @@
+{
+  "ticker": "GEHC",
+  "last_updated": "2026-05-13T15:04:41.760130",
+  "data_points": 853,
+  "date_range": {
+    "start": "2022-12-15",
+    "end": "2026-05-12"
+  },
+  "price_metrics": {
+    "total_return_pct": 4.37,
+    "volatility_pct": 32.77,
+    "volatility_level": "Medium",
+    "ma_20": 66.54,
+    "ma_50": 70.04,
+    "ma_200": 75.88,
+    "price_high": 93.56,
+    "price_low": 55.7,
+    "current_price": 62.29
+  },
+  "volume_metrics": {
+    "avg_volume": 3337307,
+    "avg_volume_20d": 6184325,
+    "current_volume": 4299300,
+    "volume_trend_pct": 85.31
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.14,
+    "max_drawdown_pct": -37.36,
+    "daily_volatility_pct": 2.06
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11089,
+    "recession_percentage": 9.88,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2022-12-15",
+      "transition_price": 59.68,
+      "impact_90days_pct": 28.57,
+      "impact_1year_pct": 26.68,
+      "pre_transition_trend_90d_pct": null,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
+}

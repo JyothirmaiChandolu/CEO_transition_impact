@@ -1,0 +1,63 @@
+{
+  "ticker": "PFIS",
+  "last_updated": "2026-05-11T18:49:33.505829",
+  "data_points": 6021,
+  "date_range": {
+    "start": "2002-06-05",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 614.2,
+    "volatility_pct": 34.11,
+    "volatility_level": "Medium",
+    "ma_20": 57.54,
+    "ma_50": 55.14,
+    "ma_200": 50.69,
+    "price_high": 59.35,
+    "price_low": 8.16,
+    "current_price": 59.35
+  },
+  "volume_metrics": {
+    "avg_volume": 7093,
+    "avg_volume_20d": 67390,
+    "current_volume": 49100,
+    "volume_trend_pct": 850.03
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.35,
+    "max_drawdown_pct": -51.74,
+    "daily_volatility_pct": 2.15
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "ticker": "CSX",
+  "last_updated": "2026-05-13T15:04:39.589555",
+  "data_points": 7640,
+  "date_range": {
+    "start": "1996-01-02",
+    "end": "2026-05-12"
+  },
+  "price_metrics": {
+    "total_return_pct": 3013.99,
+    "volatility_pct": 31.63,
+    "volatility_level": "Medium",
+    "ma_20": 44.49,
+    "ma_50": 42.16,
+    "ma_200": 37.44,
+    "price_high": 46.18,
+    "price_low": 0.7,
+    "current_price": 44.53
+  },
+  "volume_metrics": {
+    "avg_volume": 22796808,
+    "avg_volume_20d": 12644495,
+    "current_volume": 21916200,
+    "volume_trend_pct": -44.53
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.45,
+    "max_drawdown_pct": -69.18,
+    "daily_volatility_pct": 1.99
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11089,
+    "recession_percentage": 9.88,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2017-04-19",
+      "transition_price": 13.84,
+      "impact_90days_pct": 16.91,
+      "impact_1year_pct": 32.44,
+      "pre_transition_trend_90d_pct": 3.52,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2017-12-14",
+      "transition_price": 17.1,
+      "impact_90days_pct": -0.41,
+      "impact_1year_pct": 16.43,
+      "pre_transition_trend_90d_pct": 9.62,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2022-09-26",
+      "transition_price": 26.09,
+      "impact_90days_pct": 14.3,
+      "impact_1year_pct": 13.19,
+      "pre_transition_trend_90d_pct": -5.57,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2025-09-29",
+      "transition_price": 35.58,
+      "impact_90days_pct": 2.59,
+      "impact_1year_pct": 25.15,
+      "pre_transition_trend_90d_pct": 10.26,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
+}

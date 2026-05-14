@@ -1,0 +1,63 @@
+{
+  "ticker": "OSIS",
+  "last_updated": "2026-05-11T18:49:28.882118",
+  "data_points": 7194,
+  "date_range": {
+    "start": "1997-10-02",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 1426.65,
+    "volatility_pct": 60.68,
+    "volatility_level": "High",
+    "ma_20": 282.41,
+    "ma_50": 279.89,
+    "ma_200": 261.24,
+    "price_high": 309.68,
+    "price_low": 2.78,
+    "current_price": 230.83
+  },
+  "volume_metrics": {
+    "avg_volume": 180254,
+    "avg_volume_20d": 317415,
+    "current_volume": 321900,
+    "volume_trend_pct": 76.09
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.4,
+    "max_drawdown_pct": -88.45,
+    "daily_volatility_pct": 3.82
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

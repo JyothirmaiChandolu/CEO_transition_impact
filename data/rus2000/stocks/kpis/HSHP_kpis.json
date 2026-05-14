@@ -1,0 +1,63 @@
+{
+  "ticker": "HSHP",
+  "last_updated": "2026-05-11T18:48:45.313225",
+  "data_points": 779,
+  "date_range": {
+    "start": "2023-03-31",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 209.92,
+    "volatility_pct": 44.42,
+    "volatility_level": "High",
+    "ma_20": 14.14,
+    "ma_50": 13.66,
+    "ma_200": 9.94,
+    "price_high": 16.24,
+    "price_low": 3.97,
+    "current_price": 16.24
+  },
+  "volume_metrics": {
+    "avg_volume": 154720,
+    "avg_volume_20d": 326115,
+    "current_volume": 371700,
+    "volume_trend_pct": 110.78
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 1.0,
+    "max_drawdown_pct": -51.53,
+    "daily_volatility_pct": 2.8
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

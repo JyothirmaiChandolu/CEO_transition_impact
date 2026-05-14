@@ -1,0 +1,63 @@
+{
+  "ticker": "BNTC",
+  "last_updated": "2026-05-11T18:47:50.723411",
+  "data_points": 2987,
+  "date_range": {
+    "start": "2014-06-24",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -99.79,
+    "volatility_pct": 125.67,
+    "volatility_level": "High",
+    "ma_20": 12.69,
+    "ma_50": 11.79,
+    "ma_200": 12.7,
+    "price_high": 5909.3,
+    "price_low": 1.93,
+    "current_price": 12.28
+  },
+  "volume_metrics": {
+    "avg_volume": 43827,
+    "avg_volume_20d": 114790,
+    "current_volume": 169200,
+    "volume_trend_pct": 161.91
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.07,
+    "max_drawdown_pct": -99.97,
+    "daily_volatility_pct": 7.92
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

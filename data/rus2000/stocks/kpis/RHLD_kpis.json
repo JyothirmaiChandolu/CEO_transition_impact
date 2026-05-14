@@ -1,0 +1,63 @@
+{
+  "ticker": "RHLD",
+  "last_updated": "2026-05-11T18:49:44.454517",
+  "data_points": 304,
+  "date_range": {
+    "start": "2025-02-24",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": 209.11,
+    "volatility_pct": 134.85,
+    "volatility_level": "High",
+    "ma_20": 139.29,
+    "ma_50": 149.72,
+    "ma_200": 136.58,
+    "price_high": 226.37,
+    "price_low": 24.91,
+    "current_price": 110.94
+  },
+  "volume_metrics": {
+    "avg_volume": 110321,
+    "avg_volume_20d": 166465,
+    "current_volume": 341600,
+    "volume_trend_pct": 50.89
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 1.23,
+    "max_drawdown_pct": -52.33,
+    "daily_volatility_pct": 8.49
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}

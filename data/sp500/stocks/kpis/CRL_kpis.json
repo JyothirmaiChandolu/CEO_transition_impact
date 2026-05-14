@@ -1,0 +1,78 @@
+{
+  "ticker": "CRL",
+  "last_updated": "2026-05-13T15:04:39.418452",
+  "data_points": 6509,
+  "date_range": {
+    "start": "2000-06-23",
+    "end": "2026-05-12"
+  },
+  "price_metrics": {
+    "total_return_pct": 666.77,
+    "volatility_pct": 35.65,
+    "volatility_level": "Medium",
+    "ma_20": 175.14,
+    "ma_50": 170.3,
+    "ma_200": 176.4,
+    "price_high": 458.3,
+    "price_low": 18.0,
+    "current_price": 168.69
+  },
+  "volume_metrics": {
+    "avg_volume": 572186,
+    "avg_volume_20d": 829260,
+    "current_volume": 724900,
+    "volume_trend_pct": 44.93
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 0.35,
+    "max_drawdown_pct": -78.23,
+    "daily_volatility_pct": 2.25
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11089,
+    "recession_percentage": 9.88,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2026-05-05",
+      "transition_price": 185.39,
+      "impact_90days_pct": -9.01,
+      "impact_1year_pct": -9.01,
+      "pre_transition_trend_90d_pct": -8.05,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
+}

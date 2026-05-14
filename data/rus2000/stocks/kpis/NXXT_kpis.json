@@ -1,0 +1,63 @@
+{
+  "ticker": "NXXT",
+  "last_updated": "2026-05-11T18:49:24.201750",
+  "data_points": 1167,
+  "date_range": {
+    "start": "2021-09-15",
+    "end": "2026-05-08"
+  },
+  "price_metrics": {
+    "total_return_pct": -99.63,
+    "volatility_pct": 121.7,
+    "volatility_level": "High",
+    "ma_20": 0.38,
+    "ma_50": 0.44,
+    "ma_200": 1.24,
+    "price_high": 104.0,
+    "price_low": 0.32,
+    "current_price": 0.34
+  },
+  "volume_metrics": {
+    "avg_volume": 347371,
+    "avg_volume_20d": 4160255,
+    "current_volume": 992400,
+    "volume_trend_pct": 1097.64
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.42,
+    "max_drawdown_pct": -99.69,
+    "daily_volatility_pct": 7.67
+  },
+  "macro_summary": {
+    "total_recession_periods": 4,
+    "total_recession_days": 1096,
+    "total_analysis_period_days": 11087,
+    "recession_percentage": 9.89,
+    "recessions": [
+      {
+        "name": "1990-1991 Recession",
+        "start": "1990-07-01",
+        "end": "1991-03-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2001 Recession",
+        "start": "2001-03-01",
+        "end": "2001-11-01",
+        "duration_months": 8.0
+      },
+      {
+        "name": "2007-2009 Financial Crisis",
+        "start": "2007-12-01",
+        "end": "2009-06-01",
+        "duration_months": 18.0
+      },
+      {
+        "name": "2020 COVID-19 Recession",
+        "start": "2020-02-01",
+        "end": "2020-04-01",
+        "duration_months": 2.0
+      }
+    ]
+  }
+}
