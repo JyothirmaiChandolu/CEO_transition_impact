@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { X, Send, Sparkles, Bot, Trash2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Button } from './ui/button';
-import { formatDate } from '../utils/api';
 import type { Company, CEOTransition, StockData } from '../utils/types';
 
 interface Message {
@@ -19,7 +18,7 @@ interface ChatBotProps {
   stockData: StockData | null;
 }
 
-export function ChatBot({ currentView, company, transition, stockData }: ChatBotProps) {
+export function ChatBot({ currentView, company, transition }: ChatBotProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [messages, setMessages] = useState<Message[]>([

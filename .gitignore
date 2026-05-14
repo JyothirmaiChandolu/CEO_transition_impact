@@ -3,6 +3,7 @@ node_modules/
 
 # ── Build output ─────────────────────────────────────────────────
 dist/
+build/
 
 # ── Python ───────────────────────────────────────────────────────
 __pycache__/
@@ -36,3 +37,8 @@ Thumbs.db
 
 # ── Cost / report CSVs (generated) ───────────────────────────────
 cost_report.csv
+
+# ── Vector DB / ChromaDB (generated, binary) ─────────────────────
+chatbot/chroma_db/
+backend/chatbot/chroma_db/
+*.sqlite3
