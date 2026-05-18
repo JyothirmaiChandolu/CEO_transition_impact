@@ -1,16 +1,9 @@
 """
-CLI entry point for the CEO agent.
-
-Usage:
-  python -m ceo_agent.run           # interactive mode selector
-  python -m ceo_agent.run batch     # run the next 100-company batch
-  python -m ceo_agent.run test      # run first 2 companies
-  python -m ceo_agent.run AAPL,MSFT # run specific tickers
-
-Output files:
-  sec_ceo_data/agent_batch_NNN.json
-  sec_ceo_data/agent_batch_NNN.csv
-  sec_ceo_data/agent_batch_NNN_progress.json  (rolling save, for resume)
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: CLI entry point for running the CEO agent in batch, test, or specific-ticker mode, outputting results to JSON and CSV files.
 """
 
 import csv

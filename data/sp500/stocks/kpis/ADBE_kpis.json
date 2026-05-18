@@ -1,27 +1,27 @@
 {
   "ticker": "ADBE",
-  "last_updated": "2026-05-13T15:04:31.718893",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:27.672485",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 2979.67,
+    "total_return_pct": 2930.82,
     "volatility_pct": 43.68,
     "volatility_level": "High",
-    "ma_20": 247.63,
-    "ma_50": 249.63,
-    "ma_200": 310.09,
+    "ma_20": 246.64,
+    "ma_50": 248.21,
+    "ma_200": 308.75,
     "price_high": 688.37,
     "price_low": 3.02,
-    "current_price": 240.83
+    "current_price": 237.01
   },
   "volume_metrics": {
-    "avg_volume": 5779757,
-    "avg_volume_20d": 5077055,
-    "current_volume": 3231000,
-    "volume_trend_pct": -12.16
+    "avg_volume": 5779402,
+    "avg_volume_20d": 5020770,
+    "current_volume": 4983200,
+    "volume_trend_pct": -13.13
   },
   "risk_metrics": {
     "sharpe_ratio": 0.43,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.75
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

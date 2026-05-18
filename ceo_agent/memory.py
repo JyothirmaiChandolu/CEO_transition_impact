@@ -1,8 +1,9 @@
 """
-Memory containers for the agent.
-
-AgentMemory  — per-company working state (message history, final result).
-BatchProgress — persists batch index across runs.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Defines memory containers for per-company agent state and persistent batch progress tracking across runs.
 """
 
 import json

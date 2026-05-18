@@ -1,15 +1,9 @@
 """
-Run the full stock data pipeline for any index.
-
-Usage:
-  python run_stock_pipeline.py                        # Russell 2000, historical
-  python run_stock_pipeline.py --index sp500          # S&P 500, historical
-  python run_stock_pipeline.py --index sp500 --start 2020-01-01 --end 2025-12-31
-  python run_stock_pipeline.py --index sp500 --today  # today only
-
-Steps:
-  1. fetch_date_range  — download raw OHLCV from yfinance
-  2. process_all_companies_all_transitions — validate + calculate KPIs
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Entry point to run the full stock data pipeline (fetch, validate, calculate KPIs) for any index and date range.
 """
 
 import json

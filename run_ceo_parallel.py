@@ -1,16 +1,9 @@
 """
-Run CEO agent batches in parallel for any index.
-
-Usage:
-  python run_ceo_parallel.py --index sp500           # all batches
-  python run_ceo_parallel.py --index sp500 --batches 1,3,5  # specific batches
-  python run_ceo_parallel.py --index russell2000
-
-Each batch runs as a separate subprocess so they don't share state.
-After all batches finish, companies.json is rebuilt once.
-
-Note: Each worker makes OpenAI + SEC EDGAR requests concurrently.
-      If you hit rate limits, reduce --workers or run fewer batches at once.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Runs CEO agent batches in parallel across multiple subprocess workers for any stock index.
 """
 
 import json

@@ -1,20 +1,10 @@
 #!/usr/bin/env python3
 """
-- Objective: Retrieve and print the current list of Russell 2000 Index's stock tickers (stock symboles, like 'AAPL' or 'TSLA', e.g.).
-- Techniques: Use Python libraries like BeautifulSoup or Scrapy for web scraping, or explore available APIs.
-- Deliverable: A well-commented Python script (.py file) that outputs the live-updated Russell 2000 Index's stock ticker list.
-
-Retrieve current Russell 2000 Index constituents from iShares IWM ETF holdings.
-Outputs list of stock tickers to timestamped files.
-
-Environment:
-Python 3.12
-Requirements: requests, pandas
-
-Usage: python russell2000_tickers.py
-
-Output: ticker list in CSV file 
-russell2000_tickers_YYYYMMDD.csv where YYYYMMDD is the date iShares updated the holdings.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Retrieves and outputs the current Russell 2000 Index stock tickers from iShares IWM ETF holdings into a timestamped CSV file.
 """
 import requests
 import pandas as pd

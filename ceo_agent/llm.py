@@ -1,6 +1,9 @@
 """
-OpenAI client wrapper.
-Two tiers: MODEL_STRONG for the reasoning loop, MODEL_FAST for cheap extraction inside tools.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: OpenAI client wrapper providing two-tier model access: GPT-4o for reasoning and GPT-4o-mini for fast extraction.
 """
 
 import json

@@ -1,45 +1,39 @@
 {
   "ticker": "ARR",
-  "last_updated": "2026-05-11T18:47:39.302387",
-  "data_points": 4637,
+  "last_updated": "2026-05-15T13:41:12.154661",
+  "data_points": 4640,
   "date_range": {
     "start": "2007-12-03",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": -44.16,
-    "volatility_pct": 29.6,
+    "total_return_pct": -44.98,
+    "volatility_pct": 29.59,
     "volatility_level": "Medium",
-    "ma_20": 17.48,
-    "ma_50": 17.02,
-    "ma_200": 15.77,
+    "ma_20": 17.47,
+    "ma_50": 17.03,
+    "ma_200": 15.81,
     "price_high": 44.94,
     "price_low": 8.93,
-    "current_price": 17.63
+    "current_price": 17.37
   },
   "volume_metrics": {
-    "avg_volume": 502757,
-    "avg_volume_20d": 3160070,
-    "current_volume": 4990600,
-    "volume_trend_pct": 528.55
+    "avg_volume": 504601,
+    "avg_volume_20d": 3106275,
+    "current_volume": 2841600,
+    "volume_trend_pct": 515.59
   },
   "risk_metrics": {
-    "sharpe_ratio": -0.02,
+    "sharpe_ratio": -0.03,
     "max_drawdown_pct": -80.13,
     "daily_volatility_pct": 1.86
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,20 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2020-03-31",
+      "transition_price": 17.34,
+      "impact_90days_pct": 9.0,
+      "impact_1year_pct": 52.6,
+      "pre_transition_trend_90d_pct": -49.64,
+      "macro_economic_context": {
+        "in_recession": true,
+        "recession_period": "2020 COVID-19 Recession",
+        "context": "Recession Period"
+      },
+      "analysis_note": "\u26a0\ufe0f CEO transition occurred during 2020 COVID-19 Recession. Stock movement may be confounded by macro-economic factors."
+    }
+  ]
 }

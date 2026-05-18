@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Conversation Memory Manager
-Maintains buffer of recent messages for context-aware responses.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Manages a rolling buffer of recent conversation messages for context-aware chatbot responses.
 """
 
 from collections import deque

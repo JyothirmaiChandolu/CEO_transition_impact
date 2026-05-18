@@ -1,27 +1,27 @@
 {
   "ticker": "MTB",
-  "last_updated": "2026-05-13T15:04:50.045717",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:44.835481",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 1895.7,
+    "total_return_pct": 1866.92,
     "volatility_pct": 31.01,
     "volatility_level": "Medium",
-    "ma_20": 215.93,
-    "ma_50": 211.09,
-    "ma_200": 201.2,
+    "ma_20": 214.72,
+    "ma_50": 210.52,
+    "ma_200": 201.35,
     "price_high": 236.36,
     "price_low": 10.12,
-    "current_price": 208.75
+    "current_price": 205.74
   },
   "volume_metrics": {
-    "avg_volume": 730786,
-    "avg_volume_20d": 1018455,
-    "current_volume": 1052800,
-    "volume_trend_pct": 39.36
+    "avg_volume": 730785,
+    "avg_volume_20d": 951700,
+    "current_volume": 734200,
+    "volume_trend_pct": 30.23
   },
   "risk_metrics": {
     "sharpe_ratio": 0.41,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 1.95
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

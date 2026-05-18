@@ -1,27 +1,27 @@
 {
   "ticker": "AGIO",
-  "last_updated": "2026-05-11T18:47:31.778078",
-  "data_points": 3218,
+  "last_updated": "2026-05-15T13:41:05.994835",
+  "data_points": 3221,
   "date_range": {
     "start": "2013-07-24",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": -11.16,
-    "volatility_pct": 63.67,
+    "total_return_pct": -8.15,
+    "volatility_pct": 63.65,
     "volatility_level": "High",
-    "ma_20": 28.63,
-    "ma_50": 29.47,
-    "ma_200": 32.9,
+    "ma_20": 27.88,
+    "ma_50": 29.43,
+    "ma_200": 32.74,
     "price_high": 135.01,
     "price_low": 16.06,
-    "current_price": 27.79
+    "current_price": 28.73
   },
   "volume_metrics": {
-    "avg_volume": 640860,
-    "avg_volume_20d": 1326190,
-    "current_volume": 582900,
-    "volume_trend_pct": 106.94
+    "avg_volume": 640945,
+    "avg_volume_20d": 1340070,
+    "current_volume": 681900,
+    "volume_trend_pct": 109.08
   },
   "risk_metrics": {
     "sharpe_ratio": 0.28,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 4.01
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,33 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2019-02-01",
+      "transition_price": 53.87,
+      "impact_90days_pct": -4.4,
+      "impact_1year_pct": -9.54,
+      "pre_transition_trend_90d_pct": -22.77,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2022-08-08",
+      "transition_price": 29.38,
+      "impact_90days_pct": -11.84,
+      "impact_1year_pct": -11.5,
+      "pre_transition_trend_90d_pct": 34.83,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

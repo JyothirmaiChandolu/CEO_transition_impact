@@ -1,5 +1,9 @@
 """
-Prompt templates for the CEO agent.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Contains system and user prompt templates that guide the CEO agent's research strategy and output format.
 """
 
 START_YEAR = 2000

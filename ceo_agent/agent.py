@@ -1,11 +1,9 @@
 """
-CEOAgent — ReAct loop using OpenAI function calling.
-
-The agent iterates up to MAX_TURNS:
-  1. Call the LLM (GPT-4o) with the current message history and tool schemas.
-  2. Execute all tool_calls in the response (possibly in parallel in future — sequential for now).
-  3. Append tool results to history and loop.
-  4. Stop when the agent calls `finalize_timeline` successfully, or MAX_TURNS is reached.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Implements the CEOAgent using a ReAct loop with OpenAI function calling to iteratively extract CEO transition histories.
 """
 
 import json
@@ -17,7 +15,7 @@ from . import llm
 from . import tools as tool_module
 from . import prompts
 from . import utils
-from .memory import AgentMemory
+from . memory import AgentMemory
 
 MAX_TURNS = 25
 

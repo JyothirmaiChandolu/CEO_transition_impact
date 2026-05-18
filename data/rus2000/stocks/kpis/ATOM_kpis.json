@@ -1,45 +1,39 @@
 {
   "ticker": "ATOM",
-  "last_updated": "2026-05-11T18:47:41.363956",
-  "data_points": 2452,
+  "last_updated": "2026-05-15T13:41:14.138172",
+  "data_points": 2455,
   "date_range": {
     "start": "2016-08-08",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 5.13,
-    "volatility_pct": 94.74,
+    "total_return_pct": 20.38,
+    "volatility_pct": 94.87,
     "volatility_level": "High",
-    "ma_20": 7.42,
-    "ma_50": 5.67,
-    "ma_200": 3.92,
+    "ma_20": 8.03,
+    "ma_50": 5.93,
+    "ma_200": 3.98,
     "price_high": 46.45,
     "price_low": 1.99,
-    "current_price": 8.41
+    "current_price": 9.63
   },
   "volume_metrics": {
-    "avg_volume": 343674,
-    "avg_volume_20d": 3955035,
-    "current_volume": 1392800,
-    "volume_trend_pct": 1050.81
+    "avg_volume": 345977,
+    "avg_volume_20d": 4107265,
+    "current_volume": 1808400,
+    "volume_trend_pct": 1087.15
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.44,
+    "sharpe_ratio": 0.46,
     "max_drawdown_pct": -95.72,
-    "daily_volatility_pct": 5.97
+    "daily_volatility_pct": 5.98
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,6 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": []
 }

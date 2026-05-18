@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Context Builder for CEO Performance Analysis RAG
-Loads and formats company data, KPIs, and sector information for injection into LLM prompts.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Loads and formats company data, KPIs, and sector information for injection into LLM prompts.
 """
 
 import json

@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-FastAPI Backend
-Serves all /api/* endpoints for the frontend and integrates the RAG chatbot.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: FastAPI backend that serves all /api/* endpoints for the frontend and integrates the RAG chatbot.
 """
 import sys
 import json

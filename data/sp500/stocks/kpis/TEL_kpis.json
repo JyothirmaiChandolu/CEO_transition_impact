@@ -1,27 +1,27 @@
 {
   "ticker": "TEL",
-  "last_updated": "2026-05-13T15:04:58.825006",
-  "data_points": 4758,
+  "last_updated": "2026-05-15T13:51:53.132671",
+  "data_points": 4760,
   "date_range": {
     "start": "2007-06-14",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 696.61,
+    "total_return_pct": 670.37,
     "volatility_pct": 31.53,
     "volatility_level": "Medium",
-    "ma_20": 218.19,
-    "ma_50": 212.55,
+    "ma_20": 215.37,
+    "ma_50": 212.57,
     "ma_200": 220.44,
     "price_high": 248.24,
     "price_low": 5.31,
-    "current_price": 213.73
+    "current_price": 206.69
   },
   "volume_metrics": {
-    "avg_volume": 2098115,
-    "avg_volume_20d": 3167785,
-    "current_volume": 3869100,
-    "volume_trend_pct": 50.98
+    "avg_volume": 2098699,
+    "avg_volume_20d": 3336655,
+    "current_volume": 2376700,
+    "volume_trend_pct": 58.99
   },
   "risk_metrics": {
     "sharpe_ratio": 0.44,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 1.99
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

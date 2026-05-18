@@ -1,45 +1,39 @@
 {
   "ticker": "BELFB",
-  "last_updated": "2026-05-11T18:47:47.028335",
-  "data_points": 7001,
+  "last_updated": "2026-05-15T13:41:18.770694",
+  "data_points": 7004,
   "date_range": {
     "start": "1998-07-10",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 4126.67,
-    "volatility_pct": 55.42,
+    "total_return_pct": 3711.77,
+    "volatility_pct": 55.45,
     "volatility_level": "High",
-    "ma_20": 265.2,
-    "ma_50": 231.7,
-    "ma_200": 180.44,
-    "price_high": 297.98,
+    "ma_20": 271.34,
+    "ma_50": 235.06,
+    "ma_200": 182.87,
+    "price_high": 298.22,
     "price_low": 4.03,
-    "current_price": 297.98
+    "current_price": 268.73
   },
   "volume_metrics": {
-    "avg_volume": 49028,
-    "avg_volume_20d": 185265,
-    "current_volume": 155800,
-    "volume_trend_pct": 277.88
+    "avg_volume": 49262,
+    "avg_volume_20d": 256720,
+    "current_volume": 1064800,
+    "volume_trend_pct": 421.12
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.48,
+    "sharpe_ratio": 0.47,
     "max_drawdown_pct": -81.88,
     "daily_volatility_pct": 3.49
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,20 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2025-02-07",
+      "transition_price": 80.64,
+      "impact_90days_pct": -8.64,
+      "impact_1year_pct": 173.7,
+      "pre_transition_trend_90d_pct": -1.24,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

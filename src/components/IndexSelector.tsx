@@ -1,21 +1,10 @@
-import { TrendingUp, ArrowRight, Building2, Clock, BarChart3 } from 'lucide-react';
+import { TrendingUp, ArrowRight, Building2, Clock, BarChart3, Archive, Trophy } from 'lucide-react';
 import { motion } from 'motion/react';
-import type { IndexConfig } from '../utils/types';
+import type { ActionView } from '../App';
 
 interface IndexSelectorProps {
-  onSelect: (index: IndexConfig) => void;
-  indices: IndexConfig[];
+  onSelectAction: (action: ActionView) => void;
 }
-
-const INDEX_STATS: Record<string, string> = {
-  russell2000: '2,000 Small-Cap US Companies',
-  sp500: '500 Large-Cap US Companies',
-};
-
-const INDEX_DESCRIPTIONS: Record<string, string> = {
-  russell2000: 'Tracks the performance of 2,000 small-cap companies in the United States.',
-  sp500: 'Measures the performance of 500 leading large-cap U.S. companies.',
-};
 
 const NAV_LINKS = [
   { label: 'Home', id: 'is-hero' },
@@ -28,18 +17,38 @@ function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 }
 
-export function IndexSelector({ onSelect, indices }: IndexSelectorProps) {
-  if (indices.length === 0) {
-    return (
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-12 h-12 border-4 border-slate-200 border-t-slate-900 rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-slate-600 font-medium">Loading indices...</p>
-        </div>
-      </div>
-    );
-  }
+const ACTIONS = [
+  {
+    key: 'archive' as ActionView,
+    icon: Archive,
+    title: 'Company Archive',
+    description: 'Browse all companies with financial profiles, sector data, market cap, and more.',
+    cta: 'Browse Archive',
+  },
+  {
+    key: 'selector' as ActionView,
+    icon: Building2,
+    title: 'Start Analysis',
+    description: 'Select a company and explore how CEO transitions impact stock performance with detailed metrics.',
+    cta: 'Start Analysis',
+  },
+  {
+    key: 'outlier-analysis' as ActionView,
+    icon: BarChart3,
+    title: 'Outlier Analysis',
+    description: 'Identify statistical outlier CEOs and companies by sector using z-score analysis.',
+    cta: 'Explore Outliers',
+  },
+  {
+    key: 'rankings' as ActionView,
+    icon: Trophy,
+    title: 'Global Rankings',
+    description: 'See top CEOs ranked by macro-adjusted stock impact and best companies by long-term returns.',
+    cta: 'View Rankings',
+  },
+];
 
+export function IndexSelector({ onSelectAction }: IndexSelectorProps) {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       {/* Sticky Nav */}
@@ -68,9 +77,8 @@ export function IndexSelector({ onSelect, indices }: IndexSelectorProps) {
         </div>
       </div>
 
-      {/* Hero / Index Selection Section */}
+      {/* Hero / Action Selection */}
       <div id="is-hero" className="flex flex-col items-center px-6 py-12">
-        {/* Centered title at top */}
         <div className="text-center mb-10 w-full max-w-5xl">
           <div className="inline-flex items-center gap-2 bg-slate-200 text-slate-700 px-4 py-2 rounded-full mb-5 border border-slate-300">
             <TrendingUp className="w-4 h-4" />
@@ -80,54 +88,40 @@ export function IndexSelector({ onSelect, indices }: IndexSelectorProps) {
             CEO Performance Analysis
           </h1>
           <p className="text-lg text-slate-500 font-light">
-            Select an index to explore CEO transition data
+            Choose an analysis type to get started
           </p>
         </div>
 
-        {/* Two-column: cards left, video right */}
-        <div className="flex flex-row items-stretch justify-center" style={{ gap: '5rem' }}>
-          {/* Left: 2 stacked index cards */}
-          <div className="w-80 flex flex-col gap-4">
-            {indices.map((idx) => (
-              <motion.button
-                key={idx.key}
-                onClick={() => onSelect(idx)}
-                type="button"
-                whileHover={{ y: -6, scale: 1.03, boxShadow: '0 20px 40px rgba(0,0,0,0.12)' }}
-                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className="bg-white rounded-xl p-6 shadow-sm border-2 border-slate-900 flex flex-col flex-1 items-center text-center"
+        {/* 4 Action Cards */}
+        <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
+          {ACTIONS.map((action, i) => {
+            const Icon = action.icon;
+            return (
+              <motion.div
+                key={action.key}
+                onClick={() => onSelectAction(action.key)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && onSelectAction(action.key)}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20, delay: i * 0.07 }}
+                whileHover={{ y: -4, boxShadow: '0 16px 32px rgba(0,0,0,0.10)' }}
+                className="bg-white rounded-xl shadow-sm border border-slate-200 hover:border-slate-300 transition-colors cursor-pointer"
+                style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}
               >
-                <div className="flex flex-col items-center gap-2 mb-3">
-                  <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white flex-shrink-0">
-                    <TrendingUp className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-bold text-slate-900 leading-tight">{idx.name}</h2>
-                    <p className="text-xs text-slate-500 font-medium">{INDEX_STATS[idx.key] ?? ''}</p>
-                  </div>
+                <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center text-white mb-5 flex-shrink-0">
+                  <Icon className="w-6 h-6" />
                 </div>
-                <p className="text-sm text-slate-600 mb-5 leading-relaxed flex-1">
-                  {INDEX_DESCRIPTIONS[idx.key] ?? idx.description}
-                </p>
-                <span className="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-lg font-semibold text-sm w-full justify-center">
-                  Explore
+                <h2 className="text-xl font-bold text-slate-900 mb-2 w-full">{action.title}</h2>
+                <p className="text-sm text-slate-500 leading-relaxed w-full" style={{ marginBottom: '2rem', flex: 1 }}>{action.description}</p>
+                <div className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white rounded-lg font-semibold text-sm hover:bg-slate-700 transition-colors" style={{ padding: '0.875rem 1.5rem' }}>
+                  {action.cta}
                   <ArrowRight className="w-4 h-4" />
-                </span>
-              </motion.button>
-            ))}
-          </div>
-
-          {/* Right: Video */}
-          <div className="w-80 flex-shrink-0 flex items-center">
-            <video
-              src="/hero.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full rounded-xl shadow-xl object-cover"
-            />
-          </div>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
 
@@ -135,7 +129,6 @@ export function IndexSelector({ onSelect, indices }: IndexSelectorProps) {
       <div className="max-w-7xl mx-auto px-6 pb-16">
         {/* Feature Cards */}
         <div id="is-features">
-          {/* Feature Cards Row 1 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:border-slate-300 transition-colors">
               <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-4 text-slate-700">
@@ -168,7 +161,6 @@ export function IndexSelector({ onSelect, indices }: IndexSelectorProps) {
             </div>
           </div>
 
-          {/* Feature Cards Row 2 */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all">
               <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-4 text-white">
@@ -202,7 +194,7 @@ export function IndexSelector({ onSelect, indices }: IndexSelectorProps) {
           </div>
         </div>
 
-        {/* Research Overview / Stats Section */}
+        {/* Research Overview */}
         <div id="is-overview" className="bg-slate-900 rounded-xl p-12 text-white shadow-xl mb-16">
           <h2 className="text-center mb-10 text-2xl font-semibold tracking-wide">Research Overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-slate-700 pt-8">

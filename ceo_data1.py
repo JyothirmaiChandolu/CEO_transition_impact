@@ -1,17 +1,9 @@
 """
-CEO History Extractor - 2-Tier Approach
-=======================================
-Tier 1: SEC EDGAR 8-K filings (Item 5.02) - CEO changes with exact dates
-Tier 2: Wikipedia scraping - Fallback for gaps / pre-2004 CEOs
-
-Period: 2000 to present
-Output: Ticker, Company, CEO Name, Start Date, End Date, Source, Validation URL
-
-Note: Item 5.02 was introduced Aug 2004. For CEO tenures spanning 2000-2004,
-      Wikipedia scraping fills the gaps.
-
-SETUP: pip install anthropic python-dotenv requests pandas beautifulsoup4
-USAGE: python3 ceo_data1.py
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Extracts CEO transition history using a two-tier approach: SEC EDGAR 8-K filings for exact dates and Wikipedia scraping as fallback.
 """
 
 import requests

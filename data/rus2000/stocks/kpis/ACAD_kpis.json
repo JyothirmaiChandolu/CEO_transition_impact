@@ -1,27 +1,27 @@
 {
   "ticker": "ACAD",
-  "last_updated": "2026-05-11T18:47:28.517038",
-  "data_points": 5522,
+  "last_updated": "2026-05-15T13:41:03.146707",
+  "data_points": 5525,
   "date_range": {
     "start": "2004-05-27",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 234.33,
-    "volatility_pct": 85.95,
+    "total_return_pct": 229.7,
+    "volatility_pct": 85.93,
     "volatility_level": "High",
-    "ma_20": 22.07,
-    "ma_50": 21.95,
-    "ma_200": 23.74,
+    "ma_20": 22.11,
+    "ma_50": 21.87,
+    "ma_200": 23.73,
     "price_high": 57.0,
     "price_low": 0.66,
-    "current_price": 22.4
+    "current_price": 22.09
   },
   "volume_metrics": {
-    "avg_volume": 1354722,
-    "avg_volume_20d": 1996610,
-    "current_volume": 2084400,
-    "volume_trend_pct": 47.38
+    "avg_volume": 1354837,
+    "avg_volume_20d": 1969290,
+    "current_volume": 2029000,
+    "volume_trend_pct": 45.35
   },
   "risk_metrics": {
     "sharpe_ratio": 0.42,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 5.41
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,33 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2015-03-11",
+      "transition_price": 44.76,
+      "impact_90days_pct": -12.58,
+      "impact_1year_pct": -56.97,
+      "pre_transition_trend_90d_pct": 37.17,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2024-09-23",
+      "transition_price": 16.29,
+      "impact_90days_pct": 3.56,
+      "impact_1year_pct": 44.87,
+      "pre_transition_trend_90d_pct": 4.42,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

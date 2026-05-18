@@ -1,27 +1,27 @@
 {
   "ticker": "SPGI",
-  "last_updated": "2026-05-13T15:04:56.156272",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:50.613733",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 6600.95,
+    "total_return_pct": 6281.04,
     "volatility_pct": 29.18,
     "volatility_level": "Medium",
-    "ma_20": 432.48,
-    "ma_50": 429.88,
-    "ma_200": 484.98,
+    "ma_20": 429.63,
+    "ma_50": 428.3,
+    "ma_200": 483.76,
     "price_high": 560.76,
     "price_low": 5.69,
-    "current_price": 424.17
+    "current_price": 403.92
   },
   "volume_metrics": {
-    "avg_volume": 1603449,
-    "avg_volume_20d": 1812680,
-    "current_volume": 2212000,
-    "volume_trend_pct": 13.05
+    "avg_volume": 1603663,
+    "avg_volume_20d": 1858650,
+    "current_volume": 2238200,
+    "volume_trend_pct": 15.9
   },
   "risk_metrics": {
     "sharpe_ratio": 0.55,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 1.84
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

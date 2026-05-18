@@ -1,45 +1,39 @@
 {
   "ticker": "AKAM",
-  "last_updated": "2026-05-13T15:04:33.431510",
-  "data_points": 6673,
+  "last_updated": "2026-05-15T13:51:29.274024",
+  "data_points": 6675,
   "date_range": {
     "start": "1999-10-29",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 3.01,
-    "volatility_pct": 62.48,
+    "total_return_pct": 7.22,
+    "volatility_pct": 62.49,
     "volatility_level": "High",
-    "ma_20": 108.9,
-    "ma_50": 108.37,
-    "ma_200": 90.14,
+    "ma_20": 115.38,
+    "ma_50": 110.61,
+    "ma_200": 90.93,
     "price_high": 327.62,
     "price_low": 0.67,
-    "current_price": 149.56
+    "current_price": 155.67
   },
   "volume_metrics": {
-    "avg_volume": 2744111,
-    "avg_volume_20d": 5748865,
-    "current_volume": 6547500,
-    "volume_trend_pct": 109.5
+    "avg_volume": 2745537,
+    "avg_volume_20d": 5919855,
+    "current_volume": 4078700,
+    "volume_trend_pct": 115.62
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.27,
+    "sharpe_ratio": 0.28,
     "max_drawdown_pct": -99.8,
     "daily_volatility_pct": 3.94
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

@@ -1,45 +1,39 @@
 {
   "ticker": "AGYS",
-  "last_updated": "2026-05-11T18:47:32.300837",
-  "data_points": 7638,
+  "last_updated": "2026-05-15T13:41:06.538346",
+  "data_points": 7641,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 523.06,
+    "total_return_pct": 474.06,
     "volatility_pct": 54.69,
     "volatility_level": "High",
-    "ma_20": 67.49,
-    "ma_50": 69.78,
-    "ma_200": 100.32,
+    "ma_20": 67.65,
+    "ma_50": 69.31,
+    "ma_200": 99.58,
     "price_high": 141.74,
     "price_low": 2.05,
-    "current_price": 71.59
+    "current_price": 65.96
   },
   "volume_metrics": {
-    "avg_volume": 152283,
-    "avg_volume_20d": 256165,
-    "current_volume": 251900,
-    "volume_trend_pct": 68.22
+    "avg_volume": 152320,
+    "avg_volume_20d": 245215,
+    "current_volume": 190200,
+    "volume_trend_pct": 60.99
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.35,
+    "sharpe_ratio": 0.34,
     "max_drawdown_pct": -90.97,
     "daily_volatility_pct": 3.45
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,59 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2008-10-20",
+      "transition_price": 6.48,
+      "impact_90days_pct": -26.85,
+      "impact_1year_pct": -1.08,
+      "pre_transition_trend_90d_pct": -46.67,
+      "macro_economic_context": {
+        "in_recession": true,
+        "recession_period": "2007-2009 Financial Crisis",
+        "context": "Recession Period"
+      },
+      "analysis_note": "\u26a0\ufe0f CEO transition occurred during 2007-2009 Financial Crisis. Stock movement may be confounded by macro-economic factors."
+    },
+    {
+      "transition_date": "2008-10-20",
+      "transition_price": 6.48,
+      "impact_90days_pct": -26.85,
+      "impact_1year_pct": -1.08,
+      "pre_transition_trend_90d_pct": -46.67,
+      "macro_economic_context": {
+        "in_recession": true,
+        "recession_period": "2007-2009 Financial Crisis",
+        "context": "Recession Period"
+      },
+      "analysis_note": "\u26a0\ufe0f CEO transition occurred during 2007-2009 Financial Crisis. Stock movement may be confounded by macro-economic factors."
+    },
+    {
+      "transition_date": "2011-05-31",
+      "transition_price": 6.81,
+      "impact_90days_pct": 39.5,
+      "impact_1year_pct": 4.11,
+      "pre_transition_trend_90d_pct": 32.75,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2017-01-03",
+      "transition_price": 10.8,
+      "impact_90days_pct": -14.91,
+      "impact_1year_pct": 16.02,
+      "pre_transition_trend_90d_pct": -0.83,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

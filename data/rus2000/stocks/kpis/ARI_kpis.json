@@ -1,27 +1,27 @@
 {
   "ticker": "ARI",
-  "last_updated": "2026-05-11T18:47:38.526945",
-  "data_points": 4181,
+  "last_updated": "2026-05-15T13:41:11.479869",
+  "data_points": 4184,
   "date_range": {
     "start": "2009-09-24",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 244.83,
-    "volatility_pct": 36.06,
+    "total_return_pct": 243.89,
+    "volatility_pct": 36.05,
     "volatility_level": "Medium",
-    "ma_20": 11.03,
-    "ma_50": 10.61,
-    "ma_200": 9.92,
+    "ma_20": 11.0,
+    "ma_50": 10.65,
+    "ma_200": 9.95,
     "price_high": 11.22,
     "price_low": 1.99,
-    "current_price": 11.0
+    "current_price": 10.97
   },
   "volume_metrics": {
-    "avg_volume": 822323,
-    "avg_volume_20d": 1345845,
-    "current_volume": 760100,
-    "volume_trend_pct": 63.66
+    "avg_volume": 822496,
+    "avg_volume_20d": 1274390,
+    "current_volume": 972400,
+    "volume_trend_pct": 54.94
   },
   "risk_metrics": {
     "sharpe_ratio": 0.32,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.27
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,20 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2012-03-15",
+      "transition_price": 3.3,
+      "impact_90days_pct": 3.64,
+      "impact_1year_pct": 20.0,
+      "pre_transition_trend_90d_pct": 16.2,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

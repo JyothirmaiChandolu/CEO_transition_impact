@@ -1,45 +1,39 @@
 {
   "ticker": "NVR",
-  "last_updated": "2026-05-13T15:04:52.530405",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:47.184387",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 57169.37,
+    "total_return_pct": 56032.51,
     "volatility_pct": 34.9,
     "volatility_level": "Medium",
-    "ma_20": 6380.69,
-    "ma_50": 6559.64,
-    "ma_200": 7414.45,
+    "ma_20": 6277.19,
+    "ma_50": 6495.41,
+    "ma_200": 7393.12,
     "price_high": 9924.4,
     "price_low": 8.88,
-    "current_price": 5795.66
+    "current_price": 5680.61
   },
   "volume_metrics": {
-    "avg_volume": 46443,
-    "avg_volume_20d": 22125,
-    "current_volume": 20000,
-    "volume_trend_pct": -52.36
+    "avg_volume": 46437,
+    "avg_volume_20d": 22130,
+    "current_volume": 24000,
+    "volume_trend_pct": -52.34
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.72,
+    "sharpe_ratio": 0.71,
     "max_drawdown_pct": -65.93,
     "daily_volatility_pct": 2.2
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

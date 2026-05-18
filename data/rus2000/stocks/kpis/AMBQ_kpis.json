@@ -1,45 +1,39 @@
 {
   "ticker": "AMBQ",
-  "last_updated": "2026-05-11T18:47:34.941763",
-  "data_points": 196,
+  "last_updated": "2026-05-15T13:41:08.395956",
+  "data_points": 199,
   "date_range": {
     "start": "2025-07-30",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 14.66,
-    "volatility_pct": 75.83,
+    "total_return_pct": 90.24,
+    "volatility_pct": 94.44,
     "volatility_level": "High",
-    "ma_20": 36.01,
-    "ma_50": 30.81,
+    "ma_20": 42.0,
+    "ma_50": 33.21,
     "ma_200": null,
-    "price_high": 44.18,
+    "price_high": 73.3,
     "price_low": 22.76,
-    "current_price": 44.18
+    "current_price": 73.3
   },
   "volume_metrics": {
-    "avg_volume": 301012,
-    "avg_volume_20d": 379590,
-    "current_volume": 937200,
-    "volume_trend_pct": 26.1
+    "avg_volume": 325533,
+    "avg_volume_20d": 629325,
+    "current_volume": 1093300,
+    "volume_trend_pct": 93.32
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.58,
+    "sharpe_ratio": 1.27,
     "max_drawdown_pct": -48.1,
-    "daily_volatility_pct": 4.78
+    "daily_volatility_pct": 5.95
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,6 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": []
 }

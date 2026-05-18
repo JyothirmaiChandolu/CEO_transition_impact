@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 """
-Look up SEC EDGAR CIK numbers for S&P 500 tickers and write sp500_output.csv.
-
-Usage:
-  python sp500_cik_lookup.py           # normal run (incremental)
-  python sp500_cik_lookup.py --retry   # retry only the tickers missing from output
-
-Reads the latest sp500_tickers_*.csv produced by sp500_data.py.
-Writes sp500_output.csv with columns: ticker,cik  (matching output.csv format).
-Incremental: skips tickers already present in sp500_output.csv.
-Rate-limited to 0.1s between requests.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Looks up SEC EDGAR CIK numbers for S&P 500 tickers incrementally and writes the results to sp500_output.csv.
 """
 
 import csv

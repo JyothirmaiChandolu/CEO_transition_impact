@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Daily Data Update Scheduler
-Fetches fresh stock data then runs the full pipeline for all 1917 Russell 2000 companies.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Schedules daily stock data fetches and runs the full pipeline for all Russell 2000 companies.
 """
 import sys
 import time

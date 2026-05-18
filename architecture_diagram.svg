@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1460" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="980" height="1460" fill="#F7F8FC"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       TITLE
+  ══════════════════════════════════════════════════════ -->
+  <text x="490" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A1A2E">CEO Performance Analysis Platform — Complete System Architecture</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 1: USER
+  ══════════════════════════════════════════════════════ -->
+  <rect x="365" y="48" width="250" height="56" rx="8" fill="#EAECEE" stroke="#95A5A6" stroke-width="1.5"/>
+  <text x="490" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C3E50">User (Web Browser)</text>
+  <text x="490" y="92" text-anchor="middle" font-size="11" fill="#666">React Single Page Application</text>
+
+  <!-- Arrow: User → CloudFront -->
+  <line x1="490" y1="104" x2="490" y2="134" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="500" y="124" font-size="10" fill="#888">HTTPS</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 2: CLOUDFRONT
+  ══════════════════════════════════════════════════════ -->
+  <rect x="210" y="137" width="560" height="56" rx="8" fill="#D6EAF8" stroke="#2E86C1" stroke-width="2"/>
+  <text x="490" y="161" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A5276">AWS CloudFront CDN</text>
+  <text x="490" y="181" text-anchor="middle" font-size="11" fill="#1A5276">Routes  /*  →  Amplify (frontend)   |   /api/*  →  ECS Backend</text>
+
+  <!-- Fork arrows from CloudFront -->
+  <line x1="330" y1="193" x2="190" y2="248" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="218" y="232" font-size="10" fill="#888">/* frontend</text>
+  <line x1="650" y1="193" x2="790" y2="248" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="685" y="232" font-size="10" fill="#888">/api/* backend</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 3: AMPLIFY (left) + ECR→ECS (right)
+  ══════════════════════════════════════════════════════ -->
+
+  <!-- Amplify -->
+  <rect x="50" y="250" width="280" height="56" rx="8" fill="#D5F5E3" stroke="#1E8449" stroke-width="2"/>
+  <text x="190" y="274" text-anchor="middle" font-size="13" font-weight="bold" fill="#145A32">AWS Amplify</text>
+  <text x="190" y="293" text-anchor="middle" font-size="11" fill="#145A32">React 18 + Vite + TypeScript build</text>
+
+  <!-- ECR badge feeding ECS -->
+  <rect x="650" y="250" width="280" height="56" rx="8" fill="#D6EAF8" stroke="#2E86C1" stroke-width="2"/>
+  <text x="790" y="270" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A5276">AWS ECS Fargate</text>
+  <text x="790" y="287" text-anchor="middle" font-size="11" fill="#1A5276">Docker Image from ECR  (688 MB)</text>
+  <text x="790" y="300" text-anchor="middle" font-size="10" fill="#1A5276">FastAPI + Uvicorn  |  1 vCPU / 2GB  |  Port 8000</text>
+
+  <!-- ECR small badge -->
+  <rect x="655" y="252" width="60" height="20" rx="4" fill="#2E86C1"/>
+  <text x="685" y="266" text-anchor="middle" font-size="9" fill="white" font-weight="bold">ECR</text>
+
+  <!-- Arrows down -->
+  <line x1="190" y1="306" x2="190" y2="338" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="790" y1="306" x2="790" y2="338" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 4: REACT VIEWS (left) + FASTAPI ENDPOINTS (right)
+  ══════════════════════════════════════════════════════ -->
+
+  <!-- React Views box -->
+  <rect x="28" y="340" width="324" height="225" rx="8" fill="#EAFAF1" stroke="#1E8449" stroke-width="1.5"/>
+  <text x="190" y="362" text-anchor="middle" font-size="12" font-weight="bold" fill="#145A32">React Frontend Views</text>
+  <line x1="38" y1="370" x2="342" y2="370" stroke="#1E8449" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="44" y="388" font-size="11" fill="#1A3A1A">• IndexSelector — Russell 2000 / S&amp;P 500 picker</text>
+  <text x="44" y="406" font-size="11" fill="#1A3A1A">• HomePage — Dashboard &amp; summary statistics</text>
+  <text x="44" y="424" font-size="11" fill="#1A3A1A">• CompanyAnalysis — KPIs, stock chart, CEO history</text>
+  <text x="44" y="442" font-size="11" fill="#1A3A1A">• OutlierAnalysis — Z-score statistical detection</text>
+  <text x="44" y="460" font-size="11" fill="#1A3A1A">• RankingsPage — Cross-company comparisons</text>
+  <text x="44" y="478" font-size="11" fill="#1A3A1A">• CompanyArchive — Full metadata browser</text>
+  <text x="44" y="496" font-size="11" fill="#1A3A1A">• ChatBot — AI Q&amp;A (RAG-powered)</text>
+  <text x="44" y="514" font-size="11" fill="#1A3A1A">• StockChart, ImpactMetrics, MacroContext</text>
+  <text x="44" y="532" font-size="11" fill="#1A3A1A">• CEOProfile, Timeline, RecessionBenchmark</text>
+
+  <!-- FastAPI Endpoints box -->
+  <rect x="628" y="340" width="324" height="160" rx="8" fill="#EBF5FB" stroke="#2471A3" stroke-width="1.5"/>
+  <text x="790" y="362" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">FastAPI REST Endpoints</text>
+  <line x1="638" y1="370" x2="942" y2="370" stroke="#2471A3" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="644" y="388" font-size="11" fill="#1A3A2A">• GET  /api/indices</text>
+  <text x="644" y="406" font-size="11" fill="#1A3A2A">• GET  /api/{index}/companies</text>
+  <text x="644" y="424" font-size="11" fill="#1A3A2A">• GET  /api/{index}/kpis/{ticker}</text>
+  <text x="644" y="442" font-size="11" fill="#1A3A2A">• GET  /api/{index}/stocks/{ticker}</text>
+  <text x="644" y="460" font-size="11" fill="#1A3A2A">• GET  /api/{index}/outliers</text>
+  <text x="644" y="478" font-size="11" fill="#1A3A2A">• POST /api/chat  →  RAG Chatbot</text>
+
+  <!-- Arrow: FastAPI → RAG Chatbot -->
+  <line x1="790" y1="500" x2="790" y2="532" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- RAG Chatbot box -->
+  <rect x="628" y="535" width="324" height="130" rx="8" fill="#E8DAEF" stroke="#7D3C98" stroke-width="1.5"/>
+  <text x="790" y="556" text-anchor="middle" font-size="12" font-weight="bold" fill="#6C3483">RAG Chatbot  (Runtime AI)</text>
+  <line x1="638" y1="563" x2="942" y2="563" stroke="#7D3C98" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="644" y="580" font-size="11" fill="#4A235A">LangChain + ChromaDB (vector store)</text>
+  <text x="644" y="597" font-size="11" fill="#4A235A">OpenAI Embeddings — context retrieval</text>
+  <text x="644" y="614" font-size="11" fill="#4A235A">Knowledge Base (7 MD files → chunks):</text>
+  <text x="660" y="631" font-size="10" fill="#6C3483">financial_terms, calculations, ceo_analysis,</text>
+  <text x="660" y="647" font-size="10" fill="#6C3483">economic_terms, outlier_methodology, billing</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       DATA STORE — center-right, connects FastAPI
+  ══════════════════════════════════════════════════════ -->
+  <!-- Arrow: FastAPI reads data store -->
+  <line x1="790" y1="665" x2="680" y2="720" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="698" y="707" font-size="10" fill="#888">reads at startup</text>
+
+  <!-- Also connect frontend side: React → API calls → back through CloudFront -->
+  <!-- Show data store also feeds frontend KPIs via API -->
+
+  <!-- ══════════════════════════════════════════════════════
+       PRE-PROCESSED DATA STORE
+  ══════════════════════════════════════════════════════ -->
+  <rect x="260" y="722" width="490" height="120" rx="8" fill="#FDFEFE" stroke="#717D7E" stroke-width="1.5"/>
+  <text x="505" y="745" text-anchor="middle" font-size="12" font-weight="bold" fill="#424949">Pre-processed Data Store  (JSON — baked into Docker image)</text>
+  <line x1="270" y1="752" x2="740" y2="752" stroke="#717D7E" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="276" y="769" font-size="11" fill="#333">• data/rus2000/stocks/kpis/{ticker}_kpis.json        (~2,000 files)</text>
+  <text x="276" y="787" font-size="11" fill="#333">• data/sp500/stocks/kpis/{ticker}_kpis.json           (~500 files)</text>
+  <text x="276" y="805" font-size="11" fill="#333">• data/{index}/stocks/validated/{ticker}_validated.json</text>
+  <text x="276" y="823" font-size="11" fill="#333">• data/{index}/companies.json + company_metadata.json</text>
+  <text x="276" y="841" font-size="11" fill="#333">• sec_ceo_data/ceo_timeline_*.json + *.csv  (CEO timelines)</text>
+
+  <!-- Arrow: Data Store → generated by pipeline -->
+  <line x1="505" y1="842" x2="505" y2="892" stroke="#555" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="516" y="875" font-size="10" fill="#888">generated by (offline)</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       OFFLINE PIPELINE SECTION HEADER
+  ══════════════════════════════════════════════════════ -->
+  <rect x="60" y="900" width="860" height="22" rx="4" fill="#F0F0F0" stroke="#CCCCCC" stroke-width="1"/>
+  <text x="490" y="915" text-anchor="middle" font-size="11" font-weight="bold" fill="#777">── Offline Data Extraction Pipeline (runs separately, not at request time) ──</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       CEO AGENT (left) + DATA PIPELINE (right)
+  ══════════════════════════════════════════════════════ -->
+
+  <!-- CEO Agent box -->
+  <rect x="60" y="935" width="380" height="200" rx="8" fill="#F5EEF8" stroke="#7D3C98" stroke-width="1.5"/>
+  <text x="250" y="957" text-anchor="middle" font-size="12" font-weight="bold" fill="#6C3483">CEO Agent  (GPT-4o + Claude)</text>
+  <line x1="70" y1="964" x2="430" y2="964" stroke="#7D3C98" stroke-width="0.7" stroke-dasharray="3,2"/>
+
+  <!-- Tier boxes inside CEO Agent -->
+  <rect x="72" y="970" width="110" height="65" rx="5" fill="#D7BDE2" stroke="#7D3C98" stroke-width="1"/>
+  <text x="127" y="987" text-anchor="middle" font-size="10" font-weight="bold" fill="#6C3483">Tier 1 — SEC</text>
+  <text x="127" y="1002" text-anchor="middle" font-size="9.5" fill="#4A235A">8-K Item 5.02</text>
+  <text x="127" y="1016" text-anchor="middle" font-size="9.5" fill="#4A235A">Claude Sonnet</text>
+  <text x="127" y="1030" text-anchor="middle" font-size="9.5" fill="#4A235A">Anti-hallucination</text>
+
+  <rect x="195" y="970" width="110" height="65" rx="5" fill="#A9CCE3" stroke="#2471A3" stroke-width="1"/>
+  <text x="250" y="987" text-anchor="middle" font-size="10" font-weight="bold" fill="#1A5276">Tier 2 — Wiki</text>
+  <text x="250" y="1002" text-anchor="middle" font-size="9.5" fill="#1A5276">CEO history pages</text>
+  <text x="250" y="1016" text-anchor="middle" font-size="9.5" fill="#1A5276">Claude Haiku</text>
+  <text x="250" y="1030" text-anchor="middle" font-size="9.5" fill="#1A5276">Web search fallback</text>
+
+  <rect x="318" y="970" width="110" height="65" rx="5" fill="#FAD7A0" stroke="#D35400" stroke-width="1"/>
+  <text x="373" y="987" text-anchor="middle" font-size="10" font-weight="bold" fill="#784212">Tier 3 — 10-K</text>
+  <text x="373" y="1002" text-anchor="middle" font-size="9.5" fill="#784212">Annual filings</text>
+  <text x="373" y="1016" text-anchor="middle" font-size="9.5" fill="#784212">DEF 14A proxy</text>
+  <text x="373" y="1030" text-anchor="middle" font-size="9.5" fill="#784212">Claude Sonnet</text>
+
+  <text x="72" y="1055" font-size="11" fill="#4A235A">ReAct loop  (up to 25 turns per company)</text>
+  <text x="72" y="1072" font-size="11" fill="#4A235A">Merge + clean + deduplicate timelines</text>
+  <text x="72" y="1089" font-size="11" fill="#4A235A">Gap detection + date propagation</text>
+  <text x="72" y="1106" font-size="11" fill="#4A235A">→ Output: ceo_timeline_*.json / *.csv</text>
+  <text x="72" y="1123" font-size="10" fill="#7D3C98">Covers ~2,000 Russell 2000 + ~500 S&amp;P 500 companies</text>
+
+  <!-- Data Pipeline box -->
+  <rect x="500" y="935" width="420" height="200" rx="8" fill="#FDEBD0" stroke="#D35400" stroke-width="1.5"/>
+  <text x="710" y="957" text-anchor="middle" font-size="12" font-weight="bold" fill="#784212">Stock Data Pipeline</text>
+  <line x1="510" y1="964" x2="910" y2="964" stroke="#D35400" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="516" y="981" font-size="11" fill="#5D4037">Step 1: fetch.py — Download OHLCV via yfinance</text>
+  <text x="516" y="999" font-size="11" fill="#5D4037">Step 2: validate.py — Clean + normalize records</text>
+  <text x="516" y="1017" font-size="11" fill="#5D4037">Step 3: calculate_kpis.py — Price, volume, risk KPIs</text>
+  <text x="516" y="1035" font-size="11" fill="#5D4037">Step 4: fetch_macro.py — Recession context (NBER)</text>
+  <text x="516" y="1053" font-size="11" fill="#5D4037">Step 5: pipeline.py — Orchestrate end-to-end</text>
+  <text x="516" y="1071" font-size="11" fill="#5D4037">Step 6: scheduler.py — Automated refresh</text>
+  <text x="516" y="1094" font-size="10" fill="#784212">KPIs: VWAP · ATH · ATL · Beta · Drawdown · Sharpe</text>
+  <text x="516" y="1110" font-size="10" fill="#784212">Volatility · Volume trend · Transition impact (90d, 1y)</text>
+  <text x="516" y="1126" font-size="10" fill="#784212">Input: russell2000_tickers.csv + sp500_tickers.csv</text>
+
+  <!-- Arrows: CEO Agent + Pipeline → sources -->
+  <!-- CEO Agent arrow to SEC EDGAR -->
+  <line x1="160" y1="1135" x2="130" y2="1182" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- CEO Agent arrow to Wikipedia -->
+  <line x1="260" y1="1135" x2="490" y2="1182" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Pipeline arrow to yfinance -->
+  <line x1="640" y1="1135" x2="490" y2="1182" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Pipeline arrow to SEC (10-K) -->
+  <line x1="560" y1="1135" x2="130" y2="1182" stroke="#555" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       EXTERNAL DATA SOURCES
+  ══════════════════════════════════════════════════════ -->
+
+  <!-- SEC EDGAR -->
+  <rect x="30" y="1185" width="240" height="80" rx="8" fill="#D5EAF5" stroke="#1A5276" stroke-width="1.5"/>
+  <text x="150" y="1208" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">SEC EDGAR</text>
+  <text x="150" y="1228" text-anchor="middle" font-size="11" fill="#1A5276">8-K filings (Item 5.02)</text>
+  <text x="150" y="1246" text-anchor="middle" font-size="11" fill="#1A5276">10-K / DEF 14A proxy filings</text>
+
+  <!-- Yahoo Finance -->
+  <rect x="370" y="1185" width="240" height="80" rx="8" fill="#A9DFBF" stroke="#1E8449" stroke-width="1.5"/>
+  <text x="490" y="1208" text-anchor="middle" font-size="12" font-weight="bold" fill="#145A32">Yahoo Finance (yfinance)</text>
+  <text x="490" y="1228" text-anchor="middle" font-size="11" fill="#145A32">Daily OHLCV stock prices</text>
+  <text x="490" y="1246" text-anchor="middle" font-size="11" fill="#145A32">Market cap · Volume · Splits</text>
+
+  <!-- Wikipedia -->
+  <rect x="710" y="1185" width="240" height="80" rx="8" fill="#FAD7A0" stroke="#D35400" stroke-width="1.5"/>
+  <text x="830" y="1208" text-anchor="middle" font-size="12" font-weight="bold" fill="#784212">Wikipedia</text>
+  <text x="830" y="1228" text-anchor="middle" font-size="11" fill="#784212">CEO history pages</text>
+  <text x="830" y="1246" text-anchor="middle" font-size="11" fill="#784212">2000 – present</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LEGEND
+  ══════════════════════════════════════════════════════ -->
+  <rect x="30" y="1300" width="920" height="130" rx="8" fill="#F0F0F0" stroke="#C0C0C0" stroke-width="1"/>
+  <text x="490" y="1322" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Legend</text>
+
+  <!-- Row 1 -->
+  <rect x="50" y="1332" width="14" height="14" rx="2" fill="#D6EAF8" stroke="#2E86C1" stroke-width="1.5"/>
+  <text x="70" y="1344" font-size="10" fill="#333">AWS Infrastructure</text>
+
+  <rect x="210" y="1332" width="14" height="14" rx="2" fill="#D5F5E3" stroke="#1E8449" stroke-width="1.5"/>
+  <text x="230" y="1344" font-size="10" fill="#333">Frontend (React)</text>
+
+  <rect x="370" y="1332" width="14" height="14" rx="2" fill="#EBF5FB" stroke="#2471A3" stroke-width="1.5"/>
+  <text x="390" y="1344" font-size="10" fill="#333">Backend API (FastAPI)</text>
+
+  <rect x="560" y="1332" width="14" height="14" rx="2" fill="#E8DAEF" stroke="#7D3C98" stroke-width="1.5"/>
+  <text x="580" y="1344" font-size="10" fill="#333">AI / LLM Layer</text>
+
+  <rect x="700" y="1332" width="14" height="14" rx="2" fill="#FDEBD0" stroke="#D35400" stroke-width="1.5"/>
+  <text x="720" y="1344" font-size="10" fill="#333">Data Pipeline (offline)</text>
+
+  <!-- Row 2 -->
+  <rect x="50" y="1356" width="14" height="14" rx="2" fill="#FDFEFE" stroke="#717D7E" stroke-width="1.5"/>
+  <text x="70" y="1368" font-size="10" fill="#333">Data Store (JSON in container)</text>
+
+  <rect x="280" y="1356" width="14" height="14" rx="2" fill="#D5EAF5" stroke="#1A5276" stroke-width="1.5"/>
+  <text x="300" y="1368" font-size="10" fill="#333">External Source (Tier 1 — SEC)</text>
+
+  <rect x="520" y="1356" width="14" height="14" rx="2" fill="#A9DFBF" stroke="#1E8449" stroke-width="1.5"/>
+  <text x="540" y="1368" font-size="10" fill="#333">External Source (Tier 2 — Wikipedia / yfinance)</text>
+
+  <rect x="780" y="1356" width="14" height="14" rx="2" fill="#FAD7A0" stroke="#D35400" stroke-width="1.5"/>
+  <text x="800" y="1368" font-size="10" fill="#333">External Source (Tier 3 — 10-K)</text>
+
+  <!-- Stack summary -->
+  <text x="490" y="1398" text-anchor="middle" font-size="10" fill="#555">Stack: React 18 · TypeScript · FastAPI · Python 3.11 · GPT-4o · Claude Sonnet/Haiku · LangChain · ChromaDB · yfinance · AWS ECR / ECS Fargate / Amplify / CloudFront</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       FIGURE CAPTION
+  ══════════════════════════════════════════════════════ -->
+  <text x="490" y="1448" text-anchor="middle" font-size="11" font-style="italic" fill="#666">Figure: CEO Performance Analysis Platform — Complete System Architecture</text>
+</svg>

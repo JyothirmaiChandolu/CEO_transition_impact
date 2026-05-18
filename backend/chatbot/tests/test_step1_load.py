@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Test Step 1: Load Documents
-Tests that knowledge base documents are loaded correctly.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Tests that Step 1 correctly loads all knowledge base markdown documents using LangChain.
 """
 
 import sys

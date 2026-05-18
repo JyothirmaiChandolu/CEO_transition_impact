@@ -1,6 +1,9 @@
 """
-Pure utility functions shared across the agent package.
-No API calls, no side effects — safe to import anywhere.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Pure utility functions for HTML cleaning, date normalization, and text processing shared across the agent package.
 """
 
 import re

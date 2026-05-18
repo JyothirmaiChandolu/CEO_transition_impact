@@ -1,11 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Step 2: Split Documents into Chunks
-Uses LangChain RecursiveCharacterTextSplitter to break documents into manageable chunks
-for embedding and retrieval.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Splits loaded documents into smaller chunks using LangChain's RecursiveCharacterTextSplitter for embedding and retrieval.
 """
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter

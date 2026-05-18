@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Test Context Builder
-Tests that company and sector context is built correctly.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Tests that the ContextBuilder correctly loads and formats company and sector data for LLM prompts.
 """
 
 import sys

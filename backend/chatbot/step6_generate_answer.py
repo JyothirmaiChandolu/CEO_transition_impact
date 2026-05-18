@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Step 6: Generate Answer
-Uses OpenAI GPT-4o-mini to generate answers grounded in retrieved chunks and data context.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Generates grounded answers using OpenAI GPT-4o-mini based on retrieved chunks and company data context.
 """
 
 from langchain_openai import ChatOpenAI

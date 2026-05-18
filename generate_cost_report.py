@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate a token usage and cost report across all indices.
-
-Two data sources:
-  1. <ceo_data_dir>/token_usage.jsonl  — actual usage logged by llm.py (future runs)
-  2. <ceo_data_dir>/agent_batch_*.json — existing batches (estimated, no usage was stored)
-
-Usage:
-  python generate_cost_report.py [--out cost_report.csv]
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Generates a token usage and cost report across all indices from batch output files and token usage logs.
 """
 
 import csv

@@ -1,27 +1,27 @@
 {
   "ticker": "STX",
-  "last_updated": "2026-05-13T15:04:56.995276",
-  "data_points": 5891,
+  "last_updated": "2026-05-15T13:51:51.404044",
+  "data_points": 5893,
   "date_range": {
     "start": "2002-12-11",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 15218.18,
+    "total_return_pct": 15141.67,
     "volatility_pct": 45.91,
     "volatility_level": "High",
-    "ma_20": 657.96,
-    "ma_50": 513.05,
-    "ma_200": 327.28,
+    "ma_20": 686.49,
+    "ma_50": 530.86,
+    "ma_200": 333.89,
     "price_high": 834.01,
     "price_low": 1.6,
-    "current_price": 808.8
+    "current_price": 804.76
   },
   "volume_metrics": {
-    "avg_volume": 5596373,
-    "avg_volume_20d": 4869555,
-    "current_volume": 3781700,
-    "volume_trend_pct": -12.99
+    "avg_volume": 5595300,
+    "avg_volume_20d": 4764705,
+    "current_volume": 2355400,
+    "volume_trend_pct": -14.84
   },
   "risk_metrics": {
     "sharpe_ratio": 0.66,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.89
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

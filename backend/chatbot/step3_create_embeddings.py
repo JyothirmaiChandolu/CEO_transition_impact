@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Step 3: Create Embeddings
-Uses OpenAI's text-embedding-3-small model to create vector embeddings for chunks.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Creates vector embeddings for document chunks using OpenAI's text-embedding-3-small model.
 """
 
 from langchain_openai import OpenAIEmbeddings

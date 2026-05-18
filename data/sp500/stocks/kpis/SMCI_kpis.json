@@ -1,27 +1,27 @@
 {
   "ticker": "SMCI",
-  "last_updated": "2026-05-13T15:04:55.260272",
-  "data_points": 4811,
+  "last_updated": "2026-05-15T13:51:49.783853",
+  "data_points": 4813,
   "date_range": {
     "start": "2007-03-29",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 3626.14,
-    "volatility_pct": 62.57,
+    "total_return_pct": 3653.41,
+    "volatility_pct": 62.56,
     "volatility_level": "High",
-    "ma_20": 29.41,
-    "ma_50": 27.77,
-    "ma_200": 37.07,
+    "ma_20": 29.87,
+    "ma_50": 27.81,
+    "ma_200": 36.8,
     "price_high": 118.81,
     "price_low": 0.38,
-    "current_price": 32.79
+    "current_price": 33.03
   },
   "volume_metrics": {
-    "avg_volume": 11487023,
-    "avg_volume_20d": 38219245,
-    "current_volume": 35089600,
-    "volume_trend_pct": 232.72
+    "avg_volume": 11494243,
+    "avg_volume_20d": 38266450,
+    "current_volume": 32285500,
+    "volume_trend_pct": 232.92
   },
   "risk_metrics": {
     "sharpe_ratio": 0.59,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 3.94
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

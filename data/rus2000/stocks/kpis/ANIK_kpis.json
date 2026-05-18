@@ -1,45 +1,39 @@
 {
   "ticker": "ANIK",
-  "last_updated": "2026-05-11T18:47:36.741309",
-  "data_points": 7638,
+  "last_updated": "2026-05-15T13:41:09.964197",
+  "data_points": 7641,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 280.67,
-    "volatility_pct": 64.6,
+    "total_return_pct": 295.36,
+    "volatility_pct": 64.59,
     "volatility_level": "High",
-    "ma_20": 14.97,
-    "ma_50": 14.68,
-    "ma_200": 10.79,
+    "ma_20": 14.94,
+    "ma_50": 14.71,
+    "ma_200": 10.85,
     "price_high": 73.36,
     "price_low": 0.75,
-    "current_price": 14.77
+    "current_price": 15.34
   },
   "volume_metrics": {
-    "avg_volume": 98446,
-    "avg_volume_20d": 134805,
-    "current_volume": 110700,
-    "volume_trend_pct": 36.93
+    "avg_volume": 98436,
+    "avg_volume_20d": 122335,
+    "current_volume": 123800,
+    "volume_trend_pct": 24.28
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.37,
+    "sharpe_ratio": 0.38,
     "max_drawdown_pct": -95.88,
     "daily_volatility_pct": 4.07
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,46 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2017-07-27",
+      "transition_price": 51.7,
+      "impact_90days_pct": 13.29,
+      "impact_1year_pct": -22.53,
+      "pre_transition_trend_90d_pct": 12.07,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2020-02-10",
+      "transition_price": 41.87,
+      "impact_90days_pct": -27.06,
+      "impact_1year_pct": -8.5,
+      "pre_transition_trend_90d_pct": -30.74,
+      "macro_economic_context": {
+        "in_recession": true,
+        "recession_period": "2020 COVID-19 Recession",
+        "context": "Recession Period"
+      },
+      "analysis_note": "\u26a0\ufe0f CEO transition occurred during 2020 COVID-19 Recession. Stock movement may be confounded by macro-economic factors."
+    },
+    {
+      "transition_date": "2026-02-02",
+      "transition_price": 9.63,
+      "impact_90days_pct": 54.21,
+      "impact_1year_pct": 59.29,
+      "pre_transition_trend_90d_pct": -1.93,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

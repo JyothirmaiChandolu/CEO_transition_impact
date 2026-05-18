@@ -1,12 +1,9 @@
 """
-Tool implementations for the CEO agent.
-
-Each tool function returns a plain string — never raises.
-The LLM reads these strings and decides what to do next.
-
-Also exports:
-  TOOL_SCHEMAS  — OpenAI function-calling schemas
-  dispatch()    — routes a tool_name + arguments dict to the right function
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Implements tool functions (SEC EDGAR, web search, Wikipedia) and OpenAI function-calling schemas used by the CEO agent.
 """
 
 import re

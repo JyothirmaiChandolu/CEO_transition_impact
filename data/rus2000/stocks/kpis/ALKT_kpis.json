@@ -1,45 +1,39 @@
 {
   "ticker": "ALKT",
-  "last_updated": "2026-05-11T18:47:34.083730",
-  "data_points": 1274,
+  "last_updated": "2026-05-15T13:41:07.907348",
+  "data_points": 1277,
   "date_range": {
     "start": "2021-04-14",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": -58.21,
-    "volatility_pct": 48.75,
+    "total_return_pct": -61.35,
+    "volatility_pct": 48.79,
     "volatility_level": "High",
-    "ma_20": 16.81,
-    "ma_50": 16.79,
-    "ma_200": 20.78,
+    "ma_20": 16.84,
+    "ma_50": 16.78,
+    "ma_200": 20.62,
     "price_high": 47.69,
     "price_low": 10.0,
-    "current_price": 17.97
+    "current_price": 16.62
   },
   "volume_metrics": {
-    "avg_volume": 651208,
-    "avg_volume_20d": 1741620,
-    "current_volume": 1503900,
-    "volume_trend_pct": 167.44
+    "avg_volume": 655862,
+    "avg_volume_20d": 1952880,
+    "current_volume": 2815500,
+    "volume_trend_pct": 197.76
   },
   "risk_metrics": {
-    "sharpe_ratio": -0.15,
+    "sharpe_ratio": -0.18,
     "max_drawdown_pct": -79.03,
     "daily_volatility_pct": 3.07
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,20 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2021-11-05",
+      "transition_price": 28.87,
+      "impact_90days_pct": -49.43,
+      "impact_1year_pct": -53.31,
+      "pre_transition_trend_90d_pct": -6.45,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }

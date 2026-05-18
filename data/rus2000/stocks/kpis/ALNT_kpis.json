@@ -1,27 +1,27 @@
 {
   "ticker": "ALNT",
-  "last_updated": "2026-05-11T18:47:34.319911",
-  "data_points": 7638,
+  "last_updated": "2026-05-15T13:41:08.113129",
+  "data_points": 7641,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 4596.48,
+    "total_return_pct": 4373.94,
     "volatility_pct": 78.42,
     "volatility_level": "High",
-    "ma_20": 72.97,
-    "ma_50": 67.12,
-    "ma_200": 56.02,
+    "ma_20": 71.8,
+    "ma_50": 67.04,
+    "ma_200": 56.37,
     "price_high": 78.0,
     "price_low": 0.5,
-    "current_price": 66.69
+    "current_price": 63.53
   },
   "volume_metrics": {
-    "avg_volume": 47525,
-    "avg_volume_20d": 186945,
-    "current_volume": 305700,
-    "volume_trend_pct": 293.36
+    "avg_volume": 47631,
+    "avg_volume_20d": 206000,
+    "current_volume": 342600,
+    "volume_trend_pct": 332.48
   },
   "risk_metrics": {
     "sharpe_ratio": 0.51,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 4.94
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,20 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2009-05-12",
+      "transition_price": 1.52,
+      "impact_90days_pct": -17.11,
+      "impact_1year_pct": 63.16,
+      "pre_transition_trend_90d_pct": 26.67,
+      "macro_economic_context": {
+        "in_recession": true,
+        "recession_period": "2007-2009 Financial Crisis",
+        "context": "Recession Period"
+      },
+      "analysis_note": "\u26a0\ufe0f CEO transition occurred during 2007-2009 Financial Crisis. Stock movement may be confounded by macro-economic factors."
+    }
+  ]
 }

@@ -1,27 +1,27 @@
 {
   "ticker": "CTVA",
-  "last_updated": "2026-05-13T15:04:39.839769",
-  "data_points": 1751,
+  "last_updated": "2026-05-15T13:51:35.250458",
+  "data_points": 1753,
   "date_range": {
     "start": "2019-05-24",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 210.37,
-    "volatility_pct": 32.78,
+    "total_return_pct": 213.04,
+    "volatility_pct": 32.76,
     "volatility_level": "Medium",
-    "ma_20": 80.74,
-    "ma_50": 80.79,
-    "ma_200": 71.8,
+    "ma_20": 80.95,
+    "ma_50": 80.99,
+    "ma_200": 71.91,
     "price_high": 85.46,
     "price_low": 19.31,
-    "current_price": 82.59
+    "current_price": 83.3
   },
   "volume_metrics": {
-    "avg_volume": 3921205,
-    "avg_volume_20d": 3598130,
-    "current_volume": 3373600,
-    "volume_trend_pct": -8.24
+    "avg_volume": 3920671,
+    "avg_volume_20d": 3595905,
+    "current_volume": 3830800,
+    "volume_trend_pct": -8.28
   },
   "risk_metrics": {
     "sharpe_ratio": 0.6,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.06
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -77,8 +71,8 @@
     {
       "transition_date": "2026-04-10",
       "transition_price": 83.83,
-      "impact_90days_pct": -1.48,
-      "impact_1year_pct": -1.48,
+      "impact_90days_pct": -0.63,
+      "impact_1year_pct": -0.63,
       "pre_transition_trend_90d_pct": 22.67,
       "macro_economic_context": {
         "in_recession": false,

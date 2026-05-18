@@ -1,27 +1,27 @@
 {
   "ticker": "AMAT",
-  "last_updated": "2026-05-13T15:04:34.184278",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:29.973606",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 11429.41,
+    "total_return_pct": 11679.68,
     "volatility_pct": 46.46,
     "volatility_level": "High",
-    "ma_20": 404.77,
-    "ma_50": 375.64,
-    "ma_200": 277.07,
+    "ma_20": 409.42,
+    "ma_50": 379.0,
+    "ma_200": 279.57,
     "price_high": 443.62,
     "price_low": 2.03,
-    "current_price": 431.2
+    "current_price": 440.56
   },
   "volume_metrics": {
-    "avg_volume": 20396292,
-    "avg_volume_20d": 6351960,
-    "current_volume": 9304200,
-    "volume_trend_pct": -68.86
+    "avg_volume": 20393901,
+    "avg_volume_20d": 6926085,
+    "current_volume": 14681200,
+    "volume_trend_pct": -66.04
   },
   "risk_metrics": {
     "sharpe_ratio": 0.53,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.93
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

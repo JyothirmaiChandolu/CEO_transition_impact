@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-KPI Calculation Module
-Calculates price, volume, risk, and CEO transition impact metrics with macro-economic context
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Calculates price, volume, risk, and CEO transition impact KPIs with macro-economic context for Russell 2000 stocks.
 """
 import sys
 from pathlib import Path

@@ -1,27 +1,27 @@
 {
   "ticker": "TMUS",
-  "last_updated": "2026-05-13T15:04:59.649474",
-  "data_points": 4797,
+  "last_updated": "2026-05-15T13:51:53.919423",
+  "data_points": 4799,
   "date_range": {
     "start": "2007-04-19",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 342.74,
+    "total_return_pct": 331.04,
     "volatility_pct": 39.9,
     "volatility_level": "Medium",
-    "ma_20": 193.23,
-    "ma_50": 202.64,
-    "ma_200": 213.74,
+    "ma_20": 192.79,
+    "ma_50": 201.45,
+    "ma_200": 213.28,
     "price_high": 268.25,
     "price_low": 8.81,
-    "current_price": 193.3
+    "current_price": 188.19
   },
   "volume_metrics": {
-    "avg_volume": 4015376,
-    "avg_volume_20d": 6257380,
-    "current_volume": 4174100,
-    "volume_trend_pct": 55.84
+    "avg_volume": 4015627,
+    "avg_volume_20d": 6124900,
+    "current_volume": 5647300,
+    "volume_trend_pct": 52.53
   },
   "risk_metrics": {
     "sharpe_ratio": 0.35,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.51
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -91,7 +85,7 @@
       "transition_date": "2025-10-31",
       "transition_price": 208.01,
       "impact_90days_pct": -5.64,
-      "impact_1year_pct": -7.07,
+      "impact_1year_pct": -9.53,
       "pre_transition_trend_90d_pct": -12.54,
       "macro_economic_context": {
         "in_recession": false,

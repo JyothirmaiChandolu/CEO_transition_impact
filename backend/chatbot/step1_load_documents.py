@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Step 1: Load Knowledge Base Documents
-Loads all markdown files from the knowledge_base/ folder using LangChain.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Loads all markdown files from the knowledge_base/ folder using LangChain's DirectoryLoader.
 """
 
 from pathlib import Path

@@ -1,6 +1,9 @@
 """
-Fetch CIK numbers for a list of stock tickers using SEC EDGAR.
-Usage: python get_cik.py <input_csv> <output_csv>
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Fetches SEC EDGAR CIK numbers for a list of stock tickers and writes the results to an output CSV.
 """
 
 import re

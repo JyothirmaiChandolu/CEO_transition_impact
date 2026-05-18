@@ -1,11 +1,9 @@
 """
-Fetch company metadata for all tickers using yfinance.
-
-Usage:
-  python fetch_company_metadata.py                     # Russell 2000
-  python fetch_company_metadata.py --index sp500       # S&P 500
-  python fetch_company_metadata.py --force             # re-fetch everything
-  python fetch_company_metadata.py AAPL,MSFT           # specific tickers
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Fetches and stores company metadata (name, sector, industry) for all index tickers using yfinance.
 """
 
 import json

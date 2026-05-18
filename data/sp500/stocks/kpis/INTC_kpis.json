@@ -1,45 +1,39 @@
 {
   "ticker": "INTC",
-  "last_updated": "2026-05-13T15:04:46.692470",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:41.675499",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 2820.34,
+    "total_return_pct": 2707.02,
     "volatility_pct": 40.72,
     "volatility_level": "High",
-    "ma_20": 90.42,
-    "ma_50": 65.29,
-    "ma_200": 43.37,
+    "ma_20": 95.56,
+    "ma_50": 68.24,
+    "ma_200": 44.35,
     "price_high": 129.44,
     "price_low": 3.53,
-    "current_price": 120.61
+    "current_price": 115.93
   },
   "volume_metrics": {
-    "avg_volume": 53213163,
-    "avg_volume_20d": 154571770,
-    "current_volume": 171427900,
-    "volume_trend_pct": 190.48
+    "avg_volume": 53229718,
+    "avg_volume_20d": 156199795,
+    "current_volume": 117575900,
+    "volume_trend_pct": 193.44
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.43,
+    "sharpe_ratio": 0.42,
     "max_drawdown_pct": -82.24,
     "daily_volatility_pct": 2.56
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

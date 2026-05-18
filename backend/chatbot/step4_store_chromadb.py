@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Step 4: Store Chunks in ChromaDB
-Persists chunks and embeddings into ChromaDB vector store for semantic search.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Persists document chunks and their embeddings into a ChromaDB vector store for semantic search.
 """
 
 from langchain_chroma import Chroma

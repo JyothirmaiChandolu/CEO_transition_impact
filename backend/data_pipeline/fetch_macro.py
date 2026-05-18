@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Macro-Economic Data Fetcher
-Fetches FRED and NBER recession data for macro-economic analysis
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Fetches FRED macro-economic indicators and NBER recession data for contextualizing stock performance analysis.
 """
 import pandas as pd
 import logging

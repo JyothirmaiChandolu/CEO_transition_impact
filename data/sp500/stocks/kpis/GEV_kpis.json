@@ -1,45 +1,39 @@
 {
   "ticker": "GEV",
-  "last_updated": "2026-05-13T15:04:41.977692",
-  "data_points": 533,
+  "last_updated": "2026-05-15T13:51:37.288616",
+  "data_points": 535,
   "date_range": {
     "start": "2024-03-27",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 719.81,
-    "volatility_pct": 53.13,
+    "total_return_pct": 733.99,
+    "volatility_pct": 53.06,
     "volatility_level": "High",
-    "ma_20": 1065.62,
-    "ma_50": 952.3,
-    "ma_200": 724.85,
+    "ma_20": 1075.06,
+    "ma_50": 961.72,
+    "ma_200": 729.22,
     "price_high": 1149.53,
     "price_low": 122.25,
-    "current_price": 1071.98
+    "current_price": 1090.53
   },
   "volume_metrics": {
-    "avg_volume": 3292085,
-    "avg_volume_20d": 2667395,
-    "current_volume": 2096700,
-    "volume_trend_pct": -18.98
+    "avg_volume": 3285896,
+    "avg_volume_20d": 2645575,
+    "current_volume": 1684800,
+    "volume_trend_pct": -19.49
   },
   "risk_metrics": {
-    "sharpe_ratio": 2.11,
+    "sharpe_ratio": 2.12,
     "max_drawdown_pct": -38.29,
-    "daily_volatility_pct": 3.35
+    "daily_volatility_pct": 3.34
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -78,7 +72,7 @@
       "transition_date": "2026-01-21",
       "transition_price": 667.49,
       "impact_90days_pct": 48.51,
-      "impact_1year_pct": 60.6,
+      "impact_1year_pct": 63.38,
       "pre_transition_trend_90d_pct": 12.31,
       "macro_economic_context": {
         "in_recession": false,

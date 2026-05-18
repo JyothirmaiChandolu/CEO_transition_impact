@@ -1,27 +1,27 @@
 {
   "ticker": "AIZ",
-  "last_updated": "2026-05-13T15:04:33.273945",
-  "data_points": 5602,
+  "last_updated": "2026-05-15T13:51:29.127547",
+  "data_points": 5604,
   "date_range": {
     "start": "2004-02-05",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 1350.72,
-    "volatility_pct": 31.42,
+    "total_return_pct": 1406.08,
+    "volatility_pct": 31.43,
     "volatility_level": "Medium",
-    "ma_20": 232.67,
-    "ma_50": 224.67,
-    "ma_200": 221.03,
-    "price_high": 244.14,
+    "ma_20": 235.01,
+    "ma_50": 225.28,
+    "ma_200": 221.67,
+    "price_high": 252.72,
     "price_low": 9.1,
-    "current_price": 243.43
+    "current_price": 252.72
   },
   "volume_metrics": {
-    "avg_volume": 744111,
-    "avg_volume_20d": 461590,
-    "current_volume": 433300,
-    "volume_trend_pct": -37.97
+    "avg_volume": 744024,
+    "avg_volume_20d": 480455,
+    "current_volume": 636300,
+    "volume_trend_pct": -35.42
   },
   "risk_metrics": {
     "sharpe_ratio": 0.48,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 1.98
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

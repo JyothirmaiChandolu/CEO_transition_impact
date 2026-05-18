@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-RAG Pipeline Orchestrator
-Combines all steps into a single callable RAG pipeline.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Orchestrates all RAG pipeline steps (load, chunk, embed, store, retrieve, generate) into a single callable class.
 """
 
 from .step1_load_documents import load_documents

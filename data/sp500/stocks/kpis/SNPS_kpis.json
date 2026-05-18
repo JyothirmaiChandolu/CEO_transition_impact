@@ -1,27 +1,27 @@
 {
   "ticker": "SNPS",
-  "last_updated": "2026-05-13T15:04:55.599508",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:50.108734",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 2645.91,
+    "total_return_pct": 2628.84,
     "volatility_pct": 39.33,
     "volatility_level": "Medium",
-    "ma_20": 484.17,
-    "ma_50": 442.74,
-    "ma_200": 476.23,
+    "ma_20": 491.16,
+    "ma_50": 446.02,
+    "ma_200": 475.19,
     "price_high": 645.35,
     "price_low": 12.19,
-    "current_price": 513.21
+    "current_price": 510.02
   },
   "volume_metrics": {
-    "avg_volume": 1386537,
-    "avg_volume_20d": 1684150,
-    "current_volume": 1217400,
-    "volume_trend_pct": 21.46
+    "avg_volume": 1386499,
+    "avg_volume_20d": 1637385,
+    "current_volume": 1149300,
+    "volume_trend_pct": 18.09
   },
   "risk_metrics": {
     "sharpe_ratio": 0.43,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 2.48
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

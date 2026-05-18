@@ -1,45 +1,39 @@
 {
   "ticker": "AZO",
-  "last_updated": "2026-05-13T15:04:36.971245",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:32.549494",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 11706.82,
+    "total_return_pct": 11601.94,
     "volatility_pct": 29.33,
     "volatility_level": "Medium",
-    "ma_20": 3547.63,
-    "ma_50": 3510.61,
-    "ma_200": 3760.76,
+    "ma_20": 3533.66,
+    "ma_50": 3498.45,
+    "ma_200": 3756.14,
     "price_high": 4354.54,
     "price_low": 20.12,
-    "current_price": 3409.81
+    "current_price": 3379.52
   },
   "volume_metrics": {
-    "avg_volume": 549147,
-    "avg_volume_20d": 252805,
-    "current_volume": 360000,
-    "volume_trend_pct": -53.96
+    "avg_volume": 549080,
+    "avg_volume_20d": 258920,
+    "current_volume": 301300,
+    "volume_trend_pct": -52.84
   },
   "risk_metrics": {
-    "sharpe_ratio": 0.62,
+    "sharpe_ratio": 0.61,
     "max_drawdown_pct": -46.35,
     "daily_volatility_pct": 1.85
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

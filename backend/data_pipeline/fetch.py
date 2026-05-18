@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Data Fetching Module
-Fetches stock data from yfinance for Russell 2000 companies
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Fetches historical and current OHLCV stock data from yfinance for Russell 2000 companies.
 """
 import json
 import time

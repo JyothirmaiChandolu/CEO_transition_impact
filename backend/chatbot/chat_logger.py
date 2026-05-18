@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Chat Logger
-Logs all chat interactions with tokens and metadata.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Logs all chat interactions with token counts and metadata to a persistent file.
 """
 
 import json

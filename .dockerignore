@@ -1,0 +1,42 @@
+# Frontend
+node_modules/
+dist/
+src/
+public/
+index.html
+package.json
+package-lock.json
+tsconfig*.json
+vite.config.ts
+
+# Python virtualenv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets
+.env
+
+# Dev/pipeline scripts (not needed at runtime)
+ceo_agent/
+data.py
+ceo_data1.py
+sp500_data.py
+sp500_cik_lookup.py
+run_stock_pipeline.py
+run_ceo_parallel.py
+generate_cost_report.py
+fetch_company_metadata.py
+fetch_historical.log
+get_cik.py
+pipeline.log
+
+# Logs and reports
+*.log
+cost_report.csv
+fetch_historical.log
+
+# Git
+.git/
+.claude/

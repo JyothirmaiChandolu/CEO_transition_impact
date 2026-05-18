@@ -1,11 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Data Pipeline Orchestrator
-Orchestrates validation, transformation, and KPI calculation
-using pre-fetched Russell 2000 raw stock data.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Orchestrates data validation, transformation, and KPI calculation for pre-fetched Russell 2000 stock data.
 """
 import sys
 import json

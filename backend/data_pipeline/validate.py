@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Data Validation Module
-Validates stock data for duplicates, primary keys, nulls, and data types
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Validates Russell 2000 stock data for duplicates, missing primary keys, null values, and data type conformance.
 """
 import pandas as pd
 import re

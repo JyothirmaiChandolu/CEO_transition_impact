@@ -1,13 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-CEO Transition Analysis RAG Chatbot
-
-A Retrieval-Augmented Generation (RAG) chatbot powered by LangChain and OpenAI.
-Answers questions about CEO transitions, stock performance, and financial analysis
-grounded in real S&P 100 company data (1996-2025).
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Package initialization for the RAG chatbot module that answers questions about CEO transitions and stock performance.
 """
 
 from .rag_pipeline import RAGPipeline

@@ -1,10 +1,9 @@
 """
-Title: CEO performance analysis
-Author: Jyothirmai Chandolu
-Employee_id: 800342
-
-Step 5: Retrieve Relevant Chunks
-Uses semantic similarity search to find relevant knowledge base chunks for a query.
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Retrieves the top-k most relevant knowledge base chunks for a user query using semantic similarity search.
 """
 
 

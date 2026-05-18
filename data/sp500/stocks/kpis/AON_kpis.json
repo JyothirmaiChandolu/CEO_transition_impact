@@ -1,27 +1,27 @@
 {
   "ticker": "AON",
-  "last_updated": "2026-05-13T15:04:34.966533",
-  "data_points": 7640,
+  "last_updated": "2026-05-15T13:51:30.701591",
+  "data_points": 7642,
   "date_range": {
     "start": "1996-01-02",
-    "end": "2026-05-12"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": 2171.0,
+    "total_return_pct": 2164.25,
     "volatility_pct": 28.56,
     "volatility_level": "Medium",
-    "ma_20": 320.37,
-    "ma_50": 322.52,
-    "ma_200": 342.54,
+    "ma_20": 318.6,
+    "ma_50": 321.47,
+    "ma_200": 342.07,
     "price_high": 406.53,
     "price_low": 10.66,
-    "current_price": 316.35
+    "current_price": 315.41
   },
   "volume_metrics": {
-    "avg_volume": 1427490,
-    "avg_volume_20d": 1330740,
-    "current_volume": 1622700,
-    "volume_trend_pct": -6.78
+    "avg_volume": 1427577,
+    "avg_volume_20d": 1384415,
+    "current_volume": 1844800,
+    "volume_trend_pct": -3.02
   },
   "risk_metrics": {
     "sharpe_ratio": 0.44,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 1.8
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11089,
-    "recession_percentage": 9.88,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",

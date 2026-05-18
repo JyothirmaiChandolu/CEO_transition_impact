@@ -12,6 +12,7 @@ import { loadIndices, loadCompanies, loadStockData } from './utils/api';
 import type { CompaniesData, Company, CEOTransition, StockData, IndexConfig } from './utils/types';
 
 type ViewType = 'index-selector' | 'home' | 'archive' | 'selector' | 'analysis' | 'outlier-analysis' | 'rankings';
+export type ActionView = 'archive' | 'selector' | 'outlier-analysis' | 'rankings';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('index-selector');
@@ -24,8 +25,8 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [stockLoading, setStockLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pendingAction, setPendingAction] = useState<ActionView>('archive');
 
-  // Load indices on mount
   useEffect(() => {
     loadIndices()
       .then(data => {
@@ -38,6 +39,11 @@ export default function App() {
         console.error(err);
       });
   }, []);
+
+  const handleSelectAction = (action: ActionView) => {
+    setPendingAction(action);
+    setCurrentView('home');
+  };
 
   const handleIndexSelect = (index: IndexConfig) => {
     setSelectedIndex(index);
@@ -63,7 +69,7 @@ export default function App() {
 
         setCompaniesData(data);
         setLoading(false);
-        setCurrentView('home');
+        setCurrentView(pendingAction);
       })
       .catch(err => {
         setError('Failed to load company data. Please ensure the backend is running.');
@@ -72,13 +78,8 @@ export default function App() {
       });
   };
 
-  const handleGetStarted = () => setCurrentView('selector');
-  const handleOutlierAnalysis = () => setCurrentView('outlier-analysis');
-  const handleRankings = () => setCurrentView('rankings');
-  const handleArchive = () => setCurrentView('archive');
-  const handleBackToHome = () => setCurrentView('home');
-  const handleBackToSelector = () => setCurrentView('selector');
   const handleBackToIndexSelector = () => setCurrentView('index-selector');
+  const handleBackToSelector = () => setCurrentView('selector');
 
   const handleAnalyze = async (company: Company, transition: CEOTransition) => {
     setSelectedCompany(company);
@@ -113,7 +114,6 @@ export default function App() {
     );
   }
 
-  // Loading spinner while switching index
   if (loading && currentView !== 'index-selector') {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
@@ -131,34 +131,30 @@ export default function App() {
         {currentView === 'index-selector' && (
           <IndexSelector
             key="index-selector"
-            indices={indices}
-            onSelect={handleIndexSelect}
+            onSelectAction={handleSelectAction}
           />
         )}
-        {currentView === 'home' && companiesData && selectedIndex && (
+        {currentView === 'home' && (
           <HomePage
             key="home"
-            onGetStarted={handleGetStarted}
-            onOutlierAnalysis={handleOutlierAnalysis}
-            onRankings={handleRankings}
-            onArchive={handleArchive}
-            onChangeIndex={handleBackToIndexSelector}
-            indexName={selectedIndex.name}
-            stats={companiesData.stats}
+            indices={indices}
+            onSelect={handleIndexSelect}
+            onBack={handleBackToIndexSelector}
+            actionName={pendingAction}
           />
         )}
         {currentView === 'archive' && selectedIndex && (
           <CompanyArchive
             key="archive"
             index={selectedIndex}
-            onBack={handleBackToHome}
+            onBack={handleBackToIndexSelector}
           />
         )}
         {currentView === 'selector' && companiesData && (
           <CompanySelector
             key="selector"
             companies={companiesData.companies}
-            onBack={handleBackToHome}
+            onBack={handleBackToIndexSelector}
             onAnalyze={handleAnalyze}
           />
         )}
@@ -169,7 +165,7 @@ export default function App() {
             transition={selectedTransition}
             stockData={stockData}
             stockLoading={stockLoading}
-            onBack={handleBackToHome}
+            onBack={handleBackToIndexSelector}
             onChangeSelection={handleBackToSelector}
             index={selectedIndex.key}
             benchmarkTicker={selectedIndex.benchmark_ticker}
@@ -179,7 +175,7 @@ export default function App() {
           <OutlierAnalysis
             key="outlier-analysis"
             companies={companiesData.companies}
-            onBack={handleBackToHome}
+            onBack={handleBackToIndexSelector}
             index={selectedIndex.key}
           />
         )}
@@ -187,7 +183,7 @@ export default function App() {
           <RankingsPage
             key="rankings"
             companies={companiesData.companies}
-            onBack={handleBackToHome}
+            onBack={handleBackToIndexSelector}
             onSelectCompany={handleAnalyze}
             index={selectedIndex.key}
           />

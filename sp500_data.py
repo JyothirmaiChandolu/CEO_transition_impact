@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-Retrieve current S&P 500 Index constituents from iShares IVV ETF holdings.
-Outputs list of stock tickers to a timestamped CSV file.
-
-Usage: python sp500_data.py
-
-Output: sp500_tickers_YYYYMMDD.csv
+__Title__      : CEO performance analysis
+__Author__     : Jyothirmai Chandolu
+__Employee_id__: 800342
+__Version__    : 1
+__Description__: Retrieves current S&P 500 Index constituents from iShares IVV ETF holdings and outputs tickers to a timestamped CSV file.
 """
 import requests
 import pandas as pd

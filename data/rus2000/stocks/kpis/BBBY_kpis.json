@@ -1,27 +1,27 @@
 {
   "ticker": "BBBY",
-  "last_updated": "2026-05-11T18:47:44.793194",
-  "data_points": 6025,
+  "last_updated": "2026-05-15T13:41:17.144184",
+  "data_points": 6028,
   "date_range": {
     "start": "2002-05-30",
-    "end": "2026-05-08"
+    "end": "2026-05-14"
   },
   "price_metrics": {
-    "total_return_pct": -59.32,
-    "volatility_pct": 76.15,
+    "total_return_pct": -64.01,
+    "volatility_pct": 76.17,
     "volatility_level": "High",
-    "ma_20": 5.32,
-    "ma_50": 5.01,
-    "ma_200": 6.97,
+    "ma_20": 5.28,
+    "ma_50": 4.98,
+    "ma_200": 6.88,
     "price_high": 122.32,
     "price_low": 2.65,
-    "current_price": 5.3
+    "current_price": 4.69
   },
   "volume_metrics": {
-    "avg_volume": 1140675,
-    "avg_volume_20d": 5106165,
-    "current_volume": 1654700,
-    "volume_trend_pct": 347.64
+    "avg_volume": 1141123,
+    "avg_volume_20d": 5096695,
+    "current_volume": 1897800,
+    "volume_trend_pct": 346.64
   },
   "risk_metrics": {
     "sharpe_ratio": 0.3,
@@ -29,17 +29,11 @@
     "daily_volatility_pct": 4.8
   },
   "macro_summary": {
-    "total_recession_periods": 4,
-    "total_recession_days": 1096,
-    "total_analysis_period_days": 11087,
-    "recession_percentage": 9.89,
+    "total_recession_periods": 3,
+    "total_recession_days": 853,
+    "total_analysis_period_days": 11091,
+    "recession_percentage": 7.69,
     "recessions": [
-      {
-        "name": "1990-1991 Recession",
-        "start": "1990-07-01",
-        "end": "1991-03-01",
-        "duration_months": 8.0
-      },
       {
         "name": "2001 Recession",
         "start": "2001-03-01",
@@ -59,5 +53,59 @@
         "duration_months": 2.0
       }
     ]
-  }
+  },
+  "transition_impacts": [
+    {
+      "transition_date": "2013-02-12",
+      "transition_price": 12.79,
+      "impact_90days_pct": 105.47,
+      "impact_1year_pct": 45.35,
+      "pre_transition_trend_90d_pct": -11.37,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2016-04-11",
+      "transition_price": 14.6,
+      "impact_90days_pct": 13.77,
+      "impact_1year_pct": 23.97,
+      "pre_transition_trend_90d_pct": 34.07,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2019-08-22",
+      "transition_price": 21.12,
+      "impact_90days_pct": -62.5,
+      "impact_1year_pct": 473.34,
+      "pre_transition_trend_90d_pct": 97.94,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    },
+    {
+      "transition_date": "2023-11-06",
+      "transition_price": 16.2,
+      "impact_90days_pct": 41.98,
+      "impact_1year_pct": -60.93,
+      "pre_transition_trend_90d_pct": -50.15,
+      "macro_economic_context": {
+        "in_recession": false,
+        "recession_period": null,
+        "context": "Economic Expansion"
+      },
+      "analysis_note": "\u2713 CEO transition occurred during economic expansion. Stock movement more likely reflects CEO impact."
+    }
+  ]
 }
