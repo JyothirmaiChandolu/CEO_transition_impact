@@ -1,0 +1,20 @@
+# FastAPI backend
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+
+# Data pipeline
+pandas>=2.0.0
+numpy>=1.24.0
+yfinance>=0.2.40
+schedule>=1.2.0
+
+# Chatbot / RAG
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-chroma>=0.1.0
+langchain-community>=0.2.0
+chromadb>=0.5.0
+openai>=1.0.0
+unstructured>=0.14.0
+tiktoken>=0.7.0
