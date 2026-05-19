@@ -17,8 +17,7 @@ from . import prompts
 from . import utils
 from . memory import AgentMemory
 
-MAX_TURNS = 25
-
+MAX_TURNS = 15
 
 class CEOAgent:
     def run_company(self, ticker: str, cik: str, company_name: str) -> list:

@@ -80,7 +80,7 @@ class RAGPipeline:
         print("✓ RAG Pipeline Ready!")
         print("=" * 60 + "\n")
 
-    def answer(self, query: str, ticker: str = None, sector: str = None, transition_date: str = None) -> str:
+    def answer(self, query: str, ticker: str = None, sector: str = None, transition_date: str = None, chat_history: list = None) -> str:
         """
         Answer a user query using the RAG pipeline.
 
@@ -89,6 +89,7 @@ class RAGPipeline:
             ticker: Optional company ticker for company-specific context
             sector: Optional sector for sector-specific context
             transition_date: Optional transition date for specific analysis
+            chat_history: List of prior messages [{role, content}]
 
         Returns:
             String answer from the LLM
@@ -110,7 +111,7 @@ class RAGPipeline:
 
         # Step 6: Generate answer
         print("  [Step 6] Generating answer...")
-        answer = generate_answer(query, kb_chunks, data_context)
+        answer = generate_answer(query, kb_chunks, data_context, chat_history=chat_history)
 
         print(f"  [Done]\n")
 

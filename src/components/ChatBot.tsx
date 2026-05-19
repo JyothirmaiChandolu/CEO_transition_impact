@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { X, Send, Sparkles, Bot, Trash2 } from 'lucide-react';
+import { X, Send, Sparkles, MessageCircle, Trash2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Button } from './ui/button';
 import type { Company, CEOTransition, StockData } from '../utils/types';
@@ -45,8 +45,13 @@ export function ChatBot({ currentView, company, transition }: ChatBotProps) {
   }, [messages, isTyping, isOpen]);
 
   // Generate response using RAG chatbot API
-  const generateResponse = async (query: string): Promise<string> => {
+  const generateResponse = async (query: string, currentMessages: Message[]): Promise<string> => {
     try {
+      const history = currentMessages
+        .filter(m => m.id !== 'welcome')
+        .slice(-10)
+        .map(m => ({ role: m.sender === 'user' ? 'user' : 'assistant', content: m.text }));
+
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -55,7 +60,8 @@ export function ChatBot({ currentView, company, transition }: ChatBotProps) {
           ticker: company?.ticker ?? null,
           transition_date: transition?.transitionDate ?? null,
           sector: company?.sector ?? null,
-          session_id: sessionId
+          session_id: sessionId,
+          chat_history: history
         })
       });
 
@@ -88,7 +94,7 @@ export function ChatBot({ currentView, company, transition }: ChatBotProps) {
     setIsTyping(true);
 
     try {
-      const responseText = await generateResponse(newUserMessage.text);
+      const responseText = await generateResponse(newUserMessage.text, [...messages, newUserMessage]);
       const newBotMessage: Message = {
         id: (Date.now() + 1).toString(),
         text: responseText,
@@ -133,7 +139,7 @@ export function ChatBot({ currentView, company, transition }: ChatBotProps) {
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-slate-900 text-white rounded-full shadow-xl flex items-center justify-center border-2 border-slate-700 hover:bg-slate-800 transition-colors"
       >
-        {isOpen ? <X className="w-6 h-6" /> : <Bot className="w-7 h-7" />}
+        {isOpen ? <X className="w-6 h-6" /> : <MessageCircle className="w-7 h-7" />}
       </motion.button>
 
       {/* Chat Window */}
@@ -186,7 +192,13 @@ export function ChatBot({ currentView, company, transition }: ChatBotProps) {
                         : 'bg-white text-slate-700 border border-slate-200 rounded-tl-none'
                     }`}
                   >
-                     <div dangerouslySetInnerHTML={{ __html: msg.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                     <div dangerouslySetInnerHTML={{ __html: msg.text
+                       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                       .replace(/^[•\-]\s+(.+)$/gm, '<li style="list-style-type:disc;margin-left:1rem">$1</li>')
+                       .replace(/<\/li>\n<li/g, '</li><li')
+                       .replace(/(<li[^>]*>[^<]*<\/li>)+/g, m => `<ul style="margin:0.2rem 0;padding:0">${m}</ul>`)
+                       .replace(/\n/g, '<br>')
+                     }} />
                      <div className={`text-[10px] mt-1 ${msg.sender === 'user' ? 'text-slate-400' : 'text-slate-400'}`}>
                        {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                      </div>

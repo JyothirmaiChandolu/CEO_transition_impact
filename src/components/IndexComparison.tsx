@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Legend } from 'recharts';
+import { AreaChart, Area, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Legend } from 'recharts';
 import { TrendingUp, TrendingDown } from 'lucide-react';
 import { loadIndexData } from '../utils/api';
 import type { ChartDataPoint } from '../utils/types';
@@ -72,6 +72,40 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
       indexNormalized: (d.indexClose / firstIndexPrice) * 100
     }));
   }, [mergedData]);
+
+  // True abnormal return: stock return − benchmark return, both anchored at transition date
+  const abnormalReturnData = useMemo(() => {
+    if (mergedData.length === 0) return [];
+
+    const targetDate = new Date(transitionDate);
+    const transitionIdx = mergedData.reduce((best, _, idx) => {
+      const bestDiff = Math.abs(new Date(mergedData[best].date).getTime() - targetDate.getTime());
+      const currDiff = Math.abs(new Date(mergedData[idx].date).getTime() - targetDate.getTime());
+      return currDiff < bestDiff ? idx : best;
+    }, 0);
+
+    const baseCompany = mergedData[transitionIdx].companyClose;
+    const baseIndex   = mergedData[transitionIdx].indexClose;
+
+    return mergedData.slice(transitionIdx, transitionIdx + 365).map((d, i) => {
+      const stockRet = ((d.companyClose - baseCompany) / baseCompany) * 100;
+      const benchRet = ((d.indexClose   - baseIndex)   / baseIndex)   * 100;
+      return {
+        date: d.date,
+        day: i,
+        abnormalReturn: parseFloat((stockRet - benchRet).toFixed(2)),
+        stockReturn:    parseFloat(stockRet.toFixed(2)),
+        benchmarkReturn: parseFloat(benchRet.toFixed(2)),
+      };
+    });
+  }, [mergedData, transitionDate]);
+
+  const ar90 = abnormalReturnData[89]?.abnormalReturn
+    ?? abnormalReturnData[abnormalReturnData.length - 1]?.abnormalReturn
+    ?? null;
+  const ar1y = abnormalReturnData[251]?.abnormalReturn
+    ?? abnormalReturnData[abnormalReturnData.length - 1]?.abnormalReturn
+    ?? null;
 
   if (loading) {
     return (
@@ -244,6 +278,97 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
           <span className="font-medium">Note:</span> Both prices are normalized to 100 at the start of the period for easy comparison. Red line marks CEO transition date.
         </p>
       </div>
+
+      {/* Abnormal Return Section */}
+      {abnormalReturnData.length > 0 && (
+        <div className="mt-8 border-t border-slate-200 pt-6">
+          <div className="mb-4">
+            <h3 className="text-lg font-bold text-slate-900">Cumulative Abnormal Return (Post-Transition)</h3>
+            <p className="text-sm text-slate-500 mt-1">
+              Stock return minus benchmark return, both measured from the CEO transition date. Isolates the CEO-specific market impact from broader market movements.
+            </p>
+          </div>
+
+          {/* Summary Cards */}
+          <div className="grid grid-cols-2 gap-3 mb-5">
+            <div className={`rounded-lg p-4 border ${ar90 !== null && ar90 >= 0 ? 'bg-emerald-50 border-emerald-200' : 'bg-red-50 border-red-200'}`}>
+              <div className="text-xs font-medium text-slate-600 mb-1">90-Day Abnormal Return</div>
+              <div className={`text-2xl font-bold ${ar90 !== null && ar90 >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
+                {ar90 !== null ? `${ar90 >= 0 ? '+' : ''}${ar90.toFixed(2)}%` : 'N/A'}
+              </div>
+              <div className="text-xs text-slate-500 mt-1">vs {benchmarkTicker}</div>
+            </div>
+            <div className={`rounded-lg p-4 border ${ar1y !== null && ar1y >= 0 ? 'bg-emerald-50 border-emerald-200' : 'bg-red-50 border-red-200'}`}>
+              <div className="text-xs font-medium text-slate-600 mb-1">1-Year Abnormal Return</div>
+              <div className={`text-2xl font-bold ${ar1y !== null && ar1y >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
+                {ar1y !== null ? `${ar1y >= 0 ? '+' : ''}${ar1y.toFixed(2)}%` : 'N/A'}
+              </div>
+              <div className="text-xs text-slate-500 mt-1">vs {benchmarkTicker}</div>
+            </div>
+          </div>
+
+          {/* Abnormal Return Chart */}
+          <div className="bg-slate-50 rounded-lg p-4">
+            <ResponsiveContainer width="100%" height={300}>
+              <LineChart data={abnormalReturnData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+                <XAxis
+                  dataKey="day"
+                  tick={{ fontSize: 12 }}
+                  stroke="#94a3b8"
+                  tickFormatter={(d) => `Day ${d}`}
+                  interval={Math.ceil(abnormalReturnData.length / 8) - 1}
+                />
+                <YAxis
+                  tickFormatter={(v) => `${v.toFixed(1)}%`}
+                  stroke="#94a3b8"
+                  tick={{ fontSize: 12 }}
+                />
+                <Tooltip
+                  contentStyle={{ backgroundColor: '#fff', border: '1px solid #e2e8f0', borderRadius: '8px' }}
+                  formatter={(value: number, name: string) => [`${value.toFixed(2)}%`, name]}
+                  labelFormatter={(day) => `Day ${day} post-transition`}
+                />
+                <Legend wrapperStyle={{ paddingTop: '16px' }} />
+                <ReferenceLine y={0} stroke="#94a3b8" strokeDasharray="4 4" />
+                <Line
+                  type="monotone"
+                  dataKey="abnormalReturn"
+                  stroke="#f59e0b"
+                  dot={false}
+                  strokeWidth={2}
+                  name="Abnormal Return"
+                  isAnimationActive={false}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="stockReturn"
+                  stroke="#3b82f6"
+                  dot={false}
+                  strokeWidth={1.5}
+                  strokeDasharray="4 2"
+                  name={`${companyTicker} Return`}
+                  isAnimationActive={false}
+                />
+                <Line
+                  type="monotone"
+                  dataKey="benchmarkReturn"
+                  stroke="#a855f7"
+                  dot={false}
+                  strokeWidth={1.5}
+                  strokeDasharray="4 2"
+                  name={`${benchmarkTicker} Return`}
+                  isAnimationActive={false}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div className="mt-3 text-xs text-slate-600 bg-slate-50 rounded p-3">
+            <span className="font-medium">How to read:</span> Abnormal Return (amber) = {companyTicker} return − {benchmarkTicker} return from transition date. Positive values mean the stock outperformed the market specifically due to the CEO change.
+          </div>
+        </div>
+      )}
     </div>
   );
 }

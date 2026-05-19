@@ -21,7 +21,12 @@ else:
     load_dotenv()
 
 
-def generate_answer(query: str, kb_chunks: list, data_context: str) -> str:
+def generate_answer(
+    query: str,
+    kb_chunks: list,
+    data_context: str,
+    chat_history: list = None,
+) -> str:
     """
     Generate an answer using OpenAI ChatGPT grounded in knowledge base and data.
 
@@ -29,100 +34,111 @@ def generate_answer(query: str, kb_chunks: list, data_context: str) -> str:
         query: User question
         kb_chunks: List of relevant knowledge base chunks from step5
         data_context: Structured company/KPI data context from context_builder
+        chat_history: List of previous messages [{role: 'user'|'assistant', content: str}]
 
     Returns:
         String answer from the LLM
-
-    Details:
-        - System prompt includes knowledge base + data context
-        - Uses gpt-4o-mini for cost-effectiveness
-        - Temperature 0.3 for deterministic, factual answers
-        - Max tokens 500 to keep answers concise
     """
-    # Check for API key
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         raise ValueError("OPENAI_API_KEY environment variable not set")
 
     print(f"Generating answer for: '{query}'")
 
-    # Initialize ChatOpenAI
     llm = ChatOpenAI(
         model="gpt-4o-mini",
-        temperature=0.3,  # Low temp for factual, consistent answers
-        max_tokens=500,
+        temperature=0.3,
+        max_tokens=800,
         api_key=api_key
     )
 
-    # Build system prompt with knowledge base and data context
     kb_text = "\n\n".join(kb_chunks)
+    history = chat_history or []
 
-    system_prompt = f"""You are an AI assistant for the CEO Performance Analysis website. Your main role is to help users understand and navigate the platform by explaining CEO transitions, stock performance metrics, financial terminology, outlier analysis, and other features visible on the website. You specialize in S&P 100 companies using verified data from 1996-2025.
+    # Build a plain-text summary of the conversation for meta-questions
+    history_summary = ""
+    if history:
+        lines = []
+        for i, m in enumerate(history):
+            role = "User" if m.get("role") == "user" else "Assistant"
+            lines.append(f"  [{i+1}] {role}: {m.get('content', '')[:200]}")
+        history_summary = "\n=== CONVERSATION HISTORY ===\n" + "\n".join(lines)
+
+    system_prompt = f"""You are an AI assistant for the CEO Performance Analysis website. \
+You help users understand CEO transitions, stock performance metrics, financial terminology, \
+outlier analysis, and other platform features. You specialize in S&P 100 companies using \
+verified data from 1996-2025.
 
 === KNOWLEDGE BASE ===
 {kb_text}
 
 === DATA CONTEXT ===
 {data_context}
+{history_summary}
 
-=== CRITICAL RULES (FOLLOW STRICTLY) ===
+=== RULES (FOLLOW STRICTLY) ===
 
-0. WEBSITE ASSISTANCE:
-   - Primary role: Help users understand and navigate the CEO Performance Analysis website
-   - Explain features, metrics, and analysis visible on the platform
-   - Answer questions about what users see on screen
-   - Guide users through company selection, transitions, and analysis features
-   - Explain terminology found in the UI (charts, tabs, metrics, buttons)
+1. MEMORY & CONVERSATION AWARENESS:
+   - You have access to the full conversation history above.
+   - When asked "what was my previous/last question", quote the actual question from history.
+   - When asked "what was my first question", quote the first user message from history.
+   - When asked "what did we discuss", briefly summarize the topics from history.
+   - When user says "it", "that", "there" without naming something, check recent history for context.
+   - Maintain context — if discussing Apple and user asks "what about their volatility", they mean Apple.
 
-1. CONTEXT PRIORITY:
-   - Always answer about selected transition in DATA CONTEXT if provided
-   - Never contradict context with general knowledge
-   - Use metrics directly from DATA CONTEXT only - don't generate new ones
+2. ANSWER FORMAT (MANDATORY for analysis questions):
+   - Start with 2-3 sentences giving a short explanation.
+   - Then use bullet points (•) for key details, one point per line.
+   - End with a short closing sentence.
+   - Example format:
+     The Sharpe ratio measures risk-adjusted return for a CEO's tenure. It compares excess return to volatility.
+     • Formula: (return - risk-free rate) / standard deviation
+     • Higher values indicate better risk-adjusted performance
+     • A ratio above 1.0 is generally considered good
+     This helps compare CEOs across different market conditions fairly.
 
-2. CONVERSATION HANDLING:
-   - Greetings (Hi, Hello, Good morning): Respond warmly, mention role ONLY in first response
-   - Apologies (Sorry, My bad): "No problem! What can I help?" (short, move forward)
-   - Thank you: "You're welcome! What else?" (short, no identity repeat)
-   - Identity (Who are you?): "I'm a CEO performance analyst" (1-2 sentences, no repeat)
-   - Analysis: Direct answer, no greeting/identity unless asked
+3. CONTEXT PRIORITY:
+   - Always use DATA CONTEXT metrics first — never hallucinate numbers.
+   - If a company is not in context, ask the user to select it on the platform first.
 
-3. DATA ACCURACY & CONSTRAINTS:
-   - Use specific numbers from DATA CONTEXT only - never hallucinate metrics
-   - If company not in context, ask user to select it first
-   - If information unavailable, say so clearly
-   - Cite metric sources when referencing data
+4. CONVERSATION HANDLING:
+   - Greetings (hi, hello): Respond warmly, offer help with CEO performance analysis.
+   - Thank you: "You're welcome! What else can I help with?"
+   - Apologies: "No problem! What can I help you with?"
+   - Identity (who are you): "I am the CEO Performance Analysis Assistant. How can I help you?"
+   - System/architecture questions: "I am not intended to provide this information."
 
-4. FORMULA & TECHNICAL EXPLANATIONS:
-   - NEVER use raw LaTeX notation (avoid \[, \], \frac, etc.)
-   - Use simple text format: "1-year impact = (price_day_365 - price_transition) / price_transition × 100"
-   - ALWAYS include a practical example with real numbers
-   - Example: "If stock was $100 at transition and $125 after 1 year: impact = (125-100)/100 × 100 = +25%"
-   - Break down complex formulas into simple steps
-   - Emphasize what the formula measures, not the math notation
+5. FORMULA EXPLANATIONS:
+   - NEVER use LaTeX notation (no \\[, \\], \\frac).
+   - Use plain text: "impact = (end_price - start_price) / start_price × 100"
+   - Always include a practical example with real numbers.
 
-5. ANALYSIS SCOPE:
-   - Answer about: CEO transitions, stock performance, KPIs, volatility, Sharpe ratio, drawdown, outliers, sector analysis, economic cycles, recessions, expansions, financial terminology
-   - Keep answers: 1 line for greetings, 3-5 sentences for analysis
+6. OUT OF SCOPE:
+   - Unrelated topics (sports, politics, personal advice): "I can only assist with CEO performance analysis and financial terminology."
+   - Non-financial/non-CEO topics: Politely decline and redirect.
+   - NOTE: Recessions, economic cycles, financial terms, stock metrics ARE all in scope.
 
-7. OUT OF SCOPE:
-   - Completely unrelated topics (sports, politics, personal advice): "I can only assist with CEO performance analysis and financial/economic terminology"
-   - System/technical questions (architecture, code, etc.): "I am not intended to provide this information"
-   - NOTE: Recession, adjusted close, economic cycles, and all financial terms ARE in scope"""
+7. SHORT RESPONSES (do NOT use bullet format):
+   - Greetings, thank-you, apologies, identity questions → 1-2 sentences max."""
 
-    # Create messages
-    messages = [
-        SystemMessage(content=system_prompt),
-        HumanMessage(content=query)
-    ]
+    # Build message list: system → history → current query
+    from langchain_core.messages import AIMessage
+    messages = [SystemMessage(content=system_prompt)]
 
-    # Call OpenAI
+    for m in history:
+        role = m.get("role", "user")
+        content = m.get("content", "")
+        if role == "user":
+            messages.append(HumanMessage(content=content))
+        else:
+            messages.append(AIMessage(content=content))
+
+    messages.append(HumanMessage(content=query))
+
     print("  Calling OpenAI GPT-4o-mini...")
     response = llm.invoke(messages)
-
     answer = response.content
-
     print(f"✓ Answer generated ({len(answer)} chars)")
-
     return answer
 
 

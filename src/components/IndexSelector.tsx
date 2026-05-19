@@ -50,7 +50,7 @@ const ACTIONS = [
 
 export function IndexSelector({ onSelectAction }: IndexSelectorProps) {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
+    <div className="min-h-screen text-slate-900 font-sans" style={{ backgroundImage: "linear-gradient(rgba(248,250,252,0.6), rgba(248,250,252,0.6)), url('/bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed' }}>
       {/* Sticky Nav */}
       <div style={{ background: '#fff', borderBottom: '1px solid #e2e8f0', position: 'sticky', top: 0, zIndex: 10 }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 2rem', height: 72, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>

@@ -1021,6 +1021,7 @@ async def chat(body: dict):
             ticker=body.get("ticker"),
             sector=body.get("sector"),
             transition_date=body.get("transition_date"),
+            chat_history=body.get("chat_history", []),
         )
         return {"response": response}
     except Exception as e:
