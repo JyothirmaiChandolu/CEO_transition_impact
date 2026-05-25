@@ -44,12 +44,12 @@ const SECTOR_IMAGES: Record<string, string> = {
   'Utilities': '/sectors/utilities.jpeg',
 };
 
-function SectorIcon({ sector, width = 280, height = 180 }: { sector: string; width?: number; height?: number }) {
+function SectorIcon({ sector, width = '100%', height = 180, rounded = false }: { sector: string; width?: number | string; height?: number; rounded?: boolean }) {
   const src = SECTOR_IMAGES[sector];
   if (!src) return <span style={{ fontSize: 36 }}>📊</span>;
   return (
     <img src={src} alt={sector}
-      style={{ width, height, objectFit: 'cover', borderRadius: 8, display: 'block', flexShrink: 0 }}
+      style={{ width, height, objectFit: 'cover', borderRadius: rounded ? 8 : 0, display: 'block', flexShrink: 0 }}
     />
   );
 }
@@ -638,10 +638,17 @@ export function OutlierAnalysis({ companies, onBack, index }: OutlierAnalysisPro
               <motion.button key={sector} onClick={() => handleSectorSelect(sector)}
                 whileHover={{ y: -6, scale: 1.03, boxShadow: '0 20px 40px rgba(0,0,0,0.12)' }}
                 transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className="bg-white rounded-lg p-6 border-2 border-slate-200 hover:border-slate-900 transition-colors"
-                style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                <div style={{ marginBottom: 12 }}><SectorIcon sector={sector} /></div>
-                <p className="font-semibold text-slate-900 text-sm">{sector}</p>
+                className="rounded-lg overflow-hidden border-2 border-slate-200 hover:border-slate-900 transition-colors"
+                style={{ position: 'relative', height: 200, display: 'block' }}>
+                <SectorIcon sector={sector} width="100%" height={200} />
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.1) 55%, transparent 100%)',
+                  display: 'flex', alignItems: 'flex-end', justifyContent: 'center',
+                  padding: '0.75rem',
+                }}>
+                  <p style={{ fontWeight: 700, color: '#fff', fontSize: '0.85rem', lineHeight: 1.3, margin: 0, textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>{sector}</p>
+                </div>
               </motion.button>
             ))}
           </div>
@@ -657,7 +664,7 @@ export function OutlierAnalysis({ companies, onBack, index }: OutlierAnalysisPro
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-slate-900 mb-2">
               <span className="inline-flex items-center gap-2">
-                <SectorIcon sector={outlierData.sector} width={32} height={32} />
+                <SectorIcon sector={outlierData.sector} width={32} height={32} rounded />
                 {outlierData.sector} — Outlier Analysis
               </span>
             </h1>

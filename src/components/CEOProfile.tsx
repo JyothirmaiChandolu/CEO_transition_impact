@@ -9,6 +9,7 @@ interface CEOProfileProps {
   transitionDate: string;
   sector: string;
   impact90Days?: number | null;
+  prefetchedData?: ProfileData | null;
 }
 
 interface ProfileData {
@@ -22,18 +23,28 @@ interface ProfileData {
   mandates: string[];
 }
 
-export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfileProps) {
+export function CEOProfile({ ceoName, companyName, transitionDate, sector, impact90Days, prefetchedData }: CEOProfileProps) {
   const [profile, setProfile] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);
   const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    setProfile(null);
     setImgError(false);
 
+    // Use prefetched data if already available — no network call needed
+    if (prefetchedData) {
+      setProfile(prefetchedData);
+      setLoading(false);
+      return;
+    }
+
+    // Fallback: fetch ourselves (e.g. direct navigation without prefetch)
+    setLoading(true);
+    setProfile(null);
     const params = new URLSearchParams({ name: ceoName, company: companyName });
-    if (impact90Days != null) params.set('impact_90d', String(impact90Days));
+    if (impact90Days != null)  params.set('impact_90d', String(impact90Days));
+    if (transitionDate)        params.set('transition_date', transitionDate);
+    if (sector)                params.set('sector', sector);
 
     fetch(`/api/ceo/profile?${params}`)
       .then(r => r.json())
@@ -44,7 +55,7 @@ export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfilePro
         narrative: null, mandates: [],
       }))
       .finally(() => setLoading(false));
-  }, [ceoName, companyName, impact90Days]);
+  }, [ceoName, companyName, impact90Days, prefetchedData]);
 
   if (loading) {
     return (
@@ -63,22 +74,23 @@ export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfilePro
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}
+      style={{ display: 'flex', gap: '1.5rem', alignItems: 'stretch' }}
     >
-      {/* ── Left: photo card ── */}
+      {/* ── Left column: photo card ── */}
       <div style={{
-        width: 260, flexShrink: 0, background: '#fff',
-        borderRadius: 16, border: '1px solid #e2e8f0',
+        width: 300, flexShrink: 0,
+        background: '#fff', borderRadius: 16, border: '1px solid #e2e8f0',
         boxShadow: '0 1px 3px rgba(0,0,0,0.07)', overflow: 'hidden',
+        display: 'flex', flexDirection: 'column',
       }}>
-        {/* Photo with name overlay */}
-        <div style={{ position: 'relative', height: 320 }}>
+        {/* Photo — fixed height so it never stretches awkwardly */}
+        <div style={{ position: 'relative', height: 420, flexShrink: 0 }}>
           {hasPhoto ? (
             <img
               src={profile!.image_url!}
               alt={ceoName}
               onError={() => setImgError(true)}
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }}
             />
           ) : (
             <div style={{
@@ -93,7 +105,7 @@ export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfilePro
           <div style={{
             position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column',
             justifyContent: 'flex-end',
-            background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)',
+            background: 'linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.2) 45%, transparent 100%)',
             padding: '1rem 1.25rem',
           }}>
             <p style={{ fontSize: '1.1rem', fontWeight: 700, color: '#fff', lineHeight: 1.3, margin: 0 }}>{ceoName}</p>
@@ -103,8 +115,8 @@ export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfilePro
           </div>
         </div>
 
-        {/* Background & Focus */}
-        <div style={{ padding: '1.25rem', borderTop: '1px solid #f1f5f9', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        {/* Background & Focus — flex: 1 so it fills remaining card height and stays aligned */}
+        <div style={{ padding: '1.25rem', borderTop: '1px solid #f1f5f9', display: 'flex', flexDirection: 'column', gap: '1rem', flex: 1, justifyContent: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
             <Briefcase style={{ width: 16, height: 16, color: '#94a3b8', marginTop: 2, flexShrink: 0 }} />
             <div>
@@ -122,9 +134,8 @@ export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfilePro
         </div>
       </div>
 
-      {/* ── Right: narrative + mandates ── */}
+      {/* ── Right column: narrative + mandates stacked ── */}
       <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-        {/* Executive Narrative */}
         <div style={{ background: '#fff', borderRadius: 16, border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.07)', padding: '1.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
             <BookOpen style={{ width: 20, height: 20, color: '#3b82f6', flexShrink: 0 }} />
@@ -148,7 +159,6 @@ export function CEOProfile({ ceoName, companyName, impact90Days }: CEOProfilePro
           )}
         </div>
 
-        {/* Key Mandates & Objectives */}
         {profile?.mandates && profile.mandates.length > 0 && (
           <div style={{ background: '#fff', borderRadius: 16, border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.07)', padding: '1.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.25rem' }}>

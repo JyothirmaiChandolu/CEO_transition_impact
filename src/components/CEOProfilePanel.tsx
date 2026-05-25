@@ -35,44 +35,15 @@ function useCEOProfile(ceoName: string, companyName: string): { profile: WikiPro
     async function fetchProfile() {
       setLoading(true);
       try {
-        // Try "{name} CEO {company}" first, fall back to just "{name}"
-        const queries = [
-          `${ceoName} CEO ${companyName}`,
-          ceoName,
-        ];
-
-        let pageTitle: string | null = null;
-        for (const q of queries) {
-          const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&format=json&origin=*&srlimit=1`;
-          const res = await fetch(searchUrl);
-          const data = await res.json();
-          const results = data?.query?.search;
-          if (results && results.length > 0) {
-            pageTitle = results[0].title;
-            break;
-          }
-        }
-
-        if (!pageTitle) {
-          if (!cancelled) setProfile({ photo: null, extract: null, pageUrl: null, found: false });
-          return;
-        }
-
-        const pageUrl = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(pageTitle)}&prop=pageimages|extracts&exchars=350&exintro=true&format=json&origin=*&pithumbsize=400`;
-        const pageRes = await fetch(pageUrl);
-        const pageData = await pageRes.json();
-        const pages = pageData?.query?.pages;
-        const page = pages ? (Object.values(pages)[0] as any) : null;
-
-        const rawExtract = page?.extract?.replace(/<[^>]*>/g, '')?.trim() ?? null;
-        const shortExtract = rawExtract ? rawExtract.slice(0, 300) + (rawExtract.length > 300 ? '...' : '') : null;
-
+        const params = new URLSearchParams({ name: ceoName, company: companyName });
+        const res = await fetch(`/api/ceo/bio?${params}`);
+        const data = await res.json();
         if (!cancelled) {
           setProfile({
-            photo: page?.thumbnail?.source ?? null,
-            extract: shortExtract,
-            pageUrl: page?.title ? `https://en.wikipedia.org/wiki/${encodeURIComponent(page.title)}` : null,
-            found: true,
+            photo:   data.image_url ?? null,
+            extract: data.bio ?? null,
+            pageUrl: data.url ?? null,
+            found:   data.found ?? false,
           });
         }
       } catch {

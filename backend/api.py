@@ -7,10 +7,15 @@ __Description__: FastAPI backend that serves all /api/* endpoints for the fronte
 """
 import sys
 import json
+import asyncio
 import logging
 from pathlib import Path
 from typing import Optional
 from datetime import datetime
+
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent / ".env")
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 import numpy as np
 import pandas as pd
@@ -849,56 +854,205 @@ async def get_company_rankings(index: str, top_n: int = 20):
 
 
 # ---------------------------------------------------------------------------
-# /api/ceo/profile  — Wikipedia-based CEO profile lookup
+# CEO profile helpers — multi-source web search
 # ---------------------------------------------------------------------------
 
-@app.get("/api/ceo/profile")
-async def get_ceo_profile(name: str, company: str = "", impact_90d: Optional[float] = None):
+async def _fetch_wikipedia_profile(name: str, company: str) -> dict:
+    """Search Wikipedia with multiple query strategies. Returns bio, image_url, url."""
     import httpx
+    headers = {"User-Agent": "CEOAnalysisTool/1.0 (research project)"}
+    bio = None
+    image_url = None
+    url = None
 
-    bio: str | None = None
-    image_url: str | None = None
-    url: str | None = None
-    page_title: str = name
+    queries = [
+        f"{name} CEO {company}".strip(),
+        f"{name} {company}".strip(),
+        name,
+    ]
 
-    # Step 1: Wikipedia fetch
-    try:
-        headers = {"User-Agent": "CEOAnalysisTool/1.0 (research project)"}
-        async with httpx.AsyncClient(timeout=10, headers=headers) as client:
-            search = await client.get(
-                "https://en.wikipedia.org/w/api.php",
-                params={"action": "query", "list": "search",
-                        "srsearch": f"{name} CEO {company}".strip(),
-                        "format": "json", "srlimit": 3},
-            )
-            results = search.json().get("query", {}).get("search", [])
-            if results:
-                # Prefer a result whose title contains the CEO's last name
-                last_name = name.split()[-1].lower()
-                best = next((r for r in results if last_name in r["title"].lower()), results[0])
-                page_title = best["title"]
-                page_resp = await client.get(
-                    "https://en.wikipedia.org/w/api.php",
-                    params={"action": "query", "titles": page_title,
-                            "prop": "extracts|pageimages|info",
-                            "exintro": True, "explaintext": True,
-                            "pithumbsize": 600, "inprop": "url",
-                            "format": "json"},
-                )
-                pages = page_resp.json().get("query", {}).get("pages", {})
-                page = next(iter(pages.values()))
+    async with httpx.AsyncClient(timeout=10, headers=headers) as client:
+        page_title = None
+        for q in queries:
+            try:
+                r = await client.get("https://en.wikipedia.org/w/api.php", params={
+                    "action": "query", "list": "search", "srsearch": q,
+                    "format": "json", "srlimit": 3,
+                })
+                results = r.json().get("query", {}).get("search", [])
+                if results:
+                    last_name = name.split()[-1].lower()
+                    best = next((x for x in results if last_name in x["title"].lower()), results[0])
+                    page_title = best["title"]
+                    break
+            except Exception:
+                continue
+
+        if page_title:
+            try:
+                page_r = await client.get("https://en.wikipedia.org/w/api.php", params={
+                    "action": "query", "titles": page_title,
+                    "prop": "extracts|pageimages|info",
+                    "exintro": True, "explaintext": True,
+                    "pithumbsize": 800, "pilicense": "any",
+                    "inprop": "url", "format": "json",
+                })
+                pages = page_r.json().get("query", {}).get("pages", {})
+                page = next(iter(pages.values()), {})
                 raw = page.get("extract", "") or ""
-                if len(raw) > 900:
-                    cut = raw.rfind(". ", 0, 900)
-                    bio = raw[: cut + 1] if cut != -1 else raw[:900]
+                if len(raw) > 1000:
+                    cut = raw.rfind(". ", 0, 1000)
+                    bio = raw[:cut + 1] if cut != -1 else raw[:1000]
                 else:
                     bio = raw or None
                 image_url = page.get("thumbnail", {}).get("source") if page.get("thumbnail") else None
                 url = page.get("fullurl")
-    except Exception as e:
-        logger.error(f"Wikipedia fetch error for '{name}': {e}")
+            except Exception as e:
+                logger.warning(f"Wikipedia page fetch failed for '{name}': {e}")
 
-    # Step 2: OpenAI structured extraction
+    return {"bio": bio, "image_url": image_url, "url": url}
+
+
+_TRUSTED_IMG_DOMAINS = [
+    "bloomberg.com", "forbes.com", "reuters.com", "businessinsider.com",
+    "wsj.com", "nytimes.com", "cnbc.com", "ft.com", "fortune.com",
+    "marketwatch.com", "barrons.com", "businesswire.com", "prnewswire.com",
+    "apnews.com", "bbc.com", "theguardian.com", "techcrunch.com",
+    "ir.", "investor.", "newsroom.", "press.", "about.",
+]
+
+
+async def _search_ceo_image(name: str, company: str) -> str | None:
+    """DuckDuckGo image search — returns first headshot from a trusted news/company source."""
+    queries = [
+        f"{name} CEO {company} headshot",
+        f"{name} {company} executive portrait",
+        f"{name} CEO professional photo",
+    ]
+    try:
+        try:
+            from ddgs import DDGS  # type: ignore[import]
+        except ImportError:
+            from duckduckgo_search import DDGS  # type: ignore[import]
+        for q in queries:
+            results = await asyncio.to_thread(lambda q=q: list(DDGS().images(q, max_results=20)))
+            for img in results:
+                source  = img.get("source", "").lower()
+                img_url = img.get("image", "")
+                if not img_url:
+                    continue
+                ext_ok = any(img_url.lower().endswith(e) for e in (".jpg", ".jpeg", ".png", ".webp"))
+                from_trusted = any(d in source for d in _TRUSTED_IMG_DOMAINS)
+                if ext_ok and from_trusted:
+                    return img_url
+            # Second pass: any source, just needs a valid extension
+            for img in results:
+                img_url = img.get("image", "")
+                if img_url and any(img_url.lower().endswith(e) for e in (".jpg", ".jpeg", ".png", ".webp")):
+                    return img_url
+    except Exception as e:
+        logger.warning(f"DDG image search failed for '{name}': {e}")
+    return None
+
+
+async def _web_search_bio(name: str, company: str, transition_date: str = "", sector: str = "") -> list[str]:
+    """DuckDuckGo text search — transition-specific queries for Forbes, Bloomberg, Reuters, etc."""
+    year = transition_date[:4] if transition_date else ""
+    queries = [
+        f"{name} appointed CEO {company} {year}".strip(),
+        f"{name} {company} CEO appointment leadership strategy {year}".strip(),
+        f"{name} CEO {company} biography executive profile",
+    ]
+    snippets: list[str] = []
+    try:
+        try:
+            from ddgs import DDGS  # type: ignore[import]
+        except ImportError:
+            from duckduckgo_search import DDGS  # type: ignore[import]
+        for q in queries:
+            results = await asyncio.to_thread(lambda q=q: list(DDGS().text(q, max_results=5)))
+            found = [r.get("body", "") for r in results if r.get("body")]
+            if found:
+                snippets.extend(found)
+                if len(snippets) >= 5:
+                    break
+    except Exception as e:
+        logger.warning(f"DuckDuckGo search failed for '{name}': {e}")
+    return snippets[:6]
+
+
+async def _search_ceo_profile(name: str, company: str, transition_date: str = "", sector: str = "") -> dict:
+    """Run Wikipedia, DDG text, and DDG image search in parallel."""
+    wiki_task  = asyncio.create_task(_fetch_wikipedia_profile(name, company))
+    text_task  = asyncio.create_task(_web_search_bio(name, company, transition_date, sector))
+    image_task = asyncio.create_task(_search_ceo_image(name, company))
+    wiki_data, snippets, ddg_image = await asyncio.gather(wiki_task, text_task, image_task)
+
+    # Prefer Wikipedia image (identity-verified); fall back to DDG image
+    image_url = wiki_data["image_url"] or ddg_image
+
+    return {
+        "wiki_bio":  wiki_data["bio"],
+        "image_url": image_url,
+        "url":       wiki_data["url"],
+        "snippets":  snippets,
+    }
+
+
+# ---------------------------------------------------------------------------
+# /api/ceo/bio  — lightweight profile for timeline panel (no OpenAI narrative)
+# ---------------------------------------------------------------------------
+
+@app.get("/api/ceo/bio")
+async def get_ceo_bio(name: str, company: str = "", transition_date: str = ""):
+    if not name or name in ("Unknown", "ERROR", "NOT FOUND"):
+        return {"name": name, "bio": None, "image_url": None, "url": None, "found": False}
+    from ceo_profile_agent.agent import get_agent
+    data = await get_agent().run(name, company, transition_date)
+    bio = data.get("bio") or None
+    image_url = data.get("image_url") or None
+    return {
+        "name":      name,
+        "bio":       bio,
+        "image_url": image_url,
+        "url":       data.get("source_url") or None,
+        "found":     bool(bio or image_url),
+    }
+
+
+# ---------------------------------------------------------------------------
+# /api/ceo/profile  — full profile with OpenAI narrative (analysis tab)
+# ---------------------------------------------------------------------------
+
+@app.get("/api/ceo/profile")
+async def get_ceo_profile(
+    name: str,
+    company: str = "",
+    impact_90d: Optional[float] = None,
+    transition_date: str = "",
+    sector: str = "",
+):
+    from ceo_profile_agent.agent import get_agent
+    # Run profile agent (handles image verification + caching) and web snippets in parallel
+    profile_task = get_agent().run(name, company, transition_date, sector)
+    snippets_task = _web_search_bio(name, company, transition_date, sector)
+    profile_data, snippets = await asyncio.gather(profile_task, snippets_task)
+
+    bio       = profile_data.get("bio") or None
+    image_url = profile_data.get("image_url") or None
+    url       = profile_data.get("source_url") or None
+
+    year = transition_date[:4] if transition_date else "unknown year"
+
+    # Build combined context — bio + transition-specific snippets
+    source_parts = []
+    if bio:
+        source_parts.append(f"Wikipedia bio:\n{bio}")
+    for i, s in enumerate(snippets[:5]):
+        source_parts.append(f"Web source {i+1}:\n{s}")
+    source_text = "\n\n".join(source_parts) or "No profile data found from web sources."
+
+    # OpenAI structured extraction
     background = "Executive Leader"
     focus = "Strategic Growth"
     narrative: str | None = None
@@ -908,99 +1062,91 @@ async def get_ceo_profile(name: str, company: str = "", impact_90d: Optional[flo
         from openai import AsyncOpenAI
         oai = AsyncOpenAI()
         impact_note = (
-            f"The stock moved {impact_90d:+.1f}% in the 90 days after the transition."
+            f"The stock moved {impact_90d:+.1f}% in the 90 days after this transition."
             if impact_90d is not None else ""
         )
-        prompt = f"""You are analyzing {name}, the incoming CEO at {company}.
+        prompt = f"""You are writing a specific CEO transition profile for an investment research platform.
 
-Wikipedia bio:
-{bio or "No Wikipedia data available."}
-
+CEO Name        : {name}
+Company         : {company}
+Sector          : {sector or 'Unknown'}
+Transition Year : {year}
 {impact_note}
+
+Profile data gathered from web search and Wikipedia (includes transition-specific news):
+{source_text}
+
+Your task — write a profile that is SPECIFIC to this exact transition at {company} in {year}. Do NOT write generic text.
 
 Return a JSON object with exactly these fields:
 {{
-  "background": "Previous role in 2-4 words (e.g. 'Former CFO', 'Former COO', 'Industry Veteran')",
-  "focus": "Strategic focus area in 2-4 words (e.g. 'Digital Transformation', 'Operational Excellence')",
-  "narrative": "Two paragraphs separated by a newline. First paragraph: what this CEO transition signals strategically for {company}. Second paragraph: their appointment context, their background, and the market's reaction{(' (' + f'{impact_90d:+.1f}%' + ' stock move)') if impact_90d is not None else ''}.",
-  "mandates": ["Specific objective or achievement 1", "Specific objective or achievement 2", "Specific objective or achievement 3"]
+  "background": "Their specific previous role in 2-4 words, e.g. 'Former CFO at {company}', 'COO since 2005', 'Industry Outsider' — derived from the sources above",
+  "focus": "Their specific strategic priority at {company} in 2-4 words based on the context, e.g. 'Cost Restructuring', 'International Expansion', 'Turnaround Leader'",
+  "narrative": "Two paragraphs separated by \\n. Paragraph 1: What was happening at {company} in {year} that led to this transition — company context, challenges, or opportunities at that specific time. Paragraph 2: What {name} specifically brought to the role, their relevant background, and the market's reaction{(' — stock moved ' + f'{impact_90d:+.1f}%' + ' in 90 days') if impact_90d is not None else ''}. Be specific, factual, and grounded in the sources provided.",
+  "mandates": ["Specific real challenge or goal {name} faced at {company} in {year}", "Second specific objective based on company context at that time", "Third specific initiative or achievement"]
 }}
 
-Base everything on the Wikipedia bio where available; use general knowledge about {name} and {company} otherwise. Return only valid JSON."""
+IMPORTANT: Every sentence must be specific to {name} at {company} in {year}. Never write generic phrases like 'marks a new chapter' or 'brings executive experience'. Return only valid JSON."""
 
         resp = await oai.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"},
-            max_tokens=600,
+            max_tokens=1100,
         )
         extracted = json.loads(resp.choices[0].message.content)
         background = extracted.get("background", background)
-        focus = extracted.get("focus", focus)
-        narrative = extracted.get("narrative")
-        mandates = extracted.get("mandates", [])[:3]
+        focus      = extracted.get("focus", focus)
+        narrative  = extracted.get("narrative")
+        raw_mandates = extracted.get("mandates")
+        mandates = [m for m in (raw_mandates or []) if isinstance(m, str) and m.strip()][:3]
+        # If OpenAI returned empty or null mandates, use generic fallback
+        if not mandates:
+            mandates = [
+                f"Lead {company}'s strategic transformation agenda in {year}",
+                "Drive operational efficiency and shareholder value creation",
+                "Execute the company's long-term growth and competitive positioning",
+            ]
     except Exception as e:
         logger.error(f"OpenAI profile extraction error for '{name}': {e}")
-        # Smart fallback: derive fields from bio text heuristically
-        if bio:
-            bio_lower = bio.lower()
-            # Guess background from role keywords
-            for role in ["chief operating officer", "coo", "chief financial officer", "cfo",
-                         "president", "chief technology officer", "cto", "vice president",
-                         "general counsel", "chief marketing officer"]:
-                if role in bio_lower:
-                    abbr = {"chief operating officer": "Former COO", "coo": "Former COO",
-                            "chief financial officer": "Former CFO", "cfo": "Former CFO",
-                            "chief technology officer": "Former CTO", "cto": "Former CTO",
-                            "president": "Former President", "vice president": "Former VP",
-                            "general counsel": "Former General Counsel",
-                            "chief marketing officer": "Former CMO"}.get(role, "Executive Leader")
-                    background = abbr
-                    break
-            # Guess focus from keywords
-            for kw, label in [("technology", "Technology & Innovation"),
-                               ("digital", "Digital Transformation"),
-                               ("finance", "Financial Excellence"),
-                               ("operations", "Operational Excellence"),
-                               ("growth", "Revenue Growth"),
-                               ("sustain", "Sustainability"),
-                               ("health", "Healthcare Innovation")]:
-                if kw in bio_lower:
-                    focus = label
-                    break
-            # Build a two-paragraph narrative from the bio
-            sentences = [s.strip() for s in bio.replace("\n", " ").split(".") if len(s.strip()) > 30]
-            p1 = ". ".join(sentences[:2]) + "." if sentences else ""
-            p2 = ". ".join(sentences[2:4]) + "." if len(sentences) > 2 else ""
-            impact_txt = f" The stock moved {impact_90d:+.1f}% in the 90 days following the transition." if impact_90d is not None else ""
-            narrative = f"{p1}\n{p2}{impact_txt}".strip()
-            mandates = [
-                f"Lead {company}'s next phase of strategic growth",
-                "Drive operational efficiency and shareholder value",
-                "Execute the company's long-term vision and transformation agenda",
-            ]
-        else:
-            impact_txt = f" The stock moved {impact_90d:+.1f}% in the 90 days following the transition." if impact_90d is not None else ""
-            narrative = (
-                f"The appointment of {name} as CEO of {company} marks a new chapter in the company's leadership journey."
-                f"\nAppointed to drive the company's strategic agenda, {name} brings executive experience to the role.{impact_txt}"
-            )
-            mandates = [
-                f"Lead {company}'s strategic growth and market expansion",
-                "Strengthen operational performance and shareholder value",
-                "Build and inspire a high-performing leadership team",
-            ]
+        combined_text = source_text.lower()
+        for role, label in [
+            ("chief operating officer", "Former COO"), ("coo", "Former COO"),
+            ("chief financial officer", "Former CFO"), ("cfo", "Former CFO"),
+            ("chief technology officer", "Former CTO"), ("cto", "Former CTO"),
+            ("president", "Former President"), ("vice president", "Former VP"),
+        ]:
+            if role in combined_text:
+                background = label
+                break
+        for kw, label in [
+            ("technology", "Technology & Innovation"), ("digital", "Digital Transformation"),
+            ("finance", "Financial Excellence"), ("operations", "Operational Excellence"),
+            ("growth", "Revenue Growth"), ("health", "Healthcare Innovation"),
+        ]:
+            if kw in combined_text:
+                focus = label
+                break
+        impact_txt = f" The stock moved {impact_90d:+.1f}% in the 90 days following the transition." if impact_90d is not None else ""
+        narrative = (
+            f"The appointment of {name} as CEO of {company} marks a significant leadership transition."
+            f"\n{name} brings executive experience to drive {company}'s strategic agenda forward.{impact_txt}"
+        )
+        mandates = [
+            f"Lead {company}'s next phase of strategic growth",
+            "Drive operational efficiency and shareholder value",
+            "Execute the company's long-term transformation agenda",
+        ]
 
     return {
-        "name": name,
-        "bio": bio,
-        "image_url": image_url,
-        "url": url,
-        "wikipedia_title": page_title,
-        "background": background,
-        "focus": focus,
-        "narrative": narrative,
-        "mandates": mandates,
+        "name":             name,
+        "bio":              bio or (snippets[0][:300] if snippets else None),
+        "image_url":        image_url,
+        "url":              url,
+        "background":       background,
+        "focus":            focus,
+        "narrative":        narrative,
+        "mandates":         mandates,
     }
 
 

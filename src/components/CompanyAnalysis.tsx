@@ -31,8 +31,28 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
   const [selectedTab, setSelectedTab] = useState<string>('overview');
   const [metrics, setMetrics] = useState<any>(null);
   const [metricsLoading, setMetricsLoading] = useState(false);
+  const [prefetchedProfile, setPrefetchedProfile] = useState<any>(null);
 
   const daysMap: Record<TimeRange, number> = { '6m': 180, '1y': 365, '2y': 730, '5y': 1825 };
+
+  // Prefetch CEO profile as soon as a transition is selected — runs in background,
+  // result passed down to CEOProfile so the tab renders instantly without re-fetching.
+  useEffect(() => {
+    if (!transition.newCEO || !company.name) return;
+    setPrefetchedProfile(null);
+    let cancelled = false;
+    const params = new URLSearchParams({
+      name: transition.newCEO,
+      company: company.name,
+      transition_date: transition.transitionDate,
+      sector: company.sector || '',
+    });
+    fetch(`/api/ceo/profile?${params}`)
+      .then(r => r.json())
+      .then(data => { if (!cancelled) setPrefetchedProfile(data); })
+      .catch(() => {});
+    return () => { cancelled = true; };
+  }, [transition.newCEO, transition.transitionDate, company.name, company.sector]);
 
   // Fetch metrics from backend
   useEffect(() => {
@@ -475,6 +495,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                 transitionDate={transition.transitionDate}
                 sector={company.sector || ''}
                 impact90Days={metrics?.impact90Days ?? null}
+                prefetchedData={prefetchedProfile}
               />
             </motion.div>
           </TabsContent>
@@ -500,6 +521,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                   transitionDate={transition.transitionDate}
                   companyName={company.name}
                   benchmarkTicker={benchmarkTicker}
+                  sector={company.sector}
                 />
               ) : (
                 <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">

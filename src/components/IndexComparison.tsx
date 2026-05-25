@@ -4,60 +4,90 @@ import { TrendingUp, TrendingDown } from 'lucide-react';
 import { loadIndexData } from '../utils/api';
 import type { ChartDataPoint } from '../utils/types';
 
+const SECTOR_ETF_MAP: Record<string, string> = {
+  'Information Technology': 'XLK',
+  'Technology': 'XLK',
+  'Health Care': 'XLV',
+  'Healthcare': 'XLV',
+  'Financials': 'XLF',
+  'Financial Services': 'XLF',
+  'Consumer Discretionary': 'XLY',
+  'Consumer Cyclical': 'XLY',
+  'Consumer Staples': 'XLP',
+  'Consumer Defensive': 'XLP',
+  'Energy': 'XLE',
+  'Utilities': 'XLU',
+  'Materials': 'XLB',
+  'Basic Materials': 'XLB',
+  'Industrials': 'XLI',
+  'Real Estate': 'XLRE',
+  'Communication Services': 'XLC',
+};
+
 interface IndexComparisonProps {
   companyData: ChartDataPoint[];
   companyTicker: string;
   transitionDate: string;
   companyName: string;
   benchmarkTicker: string;
+  sector?: string;
 }
 
-export function IndexComparison({ companyData, companyTicker, transitionDate, companyName, benchmarkTicker }: IndexComparisonProps) {
+export function IndexComparison({ companyData, companyTicker, transitionDate, companyName, benchmarkTicker, sector }: IndexComparisonProps) {
   const [indexData, setIndexData] = useState<ChartDataPoint[]>([]);
+  const [sectorData, setSectorData] = useState<ChartDataPoint[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const sectorTicker = sector ? SECTOR_ETF_MAP[sector] ?? null : null;
+
   useEffect(() => {
-    const fetchIndexData = async () => {
+    const fetchAll = async () => {
       try {
-        const data = await loadIndexData(benchmarkTicker);
-        if (data) {
-          setIndexData(data.data.map(p => ({
-            ...p,
-            dateLabel: new Date(p.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }),
-            isTransitionDate: false,
-          })));
+        const fetches: Promise<void>[] = [
+          loadIndexData(benchmarkTicker).then(data => {
+            if (data) setIndexData(data.data.map(p => ({ ...p, dateLabel: new Date(p.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }), isTransitionDate: false })));
+          }),
+        ];
+        if (sectorTicker) {
+          fetches.push(
+            loadIndexData(sectorTicker).then(data => {
+              if (data) setSectorData(data.data.map(p => ({ ...p, dateLabel: new Date(p.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }), isTransitionDate: false })));
+            })
+          );
         }
+        await Promise.all(fetches);
       } catch (error) {
-        console.error('Error loading index data:', error);
+        console.error('Error loading comparison data:', error);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchIndexData();
-  }, [benchmarkTicker]);
+    fetchAll();
+  }, [benchmarkTicker, sectorTicker]);
 
   // Merge and normalize data
   const mergedData = useMemo(() => {
     if (!companyData || !indexData) return [];
 
-    // Create a map of index data by date for quick lookup
     const indexMap = new Map(indexData.map(d => [d.date, d]));
+    const sectorMap = new Map(sectorData.map(d => [d.date, d]));
 
-    // Filter company data to only dates that exist in both datasets
     return companyData
       .filter(d => indexMap.has(d.date))
       .map(d => {
         const idx = indexMap.get(d.date)!;
+        const sec = sectorMap.get(d.date);
         return {
           date: d.date,
           dateLabel: d.dateLabel,
           companyClose: d.close,
           indexClose: idx.close,
-          isTransitionDate: d.isTransitionDate
+          sectorClose: sec ? sec.close : null,
+          isTransitionDate: d.isTransitionDate,
         };
       });
-  }, [companyData, indexData]);
+  }, [companyData, indexData, sectorData]);
 
   // Normalize prices to base 100 for comparison
   const normalizedData = useMemo(() => {
@@ -65,11 +95,13 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
 
     const firstCompanyPrice = mergedData[0].companyClose;
     const firstIndexPrice = mergedData[0].indexClose;
+    const firstSectorPrice = mergedData.find(d => d.sectorClose != null)?.sectorClose ?? null;
 
     return mergedData.map(d => ({
       ...d,
       companyNormalized: (d.companyClose / firstCompanyPrice) * 100,
-      indexNormalized: (d.indexClose / firstIndexPrice) * 100
+      indexNormalized: (d.indexClose / firstIndexPrice) * 100,
+      sectorNormalized: (firstSectorPrice && d.sectorClose) ? (d.sectorClose / firstSectorPrice) * 100 : undefined,
     }));
   }, [mergedData]);
 
@@ -86,16 +118,19 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
 
     const baseCompany = mergedData[transitionIdx].companyClose;
     const baseIndex   = mergedData[transitionIdx].indexClose;
+    const baseSector  = mergedData[transitionIdx].sectorClose;
 
     return mergedData.slice(transitionIdx, transitionIdx + 365).map((d, i) => {
       const stockRet = ((d.companyClose - baseCompany) / baseCompany) * 100;
       const benchRet = ((d.indexClose   - baseIndex)   / baseIndex)   * 100;
+      const secRet   = (baseSector && d.sectorClose) ? ((d.sectorClose - baseSector) / baseSector) * 100 : undefined;
       return {
         date: d.date,
         day: i,
         abnormalReturn: parseFloat((stockRet - benchRet).toFixed(2)),
         stockReturn:    parseFloat(stockRet.toFixed(2)),
         benchmarkReturn: parseFloat(benchRet.toFixed(2)),
+        sectorReturn:   secRet != null ? parseFloat(secRet.toFixed(2)) : undefined,
       };
     });
   }, [mergedData, transitionDate]);
@@ -133,6 +168,10 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
   const companyPerf = lastData.companyNormalized - firstData.companyNormalized;
   const indexPerf = lastData.indexNormalized - firstData.indexNormalized;
   const outperformance = companyPerf - indexPerf;
+  const sectorPerf = (lastData.sectorNormalized != null && firstData.sectorNormalized != null)
+    ? lastData.sectorNormalized - firstData.sectorNormalized
+    : null;
+  const vsSecPerf = sectorPerf != null ? companyPerf - sectorPerf : null;
 
   const transitionLabel = (() => {
     const exactMatch = normalizedData.find(d => d.isTransitionDate);
@@ -157,7 +196,9 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
       <div className="mb-6">
         <div className="flex items-start justify-between mb-4">
           <div>
-            <h3 className="text-lg font-bold text-slate-900">{companyName} vs Russell 2000</h3>
+            <h3 className="text-lg font-bold text-slate-900">
+              {companyName} vs Russell 2000{sectorTicker ? ` vs ${sector} Sector (${sectorTicker})` : ''}
+            </h3>
             <p className="text-sm text-slate-600 mt-1">Normalized comparison (Base = 100)</p>
           </div>
           <div className="text-right">
@@ -168,33 +209,47 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
                 <TrendingDown className="w-5 h-5 text-red-600" />
               )}
               <span className={`text-sm font-semibold ${outperformance >= 0 ? 'text-green-600' : 'text-red-600'}`}>
-                {outperformance >= 0 ? '+' : ''}{outperformance.toFixed(2)}% outperformance
+                {outperformance >= 0 ? '+' : ''}{outperformance.toFixed(2)}% vs index
               </span>
             </div>
           </div>
         </div>
 
         {/* Performance Comparison Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+        <div className={`grid gap-3 mb-6 ${sectorTicker ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-2 md:grid-cols-3'}`}>
           <div className="bg-blue-50 rounded-lg p-3 border border-blue-200">
-            <div className="text-xs text-blue-700 font-medium">Company Performance</div>
+            <div className="text-xs text-blue-700 font-medium">{companyTicker} Performance</div>
             <div className={`text-lg font-bold ${companyPerf >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {companyPerf >= 0 ? '+' : ''}{companyPerf.toFixed(2)}%
             </div>
           </div>
 
           <div className="bg-purple-50 rounded-lg p-3 border border-purple-200">
-            <div className="text-xs text-purple-700 font-medium">Russell 2000 Performance</div>
+            <div className="text-xs text-purple-700 font-medium">Russell 2000</div>
             <div className={`text-lg font-bold ${indexPerf >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {indexPerf >= 0 ? '+' : ''}{indexPerf.toFixed(2)}%
             </div>
           </div>
 
+          {sectorTicker && sectorPerf !== null && (
+            <div className="bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+              <div className="text-xs text-emerald-700 font-medium">{sector} Sector ({sectorTicker})</div>
+              <div className={`text-lg font-bold ${sectorPerf >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                {sectorPerf >= 0 ? '+' : ''}{sectorPerf.toFixed(2)}%
+              </div>
+            </div>
+          )}
+
           <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-            <div className="text-xs text-slate-700 font-medium">Relative Performance</div>
+            <div className="text-xs text-slate-700 font-medium">vs Index</div>
             <div className={`text-lg font-bold ${outperformance >= 0 ? 'text-green-600' : 'text-red-600'}`}>
               {outperformance >= 0 ? '+' : ''}{outperformance.toFixed(2)}%
             </div>
+            {vsSecPerf !== null && (
+              <div className={`text-xs font-medium mt-0.5 ${vsSecPerf >= 0 ? 'text-emerald-600' : 'text-red-500'}`}>
+                {vsSecPerf >= 0 ? '+' : ''}{vsSecPerf.toFixed(2)}% vs sector
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -211,6 +266,10 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
               <linearGradient id="colorIndex" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#a855f7" stopOpacity={0.3} />
                 <stop offset="95%" stopColor="#a855f7" stopOpacity={0} />
+              </linearGradient>
+              <linearGradient id="colorSector" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#10b981" stopOpacity={0.25} />
+                <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -269,13 +328,26 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
               name="Russell 2000 (Normalized)"
               isAnimationActive={false}
             />
+            {sectorTicker && (
+              <Area
+                type="monotone"
+                dataKey="sectorNormalized"
+                stroke="#10b981"
+                fillOpacity={1}
+                fill="url(#colorSector)"
+                name={`${sector} Sector — ${sectorTicker} (Normalized)`}
+                isAnimationActive={false}
+                connectNulls
+              />
+            )}
           </AreaChart>
         </ResponsiveContainer>
       </div>
 
       <div className="mt-4 text-xs text-slate-600 bg-slate-50 rounded p-3">
         <p>
-          <span className="font-medium">Note:</span> Both prices are normalized to 100 at the start of the period for easy comparison. Red line marks CEO transition date.
+          <span className="font-medium">Note:</span> All prices normalized to 100 at period start.
+          {sectorTicker ? ` Green line = ${sectorTicker} SPDR sector ETF (${sector}).` : ''} Red dashed line = CEO transition date.
         </p>
       </div>
 
@@ -337,7 +409,7 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
                   stroke="#f59e0b"
                   dot={false}
                   strokeWidth={2}
-                  name="Abnormal Return"
+                  name="Abnormal Return (vs Index)"
                   isAnimationActive={false}
                 />
                 <Line
@@ -360,12 +432,26 @@ export function IndexComparison({ companyData, companyTicker, transitionDate, co
                   name={`${benchmarkTicker} Return`}
                   isAnimationActive={false}
                 />
+                {sectorTicker && (
+                  <Line
+                    type="monotone"
+                    dataKey="sectorReturn"
+                    stroke="#10b981"
+                    dot={false}
+                    strokeWidth={1.5}
+                    strokeDasharray="4 2"
+                    name={`${sectorTicker} Sector Return`}
+                    isAnimationActive={false}
+                    connectNulls
+                  />
+                )}
               </LineChart>
             </ResponsiveContainer>
           </div>
 
           <div className="mt-3 text-xs text-slate-600 bg-slate-50 rounded p-3">
-            <span className="font-medium">How to read:</span> Abnormal Return (amber) = {companyTicker} return − {benchmarkTicker} return from transition date. Positive values mean the stock outperformed the market specifically due to the CEO change.
+            <span className="font-medium">How to read:</span> Abnormal Return (amber) = {companyTicker} return − {benchmarkTicker} return from transition date.
+            {sectorTicker ? ` Green line = ${sectorTicker} sector ETF return for context.` : ''} Positive values mean the stock outperformed the market.
           </div>
         </div>
       )}
