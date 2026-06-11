@@ -17,7 +17,7 @@ from . import prompts
 from . import utils
 from . memory import AgentMemory
 
-MAX_TURNS = 15
+MAX_TURNS = 25
 
 class CEOAgent:
     def run_company(self, ticker: str, cik: str, company_name: str) -> list:
@@ -29,7 +29,11 @@ class CEOAgent:
         memory.add_user(prompts.build_user_prompt(ticker, cik, company_name))
 
         for turn in range(1, MAX_TURNS + 1):
-            msg = llm.chat(memory.messages, tools=tool_module.TOOL_SCHEMAS)
+            try:
+                msg = llm.chat(memory.messages, tools=tool_module.TOOL_SCHEMAS)
+            except Exception as e:
+                print(f"   [turn {turn}] LLM error after all retries: {e} — aborting agent loop")
+                break
             memory.add_assistant(msg)
 
             if not msg.tool_calls:

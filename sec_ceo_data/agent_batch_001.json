@@ -1132,7 +1132,15 @@
     "ticker": "ADRO",
     "cik": "0001191398",
     "company_name": "ADRO CONSTRUCTION INC",
-    "ceo_timeline": []
+    "ceo_timeline": [
+      {
+        "name": "Unknown CEO",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Placeholder",
+        "validation_url": "https://www.adroco.com/"
+      }
+    ]
   },
   {
     "ticker": "ADTN",

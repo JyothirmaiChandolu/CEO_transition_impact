@@ -65,6 +65,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
             priceAtTransition: kpis.transition_impact.transition_price,
             impact90Days: kpis.transition_impact.impact_90days_pct,
             impact1Year: kpis.transition_impact.impact_1year_pct,
+            impact3Year: kpis.transition_impact.impact_3year_pct ?? null,
             preTransitionTrend: kpis.transition_impact.pre_transition_trend_90d_pct,
             volatility: kpis.risk_metrics?.daily_volatility_pct || 0,
             volatilityLevel: kpis.price_metrics?.volatility_level || 'Medium',
@@ -93,18 +94,39 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
     setSelectedTab('overview');
   }, [company.ticker, transition.transitionDate]);
 
+  const isSingleCEO = !transition.previousCEO;
+
+  // For single-CEO companies, derive the effective anchor date from actual stock data
+  const effectiveTransitionDate = useMemo(() => {
+    if (!isSingleCEO || !stockData?.data?.length) return transition.transitionDate;
+    const first = stockData.data.find(d => d.date >= transition.transitionDate);
+    return first?.date ?? stockData.data[0].date;
+  }, [isSingleCEO, transition.transitionDate, stockData]);
+
   // Get chart data around transition (filter from stockData)
   const chartData = useMemo(() => {
     if (!stockData || !stockData.data) return [];
     const days = daysMap[selectedRange];
-    const transDate = new Date(transition.transitionDate);
-    const startDate = new Date(transDate);
-    startDate.setDate(startDate.getDate() - days / 2);
-    const endDate = new Date(transDate);
-    endDate.setDate(endDate.getDate() + days / 2);
 
-    const startStr = startDate.toISOString().split('T')[0];
-    const endStr = endDate.toISOString().split('T')[0];
+    let startStr: string, endStr: string;
+    if (isSingleCEO) {
+      // Show most recent N days so the chart always has data
+      const sorted = stockData.data.map(d => d.date).sort();
+      const latest = sorted[sorted.length - 1];
+      const end = new Date(latest);
+      const start = new Date(end);
+      start.setDate(start.getDate() - days);
+      startStr = start.toISOString().split('T')[0];
+      endStr = latest;
+    } else {
+      const transDate = new Date(transition.transitionDate);
+      const startDate = new Date(transDate);
+      startDate.setDate(startDate.getDate() - days / 2);
+      const endDate = new Date(transDate);
+      endDate.setDate(endDate.getDate() + days / 2);
+      startStr = startDate.toISOString().split('T')[0];
+      endStr = endDate.toISOString().split('T')[0];
+    }
 
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const formatLabel = (dateStr: string) => {
@@ -112,8 +134,9 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
       return `${months[d.getMonth()]} '${String(d.getFullYear()).slice(2)}`;
     };
 
-    // Find closest date to transition (handle weekends/holidays)
-    const transitionDate_obj = new Date(transition.transitionDate);
+    // Find closest date to the effective transition date (handles weekends/holidays and pre-IPO dates)
+    const anchorDateStr = isSingleCEO ? effectiveTransitionDate : transition.transitionDate;
+    const transitionDate_obj = new Date(anchorDateStr);
     const filteredData = stockData.data.filter(d => d.date >= startStr && d.date <= endStr);
 
     let closestTransitionDate = transition.transitionDate;
@@ -145,7 +168,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
   const timeline = company.transitions.map((t) => ({
     date: t.transitionDate,
     event: 'CEO Transition',
-    details: `${t.previousCEO} → ${t.newCEO}`,
+    details: `${t.previousCEO || 'Initial Appointment'} → ${t.newCEO}`,
     type: t === transition ? 'highlight' : 'info'
   }));
 
@@ -199,11 +222,13 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
               <div className="space-y-2 mt-4">
                 <div className="flex items-center gap-3">
                   <Calendar className="w-4 h-4 text-slate-400" />
-                  <span className="text-slate-300 text-sm">Transition: ~{formatDate(transition.transitionDate)}</span>
+                  <span className="text-slate-300 text-sm">
+                    {isSingleCEO ? 'CEO since' : 'Transition:'} ~{formatDate(transition.transitionDate)}
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <User className="w-4 h-4 text-slate-400" />
-                  <span className="text-slate-300 text-sm">{transition.previousCEO} → {transition.newCEO}</span>
+                  <span className="text-slate-300 text-sm">{transition.previousCEO || 'Initial Appointment'} → {transition.newCEO}</span>
                 </div>
               </div>
             </div>
@@ -259,25 +284,31 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
               transition={{ delay: 0.2 }}
               className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm"
             >
-              <h3 className="mb-4 text-lg font-bold text-slate-900">Leadership Transition Profile</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4 p-5 bg-slate-50 rounded-lg border border-slate-100">
-                  <div className="flex items-center gap-2 mb-2">
-                    <User className="w-4 h-4 text-slate-500" />
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Outgoing CEO</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-xl text-slate-900">{transition.previousCEO}</div>
-                    <div className="text-sm text-slate-500 mt-2 font-mono">
-                      Tenure ended: {formatDateShort(transition.transitionDate)}
+              <h3 className="mb-4 text-lg font-bold text-slate-900">
+                {transition.previousCEO ? 'Leadership Transition Profile' : 'CEO Appointment Profile'}
+              </h3>
+              <div className={`grid gap-8 ${transition.previousCEO ? 'md:grid-cols-2' : 'md:grid-cols-1 max-w-sm'}`}>
+                {transition.previousCEO && (
+                  <div className="space-y-4 p-5 bg-slate-50 rounded-lg border border-slate-100">
+                    <div className="flex items-center gap-2 mb-2">
+                      <User className="w-4 h-4 text-slate-500" />
+                      <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Outgoing CEO</span>
+                    </div>
+                    <div>
+                      <div className="font-bold text-xl text-slate-900">{transition.previousCEO}</div>
+                      <div className="text-sm text-slate-500 mt-2 font-mono">
+                        Tenure ended: {formatDateShort(transition.transitionDate)}
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
 
                 <div className="space-y-4 p-5 bg-slate-50 rounded-lg border border-slate-200">
                   <div className="flex items-center gap-2 mb-2">
                     <User className="w-4 h-4 text-slate-800" />
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-800">Incoming CEO</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-800">
+                      {transition.previousCEO ? 'Incoming CEO' : 'CEO'}
+                    </span>
                   </div>
                   <div>
                     <div className="font-bold text-xl text-slate-900">{transition.newCEO}</div>
@@ -325,7 +356,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
               ) : (
                 <StockChart
                   data={chartData}
-                  transitionDate={transition.transitionDate}
+                  transitionDate={effectiveTransitionDate}
                   companyName={company.name}
                   ticker={company.ticker}
                 />
@@ -338,7 +369,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="grid grid-cols-1 md:grid-cols-4 gap-6"
+                style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1rem' }}
               >
                 <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
@@ -360,6 +391,18 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                   </div>
                   <div className={`text-3xl font-bold mb-1 ${(metrics.impact1Year ?? 0) >= 0 ? 'text-emerald-700' : 'text-red-700'}`}>
                     {metrics.impact1Year !== null ? `${metrics.impact1Year >= 0 ? '+' : ''}${metrics.impact1Year.toFixed(1)}%` : 'N/A'}
+                  </div>
+                  <div className="text-xs text-slate-500">Post-transition</div>
+                </div>
+
+                <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
+                    <TrendingUp className="w-4 h-4" />
+                    3-Year Impact
+                    <MetricTooltip text="Percentage change in stock price over the 3 years following the CEO transition. Only available for transitions that occurred at least 3 years ago." />
+                  </div>
+                  <div className={`text-3xl font-bold mb-1 ${(metrics.impact3Year ?? 0) >= 0 ? 'text-emerald-700' : 'text-red-700'}`}>
+                    {metrics.impact3Year !== null && metrics.impact3Year !== undefined ? `${metrics.impact3Year >= 0 ? '+' : ''}${metrics.impact3Year.toFixed(1)}%` : 'N/A'}
                   </div>
                   <div className="text-xs text-slate-500">Post-transition</div>
                 </div>
@@ -474,7 +517,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                           <div className="text-sm font-mono text-slate-500">{formatDateShort(t.transitionDate)}</div>
                           <div>
                             <div className="text-sm font-medium text-slate-900">
-                              {t.previousCEO} → {t.newCEO}
+                              {t.previousCEO || 'Initial Appointment'} → {t.newCEO}
                             </div>
                           </div>
                         </div>
@@ -518,7 +561,7 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                 <IndexComparison
                   companyData={chartData}
                   companyTicker={company.ticker}
-                  transitionDate={transition.transitionDate}
+                  transitionDate={effectiveTransitionDate}
                   companyName={company.name}
                   benchmarkTicker={benchmarkTicker}
                   sector={company.sector}
@@ -563,7 +606,10 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                     <div className="flex-1">
                       <h4 className="mb-2 text-lg font-bold text-slate-900">Transition Overview</h4>
                       <div className="text-slate-600 leading-relaxed text-base">
-                        {transition.previousCEO} served as CEO of {company.name} until the verified transition date on <span className="font-semibold">{formatDate(transition.transitionDate)}</span>, when {transition.newCEO} took over as CEO. This transition date has been validated against SEC 8-K filings and company announcements, ensuring accuracy across all market impact calculations.
+                        {transition.previousCEO
+                          ? <>{transition.previousCEO} served as CEO of {company.name} until the verified transition date on <span className="font-semibold">{formatDate(transition.transitionDate)}</span>, when {transition.newCEO} took over as CEO.</>
+                          : <>{transition.newCEO} is the first CEO on record at {company.name}, with tenure beginning on <span className="font-semibold">{formatDate(transition.transitionDate)}</span>.</>
+                        } This date has been validated against SEC 8-K filings and company announcements, ensuring accuracy across all market impact calculations.
                       </div>
                     </div>
                   </div>
@@ -634,7 +680,10 @@ export function CompanyAnalysis({ company, transition, stockData, stockLoading, 
                 <div className="bg-slate-900 rounded-xl p-8 text-white shadow-xl">
                   <h3 className="mb-4 text-xl font-bold">Executive Summary</h3>
                   <p className="text-slate-300 mb-6 text-lg leading-relaxed">
-                    The leadership transition at {company.name} ({company.ticker}) from {transition.previousCEO} to {transition.newCEO}{' '}
+                    {transition.previousCEO
+                      ? `The leadership transition at ${company.name} (${company.ticker}) from ${transition.previousCEO} to ${transition.newCEO}`
+                      : `${transition.newCEO}'s appointment as CEO of ${company.name} (${company.ticker})`
+                    }{' '}
                     {metrics.impact90Days !== null ? (
                       <>
                         resulted in a{' '}

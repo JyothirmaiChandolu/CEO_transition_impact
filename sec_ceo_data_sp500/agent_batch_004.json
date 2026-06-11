@@ -1465,5 +1465,1268 @@
         "validation_url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756718000011/panw-8xkxq318earningsrelea.htm"
       }
     ]
+  },
+  {
+    "ticker": "PAYX",
+    "cik": "0000723531",
+    "company_name": "PAYCHEX INC",
+    "ceo_timeline": []
+  },
+  {
+    "ticker": "PCAR",
+    "cik": "0000075362",
+    "company_name": "PACCAR INC",
+    "ceo_timeline": [
+      {
+        "name": "Mark C. Pigott",
+        "start_date": "1997-01-01",
+        "end_date": "2014-04-27",
+        "source": "SEC 8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/75362/000119312513474972/d645041d8k.htm"
+      },
+      {
+        "name": "Ronald E. Armstrong",
+        "start_date": "2014-04-27",
+        "end_date": "2018-04-30",
+        "source": "SEC 8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/75362/000119312513474972/d645041d8k.htm"
+      },
+      {
+        "name": "H. C. Schippers",
+        "start_date": "2018-04-30",
+        "end_date": "2019-06-30",
+        "source": "SEC 8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/75362/000119312518152947/d555135d8k.htm"
+      },
+      {
+        "name": "R. Preston Feight",
+        "start_date": "2019-06-30",
+        "end_date": "Present",
+        "source": "SEC 8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/75362/000119312519112444/d645787d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PCG",
+    "cik": "0001004980",
+    "company_name": "PG&E Corp",
+    "ceo_timeline": [
+      {
+        "name": "Patricia Poppe",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1004980/000100498025000010/pcg-20241231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PEG",
+    "cik": "0000788784",
+    "company_name": "PUBLIC SERVICE ENTERPRISE GROUP INC",
+    "ceo_timeline": [
+      {
+        "name": "E. James Ferland",
+        "start_date": "2006-10-01",
+        "end_date": "2008-12-16",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/788784/000095011706004038/a42824.htm"
+      },
+      {
+        "name": "Ralph Izzo",
+        "start_date": "2008-12-16",
+        "end_date": "2018-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/788784/000093041308007334/c56057_8k.htm"
+      },
+      {
+        "name": "Hak Cheol Shin",
+        "start_date": "2018-12-31",
+        "end_date": "2022-09-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/788784/000119312518326203/d652019d8k.htm"
+      },
+      {
+        "name": "Ralph A. LaRossa",
+        "start_date": "2022-09-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/788784/000119312522236554/d401736d8ka.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PEP",
+    "cik": "0000077476",
+    "company_name": "PEPSICO INC",
+    "ceo_timeline": [
+      {
+        "name": "Steven S. Reinemund",
+        "start_date": "2001-05-01",
+        "end_date": "2005-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/77476/000129993306005463/htm_14444.htm"
+      },
+      {
+        "name": "Gary M. Rodkin",
+        "start_date": "2005-07-01",
+        "end_date": "2005-07-01",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Gary+M.+Rodkin+CEO+PEPSICO+INC+appointed+2005&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Irene Rosenfeld",
+        "start_date": "2006-06-23",
+        "end_date": "2006-06-23",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Irene+Rosenfeld+became+chief+executive+PEPSICO+INC&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Indra K. Nooyi",
+        "start_date": "2006-10-01",
+        "end_date": "2018-10-03",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/77476/000129993306005463/htm_14444.htm"
+      },
+      {
+        "name": "Ramon Laguarta",
+        "start_date": "2018-10-03",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747617000052/pepsicoform8-kdecember2017.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PFE",
+    "cik": "0000078003",
+    "company_name": "PFIZER INC",
+    "ceo_timeline": []
+  },
+  {
+    "ticker": "PFG",
+    "cik": "0001126328",
+    "company_name": "PRINCIPAL FINANCIAL GROUP INC",
+    "ceo_timeline": [
+      {
+        "name": "J. Barry Griswell",
+        "start_date": null,
+        "end_date": "2008-05-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000112632808000044/finallzimpleman022608.htm"
+      },
+      {
+        "name": "Larry D. Zimpleman",
+        "start_date": "2008-05-01",
+        "end_date": "2009-01-15",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000112632815000221/pfg8-kreceo81815.htm"
+      },
+      {
+        "name": "Therese M. Vaughan",
+        "start_date": "2009-01-15",
+        "end_date": "2009-01-15",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000112632809000009/vaughanresignation.htm"
+      },
+      {
+        "name": "Norman R. Sorensen",
+        "start_date": "2012-02-29",
+        "end_date": "2012-02-29",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000089874512000026/finalsorensenretire.htm"
+      },
+      {
+        "name": "Luis Valdez",
+        "start_date": "2012-02-29",
+        "end_date": "2015-08-18",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465920130500/tm2037294d2_8k.htm"
+      },
+      {
+        "name": "Daniel J. Houston",
+        "start_date": "2015-08-18",
+        "end_date": "2018-09-10",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465924119004/tm"
+      },
+      {
+        "name": "Patrick G. Halter",
+        "start_date": "2018-09-10",
+        "end_date": "2020-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000112632818000239/pfg8-kre091018.htm"
+      },
+      {
+        "name": "Tim Dunbar",
+        "start_date": "2020-12-31",
+        "end_date": "2020-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465920108318/tm2031730-1_8k.htm"
+      },
+      {
+        "name": "Kamal Bhatia",
+        "start_date": "2024-02-10",
+        "end_date": "2025-01-07",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465924003303/tm243087d1_8k.htm"
+      },
+      {
+        "name": "Deanna Strable",
+        "start_date": "2025-01-07",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465924119004/tm"
+      }
+    ]
+  },
+  {
+    "ticker": "PG",
+    "cik": "0000080424",
+    "company_name": "PROCTER & GAMBLE Co",
+    "ceo_timeline": [
+      {
+        "name": "James M. Kilts",
+        "start_date": "2001-02-01",
+        "end_date": "2005-10-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042405000219/kilts8k.txt"
+      },
+      {
+        "name": "A.G. Lafley",
+        "start_date": "2005-10-01",
+        "end_date": "2009-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042409000029/lafleymcdonald.htm"
+      },
+      {
+        "name": "Robert A. McDonald",
+        "start_date": "2009-07-01",
+        "end_date": "2013-06-30",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042409000029/lafleymcdonald.htm"
+      },
+      {
+        "name": "David Taylor",
+        "start_date": "2015-11-01",
+        "end_date": "2021-11-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042415000060/presidentceotransition.htm"
+      },
+      {
+        "name": "Jon R. Moeller",
+        "start_date": "2021-11-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042421000078/cooceoannouncement.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PGR",
+    "cik": "0000080661",
+    "company_name": "PROGRESSIVE CORP/OH/",
+    "ceo_timeline": [
+      {
+        "name": "Tricia Griffith",
+        "start_date": "2023-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066124000014/pgr-20240325.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PH",
+    "cik": "0000076334",
+    "company_name": "Parker-Hannifin Corp",
+    "ceo_timeline": [
+      {
+        "name": "Thomas L. Williams",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/76334/000007633422000034/ph-20220630.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PKG",
+    "cik": "0000075677",
+    "company_name": "PACKAGING CORP OF AMERICA",
+    "ceo_timeline": [
+      {
+        "name": "Mark W. Kowlzan",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/75677/000119312526074129/pkg-20251231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PLD",
+    "cik": "0001045609",
+    "company_name": "Prologis, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "W. Blake Baird",
+        "start_date": null,
+        "end_date": "2006-12-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1045609/000095013406022138/f25425e8vk.htm"
+      },
+      {
+        "name": "Hamid R. Moghadam",
+        "start_date": "2006-12-01",
+        "end_date": "2011-06-03",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1045609/000095013406022138/f25425e8vk.htm"
+      },
+      {
+        "name": "Walter C. Rakowich",
+        "start_date": "2011-06-03",
+        "end_date": "2012-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1045609/000095012311057596/y91585ae8vk.htm"
+      },
+      {
+        "name": "Guy F. Jaquier",
+        "start_date": "2013-05-15",
+        "end_date": "2013-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312513224687/d540216d8k.htm"
+      },
+      {
+        "name": "Philip L. Hawkins",
+        "start_date": "2018-08-24",
+        "end_date": "2026-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1045609/000156459018022302/pld-8ka_20180822.htm"
+      },
+      {
+        "name": "Daniel S. Letter",
+        "start_date": "2026-01-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312525029178/d874222d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PLTR",
+    "cik": "0001321655",
+    "company_name": "Palantir Technologies Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Alexander Karp",
+        "start_date": "2020-08-06",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1321655/000119312521013558/d949109d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PM",
+    "cik": "0001413329",
+    "company_name": "Philip Morris International Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Louis C. Camilleri",
+        "start_date": "2002-01-01",
+        "end_date": "2013-05-08",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1413329/000119312508071267/d8k.htm"
+      },
+      {
+        "name": "Andr Calantzopoulos",
+        "start_date": "2013-05-08",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332913000037/a2013-may8x8xk.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PNR",
+    "cik": "0000077360",
+    "company_name": "PENTAIR plc",
+    "ceo_timeline": [
+      {
+        "name": "John L. Stauch",
+        "start_date": "2017-07-11",
+        "end_date": "2018-03-15",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/77360/000095013708003191/c24516e8vk.htm"
+      },
+      {
+        "name": "Randall J. Hogan",
+        "start_date": "2018-03-15",
+        "end_date": "2018-04-03",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/77360/000119312513098562/d499264d8k.htm"
+      },
+      {
+        "name": "De'Mon L. Wiggins",
+        "start_date": "2026-04-28",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000024/pnr-20260424.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PNW",
+    "cik": "0000764622",
+    "company_name": "PINNACLE WEST CAPITAL CORP",
+    "ceo_timeline": [
+      {
+        "name": "William J. Post",
+        "start_date": "1971-01-01",
+        "end_date": "2007-02-20",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/764622/000095015309000224/p14449e8vk.htm"
+      },
+      {
+        "name": "Jack E. Davis",
+        "start_date": "2007-02-20",
+        "end_date": "2008-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/764622/000095015307001231/p73919e8vk.htm"
+      },
+      {
+        "name": "Donald E. Brandt",
+        "start_date": "2008-03-01",
+        "end_date": "2009-11-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/764622/000110465913091962/a13-26818_18k.htm"
+      },
+      {
+        "name": "Denis Cortese",
+        "start_date": "2009-11-01",
+        "end_date": "2013-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/764622/000095012309046209/c90340e8vk.htm"
+      },
+      {
+        "name": "Jeffrey Guldner",
+        "start_date": "2013-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/764622/000076462223000023/pnw-20221231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PODD",
+    "cik": "0001145197",
+    "company_name": "INSULET CORP",
+    "ceo_timeline": [
+      {
+        "name": "Duane DeSisto",
+        "start_date": "2005-05-04",
+        "end_date": "2014-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1145197/000095013508003690/b70140ice8vk.htm"
+      },
+      {
+        "name": "John Fallon",
+        "start_date": "2014-01-01",
+        "end_date": "2016-10-14",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1145197/000115752316006903/a51442288.htm"
+      },
+      {
+        "name": "Patrick J. Sullivan",
+        "start_date": "2016-10-14",
+        "end_date": "2018-09-14",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1145197/000115752318001929/a51865882.htm"
+      },
+      {
+        "name": "Shacey Petrovic",
+        "start_date": "2018-09-14",
+        "end_date": "2022-06-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1145197/000115752318001929/a51865882.htm"
+      },
+      {
+        "name": "James R. Hollingshead",
+        "start_date": "2022-06-01",
+        "end_date": "2025-04-28",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1145197/000119312525100522/d926293d8k.htm"
+      },
+      {
+        "name": "Ashley McEvoy",
+        "start_date": "2025-04-28",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1145197/000119312525100522/d926293d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "POOL",
+    "cik": "0000945841",
+    "company_name": "POOL CORP",
+    "ceo_timeline": [
+      {
+        "name": "Manuel J. Perez de la Mesa",
+        "start_date": null,
+        "end_date": "2008-02-26",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/945841/000094584108000020/pool3308eb8k.htm"
+      },
+      {
+        "name": "James J. Gaffney",
+        "start_date": "2008-02-26",
+        "end_date": "2016-05-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/945841/000094584115000135/pool103020158-k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "Peter D. Arvan",
+        "start_date": "2016-12-21",
+        "end_date": "2026-05-04",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/945841/000094584116000296/form8-k12212016.htm"
+      },
+      {
+        "name": "John B. Watwood",
+        "start_date": "2026-05-04",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/945841/000119312526204112/pool-20260504.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PPG",
+    "cik": "0000079879",
+    "company_name": "PPG INDUSTRIES INC",
+    "ceo_timeline": [
+      {
+        "name": "Raymond W. LeBoeuf",
+        "start_date": null,
+        "end_date": "2005-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000119312505136518/d8k.htm"
+      },
+      {
+        "name": "Hugh Grant",
+        "start_date": "2005-07-01",
+        "end_date": "2005-09-15",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000119312505186203/d8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "Pierre-Marie De Leener",
+        "start_date": "2005-09-15",
+        "end_date": "2012-10-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000119312512368961/d402370d8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "J. Rich Alexander",
+        "start_date": "2012-10-31",
+        "end_date": "2013-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987913000018/a8-k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "David B. Navikas",
+        "start_date": "2013-03-01",
+        "end_date": "2005-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987915000004/a8-knavikas.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "Charles E. Bunch",
+        "start_date": "2005-07-01",
+        "end_date": "2016-09-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000095015207001347/l24831ae8vk.htm"
+      },
+      {
+        "name": "Michael H. McGarry",
+        "start_date": "2016-09-01",
+        "end_date": "2023-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987916000092/form8-kjuly212016announcem.htm"
+      },
+      {
+        "name": "Timothy M. Knavish",
+        "start_date": "2023-01-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987922000010/form8-k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PPL",
+    "cik": "0000922224",
+    "company_name": "PPL Corp",
+    "ceo_timeline": [
+      {
+        "name": "James E. Abel",
+        "start_date": "1998-01-01",
+        "end_date": "2002-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222409000029/form8k.htm"
+      },
+      {
+        "name": "Stuart E. Graham",
+        "start_date": "2002-01-01",
+        "end_date": "2006-06-26",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222408000050/form8k.htm"
+      },
+      {
+        "name": "James H. Miller",
+        "start_date": "2006-06-26",
+        "end_date": "2008-08-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222411000197/form8k.htm"
+      },
+      {
+        "name": "Bryce L. Shriver",
+        "start_date": "2008-08-01",
+        "end_date": "2009-04-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222409000006/form8k.htm"
+      },
+      {
+        "name": "William H. Spence",
+        "start_date": "2011-11-17",
+        "end_date": "2018-03-08",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222420000001/form8k.htm"
+      },
+      {
+        "name": "Paul W. Thompson",
+        "start_date": "2018-03-08",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222418000001/form8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PRU",
+    "cik": "0001137774",
+    "company_name": "PRUDENTIAL FINANCIAL INC",
+    "ceo_timeline": [
+      {
+        "name": "Arthur F. Ryan",
+        "start_date": "1998-01-01",
+        "end_date": "2008-01-01",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Arthur+F.+Ryan+CEO+PRUDENTIAL+FINANCIAL+INC+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "John R. Strangfeld",
+        "start_date": "2008-01-01",
+        "end_date": "2011-02-08",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1137774/000119312508010527/d8k.htm"
+      },
+      {
+        "name": "Charles F. Lowrey",
+        "start_date": "2011-02-08",
+        "end_date": "2023-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1137774/000119312511027458/d8k.htm"
+      },
+      {
+        "name": "Caroline A. Feeney",
+        "start_date": "2023-01-01",
+        "end_date": "2023-01-01",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Caroline+A.+Feeney+CEO+PRUDENTIAL+FINANCIAL+INC+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Scott G. Sleyster",
+        "start_date": "2023-04-28",
+        "end_date": "2023-04-28",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Scott+G.+Sleyster+CEO+PRUDENTIAL+FINANCIAL+INC+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Andrew F. Sullivan",
+        "start_date": "2025-03-31",
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Andrew+F.+Sullivan+CEO+PRUDENTIAL+FINANCIAL+INC+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      }
+    ]
+  },
+  {
+    "ticker": "PSA",
+    "cik": "0001393311",
+    "company_name": "Public Storage",
+    "ceo_timeline": [
+      {
+        "name": "Joseph D. Russell, Jr.",
+        "start_date": "2019-01-01",
+        "end_date": "2026-03-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1393311/000119312518050794/d533849d8k.htm"
+      },
+      {
+        "name": "Ronald L. Havner Jr.",
+        "start_date": "2026-04-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1393311/000119312526128991/psa-20260325.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PSKY",
+    "cik": "0002041610",
+    "company_name": "Paramount Skydance Corp",
+    "ceo_timeline": [
+      {
+        "name": "David Ellison",
+        "start_date": "2025-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000011/psky-20251231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PSX",
+    "cik": "0001534701",
+    "company_name": "Phillips 66",
+    "ceo_timeline": [
+      {
+        "name": "Mark Lashier",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000010/psx-20260401.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PTC",
+    "cik": "0000857005",
+    "company_name": "PTC INC.",
+    "ceo_timeline": [
+      {
+        "name": "C. Richard Harrison",
+        "start_date": "2000-01-01",
+        "end_date": "2009-03-04",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/857005/000085700509000016/form8k.htm"
+      },
+      {
+        "name": "James Heppelmann",
+        "start_date": "2010-05-10",
+        "end_date": "2015-06-08",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=James+Heppelmann+CEO+PTC+INC+appointed+2024&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Thomas Bogan",
+        "start_date": "2015-06-08",
+        "end_date": "2017-08-15",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Thomas+Bogan+became+chief+executive+PTC+INC&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Craig Hayman",
+        "start_date": "2017-08-15",
+        "end_date": "2017-08-15",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Craig+Hayman+became+chief+executive+PTC+INC&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Corinna Lathan",
+        "start_date": "2017-08-15",
+        "end_date": "2018-02-13",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/857005/000165495417007720/form8-klathanannouncement.htm"
+      },
+      {
+        "name": "Michael DiTullio",
+        "start_date": "2023-01-01",
+        "end_date": "2024-02-14",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=PTC+INC+CEO+history+leadership&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Neil Barua",
+        "start_date": "2024-02-14",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/857005/000119312523194613/d398527d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PWR",
+    "cik": "0001050915",
+    "company_name": "QUANTA SERVICES, INC.",
+    "ceo_timeline": [
+      {
+        "name": "John R. Colson",
+        "start_date": "2008-01-01",
+        "end_date": "2011-05-19",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1050915/000095012311029298/h80965e8vk.htm"
+      },
+      {
+        "name": "James F. O Neil III",
+        "start_date": "2011-05-19",
+        "end_date": "2016-03-14",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312516504224/d157844d8k.htm"
+      },
+      {
+        "name": "Earl C. (Duke) Austin, Jr.",
+        "start_date": "2016-03-14",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312522021674/d98329d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "PYPL",
+    "cik": "0001633917",
+    "company_name": "PayPal Holdings, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Dan Schulman",
+        "start_date": "2015-07-01",
+        "end_date": "2017-01-01",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Dan+Schulman+CEO+PayPal+appointed+2015&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Alex Chriss",
+        "start_date": "2017-01-01",
+        "end_date": "2023-09-27",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Alex+Chriss+became+chief+executive+PayPal&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Enrique Lores",
+        "start_date": "2023-09-27",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1633917/000119312523212353/d475247d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "Q",
+    "cik": "0002058873",
+    "company_name": "Qnity Electronics, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Jon Kemp",
+        "start_date": "2026-04-08",
+        "end_date": "Present",
+        "source": "SEC filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/2058873/000162828026024259/q-20260408.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "QCOM",
+    "cik": "0000804328",
+    "company_name": "QUALCOMM INC/DE",
+    "ceo_timeline": [
+      {
+        "name": "Irwin Jacobs",
+        "start_date": "1990-01-01",
+        "end_date": "2005-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/804328/000093639205000056/a06730e8vk.htm"
+      },
+      {
+        "name": "Paul E. Jacobs",
+        "start_date": "2005-07-01",
+        "end_date": "2014-03-04",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/804328/000123445213000640/qcom1212138-k.htm"
+      },
+      {
+        "name": "Steven M. Mollenkopf",
+        "start_date": "2014-03-04",
+        "end_date": "2021-06-30",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/804328/000172894921000004/qcom-20210104.htm"
+      },
+      {
+        "name": "Cristiano Amon",
+        "start_date": "2021-06-30",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/804328/000172894921000004/qcom-20210104.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RCL",
+    "cik": "0000884887",
+    "company_name": "ROYAL CARIBBEAN CRUISES LTD",
+    "ceo_timeline": [
+      {
+        "name": "Jason Liberty",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/884887/000114036124020353/ny20022903x1_def14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "REG",
+    "cik": "0000910606",
+    "company_name": "REGENCY CENTERS CORP",
+    "ceo_timeline": [
+      {
+        "name": "Martin E. Hap Stein, Jr.",
+        "start_date": "2013-01-01",
+        "end_date": "2014-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/910606/000091060613000034/reg8-k122413.htm"
+      },
+      {
+        "name": "Chaim Katzman",
+        "start_date": "2014-01-01",
+        "end_date": "2018-02-14",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/910606/000119312518046005/d505366d8k.htm"
+      },
+      {
+        "name": "Lisa Palmer",
+        "start_date": "2020-01-01",
+        "end_date": "2024-11-08",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/910606/000095017022000108/reg-20220105.htm"
+      },
+      {
+        "name": "Mark J. Parrell",
+        "start_date": "2026-01-01",
+        "end_date": "Present",
+        "source": "10-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/910606/000119312526051668/reg-20251231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "REGN",
+    "cik": "0000872589",
+    "company_name": "REGENERON PHARMACEUTICALS, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Leonard S. Schleifer",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/872589/000153217620000008/regn-123119x10k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RF",
+    "cik": "0001281761",
+    "company_name": "REGIONS FINANCIAL CORP",
+    "ceo_timeline": [
+      {
+        "name": "John Turner",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=%22REGIONS+FINANCIAL+CORP%22+%22chief+executive+officer%22+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      }
+    ]
+  },
+  {
+    "ticker": "RJF",
+    "cik": "0000720005",
+    "company_name": "RAYMOND JAMES FINANCIAL INC",
+    "ceo_timeline": [
+      {
+        "name": "Paul Shoukry",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/720005/000072000525000008/rjf-20250108.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RL",
+    "cik": "0001037038",
+    "company_name": "RALPH LAUREN CORP",
+    "ceo_timeline": [
+      {
+        "name": "Patrice Louvet",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1037038/000103703819000005/rl-20190330x10k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RMD",
+    "cik": "0000943819",
+    "company_name": "RESMED INC",
+    "ceo_timeline": [
+      {
+        "name": "Louis A. Simpson",
+        "start_date": "2000-01-01",
+        "end_date": "2005-01-25",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/943819/000119312505015480/d8k.htm"
+      },
+      {
+        "name": "John P. Wareham",
+        "start_date": "2005-01-25",
+        "end_date": "2008-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/943819/000119312507193937/d8k.htm"
+      },
+      {
+        "name": "Kieran T. Gallahue",
+        "start_date": "2008-01-01",
+        "end_date": "2011-01-28",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/943819/000119312511019714/d8k.htm"
+      },
+      {
+        "name": "Peter C. Farrell",
+        "start_date": "2011-01-28",
+        "end_date": "2013-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/943819/000119312513076186/d491348d8k.htm"
+      },
+      {
+        "name": "Michael J. Farrell",
+        "start_date": "2013-03-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/943819/000119312523016231/d369496d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "ROK",
+    "cik": "0001024478",
+    "company_name": "ROCKWELL AUTOMATION, INC",
+    "ceo_timeline": [
+      {
+        "name": "Keith D. Nosbusch",
+        "start_date": null,
+        "end_date": "2016-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1024478/000129993309003659/htm_34250.htm"
+      },
+      {
+        "name": "Blake D. Moret",
+        "start_date": "2016-07-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1024478/000119312516545582/d184404d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "ROL",
+    "cik": "0000084839",
+    "company_name": "ROLLINS INC",
+    "ceo_timeline": [
+      {
+        "name": "Jerry Gahlhoff",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/84839/000008483926000008/rol-20251231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "ROP",
+    "cik": "0000882835",
+    "company_name": "ROPER TECHNOLOGIES INC",
+    "ceo_timeline": [
+      {
+        "name": "Robert E. Knowling, Jr.",
+        "start_date": null,
+        "end_date": "2018-09-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/882835/000088283508000022/cover8k.htm"
+      },
+      {
+        "name": "L. Neil Hunn",
+        "start_date": "2018-09-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/882835/000088283518000053/a8kneilhunnapptceo.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "ROST",
+    "cik": "0000745732",
+    "company_name": "ROSS STORES, INC.",
+    "ceo_timeline": [
+      {
+        "name": "James C. Peters",
+        "start_date": "1996-01-01",
+        "end_date": "2005-02-07",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/745732/000120677405000160/rs907928.htm"
+      },
+      {
+        "name": "Michael Balmuth",
+        "start_date": "2005-02-07",
+        "end_date": "2014-06-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/745732/000120677405000160/rs907928.htm"
+      },
+      {
+        "name": "Barbara Rentler",
+        "start_date": "2014-06-01",
+        "end_date": "2025-02-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/745732/000120677414001545/rossstores_8k.htm"
+      },
+      {
+        "name": "James Conroy",
+        "start_date": "2025-02-02",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000013/rost-20260406.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RSG",
+    "cik": "0001060391",
+    "company_name": "REPUBLIC SERVICES, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Donald W. Slager",
+        "start_date": "2016-06-03",
+        "end_date": "2021-06-25",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1060391/000119312516611923/d202394d8k.htm"
+      },
+      {
+        "name": "Charles F. Serianni",
+        "start_date": "2021-06-25",
+        "end_date": "2021-06-25",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039121000027/rsg-20210625.htm"
+      },
+      {
+        "name": "Jon Vander Ark",
+        "start_date": "2021-06-25",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039121000027/rsg-20210625.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RTX",
+    "cik": "0000101829",
+    "company_name": "RTX Corp",
+    "ceo_timeline": [
+      {
+        "name": "Christopher T. Calio",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RVTY",
+    "cik": "0000031791",
+    "company_name": "REVVITY, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Robert F. Friel",
+        "start_date": null,
+        "end_date": "2007-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/31791/000119312519226118/d794085d8k.htm"
+      },
+      {
+        "name": "Gregory L. Summe",
+        "start_date": "2007-01-01",
+        "end_date": "2007-07-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/31791/000119312507166458/d8k.htm"
+      },
+      {
+        "name": "John A. Roush",
+        "start_date": "2010-12-01",
+        "end_date": "2019-12-29",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/31791/000119312510263042/d8k.htm"
+      },
+      {
+        "name": "Prahlad R. Singh",
+        "start_date": "2019-12-30",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/31791/000119312519226118/d794085d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "SATS",
+    "cik": "0001415404",
+    "company_name": "EchoStar CORP",
+    "ceo_timeline": [
+      {
+        "name": "Charles W. Ergen",
+        "start_date": "2007-01-01",
+        "end_date": "2009-11-17",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1415404/000141540409000007/d70167e8vk.htm"
+      },
+      {
+        "name": "Michael T. Dugan",
+        "start_date": "2009-11-17",
+        "end_date": "2011-06-20",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1415404/000141540411000007/echostar8_k.htm"
+      },
+      {
+        "name": "Joseph P. Clayton",
+        "start_date": "2011-06-20",
+        "end_date": "2022-03-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1415404/000141540422000002/sats-20220217.htm"
+      },
+      {
+        "name": "Hamid Akhavan",
+        "start_date": "2022-03-31",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1415404/000141540422000002/sats-20220217.htm"
+      }
+    ]
   }
 ]

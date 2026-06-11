@@ -136,7 +136,7 @@ export function IndexSelector({ onSelectAction }: IndexSelectorProps) {
               </div>
               <h3 className="mb-3 text-lg font-bold text-slate-900">Company Selection</h3>
               <p className="text-slate-500 leading-relaxed">
-                Choose from 237 companies across multiple sectors. Filter by industry, search by name or ticker symbol.
+                Choose from 2,391 companies across multiple sectors. Filter by industry, search by name or ticker symbol.
               </p>
             </div>
 
@@ -199,15 +199,15 @@ export function IndexSelector({ onSelectAction }: IndexSelectorProps) {
           <h2 className="text-center mb-10 text-2xl font-semibold tracking-wide">Research Overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-slate-700 pt-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 tracking-tight">1,200+</div>
+              <div className="text-4xl font-bold mb-2 tracking-tight">4,174+</div>
               <div className="text-slate-400 text-sm uppercase tracking-wider font-medium">CEO Transitions Analyzed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 tracking-tight">237+</div>
+              <div className="text-4xl font-bold mb-2 tracking-tight">1,733+</div>
               <div className="text-slate-400 text-sm uppercase tracking-wider font-medium">Companies with Transitions</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2 tracking-tight">2,500+</div>
+              <div className="text-4xl font-bold mb-2 tracking-tight">2,391+</div>
               <div className="text-slate-400 text-sm uppercase tracking-wider font-medium">Total Companies Tracked</div>
             </div>
             <div className="text-center">

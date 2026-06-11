@@ -43,7 +43,11 @@ class AgentMemory:
             ]
         self.messages.append(entry)
 
+    _MAX_TOOL_RESULT_CHARS = 2500
+
     def add_tool_result(self, tool_call_id: str, name: str, content: str) -> None:
+        if len(content) > self._MAX_TOOL_RESULT_CHARS:
+            content = content[:self._MAX_TOOL_RESULT_CHARS] + "\n...[truncated]"
         self.messages.append({
             "role": "tool",
             "tool_call_id": tool_call_id,

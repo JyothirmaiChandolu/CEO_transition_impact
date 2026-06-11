@@ -104,6 +104,7 @@ export interface TransitionImpact {
   transition_price: number;
   impact_90days_pct: number;
   impact_1year_pct: number;
+  impact_3year_pct: number | null;
   pre_transition_trend_90d_pct: number;
   macro_economic_context: MacroEconomicContextData;
   analysis_note: string;
@@ -263,6 +264,7 @@ export interface CEORankingResult {
   transition_date: string;
   impact_1year_pct: number;
   impact_90days_pct: number;
+  impact_3year_pct: number | null;
   daily_volatility_pct: number;
   tenure_days: number;
   tenure_label: string;

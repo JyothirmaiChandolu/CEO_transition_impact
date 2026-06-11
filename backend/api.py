@@ -5,6 +5,7 @@ __Employee_id__: 800342
 __Version__    : 1
 __Description__: FastAPI backend that serves all /api/* endpoints for the frontend and integrates the RAG chatbot.
 """
+import re
 import sys
 import json
 import asyncio
@@ -214,7 +215,18 @@ def _compute_transition_impact(index_key: str, ticker: str, transition_date: str
     df["date"] = pd.to_datetime(df["date"])
     df = df.sort_values("date").reset_index(drop=True)
 
-    td = pd.to_datetime(transition_date)
+    # Sanitize dates like "2021-05-xx" or "2021-xx-xx" by replacing xx with 01
+    clean_date = re.sub(r'\bxx\b', '01', str(transition_date))
+    try:
+        td = pd.to_datetime(clean_date)
+    except Exception:
+        return {}
+
+    # If transition date predates all available stock data (pre-IPO CEO),
+    # snap to first available trading day so we measure from IPO onward.
+    first_stock_date = df["date"].iloc[0]
+    if td < first_stock_date:
+        td = first_stock_date
 
     # Find closest trading day on or after transition date
     after = df[df["date"] >= td]
@@ -233,6 +245,11 @@ def _compute_transition_impact(index_key: str, ticker: str, transition_date: str
     after1y = df[df["date"] >= t1y]
     price_1y = float(after1y.iloc[0]["close"]) if not after1y.empty else None
 
+    # Price 3 years after
+    t3y = td + pd.Timedelta(days=1095)
+    after3y = df[df["date"] >= t3y]
+    price_3y = float(after3y.iloc[0]["close"]) if not after3y.empty else None
+
     # Pre-transition 90-day trend
     t_before90 = td - pd.Timedelta(days=90)
     before90 = df[(df["date"] >= t_before90) & (df["date"] < td)]
@@ -244,6 +261,7 @@ def _compute_transition_impact(index_key: str, ticker: str, transition_date: str
 
     impact_90d = round((price_90d - transition_price) / transition_price * 100, 2) if price_90d else None
     impact_1y = round((price_1y - transition_price) / transition_price * 100, 2) if price_1y else None
+    impact_3y = round((price_3y - transition_price) / transition_price * 100, 2) if price_3y else None
 
     try:
         macro = MacroDataFetcher().get_macro_context(transition_date)
@@ -262,6 +280,7 @@ def _compute_transition_impact(index_key: str, ticker: str, transition_date: str
         "transition_price": round(transition_price, 2),
         "impact_90days_pct": impact_90d,
         "impact_1year_pct": impact_1y,
+        "impact_3year_pct": impact_3y,
         "pre_transition_trend_90d_pct": pre_trend,
         "macro_economic_context": {
             "in_recession": macro.get("in_recession", False),
@@ -721,6 +740,7 @@ async def get_ceo_rankings(index: str, top_n: int = 20, macro_adjusted: bool = T
                 "transition_date": trans_date,
                 "impact_1year_pct": impact.get("impact_1year_pct") or 0,
                 "impact_90days_pct": impact.get("impact_90days_pct") or 0,
+                "impact_3year_pct": impact.get("impact_3year_pct"),
                 "daily_volatility_pct": rm.get("daily_volatility_pct") or 10,
                 "macro_multiplier": 1.2 if in_rec and macro_adjusted else 1.0,
                 "macro_context": impact.get("macro_economic_context", {}).get("context", ""),
@@ -754,6 +774,7 @@ async def get_ceo_rankings(index: str, top_n: int = 20, macro_adjusted: bool = T
             "transition_date": row["transition_date"],
             "impact_1year_pct": round(float(row["impact_1year_pct"]), 2),
             "impact_90days_pct": round(float(row["impact_90days_pct"]), 2),
+            "impact_3year_pct": round(float(row["impact_3year_pct"]), 2) if pd.notna(row.get("impact_3year_pct")) else None,
             "daily_volatility_pct": round(float(row["daily_volatility_pct"]), 2),
             "tenure_days": td,
             "tenure_label": f"{td // 365}y {(td % 365) // 30}m",

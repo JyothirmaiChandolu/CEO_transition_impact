@@ -370,7 +370,7 @@ def _search_duckduckgo(query: str) -> list[str]:
         titles   = re.findall(r'result__title[^>]*>.*?<a[^>]*>(.*?)</a>', text, re.DOTALL)
         urls_f   = re.findall(r'class="result__url"[^>]*>(.*?)</(?:a|span)>', text, re.DOTALL)
         results = []
-        for i, snippet in enumerate(snippets[:8]):
+        for i, snippet in enumerate(snippets[:5]):
             clean_s = re.sub(r'<[^>]+>', '', snippet).strip()
             title   = re.sub(r'<[^>]+>', '', titles[i]).strip() if i < len(titles) else ""
             r_url   = re.sub(r'<[^>]+>', '', urls_f[i]).strip() if i < len(urls_f) else ""
@@ -506,9 +506,9 @@ def fetch_webpage(url: str, company_name: str = "") -> str:
 
     if sections:
         header = f"[CEO-relevant excerpts from {url}]\n\n"
-        return header + "\n---\n".join(sections[:8])
+        return header + "\n---\n".join(sections[:4])
 
-    return text[:5000]
+    return text[:3000]
 
 
 # ── Tool: finalize_timeline ──────────────────────────────────────────────────

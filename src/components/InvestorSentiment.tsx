@@ -49,7 +49,9 @@ export function InvestorSentiment({
     sentimentIcon = <ThumbsUp className="w-8 h-8 text-emerald-600" />;
 
     if (preTransitionNegative) {
-      sentimentDescription = `The market reacted positively to the leadership transition from ${previousCEO} to ${newCEO}. Despite a negative pre-transition trend, the stock rebounded by ${impact90Days.toFixed(1)}% in 90 days, suggesting investor optimism about new management's direction.`;
+      sentimentDescription = previousCEO
+        ? `The market reacted positively to the leadership transition from ${previousCEO} to ${newCEO}. Despite a negative pre-transition trend, the stock rebounded by ${impact90Days.toFixed(1)}% in 90 days, suggesting investor optimism about new management's direction.`
+        : `The market reacted positively to ${newCEO}'s appointment. Despite a negative pre-appointment trend, the stock rebounded by ${impact90Days.toFixed(1)}% in 90 days, suggesting investor optimism about the new leadership's direction.`;
     } else {
       sentimentDescription = `Investors showed confidence in the new CEO ${newCEO}. The stock gained ${impact90Days.toFixed(1)}% in the first 90 days post-transition, indicating market approval of the leadership change at ${companyName}.`;
     }

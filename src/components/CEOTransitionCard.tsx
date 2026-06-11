@@ -54,8 +54,8 @@ export function CEOTransitionCard({
         <div className="bg-slate-50 rounded-lg p-4 mb-4">
           <div className="flex items-center gap-3">
             <div className="flex-1">
-              <div className="text-sm text-muted-foreground mb-1">Outgoing CEO</div>
-              <div className="font-medium">{previousCEO}</div>
+              <div className="text-sm text-muted-foreground mb-1">{previousCEO ? 'Outgoing CEO' : 'Initial Appointment'}</div>
+              <div className="font-medium">{previousCEO || '—'}</div>
               <div className="text-xs text-muted-foreground mt-1">{tenure.previous}</div>
             </div>
             <ArrowRight className="w-5 h-5 text-amber-500 flex-shrink-0" />

@@ -1,0 +1,79 @@
+[
+  {
+    "ticker": "A",
+    "cik": "0001090872",
+    "company_name": "AGILENT TECHNOLOGIES, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Edward W. Barnholt",
+        "start_date": null,
+        "end_date": "2005-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1090872/000119312505008846/d8k.htm"
+      },
+      {
+        "name": "William P. Sullivan",
+        "start_date": "2005-03-01",
+        "end_date": "2015-03-18",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1090872/000109087214000027/form8-kmmcmullen.htm"
+      },
+      {
+        "name": "Michael R. McMullen",
+        "start_date": "2015-03-18",
+        "end_date": "2024-05-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1090872/000109087215000011/form8-kceomcmullen.htm"
+      },
+      {
+        "name": "Padraig McDonnell",
+        "start_date": "2024-05-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1090872/000095017024017940/a-20240220.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "AAPL",
+    "cik": "0000320193",
+    "company_name": "Apple Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Steve Jobs",
+        "start_date": "1997-07-09",
+        "end_date": "2011-08-24",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/320193/000118143109003017/rrd229456.htm"
+      },
+      {
+        "name": "Tim Cook",
+        "start_date": "2011-08-24",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/320193/000118143111003847/rrd297847.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "ABBV",
+    "cik": "0001551152",
+    "company_name": "AbbVie Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Richard A. Gonzalez",
+        "start_date": "2009-01-01",
+        "end_date": "2025-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465922045308/tm2212581d1_8k.htm"
+      },
+      {
+        "name": "Robert A. Michael",
+        "start_date": "2025-07-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925013467/tm256372d1_8k.htm"
+      }
+    ]
+  }
+]

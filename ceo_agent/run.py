@@ -265,16 +265,28 @@ def _rebuild_companies_json(ceo_data_dir: str = "sec_ceo_data", out_file: str = 
         sector = existing_sectors.get(ticker, "Unknown")
         transitions = []
         timeline = item.get("ceo_timeline", [])
-        for i in range(len(timeline) - 1):
-            cur = timeline[i]
-            nxt = timeline[i + 1]
-            transitions.append({
-                "previousCEO": cur.get("name", "Unknown"),
-                "newCEO": nxt.get("name", "Unknown"),
-                "transitionDate": nxt.get("start_date") or cur.get("end_date") or "",
-                "startDate": nxt.get("start_date") or "",
-                "endDate": nxt.get("end_date") or "Present",
-            })
+        if len(timeline) == 1:
+            only = timeline[0]
+            start = only.get("start_date") or ""
+            if start:
+                transitions.append({
+                    "previousCEO": "",
+                    "newCEO": only.get("name", "Unknown"),
+                    "transitionDate": start,
+                    "startDate": start,
+                    "endDate": only.get("end_date") or "Present",
+                })
+        else:
+            for i in range(len(timeline) - 1):
+                cur = timeline[i]
+                nxt = timeline[i + 1]
+                transitions.append({
+                    "previousCEO": cur.get("name", "Unknown"),
+                    "newCEO": nxt.get("name", "Unknown"),
+                    "transitionDate": nxt.get("start_date") or cur.get("end_date") or "",
+                    "startDate": nxt.get("start_date") or "",
+                    "endDate": nxt.get("end_date") or "Present",
+                })
         companies.append({
             "ticker": ticker,
             "name": company_name,

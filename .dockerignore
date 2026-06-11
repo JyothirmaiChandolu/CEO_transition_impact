@@ -37,6 +37,10 @@ pipeline.log
 cost_report.csv
 fetch_historical.log
 
+# Raw stock data (not needed at runtime, saves ~516MB)
+data/rus2000/stock/raw/
+data/sp500/stock/raw/
+
 # Git
 .git/
 .claude/

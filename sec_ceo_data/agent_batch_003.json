@@ -866,5 +866,1416 @@
         "validation_url": "https://www.sec.gov/Archives/edgar/data/1746109/000110465926048526/tm263190-2_def14a.htm"
       }
     ]
+  },
+  {
+    "ticker": "BFH",
+    "cik": "0001101215",
+    "company_name": "BREAD FINANCIAL HOLDINGS, INC.",
+    "ceo_timeline": [
+      {
+        "name": "J. Michael Parks",
+        "start_date": "1999-10-01",
+        "end_date": "2009-03-01",
+        "source": "Equilar",
+        "validation_url": "https://people.equilar.com/bio/person/j-michael-parks-bread-financial-holdings-inc/214909"
+      },
+      {
+        "name": "Edward J. Heffernan",
+        "start_date": "2009-03-01",
+        "end_date": "2011-03-10",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1101215/000129993309000795/htm_31419.htm"
+      },
+      {
+        "name": "Ivan Szeftel",
+        "start_date": "2011-03-10",
+        "end_date": "2012-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1101215/000110121511000095/form_8k.htm"
+      },
+      {
+        "name": "Ralph J. Andretta",
+        "start_date": "2012-03-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1101215/000119312526144512/bfh-20260406.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BFLY",
+    "cik": "0001804176",
+    "company_name": "Butterfly Network, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Jonathan M. Rothberg",
+        "start_date": "2000-01-01",
+        "end_date": "2021-02-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1804176/000110465922124934/tm2232105d1_8k.htm"
+      },
+      {
+        "name": "Todd Fruchterman",
+        "start_date": "2021-02-01",
+        "end_date": "2022-12-06",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1804176/000110465922124934/tm2232105d1_8k.htm"
+      },
+      {
+        "name": "Joseph DeVivo",
+        "start_date": "2023-04-24",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1804176/000155837023006473/bfly-20230424x8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BFS",
+    "cik": "0000907254",
+    "company_name": "SAUL CENTERS, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Thomas H. McCormick",
+        "start_date": null,
+        "end_date": "1993-06-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/907254/000090725414000047/bfs-currentreport2014x8k.htm"
+      },
+      {
+        "name": "B. Francis Saul II",
+        "start_date": "1993-06-01",
+        "end_date": "2014-04-11",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/907254/000090725414000047/bfs-currentreport2014x8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BFST",
+    "cik": "0001624322",
+    "company_name": "Business First Bancshares, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Robert Bond",
+        "start_date": null,
+        "end_date": "2016-10-12",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1624322/000143774916039902/bfbi20161017_8k.htm"
+      },
+      {
+        "name": "Mark Folse",
+        "start_date": "2016-10-12",
+        "end_date": "2024-10-17",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1624322/000143774924031769/bfbi20241022_8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "George W. Cummings III",
+        "start_date": "2024-10-17",
+        "end_date": "2015-06-26",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1624322/000143774926000182/bfbi20251231_8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "David R. Jude Melville, III",
+        "start_date": "2015-06-26",
+        "end_date": "2018-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1624322/000119312515286578/d71093d8k.htm"
+      },
+      {
+        "name": "Jack E. Byrd, Jr.",
+        "start_date": "2018-01-01",
+        "end_date": "2020-04-30",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1624322/000143774918002634/bfbi20180213_8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BGC",
+    "cik": "0001094831",
+    "company_name": "BGC Group, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Kevin Foley",
+        "start_date": null,
+        "end_date": "2007-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1094831/000119312507000748/d8k.htm"
+      },
+      {
+        "name": "Shaun D. Lynn",
+        "start_date": "2007-01-01",
+        "end_date": "2007-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1094831/000119312510073537/d8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "Howard W. Lutnick",
+        "start_date": "2007-01-01",
+        "end_date": "2025-02-18",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1094831/000095013606008082/file1.htm"
+      },
+      {
+        "name": "John Abularrage, Jean-Pierre (JP) Aubin, Sean Windeatt",
+        "start_date": "2025-02-18",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1094831/000121390025015309/ea0231344-8k_bgc.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BGS",
+    "cik": "0001278027",
+    "company_name": "B&G Foods, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "David L. Wenner",
+        "start_date": "2000-01-01",
+        "end_date": "2014-12-16",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1278027/000110465920125441/tm2036066d1_8k.htm"
+      },
+      {
+        "name": "Michael Cantwell",
+        "start_date": "2014-12-16",
+        "end_date": "2015-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1278027/000110465914087103/a14-26179_18ka.htm"
+      },
+      {
+        "name": "Robert C. Cantwell",
+        "start_date": "2015-01-01",
+        "end_date": "2019-04-05",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1278027/000110465919004074/a19-3633_18k.htm"
+      },
+      {
+        "name": "Kenneth G. Romanzi",
+        "start_date": "2019-04-06",
+        "end_date": "2020-11-15",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1278027/000110465919004074/a19-3633_18k.htm"
+      },
+      {
+        "name": "Kenneth C. Casey Keller",
+        "start_date": "2021-06-14",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1278027/000110465921065194/tm2116010d1_8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BH",
+    "cik": "0001726173",
+    "company_name": "Biglari Holdings Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Sardar Biglari",
+        "start_date": "2008-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1726173/000172617324000011/bhproxystatementfor2024ann.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BHB",
+    "cik": "0000743367",
+    "company_name": "BAR HARBOR BANKSHARES",
+    "ceo_timeline": [
+      {
+        "name": "Curtis Simard",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/743367/000110465925029873/tm2422840-4_def14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BHE",
+    "cik": "0000863436",
+    "company_name": "BENCHMARK ELECTRONICS INC",
+    "ceo_timeline": [
+      {
+        "name": "David A. Moezidis",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/863436/000119312526161703/bhe-20260417.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BHR",
+    "cik": "0001574085",
+    "company_name": "Braemar Hotels & Resorts Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Monty J. Bennett",
+        "start_date": null,
+        "end_date": "2016-11-14",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1574085/000157408516000209/ahpnewceo8-kx1122016.htm"
+      },
+      {
+        "name": "J. Robison Hays, III",
+        "start_date": "2016-11-14",
+        "end_date": "2016-11-14",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1574085/000110465920054454/tm2018183d1_8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "Douglas A. Kessler",
+        "start_date": "2016-11-14",
+        "end_date": "2017-04-27",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1574085/000110465917027943/a17-12075_18k.htm"
+      },
+      {
+        "name": "Richard J. Stockton",
+        "start_date": "2017-04-27",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1574085/000110465917027943/a17-12075_18k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BHRB",
+    "cik": "0001964333",
+    "company_name": "Burke & Herbert Financial Services Corp.",
+    "ceo_timeline": [
+      {
+        "name": "H. Charles Maddy, III",
+        "start_date": "2024-01-01",
+        "end_date": "2024-05-03",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1964333/000196433326000008/bhrb-20260122.htm"
+      },
+      {
+        "name": "David P. Boyle",
+        "start_date": "2024-05-03",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1964333/000196433324000129/bhrb-20240503.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BHVN",
+    "cik": "0001935979",
+    "company_name": "Biohaven Ltd.",
+    "ceo_timeline": [
+      {
+        "name": "Vlad Coric, M.D.",
+        "start_date": "2026-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1935979/000193597926000028/bhvn-20260313.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BIOA",
+    "cik": "0001709941",
+    "company_name": "BioAge Labs, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Kristen Fortney, Ph.D.",
+        "start_date": "2025-04-17",
+        "end_date": "Present",
+        "source": "SEC filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1709941/000095017025055371/2025_bioa_proxy_statemen.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BIPC",
+    "cik": "0001788348",
+    "company_name": "Brookfield Infrastructure Corp",
+    "ceo_timeline": [
+      {
+        "name": "John Mullen",
+        "start_date": "2021-05-05",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1788348/000162828025014377/bipc-20241231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BJRI",
+    "cik": "0001013488",
+    "company_name": "BJs RESTAURANTS INC",
+    "ceo_timeline": [
+      {
+        "name": "Gerald W. Deitchle",
+        "start_date": "2005-01-19",
+        "end_date": "2008-06-04",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1013488/000119312505008106/d8k.htm"
+      },
+      {
+        "name": "Jerry Deitchle",
+        "start_date": "2008-06-04",
+        "end_date": "2013-02-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1013488/000119312508130339/d8k.htm"
+      },
+      {
+        "name": "Gregory Trojan",
+        "start_date": "2013-02-01",
+        "end_date": "2021-09-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1013488/000117184312003814/f8k_102912.htm"
+      },
+      {
+        "name": "Gregory S. Levin",
+        "start_date": "2021-09-01",
+        "end_date": "2024-08-28",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1013488/000117184321004731/f8k_070621.htm"
+      },
+      {
+        "name": "C. Bradford Richmond",
+        "start_date": "2024-08-28",
+        "end_date": "2024-09-09",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1013488/000117184324004957/f8k_082824.htm"
+      },
+      {
+        "name": "Lyle D. Tick",
+        "start_date": "2024-09-09",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1013488/000117184324005017/f8k_090324.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKE",
+    "cik": "0000885245",
+    "company_name": "BKE",
+    "ceo_timeline": [
+      {
+        "name": "Dennis H. Nelson",
+        "start_date": "1991-04-19",
+        "end_date": "Present",
+        "source": "SEC filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/885245/000088524526000016/bke-20260420.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKH",
+    "cik": "0001130464",
+    "company_name": "BLACK HILLS CORP /SD/",
+    "ceo_timeline": [
+      {
+        "name": "David R. Emery",
+        "start_date": "2004-01-01",
+        "end_date": "2018-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1130464/000113046404000320/form8k_evans.htm"
+      },
+      {
+        "name": "Linda K. Massman",
+        "start_date": "2019-01-01",
+        "end_date": null,
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1130464/000113046418000032/form8-k_massmanresignation.htm"
+      },
+      {
+        "name": "Linden R. Evans",
+        "start_date": "2019-01-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1130464/000095017024032219/bkh-20240315.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKKT",
+    "cik": "0001820302",
+    "company_name": "Bakkt, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Gavin Michael",
+        "start_date": "2024-03-26",
+        "end_date": null,
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1820302/000119312524070368/d794298d8k.htm"
+      },
+      {
+        "name": "Andrew Main",
+        "start_date": "2024-03-26",
+        "end_date": "2025-04-21",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1820302/000119312524070368/d794298d8k.htm"
+      },
+      {
+        "name": "Akshay Naheta",
+        "start_date": "2025-04-21",
+        "end_date": "2025-09-17",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1820302/000162828025018854/bakkt-20250421.htm"
+      },
+      {
+        "name": "Michael Alfred",
+        "start_date": "2025-09-17",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1820302/000162828025042251/bakkt-20250917.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKSY",
+    "cik": "0001753539",
+    "company_name": "BlackSky Technology Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Brian O'Toole",
+        "start_date": "2022-01-01",
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Brian+O'Toole+CEO+BlackSky+Technology+Inc.+appointed"
+      }
+    ]
+  },
+  {
+    "ticker": "BKTI",
+    "cik": "0000002186",
+    "company_name": "BK Technologies Corp",
+    "ceo_timeline": [
+      {
+        "name": "David P. Storey",
+        "start_date": "2007-02-07",
+        "end_date": "2017-01-17",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/2186/000111650207000293/relmform8k.htm"
+      },
+      {
+        "name": "John M. Suzuki",
+        "start_date": "2021-07-19",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/2186/000165495421008073/bkti_8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKU",
+    "cik": "0001504008",
+    "company_name": "BankUnited, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "John A. Kanas",
+        "start_date": null,
+        "end_date": "2016-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1504008/000089882216000435/body.htm"
+      },
+      {
+        "name": "Thomas M. O'Brien",
+        "start_date": "2016-12-31",
+        "end_date": "2014-04-02",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1504008/000134100414000283/form8k.htm",
+        "start_date_estimated": true
+      },
+      {
+        "name": "Rajinder P. Singh",
+        "start_date": "2017-01-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1504008/000150400826000037/bkuproxy-20260410.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKV",
+    "cik": "0001838406",
+    "company_name": "BKV Corp",
+    "ceo_timeline": [
+      {
+        "name": "Christopher Kalnin",
+        "start_date": "2020-05-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1838406/000162828025020130/bkv-20250425.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BL",
+    "cik": "0001666134",
+    "company_name": "BLACKLINE, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Therese Tucker",
+        "start_date": "2000-01-01",
+        "end_date": "2021-01-01",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Therese+Tucker+CEO+BLACKLINE,+INC.+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      },
+      {
+        "name": "Marc Huffman",
+        "start_date": "2021-01-01",
+        "end_date": "2023-03-06",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1666134/000119312520211950/d87832d8k.htm"
+      },
+      {
+        "name": "Therese Tucker, Owen Ryan",
+        "start_date": "2023-03-06",
+        "end_date": "2024-09-20",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1666134/000119312523061584/d467593d8k.htm"
+      },
+      {
+        "name": "David Henshall",
+        "start_date": "2024-09-20",
+        "end_date": "2025-07-24",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1666134/000119312524224774/d875832d8k.htm"
+      },
+      {
+        "name": "Gregory Hughes",
+        "start_date": "2025-07-24",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1666134/000166613425000025/bl-20250724.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BLFS",
+    "cik": "0000834365",
+    "company_name": "BIOLIFE SOLUTIONS INC",
+    "ceo_timeline": [
+      {
+        "name": "Michael Rice",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/834365/000143774920013418/bioli20191231_10ka.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BLKB",
+    "cik": "0001280058",
+    "company_name": "BLACKBAUD INC",
+    "ceo_timeline": [
+      {
+        "name": "Michael Gianoni",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1280058/000128005826000006/blkb-20251231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BLMN",
+    "cik": "0001546417",
+    "company_name": "Bloomin' Brands, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Michael Spanos",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1546417/000154641726000009/blmn-20251228.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BLND",
+    "cik": "0001855747",
+    "company_name": "Blend Labs, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Nima Ghamsari",
+        "start_date": "2023-08-24",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1855747/000185574723000058/blnd-20230823.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BLX",
+    "cik": "0000890541",
+    "company_name": "FOREIGN TRADE BANK OF LATIN AMERICA, INC.",
+    "ceo_timeline": []
+  },
+  {
+    "ticker": "BLZE",
+    "cik": "0001462056",
+    "company_name": "Backblaze, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Gleb Budman",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1462056/000162828025023128/blze-20241231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BMBL",
+    "cik": "0001830043",
+    "company_name": "Bumble Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Whitney Wolfe Herd",
+        "start_date": "2014-01-01",
+        "end_date": "2024-01-02",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1830043/000119312521045254/d106038d8k.htm"
+      },
+      {
+        "name": "Lidiane Jones",
+        "start_date": "2024-01-02",
+        "end_date": "2025-03-16",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1830043/000119312523270887/d579036d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BMI",
+    "cik": "0000009092",
+    "company_name": "BADGER METER INC",
+    "ceo_timeline": [
+      {
+        "name": "Richard Meeusen",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/9092/000000909218000002/bmi-20171231x10k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BMRC",
+    "cik": "0001403475",
+    "company_name": "Bank of Marin Bancorp",
+    "ceo_timeline": [
+      {
+        "name": "Timothy D. Myers",
+        "start_date": "2021-11-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1403475/000140347521000100/bmrc-20210923.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BNED",
+    "cik": "0001634117",
+    "company_name": "Barnes & Noble Education, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Max J. Roberts",
+        "start_date": "2017-07-20",
+        "end_date": "2017-09-19",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1634117/000163411717000100/form8-kceo071917.htm"
+      },
+      {
+        "name": "Michael P. Huseby",
+        "start_date": "2017-09-19",
+        "end_date": "2024-06-11",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1634117/000119312524097934/d819518d8k.htm"
+      },
+      {
+        "name": "Jonathan Shar",
+        "start_date": "2024-06-11",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1634117/000119312524159608/d815141d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BNTC",
+    "cik": "0001808898",
+    "company_name": "Benitec Biopharma Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Dr. Jerel Banks",
+        "start_date": "2024-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1808898/000119312524241155/d838871ddef14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BOC",
+    "cik": "0001494582",
+    "company_name": "BOSTON OMAHA Corp",
+    "ceo_timeline": [
+      {
+        "name": "Sean Cash",
+        "start_date": null,
+        "end_date": "2017-03-03",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1494582/000144586617000210/boston8k03092017.htm"
+      },
+      {
+        "name": "James A. McLaughlin",
+        "start_date": "2017-03-03",
+        "end_date": "2019-08-10",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1494582/000144586617000210/boston8k03092017.htm"
+      },
+      {
+        "name": "David Herman",
+        "start_date": "2019-08-10",
+        "end_date": "2019-12-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1494582/000143774919016414/bomn20190811_8k.htm"
+      },
+      {
+        "name": "W. Scott LaFoy",
+        "start_date": "2019-12-31",
+        "end_date": "2023-01-06",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1494582/000143774920007425/bomn20200409_8k.htm"
+      },
+      {
+        "name": "Adam Peterson",
+        "start_date": "2023-01-06",
+        "end_date": "2023-01-06",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1494582/000143774925013909/bomn20250410_10ka.htm"
+      },
+      {
+        "name": "Brendan J. Keating",
+        "start_date": "2023-01-06",
+        "end_date": "2023-01-06",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1494582/000143774923000877/bomn20230106_8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BOH",
+    "cik": "0000046195",
+    "company_name": "BANK OF HAWAII CORP",
+    "ceo_timeline": [
+      {
+        "name": "Peter S. Ho",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/46195/000095017024023196/boh-20231231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BOOM",
+    "cik": "0000034067",
+    "company_name": "DMC Global Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Yvon Pierre Cariou",
+        "start_date": "2000-01-01",
+        "end_date": "2013-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/34067/000089808007000177/form8k.txt"
+      },
+      {
+        "name": "Kevin Longe",
+        "start_date": "2013-03-01",
+        "end_date": "2023-01-15",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/34067/000003406717000003/neostockawardscodeofethics.htm"
+      },
+      {
+        "name": "Michael Kuta",
+        "start_date": "2023-01-15",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/34067/000003406723000023/boom-20230213.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BOOT",
+    "cik": "0001610250",
+    "company_name": "Boot Barn Holdings, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "John Hazen",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1610250/000155837025009269/boot-20250827xdef14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BORR",
+    "cik": "0001715497",
+    "company_name": "Borr Drilling Ltd",
+    "ceo_timeline": [
+      {
+        "name": "Samir Ali",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=%22Borr+Drilling+Ltd%22+%22chief+executive+officer%22+appointed&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      }
+    ]
+  },
+  {
+    "ticker": "BOW",
+    "cik": "0002002473",
+    "company_name": "Bowhead Specialty Holdings Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Stephen Sills",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/2002473/000200247325000017/bow-20250319.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BOX",
+    "cik": "0001372612",
+    "company_name": "BOX INC",
+    "ceo_timeline": [
+      {
+        "name": "Padmasree Warrior",
+        "start_date": null,
+        "end_date": "2005-04-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1372612/000119312516444389/d25886d8k.htm"
+      },
+      {
+        "name": "Aaron Levie",
+        "start_date": "2005-04-01",
+        "end_date": "2020-05-26",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1372612/000114036125018639/ny20041605x2_def14a.htm"
+      },
+      {
+        "name": "Carl Bass",
+        "start_date": "2020-05-26",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1372612/000156459020027025/box-8k_20200526.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BPRN",
+    "cik": "0001913971",
+    "company_name": "Princeton Bancorp, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Edward Dietzler",
+        "start_date": "2018-01-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1913971/000119312526126059/bprn-20260324.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BRBS",
+    "cik": "0000842717",
+    "company_name": "BLUE RIDGE BANKSHARES, INC.",
+    "ceo_timeline": [
+      {
+        "name": "Gary R. Shook",
+        "start_date": "2000-01-01",
+        "end_date": "2020-06-05",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/842717/000119312520155945/d829949d8k.htm"
+      },
+      {
+        "name": "Brian K. Plum",
+        "start_date": "2020-06-05",
+        "end_date": "2021-02-28",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/842717/000119312521024742/d124286d8k.htm"
+      },
+      {
+        "name": "Randal R. Greene",
+        "start_date": "2021-02-28",
+        "end_date": "2021-03-12",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/842717/000119312521080636/d39288d8k.htm"
+      },
+      {
+        "name": "C. Rodes Boyd, Jr.",
+        "start_date": "2022-06-27",
+        "end_date": "2023-07-12",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/842717/000119312523187723/d503046d8k.htm"
+      },
+      {
+        "name": "G. William Beale",
+        "start_date": "2023-07-12",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/842717/000119312524210375/d530217ddef14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BRCB",
+    "cik": "0002068577",
+    "company_name": "Black Rock Coffee Bar, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Mark Davis",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/2068577/000162828026025374/brcb-20260415.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BRCC",
+    "cik": "0001891101",
+    "company_name": "BRC Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Evan Hafer",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1891101/000189110123000006/brcc-20221231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BRSL",
+    "cik": "0001619762",
+    "company_name": "Brightstar Lottery PLC",
+    "ceo_timeline": [
+      {
+        "name": "Enrico Drago",
+        "start_date": null,
+        "end_date": "2024-03-01",
+        "source": "Web search",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976225000007/igt-20241231.htm"
+      },
+      {
+        "name": "Massimiliano Chiara",
+        "start_date": "2024-03-01",
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976224000017/igt-20231231.htm",
+        "start_date_estimated": true
+      }
+    ]
+  },
+  {
+    "ticker": "BRSP",
+    "cik": "0001717547",
+    "company_name": "BrightSpire Capital, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Andrew E. Witt",
+        "start_date": null,
+        "end_date": "2020-03-31",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1717547/000119312520087104/d875361d8k.htm"
+      },
+      {
+        "name": "Michael J. Mazzei",
+        "start_date": "2020-04-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1717547/000119312520087104/d875361d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BRT",
+    "cik": "0000014846",
+    "company_name": "BRT Apartments Corp.",
+    "ceo_timeline": [
+      {
+        "name": "Kenneth F. Bernstein",
+        "start_date": null,
+        "end_date": "2016-03-11",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/14846/000001484616000035/brt8-k31516.htm"
+      },
+      {
+        "name": "Jeffrey A. Gould",
+        "start_date": "2016-06-06",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/14846/000121390016014148/f8k060616_brtrealtytrust.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BRZE",
+    "cik": "0001676238",
+    "company_name": "Braze, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Unknown CEO",
+        "start_date": null,
+        "end_date": "2017-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623825000077/brz-20250601.htm"
+      },
+      {
+        "name": "William Magnuson",
+        "start_date": "2017-01-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1676238/000167623825000077/brz-20250601.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BSET",
+    "cik": "0000010329",
+    "company_name": "BASSETT FURNITURE INDUSTRIES INC",
+    "ceo_timeline": []
+  },
+  {
+    "ticker": "BSRR",
+    "cik": "0001130144",
+    "company_name": "SIERRA BANCORP",
+    "ceo_timeline": [
+      {
+        "name": "James C. Holly",
+        "start_date": "2000-01-01",
+        "end_date": "2004-01-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1130144/000114420415017457/v405099_8k.htm"
+      },
+      {
+        "name": "Vincent L. Jurkovich",
+        "start_date": "2004-01-01",
+        "end_date": "2005-04-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1130144/000114420414075479/v397183_8k.htm"
+      },
+      {
+        "name": "Kevin J. McPhaill",
+        "start_date": "2015-01-01",
+        "end_date": "Present",
+        "source": "DEF 14A",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1130144/000110465926040182/bsrr-20260520xdef14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BSVN",
+    "cik": "0001746129",
+    "company_name": "Bank7 Corp.",
+    "ceo_timeline": [
+      {
+        "name": "William B. Brad Haines",
+        "start_date": "2004-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1746129/000114036126013116/ny20064159x2_def14a.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BTBT",
+    "cik": "0001710350",
+    "company_name": "Bit Digital, Inc",
+    "ceo_timeline": [
+      {
+        "name": "Erke Huang",
+        "start_date": "2021-02-01",
+        "end_date": "2021-03-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1710350/000121390025030356/ea0237210-01.htm"
+      },
+      {
+        "name": "Sam Tabar",
+        "start_date": "2023-03-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1710350/000121390025030356/ea0237210-01.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BTDR",
+    "cik": "0001899123",
+    "company_name": "Bitdeer Technologies Group",
+    "ceo_timeline": [
+      {
+        "name": "Jihan Wu",
+        "start_date": "2024-01-29",
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://news.google.com/search?q=Jihan+Wu+CEO+Bitdeer+Technologies+Group+appointed+2024&amp;hl=en-US&amp;gl=US&amp;ceid=US:en"
+      }
+    ]
+  },
+  {
+    "ticker": "BTMD",
+    "cik": "0001819253",
+    "company_name": "biote Corp.",
+    "ceo_timeline": [
+      {
+        "name": "Steven J. Heyer",
+        "start_date": "2000-01-01",
+        "end_date": "2022-01-01",
+        "source": "Web search",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1819253/000119312525072431/d917136ddef14a.htm"
+      },
+      {
+        "name": "Teresa S. Weber",
+        "start_date": "2022-01-01",
+        "end_date": "2025-02-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1819253/000119312525017314/d776515d8k.htm"
+      },
+      {
+        "name": "Bret Christensen",
+        "start_date": "2025-02-01",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1819253/000119312525017314/d776515d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BTSG",
+    "cik": "0001865782",
+    "company_name": "BrightSpring Health Services, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Michael McMaude",
+        "start_date": null,
+        "end_date": "2024-01-30",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1865782/000095017025088587/btsg-20250620.htm"
+      },
+      {
+        "name": "Jon Rousseau",
+        "start_date": "2024-01-30",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1865782/000119312524019479/d925158d8k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BTU",
+    "cik": "0001064728",
+    "company_name": "PEABODY ENERGY CORP",
+    "ceo_timeline": [
+      {
+        "name": "James Grech",
+        "start_date": null,
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1064728/000106472826000006/btu-20251231.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BULL",
+    "cik": "0001866364",
+    "company_name": "Webull Corp",
+    "ceo_timeline": [
+      {
+        "name": "Anquan Wang",
+        "start_date": "2020-01-01",
+        "end_date": "Present",
+        "source": "Annual filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1866364/000121390026041653/ea0283691-20f_webull.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BUR",
+    "cik": "0001714174",
+    "company_name": "Burford Capital Ltd",
+    "ceo_timeline": [
+      {
+        "name": "Christopher Bogart",
+        "start_date": "2020-05-01",
+        "end_date": "Present",
+        "source": "SEC filing",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1714174/000171417426000055/bur-20260324.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BUSE",
+    "cik": "0000314489",
+    "company_name": "FIRST BUSEY CORP /NV/",
+    "ceo_timeline": [
+      {
+        "name": "Douglas C. Mills",
+        "start_date": "2006-05-15",
+        "end_date": "2007-08-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/314489/000127528706002911/fb5935.htm"
+      },
+      {
+        "name": "Van A. Dukeman",
+        "start_date": "2007-08-01",
+        "end_date": "2019-04-23",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/314489/000110465907057732/a07-20670_18k.htm"
+      },
+      {
+        "name": "Robin N. Elliott",
+        "start_date": "2019-04-23",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/314489/000031448919000017/form8k_fbc.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BKD",
+    "cik": "0001332349",
+    "company_name": "Brookdale Senior Living Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Mark J. Schulte",
+        "start_date": "1997-01-01",
+        "end_date": "2005-01-01",
+        "source": "Web search",
+        "validation_url": "https://people.equilar.com/bio/person/mark-schulte-brookdale-senior-living-inc/878307"
+      },
+      {
+        "name": "W.E. Sheriff",
+        "start_date": "2006-07-25",
+        "end_date": "2010-01-12",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1332349/000134100406002018/ny1135077.htm"
+      },
+      {
+        "name": "T. Andrew Smith",
+        "start_date": "2013-02-12",
+        "end_date": "2018-02-28",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1332349/000133234913000006/form8-k.htm"
+      },
+      {
+        "name": "Lucinda M. Baier",
+        "start_date": "2018-02-28",
+        "end_date": "2018-03-27",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1332349/000133234918000036/form8-k2018x02x22.htm"
+      },
+      {
+        "name": "Nick Stengle",
+        "start_date": "2025-10-06",
+        "end_date": "Present",
+        "source": "Web search",
+        "validation_url": "https://www.nasdaq.com/articles/brookdale-senior-living-appoints-nick-stengle-ceo"
+      }
+    ]
+  },
+  {
+    "ticker": "BLBD",
+    "cik": "0001589526",
+    "company_name": "Blue Bird Corp",
+    "ceo_timeline": [
+      {
+        "name": "Daniel J. Hennessy",
+        "start_date": "2015-02-24",
+        "end_date": "2015-02-24",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1589526/000119312515072379/d875074d8k.htm"
+      },
+      {
+        "name": "Philip Horlock",
+        "start_date": "2015-02-24",
+        "end_date": "2020-06-30",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952620000045/a8-kcfoappointment.htm"
+      },
+      {
+        "name": "Phillip Tighe",
+        "start_date": "2020-06-30",
+        "end_date": "2021-07-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952621000068/blbd-20210616.htm"
+      },
+      {
+        "name": "Matthew Stevenson",
+        "start_date": "2021-11-01",
+        "end_date": "2023-06-05",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952623000050/blbd-20230513.htm"
+      },
+      {
+        "name": "Julie A. Fream",
+        "start_date": "2023-10-19",
+        "end_date": "2024-09-28",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952623000107/blbd-20231019.htm"
+      },
+      {
+        "name": "Edward T. Hightower",
+        "start_date": "2024-10-23",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1589526/000158952624000110/blbd-20241022.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "BNL",
+    "cik": "0001424182",
+    "company_name": "Broadstone Net Lease, Inc.",
+    "ceo_timeline": [
+      {
+        "name": "Christopher J. Czarnecki",
+        "start_date": null,
+        "end_date": "2017-02-01",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1424182/000095017023000668/bnl-20230106.htm"
+      },
+      {
+        "name": "Sean T. Cutt",
+        "start_date": "2017-02-01",
+        "end_date": "2018-08-09",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1424182/000156459018021209/ck0001424182-8k_20180810.htm"
+      },
+      {
+        "name": "John Moragne",
+        "start_date": "2023-02-28",
+        "end_date": "Present",
+        "source": "8-K",
+        "validation_url": "https://www.sec.gov/Archives/edgar/data/1424182/000095017023000668/bnl-20230106.htm"
+      }
+    ]
   }
 ]

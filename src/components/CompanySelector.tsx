@@ -16,7 +16,8 @@ export function CompanySelector({ companies, onBack, onAnalyze }: CompanySelecto
   const [selectedSector, setSelectedSector] = useState<string>('all');
   const [selectedCompany, setSelectedCompany] = useState<Company | null>(null);
   const [selectedTransition, setSelectedTransition] = useState<CEOTransition | null>(null);
-  const [showOnlyWithTransitions, setShowOnlyWithTransitions] = useState(true);
+  type CEOFilter = 'transitions' | 'single' | 'no-data';
+  const [ceoFilter, setCeoFilter] = useState<CEOFilter>('transitions');
 
   // Get unique sectors
   const sectors = useMemo(() => {
@@ -34,10 +35,15 @@ export function CompanySelector({ companies, onBack, onAnalyze }: CompanySelecto
         c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         c.ticker.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesSector = selectedSector === 'all' || c.sector === selectedSector;
-      const matchesTransitions = !showOnlyWithTransitions || c.hasTransitions;
-      return matchesSearch && matchesSector && matchesTransitions;
+      const isSingle = c.transitions.length === 1 && !c.transitions[0]?.previousCEO;
+      const hasMulti = c.transitions.some(t => t.previousCEO);
+      const matchesCEOFilter =
+        ceoFilter === 'transitions' ? hasMulti :
+        ceoFilter === 'single'      ? isSingle :
+        /* no-data */                 !c.hasTransitions;
+      return matchesSearch && matchesSector && matchesCEOFilter;
     });
-  }, [companies, searchQuery, selectedSector, showOnlyWithTransitions]);
+  }, [companies, searchQuery, selectedSector, ceoFilter]);
 
   // Group by sector for display
   const groupedCompanies = useMemo(() => {
@@ -127,15 +133,25 @@ export function CompanySelector({ companies, onBack, onAnalyze }: CompanySelecto
                   </div>
                 </div>
 
-                <label className="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={showOnlyWithTransitions}
-                    onChange={(e) => setShowOnlyWithTransitions(e.target.checked)}
-                    className="rounded border-slate-300"
-                  />
-                  Show only companies with CEO transitions
-                </label>
+                <div className="flex flex-wrap gap-1.5">
+                  {([
+                    { key: 'transitions', label: 'CEO Transitions' },
+                    { key: 'single',      label: 'Single CEOs' },
+                    { key: 'no-data',     label: 'No Transitions' },
+                  ] as { key: CEOFilter; label: string }[]).map(({ key, label }) => (
+                    <button
+                      key={key}
+                      onClick={() => setCeoFilter(key)}
+                      className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${
+                        ceoFilter === key
+                          ? 'bg-blue-600 text-white'
+                          : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
               </div>
 
               {/* Company List */}
@@ -236,7 +252,7 @@ export function CompanySelector({ companies, onBack, onAnalyze }: CompanySelecto
                                 </span>
                               </div>
                               <div className="flex items-center gap-1.5 text-sm">
-                                <span className="text-slate-600 truncate">{transition.previousCEO}</span>
+                                <span className="text-slate-600 truncate">{transition.previousCEO || 'Initial Appointment'}</span>
                                 <ArrowRight className="w-3 h-3 text-slate-400 flex-shrink-0" />
                                 <span className="font-semibold text-slate-900 truncate">{transition.newCEO}</span>
                               </div>
@@ -273,7 +289,7 @@ export function CompanySelector({ companies, onBack, onAnalyze }: CompanySelecto
                             </div>
                             <div>
                               <span className="text-slate-500">Outgoing:</span>{' '}
-                              <span className="font-medium text-slate-900">{selectedTransition.previousCEO}</span>
+                              <span className="font-medium text-slate-900">{selectedTransition.previousCEO || 'Initial Appointment'}</span>
                             </div>
                             <div>
                               <span className="text-slate-500">Incoming:</span>{' '}

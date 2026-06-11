@@ -232,30 +232,36 @@ export function RankingsPage({ companies, onBack, onSelectCompany, index }: Rank
             <table className="w-full">
               <thead className="bg-slate-50 border-b border-slate-200">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-600 uppercase">Rank</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-600 uppercase">CEO</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-600 uppercase">Company</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-600 uppercase">Sector</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-600 uppercase">Transition Date</th>
-                  <th className="px-6 py-3 text-right text-xs font-bold text-slate-600 uppercase">
+                  <th className="px-3 py-3 text-left text-xs font-bold text-slate-600 uppercase">Rank</th>
+                  <th className="px-3 py-3 text-left text-xs font-bold text-slate-600 uppercase">CEO</th>
+                  <th className="px-3 py-3 text-left text-xs font-bold text-slate-600 uppercase">Company</th>
+                  <th className="px-3 py-3 text-left text-xs font-bold text-slate-600 uppercase">Sector</th>
+                  <th className="px-3 py-3 text-left text-xs font-bold text-slate-600 uppercase">Transition Date</th>
+                  <th className="px-3 py-3 text-right text-xs font-bold text-slate-600 uppercase">
                     <span className="inline-flex items-center gap-1">
                       1-Year Return
                       <MetricTooltip text="Stock price percentage change over the full first year after the CEO transition. Positive = the stock rose; negative = it declined." position="top" />
                     </span>
                   </th>
-                  <th className="px-6 py-3 text-right text-xs font-bold text-slate-600 uppercase">
+                  <th className="px-3 py-3 text-right text-xs font-bold text-slate-600 uppercase">
+                    <span className="inline-flex items-center gap-1">
+                      3-Year Return
+                      <MetricTooltip text="Stock price change over 3 years after the transition. Only shown for CEOs whose transition occurred at least 3 years ago. Not included in the composite score." position="top" />
+                    </span>
+                  </th>
+                  <th className="px-3 py-3 text-right text-xs font-bold text-slate-600 uppercase">
                     <span className="inline-flex items-center gap-1">
                       90-Day Return
                       <MetricTooltip text="Stock price change in the first 90 days after the transition. Reflects the market's near-term reaction to the incoming CEO." position="top" />
                     </span>
                   </th>
-                  <th className="px-6 py-3 text-right text-xs font-bold text-slate-600 uppercase">
+                  <th className="px-3 py-3 text-right text-xs font-bold text-slate-600 uppercase">
                     <span className="inline-flex items-center gap-1">
                       Score
                       <MetricTooltip text="Composite impact score combining 35% 1-year return + 30% 90-day return + 20% low-volatility bonus + 15% tenure efficiency. Macro-adjusted scores account for recession context." position="top" />
                     </span>
                   </th>
-                  <th className="px-6 py-3 text-center text-xs font-bold text-slate-600 uppercase">Action</th>
+                  <th className="px-3 py-3 text-center text-xs font-bold text-slate-600 uppercase">Action</th>
                 </tr>
               </thead>
               <tbody key={selectedSector ?? 'all'} className="divide-y divide-slate-200">
@@ -264,60 +270,61 @@ export function RankingsPage({ companies, onBack, onSelectCompany, index }: Rank
                     key={`${ranking.ticker}-${ranking.transition_date}`}
                     className="hover:bg-slate-50 transition-colors"
                   >
-                    <td className="px-6 py-4">
+                    <td className="px-3 py-3">
                       <span className="font-bold text-slate-900">#{ranking.rank}</span>
                       {selectedSector && (
                         <div className="text-xs text-slate-400">global #{(ranking as any).globalRank}</div>
                       )}
                     </td>
-                    <td className="px-6 py-4">
-                      <div className="font-medium text-slate-900">{ranking.ceo_name}</div>
+                    <td className="px-3 py-3">
+                      <div className="font-medium text-slate-900 text-sm">{ranking.ceo_name}</div>
                     </td>
-                    <td className="px-6 py-4">
-                      <div className="font-medium text-slate-900">{ranking.company_name}</div>
+                    <td className="px-3 py-3">
+                      <div className="font-medium text-slate-900 text-sm">{ranking.company_name}</div>
                       <div className="text-xs text-slate-500">{ranking.ticker}</div>
                     </td>
-                    <td className="px-6 py-4 text-slate-600">
+                    <td className="px-3 py-3 text-slate-600">
                       <span className="text-sm">{SECTOR_ICONS[ranking.sector] || ''} {ranking.sector}</span>
                     </td>
-                    <td className="px-6 py-4 text-slate-600">
+                    <td className="px-3 py-3 text-slate-600">
                       <span className="text-sm">{formatDateShort(ranking.transition_date)}</span>
                     </td>
-                    <td className="px-6 py-4 text-right">
+                    <td className="px-3 py-3 text-right">
                       <div className="flex items-center justify-end gap-1">
                         {ranking.impact_1year_pct >= 0 ? (
-                          <TrendingUp className="w-4 h-4 text-emerald-600" />
+                          <TrendingUp className="w-3 h-3 text-emerald-600" />
                         ) : (
-                          <TrendingDown className="w-4 h-4 text-red-600" />
+                          <TrendingDown className="w-3 h-3 text-red-600" />
                         )}
-                        <span
-                          className={`font-semibold ${
-                            ranking.impact_1year_pct >= 0 ? 'text-emerald-600' : 'text-red-600'
-                          }`}
-                        >
+                        <span className={`font-semibold text-sm ${ranking.impact_1year_pct >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
                           {ranking.impact_1year_pct >= 0 ? '+' : ''}{ranking.impact_1year_pct.toFixed(1)}%
                         </span>
                       </div>
                     </td>
-                    <td className="px-6 py-4 text-right">
-                      <span
-                        className={`font-semibold ${
-                          ranking.impact_90days_pct >= 0 ? 'text-emerald-600' : 'text-red-600'
-                        }`}
-                      >
+                    <td className="px-3 py-3 text-right">
+                      {ranking.impact_3year_pct !== null && ranking.impact_3year_pct !== undefined ? (
+                        <span className={`font-semibold text-sm ${ranking.impact_3year_pct >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
+                          {ranking.impact_3year_pct >= 0 ? '+' : ''}{ranking.impact_3year_pct.toFixed(1)}%
+                        </span>
+                      ) : (
+                        <span className="text-slate-400 text-sm">—</span>
+                      )}
+                    </td>
+                    <td className="px-3 py-3 text-right">
+                      <span className={`font-semibold text-sm ${ranking.impact_90days_pct >= 0 ? 'text-emerald-600' : 'text-red-600'}`}>
                         {ranking.impact_90days_pct >= 0 ? '+' : ''}{ranking.impact_90days_pct.toFixed(1)}%
                       </span>
                     </td>
-                    <td className="px-6 py-4 text-right">
+                    <td className="px-3 py-3 text-right">
                       <div>
-                        <div className="font-bold text-slate-900">{ranking.composite_score.toFixed(2)}</div>
-                        <div className="text-xs text-slate-500 mt-1">{ranking.macro_context}</div>
+                        <div className="font-bold text-sm text-slate-900">{ranking.composite_score.toFixed(2)}</div>
+                        <div className="text-xs text-slate-500 mt-0.5">{ranking.macro_context}</div>
                       </div>
                     </td>
-                    <td className="px-6 py-4 text-center">
+                    <td className="px-3 py-3 text-center">
                       <button
                         onClick={() => handleSeeAnalysis(ranking)}
-                        className="px-3 py-1 bg-slate-900 text-white text-xs font-medium rounded hover:bg-slate-800 transition-colors"
+                        className="px-3 py-1 bg-slate-900 text-white text-xs font-medium rounded hover:bg-slate-800 transition-colors whitespace-nowrap"
                       >
                         See Analysis
                       </button>
